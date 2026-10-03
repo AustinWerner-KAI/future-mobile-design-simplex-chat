@@ -1,0 +1,30 @@
+name: Design proposal
+description: Suggest one concrete interaction or design alternative.
+title: "Design: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Person, task and problem
+      description: What becomes difficult at which step?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Include a sketch, flow or prototype link and the before/after behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Accessibility and privacy
+      description: Include tap alternatives, reduced motion and who sees what.
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: How should we evaluate it?
+      description: State what is hypothetical and what was actually tested.
+    validations:
+      required: true

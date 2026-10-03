@@ -1,0 +1,27 @@
+name: Usability or accessibility finding
+description: Report a reproducible interaction problem.
+title: "Finding: "
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Prototype, browser, viewport and input method
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and observed result
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Expected behaviour and impact
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Attach a recording or image with private information removed. Distinguish your observation from participant research.
