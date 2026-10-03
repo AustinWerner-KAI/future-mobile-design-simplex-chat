@@ -131,6 +131,10 @@ The initiator asked for multiple messages in one list. The [working menu](../pro
 
 One conversation now unfolds at a time while the surrounding list stays in place. Switching to another relationship closes the previous workspace without clearing its draft. Collapsed rows show a draft marker; recent-message previews update after a simulated send. The message history scrolls within the open region. Search and filters close a workspace that falls outside the results, preserving its draft. Keyboard and reduced-motion routes remain available. [See the actual open-menu screenshot](../visuals/previews/menu-list-open.png). Checks passed for one active workspace, switching/filter draft retention, draft markers, updated previews, keyboard controls, reduced motion and horizontal fit at 360, 390 and 1440 pixels. Compare the [first list study](../prototypes/menu-list-v1.html) with the [current menu](../prototypes/menu-list.html).
 
+### V2 — five studies shaped by SimpleX
+
+The initiator asked for the website palette, integration into the existing app, deeper research and application of privacy/QR concepts. [The five studies](../v2.html) now cover the list, deliberate invitation, profile privacy, trust review and group membership. Colour and behaviour changes are explained in [the research](SIMPLEX_RESEARCH.md) and [integration proposal](APP_INTEGRATION.md). The sample QR encodes a design-study marker; no real invitation, keys, delivery or authentication are implemented. Browser checks passed for all five studies at 360, 390 and 1440 pixels, light/dark appearance and the main simulated decision paths. Native feasibility, large-contact performance and participant testing remain open.
+
 ## What the record means
 
 The critique above summarises the originating conversation; it is not user-study evidence. The opening analogy, visual generation order and working-prototype order are distinguished deliberately. All generated boards, all available working studies and the structural wireframes are linked from the [concept library](../concepts.html).

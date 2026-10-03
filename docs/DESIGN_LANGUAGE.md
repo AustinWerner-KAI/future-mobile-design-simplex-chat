@@ -31,3 +31,7 @@ Home must support stable user choices and an accessible route to all conversatio
 ## Evaluation
 
 Ask: what does this curve help someone do? Does the motion clarify the destination? Can the person reverse it? Who sees the content? Does it still work with large text, a keyboard open and reduced motion?
+
+## V2 / SimpleX-aligned colour treatment
+
+Observed on the current website: deep blue `#023789`, action gradient values `#001AA7` to `#0095E7`, pale-blue `#E8F3FF` / `#C0E2FF` and white. V2 uses dark blue for legible text and actions, pale blue for open surfaces and cyan for a boundary edge. These are observed website values adapted to UI roles, not an official native-app token specification. Proposed dark tokens are in `prototypes/src/menu-simplex.css` and `v2.css`. Preserve the original petrol/sage direction for comparison.

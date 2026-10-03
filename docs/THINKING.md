@@ -28,6 +28,10 @@ What should follow from that difference? A connection could remain a continuous 
 
 A list can still be the right way to find people. We should keep familiar structures where they help, and change behaviour where the underlying problem calls for it. The [multi-message menu study](../prototypes/menu-list.html) tests that balance: one searchable list, several conversations, multiple message previews and a conversation that unfolds in place.
 
+## Growing from the real SimpleX app
+
+Research clarified what our different design journey must respect: invitations rather than global-user search, contextual profiles, deliberate verification and real group roles. [Read the research](SIMPLEX_RESEARCH.md). Our [five V2 studies](../v2.html) translate those ideas into a blue visual family aligned to the current website. The [integration plan](APP_INTEGRATION.md) starts with native chat-list presentation and existing app state; it does not assume a replacement network or new permissions.
+
 ## Build on this thinking
 
 I want others to develop these ideas, not simply reproduce the pictures. The octopus analogy is a starting question, not a fixed style or a test of loyalty to the concept.

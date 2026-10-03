@@ -28,3 +28,7 @@ The evolutionary analogy is now explicit in the initiator’s thinking: differen
 ## 2026-10-03 / One active conversation in the list
 
 Keep nearby conversations visible and allow one active workspace. Preserve per-person drafts when switching or filtering, show a draft marker on collapsed rows and bound message-history growth with an accessible scrolling region. This is an exploratory interaction choice; comparative usability testing remains open.
+
+## V2 / Website identity and native-app fit
+
+Publish five research-informed studies with blue/cyan/pale-blue/white colours. Use existing-app concepts: deliberate QR/link connection, contextual profiles, preview privacy, verification and group roles. Exclude speculative email from the present-app menu variant. The integration proposal reuses native state/handlers and keeps protocol changes out of the first slice. All current files remain browser simulations.
