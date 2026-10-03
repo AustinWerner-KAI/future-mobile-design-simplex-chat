@@ -1,6 +1,6 @@
 # The Future of Mobile Design for SimpleX Chat
 
-**An independent community design exploration of messaging in 2028.**
+**An independent community design exploration of the future mobile experience of [simplex.chat](https://simplex.chat/) in 2028.**
 
 I started with a question: could the mobile chat interface become a continuous workspace that opens around what we are doing, then quietly settles when we leave?
 
@@ -69,6 +69,6 @@ The home still resembles a vertical stack. Several flows use a generic expansion
 
 Initiated by [AustinWerner-KAI](https://github.com/AustinWerner-KAI), shaped from a design conversation with AI assistance. The concept boards are AI-generated; their prompts and editable prototype source are included.
 
-SimpleX is our first design case. This project is unaffiliated with SimpleX or Jony Ive and does not represent their roadmap or endorsement.
+[simplex.chat](https://simplex.chat/) is our first design case. This project is unaffiliated with SimpleX or Jony Ive and does not represent their roadmap or endorsement.
 
 See [LICENSING.md](LICENSING.md) for current reuse terms. Contributors retain attribution. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community expectations.

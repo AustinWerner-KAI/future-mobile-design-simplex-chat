@@ -2,7 +2,7 @@
 
 ## Why I started
 
-I started with a simple question: what could the mobile chat menu become by 2028?
+I started with a simple question: what could the mobile experience of [simplex.chat](https://simplex.chat/) become by 2028?
 
 I wanted it organised, clean to the eye, generous with space and genuinely forward-looking. My phrase for the project became **“design has no ego.”** The interface should give people and their conversations the greatest presence.
 
@@ -78,7 +78,7 @@ The task now is to earn the form through behaviour. We need to test whether peop
 
 ## Why SimpleX
 
-SimpleX's public description emphasises a network without user IDs and contacts and groups held on the user's device. Those constraints make a useful foundation for exploring a coherent private communication experience. [SimpleX](https://simplex.chat/)
+SimpleX's public description emphasises a network without user IDs and contacts and groups held on the user's device. Those constraints make a useful foundation for exploring a coherent private communication experience. [simplex.chat](https://simplex.chat/)
 
 This is an independent project, not an official SimpleX redesign or roadmap. Real integration needs the maintainers' technical input. Email integration is a scenario from this project's originating conversation, not a verified commitment by the founder. Ordinary email retains its actual privacy and delivery properties.
 
