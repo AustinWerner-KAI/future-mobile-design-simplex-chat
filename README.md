@@ -8,7 +8,7 @@ My starting principle was **“design has no ego.”** The person, the relations
 
 The octopus became an inspiration for flexible form, local action and selective visibility. This repository takes you through that thinking, shows the concepts and working interactions, and invites passionate designers, researchers and builders to challenge and extend them.
 
-**[Read the illustrated journey](https://austinwerner-kai.github.io/future-mobile-design-simplex/)** · **[Try the interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex/prototypes/continuous-demo.html)** · **[Join the welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex/discussions/1)**
+**[Read the illustrated journey](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/)** · **[Try the interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/prototypes/continuous-demo.html)** · **[Join the welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/discussions/1)**
 
 The project presentation and working study are hosted on GitHub Pages. You can also open `index.html` locally. No application install is required.
 
@@ -37,7 +37,7 @@ Chat and email can share organisation around a relationship while their channel 
 
 You can contribute a sketch, motion study, usability observation, accessibility finding or small prototype. Start with one problem and show what improves for the person using it.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md), use a [design proposal or finding](https://github.com/AustinWerner-KAI/future-mobile-design-simplex/issues/new/choose), or join an open challenge. Discussions are for exploration; issues scope work; pull requests change the reference experience.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), use a [design proposal or finding](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new/choose), or join an open challenge. Discussions are for exploration; issues scope work; pull requests change the reference experience.
 
 Maintainers curate a coherent direction and record decisions with their evidence. Popularity alone does not establish usability or privacy.
 

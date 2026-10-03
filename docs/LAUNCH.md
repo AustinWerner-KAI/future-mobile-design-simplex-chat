@@ -2,10 +2,10 @@
 
 Published on 2026-10-03 under AustinWerner-KAI, with public visibility explicitly authorised by the project initiator.
 
-- [Repository](https://github.com/AustinWerner-KAI/future-mobile-design-simplex)
-- [Illustrated design journey](https://austinwerner-kai.github.io/future-mobile-design-simplex/)
-- [Working interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex/prototypes/continuous-demo.html)
-- [Welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex/discussions/1)
+- [Repository](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat)
+- [Illustrated design journey](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/)
+- [Working interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/prototypes/continuous-demo.html)
+- [Welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/discussions/1)
 - Five starter issues, linked from CHALLENGES.md and the presentation.
 
 ## Configuration
