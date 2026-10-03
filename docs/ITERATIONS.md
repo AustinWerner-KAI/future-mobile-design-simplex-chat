@@ -119,6 +119,10 @@ Tools open locally, a selected image is reviewed before a simulated send, and a 
 
 Invitations, plan membership, separate date decisions, source return and a labelled email scenario join the same environment. Real expansion origins, full reload restoration, large contact sets and production permissions remain unresolved.
 
+### Combined experience — revision 02 / alignment and anatomy
+
+The initiator’s browser screenshot exposed a clipped composer, a repeated message preview and an oversized expanding form. The [audit](PROTOTYPE_AUDIT.md) records the mismatch with the anatomy model. The revision adds a coordinating centre and distinct paths, contains the workspace inside one phone viewport, and scrolls tools within the active arm. Compare the [previous version](../prototypes/continuous-v1.html) with the [revised study](../prototypes/continuous-demo.html). Actual rendered previews replace the old combined preview; the conceptual boards remain historical references.
+
 ## What the record means
 
 The critique above summarises the originating conversation; it is not user-study evidence. The opening analogy, visual generation order and working-prototype order are distinguished deliberately. All generated boards, all available working studies and the structural wireframes are linked from the [concept library](../concepts.html).

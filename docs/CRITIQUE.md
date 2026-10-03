@@ -2,7 +2,7 @@
 
 The visual boards look organic; their behaviour is not yet equally resolved. This is a design assessment, not a user-study result.
 
-1. **Home is still a vertical stack.** Explore stable spatial relationships without making navigation unpredictable.
+1. **Home organisation remains exploratory.** Revision 02 replaces the vertical stack with coordinated paths around a centre. Test whether people can find a relationship as quickly, and extend the design to large contact sets.
 2. **Generic expansion origin.** Some secondary flows reuse Maya's expansion region instead of expanding from the control actually touched. Preserve the originating object's identity.
 3. **Curves need jobs.** Reserve unusual geometry for useful transitions, contact points and real audience boundaries.
 4. **Scale is unproven.** Four attractive branches do not solve hundreds of conversations. Keep an accessible searchable route in the next iteration.
@@ -13,3 +13,5 @@ The visual boards look organic; their behaviour is not yet equally resolved. Thi
 9. **Email integration is an assumption.** Test address visibility and reply-channel comprehension; validate any real architecture with SimpleX maintainers.
 
 Checks performed during exploration: local browser interactions for draft preservation, photo preview and point reply; explicit membership versus date confirmation; connection acceptance; source navigation; email draft retention; horizontal fit at narrow widths. These do not substitute for participant testing, a screen-reader audit or production feasibility review.
+
+The [prototype audit and revision](PROTOTYPE_AUDIT.md) addresses the initiator’s alignment screenshot. This improves composition; it does not validate the 2028 concept.
