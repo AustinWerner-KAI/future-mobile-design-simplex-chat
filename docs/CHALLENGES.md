@@ -4,7 +4,7 @@ Five challenges are open on GitHub. Sketches and small experiments are welcome.
 
 ## [A home that feels continuous](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/2)
 
-**Problem:** the prototype home is still a stack of rows.
+**Problem:** coordinated paths and a multi-message list now offer two approaches, but neither is validated for large contact sets.
 **Deliverable:** two alternatives with one opening/closing motion study.
 **Check:** find Maya, an unread conversation and a shared plan; explain a path to 100+ conversations. Names remain stable and readable. Include reduced-motion behaviour.
 

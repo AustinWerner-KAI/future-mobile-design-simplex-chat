@@ -16,6 +16,29 @@ The first attempts looked like familiar messaging products with a new visual tre
 
 This repository takes you through that exploration and invites you to help improve it.
 
+## A different evolutionary journey
+
+The octopus has followed a different evolutionary journey from us. It offers a way to think about how similar needs—sensing, acting, coordinating—can lead to very different structures. Its alternative nervous-system organisation and flexible arms are an inspiration, not an instruction to draw tentacles on a screen. [University of Chicago](https://biologicalsciences.uchicago.edu/news/unique-octopus-nervous-system).
+
+I see a parallel with simplex.chat. My ambition is for its interface to evolve from its own foundations, rather than inherit every convention from WhatsApp and Telegram. SimpleX describes a network without user IDs, with contacts and groups on the person’s device. Those foundations give us different questions to ask about identity, connection and control. [simplex.chat](https://simplex.chat/).
+
+This is my design thesis, not a claim about SimpleX’s approved roadmap. A different foundation does not automatically make an interface better; the experience still has to earn people’s trust and work in everyday life.
+
+What should follow from that difference? A connection could remain a continuous place as messages become photographs, discussions and plans. Tools could appear locally, where action happens. Invitations could make the exact sharing boundary understandable. Returning could preserve the person’s place instead of demanding fresh attention.
+
+A list can still be the right way to find people. We should keep familiar structures where they help, and change behaviour where the underlying problem calls for it. The [multi-message menu study](../prototypes/menu-list.html) tests that balance: one searchable list, several conversations, multiple message previews and a conversation that unfolds in place.
+
+## Build on this thinking
+
+I want others to develop these ideas, not simply reproduce the pictures. The octopus analogy is a starting question, not a fixed style or a test of loyalty to the concept.
+
+- **Designers:** show another way a relationship can persist through writing, sharing and returning. Explain the job each shape or movement performs.
+- **Researchers:** compare the coordinated paths with the multi-message list. Observe whether people find an unread conversation, recognise its audience and return without losing context.
+- **Accessibility contributors:** make local expansion and image replies understandable with a keyboard, large text and a screen reader. Propose alternatives wherever the spatial metaphor fails.
+- **Builders and SimpleX specialists:** identify where the proposed flows fit the protocol, where they conflict and what a viable alternative could be.
+
+Bring a question, a sketch or runnable study, the evidence you have, and what remains uncertain. Link an existing [challenge](CHALLENGES.md) or open a scoped proposal. Keep earlier attempts visible and record why the next version changes. We are building a shared investigation into how messaging could evolve differently.
+
 ## My design lens
 
 Jony Ive's work prompted a set of working principles: solve complexity before simplifying appearance; design the whole experience; understand the material; care for unnoticed details; let usefulness guide form.

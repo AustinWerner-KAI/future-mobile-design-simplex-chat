@@ -10,6 +10,10 @@ You do not need to code to participate. Start with one concrete interaction and 
 - **Engineering:** a small working interaction or a feasibility note that explains constraints.
 - **Privacy:** an audience or channel-boundary critique tied to a specific step.
 
+## Build on the central idea
+
+Our thesis is that simplex.chat can explore its own design journey, just as the octopus suggests an alternative way to solve familiar functional problems. Develop, challenge or replace a proposed behaviour; explain what follows from the communication model and what improves for the person. Compare the [list menu](prototypes/menu-list.html) with the [coordinated paths](prototypes/continuous-demo.html). A contribution need not look like an octopus to advance the idea. Read [the thinking](docs/THINKING.md) before treating a board as a specification.
+
 ## A useful proposal
 
 Include the problem, the person and task, a before/after flow, the octopus analogy if it helps, accessible alternatives, privacy implications and a way to evaluate the change. Attach visuals or link a working prototype. State what is hypothetical and what you actually observed.
@@ -39,6 +43,6 @@ Maintainers should record accepted and rejected directions in `docs/DECISIONS.md
 
 ## Attribution and rights
 
-Identify what you created and list sources, assets and licences. Concept boards in `visuals/` were AI-generated; their prompts are provided. Do not imply they are manufactured products or finished engineering specifications.
+Identify what you created and list sources, assets and licences. Concept boards in `visuals/` were AI-generated; two preserved prompts are provided; exact prompts for the earlier seven boards are unavailable. Do not imply they are manufactured products or finished engineering specifications.
 
 Original code contributions use MIT; original design and documentation contributions use CC BY 4.0 with attribution. See LICENSING.md for scope and third-party exclusions. No CLA or transfer of ownership is requested.

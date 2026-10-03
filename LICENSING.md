@@ -9,7 +9,7 @@ The documentation and visual material are licensed under CC BY 4.0 by AustinWern
 
 Suggested credit: “From anatomy to interface — the future of mobile design for simplex.chat, initiated by AustinWerner-KAI and community contributors” with a link to this repository, a link to CC BY 4.0 and an indication of changes.
 
-Concept boards were generated with AI assistance. Prompts and provenance are included. Names, trademarks and externally linked sources retain their respective rights; neither licence implies endorsement by SimpleX or Jony Ive.
+Concept boards were generated with AI assistance. Two preserved generation prompts and the visual catalogue are included; exact prompts for the earlier seven boards are unavailable. Names, trademarks and externally linked sources retain their respective rights; neither licence implies endorsement by SimpleX or Jony Ive.
 
 The standalone demo uses an original minimal project wrapper and does not bundle Codex's visualization runtime. Optional host APIs are guarded so the exported prototype works without them.
 

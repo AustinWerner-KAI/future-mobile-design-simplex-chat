@@ -12,3 +12,7 @@ for (const [source, destination, title] of studies) {
   writeFileSync(new URL('../prototypes/' + destination, import.meta.url), document);
   console.log('Built prototypes/' + destination);
 }
+
+// The menu study is a standalone document with its own presentation.
+writeFileSync(new URL('../prototypes/menu-list.html', import.meta.url), readFileSync(new URL('../prototypes/src/menu-list.html', import.meta.url), 'utf8'));
+console.log('Built prototypes/menu-list.html');
