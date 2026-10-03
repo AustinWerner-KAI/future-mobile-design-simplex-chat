@@ -8,9 +8,9 @@ My starting principle was **“design has no ego.”** The person, the relations
 
 The octopus became an inspiration for flexible form, local action and selective visibility. This repository takes you through that thinking, shows the concepts and working interactions, and invites passionate designers, researchers and builders to challenge and extend them.
 
-**[Read the illustrated journey](https://austinwerner-kai.github.io/future-mobile-design-simplex/)** · **[Try the interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex/prototypes/continuous-demo.html)** · **[Join the discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex/discussions)**
+**[Read the illustrated journey](https://austinwerner-kai.github.io/future-mobile-design-simplex/)** · **[Try the interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex/prototypes/continuous-demo.html)** · **[Join the welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex/discussions/1)**
 
-The links above are the intended GitHub Pages addresses; if deployment is still running, open `index.html` locally. No install is required to view the project.
+The project presentation and working study are hosted on GitHub Pages. You can also open `index.html` locally. No application install is required.
 
 ![Five predictions, one visual language](visuals/five-designs.png)
 

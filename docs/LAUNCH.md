@@ -1,37 +1,23 @@
-# Launch checklist
+# Community launch record
 
-Suggested repository name: `future-mobile-design-simplex`.
+Published on 2026-10-03 under AustinWerner-KAI, with public visibility explicitly authorised by the project initiator.
 
-## Before publishing
+- [Repository](https://github.com/AustinWerner-KAI/future-mobile-design-simplex)
+- [Illustrated design journey](https://austinwerner-kai.github.io/future-mobile-design-simplex/)
+- [Working interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex/prototypes/continuous-demo.html)
+- [Welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex/discussions/1)
+- Five starter issues, linked from CHALLENGES.md and the presentation.
 
-- Owner confirmed: AustinWerner-KAI. Visibility confirmed: public.
-- GitHub authentication works outside the restricted sandbox; the initial sandbox check could not access the keyring.
-- Licences confirmed and applied: original code MIT; original design material CC BY 4.0. Standalone wrapper is original project code.
-- Name maintainers and add a private moderation contact.
-- Review fictional names, generated boards and the independent-project wording.
+## Configuration
 
-## GitHub setup
+Discussions enabled. GitHub Pages serves the main branch root. Labels, two issue forms and a pull-request template are included.
 
-Create the repository, push this project and enable Discussions. Suggested categories: Welcome, Design critiques, Sketchbook, Research findings, Engineering feasibility and Decisions. Pin the welcome post from `WELCOME.md`.
+Original code uses MIT. Original design material uses CC BY 4.0 with attribution. The standalone preview uses an original wrapper; no copied visualization runtime is bundled.
 
-Create five issues from `CHALLENGES.md`. Suggested labels: `design`, `research`, `accessibility`, `privacy`, `prototype`, `good first contribution`, `needs evidence`.
+The first maintainer is AustinWerner-KAI. A dedicated private moderation contact remains to be chosen; current conduct guidance points to GitHub's abuse-reporting route for platform abuse.
 
-Optionally enable GitHub Pages from the main branch root. It will serve `index.html` and the demo. Hosting has not been enabled by this scaffold. Verify file inputs, image previews and responsive layout on the hosted version.
+## First community round
 
-## Commands after authentication and the launch decisions
+Start with the home and opening/closing interaction. Ask for one concrete critique or small variation. Record decisions and evidence. Broaden the work after participants can explain the core experience and sharing boundaries.
 
-```sh
-gh auth login -h github.com
-# Choose --public or --private after the visibility decision.
-gh repo create future-mobile-design-simplex --source=. --public --push --description 'Community design exploration of continuous private messaging for 2028'
-```
-
-Public publication is authorised by the project initiator. Reuse licensing is confirmed.
-
-## First community invitation
-
-Ask for one concrete critique or small variation. Start with the home and opening/closing interaction. Avoid inviting a full app redesign before a shared evaluation method exists.
-
-## Reference
-
-[GitHub Discussions](https://docs.github.com/en/discussions) supports open exploration; [issue forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) structure actionable contributions.
+This launch publishes a design exploration, not a production messenger or an endorsed SimpleX roadmap. No messages were sent to SimpleX maintainers or outside designers as part of publication.
