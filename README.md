@@ -1,4 +1,12 @@
-# The Future of Mobile Design for SimpleX Chat
+# From anatomy to interface
+
+**The future of mobile design for [simplex.chat](https://simplex.chat/).**
+
+![From anatomy to interface — the starting model](visuals/anatomy-to-interface.png)
+
+## Start here: from anatomy to interface
+
+A coordinating centre. Flexible arms. Local touch points. This is the opening model for the story: how anatomy suggested a different way to organise interaction. Then follow the earlier sketches, each visual iteration and the working studies.
 
 **An independent community design exploration of the future mobile experience of [simplex.chat](https://simplex.chat/) in 2028.**
 
@@ -12,10 +20,13 @@ The octopus became an inspiration for flexible form, local action and selective 
 
 The project presentation and working study are hosted on GitHub Pages. You can also open `index.html` locally. No application install is required.
 
-![Five predictions, one visual language](visuals/five-designs.png)
+**[All concepts: nine boards and four working studies](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/concepts.html)**
+
+The anatomy board opens the explanation. [The iteration record](docs/ITERATIONS.md) preserves actual creation order, including the earlier designs that did not yet resolve the idea.
 
 ## Follow the thinking
 
+- [Every iteration and its thinking](docs/ITERATIONS.md): question, response, critique and next direction.
 - [The full narrative](docs/THINKING.md): questions, principles, predictions, nature-inspired mappings, concept evolution and invitation.
 - [The design brief](docs/DESIGN_BRIEF.md): the job, boundaries and first milestone.
 - [Core screen layouts and wireframes](studies/core-wireframes.html): the structural flow behind the visual boards.
@@ -42,6 +53,13 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), use a [design proposal or finding](http
 Maintainers curate a coherent direction and record decisions with their evidence. Popularity alone does not establish usability or privacy.
 
 ## Try and edit the prototype
+
+The [concept library](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/concepts.html) links all working studies:
+
+- [Your people — opening and closing](prototypes/maya-opening.html), matching the original screenshot.
+- [Your people — photo workspace](prototypes/maya-photo.html).
+- [Shared messaging — early plan study](prototypes/shared-plan.html), with historical simulated-acceptance shortcuts.
+- [Combined experience](prototypes/continuous-demo.html).
 
 Open `prototypes/continuous-demo.html` directly in a modern browser. It covers private messaging, preserved drafts, photo preview and point replies, a proposed plan, invitations, separate joining and date confirmation, new connections and an email reply scenario.
 

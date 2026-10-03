@@ -7,7 +7,7 @@ The project initiator has authorised these reuse terms:
 
 The documentation and visual material are licensed under CC BY 4.0 by AustinWerner-KAI and their credited contributors. The MIT licence does not override that separate material licence merely because text or images appear inside HTML.
 
-Suggested credit: “The Future of Mobile Design for SimpleX Chat, initiated by AustinWerner-KAI and community contributors” with a link to this repository, a link to CC BY 4.0 and an indication of changes.
+Suggested credit: “From anatomy to interface — the future of mobile design for simplex.chat, initiated by AustinWerner-KAI and community contributors” with a link to this repository, a link to CC BY 4.0 and an indication of changes.
 
 Concept boards were generated with AI assistance. Prompts and provenance are included. Names, trademarks and externally linked sources retain their respective rights; neither licence implies endorsement by SimpleX or Jony Ive.
 

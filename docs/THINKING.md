@@ -1,4 +1,10 @@
-# The Future of Mobile Design for SimpleX Chat
+# From anatomy to interface
+
+## Start here: from anatomy to interface
+
+![From anatomy to interface](../visuals/anatomy-to-interface.png)
+
+A coordinating centre. Flexible arms. Local touch points. This board opens the story because it makes the design analogy visible. It was not the first image created: the [full iteration record](ITERATIONS.md) preserves the earlier attempts and what changed at each step.
 
 ## Why I started
 
@@ -57,6 +63,8 @@ The visual vocabulary is restrained: warm white, deep petrol ink, shallow relief
 The phone's rectangular display is a constraint we can work with. Our current work is about fluid interface behaviour, not a claim that flexible or organic hardware will be ready by 2028.
 
 ## The concepts and what changed
+
+Every available board and working study is preserved in the [concept library](../concepts.html). Read [ITERATIONS.md](ITERATIONS.md) for each question, design response, critique and next direction.
 
 Early directions offered cleaner lists, spaces and lenses. They were easy to recognise, but did not yet express a different interaction model.
 

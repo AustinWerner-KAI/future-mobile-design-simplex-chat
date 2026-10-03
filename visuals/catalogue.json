@@ -1,0 +1,101 @@
+[
+  {
+    "file": "focus-spaces-threadline.png",
+    "title": "Focus / Spaces / Threadline",
+    "description": "Early exploration of attention, grouping and conversation previews.",
+    "stage": "Earlier exploration",
+    "iteration": 1,
+    "question": "Could we reduce attention pressure?",
+    "response": "Prioritised replies, grouped spaces and previews.",
+    "critique": "The appearance changed more than the interaction model.",
+    "next": "Simplify the structure and remove visual ego."
+  },
+  {
+    "file": "quiet-index-open-spaces-lens.png",
+    "title": "Quiet index / Open spaces / Conversation lens",
+    "description": "A cleaner conventional structure; the future interaction model was still unresolved.",
+    "stage": "Earlier exploration",
+    "iteration": 2,
+    "question": "What does organised and clean mean?",
+    "response": "Quiet typography, open space and clearer grouping.",
+    "critique": "Still a familiar messaging model.",
+    "next": "Look outside the standard model and learn from nature."
+  },
+  {
+    "file": "tide-branch-clearing.png",
+    "title": "Tide / Branch / Clearing",
+    "description": "Nature-inspired attention boundaries, topic branches and shared-object organisation.",
+    "stage": "Earlier exploration",
+    "iteration": 3,
+    "question": "Can nature change the organisation?",
+    "response": "Shorelines for attention, branches for topics, gathering around an object.",
+    "critique": "No single anatomical model unified the experience.",
+    "next": "Explore octopus flexibility, local sensing and selective visibility."
+  },
+  {
+    "file": "rest-touch-return.png",
+    "title": "Rest / Touch / Return",
+    "description": "First octopus behaviour study: unfold capability at the point of touch.",
+    "stage": "Earlier exploration",
+    "iteration": 4,
+    "question": "Can capability appear where we touch?",
+    "response": "A conversation unfolds locally, then returns to the overview.",
+    "critique": "The anatomical connection was still too hard to see.",
+    "next": "Translate centre, arms and contact points explicitly."
+  },
+  {
+    "file": "anatomy-to-interface.png",
+    "title": "From anatomy to interface",
+    "description": "A design analogy connecting coordination, flexible arms and contact points to interface behaviour.",
+    "stage": "Earlier exploration",
+    "iteration": 5,
+    "question": "How can anatomy become interface?",
+    "response": "A coordinating anchor, branching relationships and local touch points.",
+    "critique": "Eight branches are a constraint, not a rule; scale remains unproven.",
+    "next": "Follow the whole journey."
+  },
+  {
+    "file": "quiet-messaging-flow.png",
+    "title": "A quieter kind of messaging",
+    "description": "An early eight-screen flow; useful journey coverage, but still a conventional screen model.",
+    "stage": "Earlier exploration",
+    "iteration": 6,
+    "question": "Does the idea cover the entire flow?",
+    "response": "Invites, messages, photos, anchored replies and a plan.",
+    "critique": "The sequence still relied on conventional separate screens.",
+    "next": "Explore continuous form and movement."
+  },
+  {
+    "file": "surface-study.png",
+    "title": "A surface that reaches back",
+    "description": "Rest, Connect, Unfold and Share as a continuous sculptural surface.",
+    "stage": "Surface direction",
+    "iteration": 7,
+    "question": "Can the surface reach, unfold and settle?",
+    "response": "A sculptural membrane changes around the activity.",
+    "critique": "Navigation, thumb reach and the behaviour behind the shape need testing.",
+    "next": "Map five predictions to concrete designs."
+  },
+  {
+    "file": "five-designs.png",
+    "title": "One surface. Five ways to connect.",
+    "description": "Living present, local tools, shared images, visible boundaries and quiet return.",
+    "stage": "Five behaviours",
+    "iteration": 8,
+    "question": "How does each prediction become a design?",
+    "response": "Five behaviours share one visual family.",
+    "critique": "Curves need useful jobs; invitation and participant cues need correction.",
+    "next": "Connect the behaviours through one story."
+  },
+  {
+    "file": "storyboard.png",
+    "title": "A connection becomes a shared world",
+    "description": "Eight moments linking invitations, messages, photographs, plans and return.",
+    "stage": "Integrated storyboard",
+    "iteration": 9,
+    "question": "Can the relationship persist through the story?",
+    "response": "Invite, accept, write, choose, send, touch, gather and return.",
+    "critique": "The screens still need continuity beyond their appearance.",
+    "next": "Build opening and closing, then photo and sharing interactions."
+  }
+]
