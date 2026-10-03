@@ -20,3 +20,7 @@ Date / issue or discussion / problem / alternatives / decision / evidence / trad
 ## 2026-10-03 / Community launch terms
 
 Owner and public visibility authorised: AustinWerner-KAI. Original code MIT; original design material CC BY 4.0 with attribution. The project narrative records the initiator’s thinking and invites independent alternatives.
+
+## 2026-10-03 / Full audit and list alternative
+
+The evolutionary analogy is now explicit in the initiator’s thinking: different foundations can lead to a different design journey. Added a seven-conversation multi-message list as an alternative to coordinated paths. Neither navigation model is validated. The full audit corrects invitation review state, image decode handling, focus return, stale descriptions and incomplete prompt provenance. Next decision should follow comparative task observations, not visual preference alone. See [FULL_AUDIT.md](FULL_AUDIT.md).
