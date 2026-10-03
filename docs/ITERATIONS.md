@@ -127,6 +127,10 @@ The initiator’s browser screenshot exposed a clipped composer, a repeated mess
 
 The initiator asked for multiple messages in one list. The [working menu](../prototypes/menu-list.html) shows seven conversations, two message previews per conversation, search and All / Unread / Groups filters. A conversation opens locally and keeps an in-memory draft. It tests whether a familiar organising structure can support a different interaction journey. The evolutionary analogy informs behaviour; it does not require a radial menu. Next: compare this list with the coordinated-path home using the same tasks.
 
+### List menu — continuity revision
+
+One conversation now unfolds at a time while the surrounding list stays in place. Switching to another relationship closes the previous workspace without clearing its draft. Collapsed rows show a draft marker; recent-message previews update after a simulated send. The message history scrolls within the open region. Search and filters close a workspace that falls outside the results, preserving its draft. Keyboard and reduced-motion routes remain available. [See the actual open-menu screenshot](../visuals/previews/menu-list-open.png). Checks passed for one active workspace, switching/filter draft retention, draft markers, updated previews, keyboard controls, reduced motion and horizontal fit at 360, 390 and 1440 pixels. Compare the [first list study](../prototypes/menu-list-v1.html) with the [current menu](../prototypes/menu-list.html).
+
 ## What the record means
 
 The critique above summarises the originating conversation; it is not user-study evidence. The opening analogy, visual generation order and working-prototype order are distinguished deliberately. All generated boards, all available working studies and the structural wireframes are linked from the [concept library](../concepts.html).

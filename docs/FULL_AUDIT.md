@@ -56,3 +56,7 @@ These are implementation checks and a heuristic design assessment. No participan
 Find Maya, identify an unread group, read the two latest messages, write a draft, close and return. Compare the list and path menus. Record navigation errors, audience misunderstandings and what is lost or retained. Then propose one change with before/after evidence. The project should evolve through those observations.
 
 See [the thinking](THINKING.md), [contribution guidance](../CONTRIBUTING.md), [open challenges](CHALLENGES.md) and [prototype audit](PROTOTYPE_AUDIT.md).
+
+## Follow-up / List continuity revision
+
+The next iteration limits the list to one active conversation, preserves drafts when switching or filtering, marks retained drafts and updates both latest-message previews after simulated sending. Focused browser checks passed for these flows, keyboard input, reduced motion and horizontal fit at 360, 390 and 1440 pixels. See the [iteration record](ITERATIONS.md). Remaining research and production limitations above still apply.

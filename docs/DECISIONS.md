@@ -24,3 +24,7 @@ Owner and public visibility authorised: AustinWerner-KAI. Original code MIT; ori
 ## 2026-10-03 / Full audit and list alternative
 
 The evolutionary analogy is now explicit in the initiator’s thinking: different foundations can lead to a different design journey. Added a seven-conversation multi-message list as an alternative to coordinated paths. Neither navigation model is validated. The full audit corrects invitation review state, image decode handling, focus return, stale descriptions and incomplete prompt provenance. Next decision should follow comparative task observations, not visual preference alone. See [FULL_AUDIT.md](FULL_AUDIT.md).
+
+## 2026-10-03 / One active conversation in the list
+
+Keep nearby conversations visible and allow one active workspace. Preserve per-person drafts when switching or filtering, show a draft marker on collapsed rows and bound message-history growth with an accessible scrolling region. This is an exploratory interaction choice; comparative usability testing remains open.
