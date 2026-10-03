@@ -24,9 +24,9 @@ The project presentation and working study are hosted on GitHub Pages. You can a
 
 The anatomy board opens the explanation. [The iteration record](docs/ITERATIONS.md) preserves actual creation order, including the earlier designs that did not yet resolve the idea.
 
-## Five new V2 designs
+## Five new V2 future-experience studies
 
-**[Explore all five V2 designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html)**: chat list, QR invitations, profile privacy, conversation verification and group membership. These use a website-aligned blue palette and are informed by [SimpleX research](docs/SIMPLEX_RESEARCH.md). [The native integration plan](docs/APP_INTEGRATION.md) explains how a first experiment could fit the existing app. All flows remain independent browser simulations.
+**[Explore all five V2 designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html)**: chat list, QR invitations, profile privacy, conversation verification and group membership. These use a website-aligned blue palette and are informed by [SimpleX research](docs/SIMPLEX_RESEARCH.md). [The future-fit notes](docs/APP_INTEGRATION.md) explore how an evolved experience could belong in SimpleX. The objective is discovering the future, not reinventing today’s app. All flows remain independent browser simulations.
 
 ## Follow the thinking
 

@@ -1,5 +1,9 @@
 # Design brief
 
+## The purpose
+
+Explore what the future SimpleX experience could become. This is a discovery project, not a current-app redesign brief or near-term feature backlog. Existing privacy, identity and connection concepts are foundations to respect and investigate, not a restriction to today’s interface.
+
 ## The job
 
 Help someone move between a private conversation, a shared object and a small group activity without losing their place, draft or understanding of who can see what.

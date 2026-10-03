@@ -40,7 +40,7 @@ The guide exposes security-code verification, database-passphrase controls, inco
 
 The iOS documentation describes SwiftUI views and state, a shared framework, notification/share extensions and a Haskell-core bridge. The Android/desktop documentation describes Compose Multiplatform UI, app state, theme components and native-core bindings. A browser prototype is a design reference, not code that can be dropped into those clients. [iOS development](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/ios/README.md), [multiplatform development](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/multiplatform/README.md).
 
-**Design implication:** implement an initial menu experiment in the native presentation layer using existing state and navigation. Do not create a second message store or bypass existing send, read, authentication and permission handlers. See [the proposed integration plan](APP_INTEGRATION.md).
+**Future feasibility consideration:** if implementation is later explored, investigate the native presentation layer with existing state and navigation. Do not create a second message store or bypass existing send, read, authentication and permission handlers. See [the proposed integration plan](APP_INTEGRATION.md).
 
 ## Visual identity
 
@@ -50,4 +50,4 @@ The current website uses blues, cyan, white and pale-blue gradients, with some w
 
 The octopus analogy should help us ask how another set of foundations leads to another way of coordinating action. For SimpleX, that means local identity, deliberate connection and visible boundaries. It does not justify an eight-arm menu, global social graph, invented permissions or decorative biological shapes.
 
-Our present-app proposal is a conversation-list treatment with contextual expansion. Email, anchored shared-image discussion and new shared-plan objects remain future experiments until their fit is established. The next contribution should explain both the human benefit and compatibility with the real app.
+Our future-experience study explores a conversation list with contextual expansion as one hypothesis, not a proposal to rebuild the present app. Email, anchored shared-image discussion and new shared-plan objects remain future experiments until their fit is established. The next contribution should explain both the human benefit and compatibility with the real app.

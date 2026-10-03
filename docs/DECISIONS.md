@@ -32,3 +32,7 @@ Keep nearby conversations visible and allow one active workspace. Preserve per-p
 ## V2 / Website identity and native-app fit
 
 Publish five research-informed studies with blue/cyan/pale-blue/white colours. Use existing-app concepts: deliberate QR/link connection, contextual profiles, preview privacy, verification and group roles. Exclude speculative email from the present-app menu variant. The integration proposal reuses native state/handlers and keeps protocol changes out of the first slice. All current files remain browser simulations.
+
+## Clarified purpose / Future experience, not present-app reinvention
+
+The initiator reiterated that this is an exploration to determine what the future could look like. Use current SimpleX privacy, profiles and QR connections as foundations for future hypotheses. Native integration notes are conditional feasibility considerations, not a near-term implementation plan. Judge contributions by what they reveal about a future experience, rather than how closely they recreate the current app.

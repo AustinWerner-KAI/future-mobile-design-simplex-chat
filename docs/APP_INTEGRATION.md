@@ -1,10 +1,10 @@
-# Fitting the concept into the existing SimpleX app
+# How a future experience could belong in SimpleX
 
-Proposed integration plan, 3 October 2026. The initiator clarified that integration means fitting into the existing SimpleX app. No upstream app code has been changed, no native build has been made, and no maintainer acceptance is implied.
+Future-fit considerations, 3 October 2026. The initiator clarified that integration means belonging within SimpleX, rather than adding external services. The purpose remains exploring the future experience, not reinventing today’s app. No upstream app code has been changed, no native build has been made, and no maintainer acceptance is implied.
 
-## First slice
+## A possible future feasibility study
 
-Offer the list treatment as an optional native chat-list experiment. Preserve the app's profile access, new-connection entry, group actions, settings and current full-conversation route. A row can reveal additional context locally; opening the full conversation remains available. Use the active authorised profile's existing data and theme preferences.
+If the community later investigates implementation, an optional native chat-list experiment is one possible feasibility study, not the current project objective. Preserve the app's profile access, new-connection entry, group actions, settings and current full-conversation route. A row can reveal additional context locally; opening the full conversation remains available. Use the active authorised profile's existing data and theme preferences.
 
 The [website-colour menu](../prototypes/menu-simplex.html) shows the visual and interaction direction. It is a partial browser study; its present-app scope excludes the speculative email channel.
 
@@ -27,12 +27,12 @@ The current browser study demonstrates only some of these interactions with fict
 
 For iOS, start with the documented ChatList and Chat views, ChatModel/ItemsModel and AppTheme. For Android/desktop, inspect the documented chat-list views, ChatModel and theme layer. Bind to the existing core-facing handlers; do not call the transport directly from a new UI component. These are proposed starting points based on the official development documents, not a file-by-file code review. [iOS](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/ios/README.md), [multiplatform](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/multiplatform/README.md).
 
-## Boundaries for the first implementation
+## Foundations future experiments should respect
 
-No new global identity, server-side conversation index or automatic merging of profiles. No external analytics on message content. No new permission model disguised as a curved boundary. Keep email and the proposed shared-plan system out of the first chat-list implementation. Security-code verification, invitation state and group roles should continue to follow existing app flows. [Connection guide](https://simplex.chat/docs/guide/making-connections.html), [profile guide](https://simplex.chat/docs/guide/chat-profiles.html), [group guide](https://simplex.chat/docs/guide/secret-groups.html).
+No new global identity, server-side conversation index or automatic merging of profiles. No external analytics on message content. No new permission model disguised as a curved boundary. Keep speculative features labelled separately from demonstrated current capabilities; email and new shared-plan objects need further exploration. Security-code verification, invitation state and group roles should continue to follow existing app flows. [Connection guide](https://simplex.chat/docs/guide/making-connections.html), [profile guide](https://simplex.chat/docs/guide/chat-profiles.html), [group guide](https://simplex.chat/docs/guide/secret-groups.html).
 
 ## Acceptance tasks
 
 Find a chat in a long list; preview without falsely marking all messages read; switch profiles without leaking previews or drafts; reply with the right role and recipient; resume a draft after opening another chat; reach the existing full conversation; handle failed sending; test lock/unlock, notifications and share-extension entry. Include TalkBack/VoiceOver, 200% text, right-to-left labels, virtual keyboard, reduced motion and Android Back/iOS back gestures.
 
-Start with a small native experiment, review it with maintainers, and compare task observations with the existing list before expanding scope. Until that happens, this project publishes a proposal rather than an app integration.
+First explore and compare future experiences. If a direction earns further investigation, discuss a small native feasibility experiment with maintainers. Until that happens, this project publishes a proposal rather than an app integration.
