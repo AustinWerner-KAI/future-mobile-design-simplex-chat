@@ -79,3 +79,7 @@ Publish an anonymised summary of the question, actual participants/method, obser
 The task-based observation, neutral instructions and think-aloud approach follow [GOV.UK guidance on moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing). Our short duration and three-person pilot are project choices. [Current uploads](CURRENT_UPLOADS.md), [critique](CRITIQUE.md), [contribution guide](../CONTRIBUTING.md) and [source register](SOURCES.md) provide the reference answers and provenance.
 
 The agent route check can be inspected in [check-contributor-route.cjs](../scripts/check-contributor-route.cjs). It requires Playwright and a browser path in `PLAYWRIGHT_MODULE` and `BROWSER_PATH`, like the other project browser checks. It does not replace human observations.
+
+## Interactive V2.1 candidates — 4 October 2026
+
+[Play and compare all three](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html), embedded or full screen. [Why grids: rationale, trade-offs and comparison tasks](WHY_GRIDS.md). Fictional, independent page sessions; no external sending. V2 remains the current project reference.

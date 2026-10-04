@@ -84,3 +84,7 @@ For local browsing run `python3 -m http.server 8000`. No app install or framewor
 ### V2.1 candidate refinement — 4 October 2026
 
 [Updated three-option mockups](../v21-options.html) · [refinement record and limits](V21_REFINEMENT.md). Compact favourites, individual identity marks, editable overlapping collections and retained tool context. V2 remains the current reference.
+
+## Interactive V2.1 candidates — 4 October 2026
+
+[Play and compare all three](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html), embedded or full screen. [Why grids: rationale, trade-offs and comparison tasks](WHY_GRIDS.md). Fictional, independent page sessions; no external sending. V2 remains the current project reference.

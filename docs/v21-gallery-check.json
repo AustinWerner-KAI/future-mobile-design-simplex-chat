@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-04T16:48:17.890Z",
+  "method": "Agent-operated Chrome local-file interaction and layout checks; not participant testing",
+  "results": [
+    "2.1.1 embedded prototype retains draft",
+    "2.1.1 embedded return retains search",
+    "2.1.2 embedded prototype retains draft",
+    "2.1.2 embedded return retains search",
+    "2.1.3 embedded prototype retains draft",
+    "2.1.3 embedded return retains search",
+    "2.1.1 independent iframe state",
+    "2.1.2 independent iframe state",
+    "2.1.3 independent iframe state",
+    "Reset clears only selected preview",
+    "Other preview survives reset",
+    "Interactive gallery fits 390",
+    "Interactive gallery fits 1440",
+    "Grid rationale fits 320",
+    "Grid rationale fits 390",
+    "Grid rationale fits 1440",
+    "Rationale mockup images load",
+    "No JavaScript page errors"
+  ]
+}

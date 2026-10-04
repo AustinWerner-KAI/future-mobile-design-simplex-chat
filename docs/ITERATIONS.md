@@ -208,3 +208,7 @@ Corrected cleared proposals restoring default text, the extra history entry from
 ## Three V2.1 options — 4 October 2026
 
 Added V2.1.1 grid, V2.1.2 compact favourites strip and V2.1.3 user-arranged collections. Distinct icon structures and text labels separate individuals, groups, publications and providers in each option. [Compare the directions](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html). These are candidate layouts; V2 remains the current reference.
+
+## Playable comparison and grid rationale — 4 October 2026
+
+Made the refined V2.1 candidates playable inside the comparison gallery and linked them from the project landing page, concept index, progression and walkthroughs. Added [why grids](WHY_GRIDS.md): a design hypothesis with explicit trade-offs and a participant comparison plan, not a claim that grids are universally better. Existing historical work remains available.
