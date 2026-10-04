@@ -78,3 +78,7 @@ For native review use platform units and [Android accessibility guidance](https:
 4. Ask participants to create an incognito invitation, draft a plan without sharing it, share one revision and return to an interrupted reply. Observe mistaken recipients, mistaken agreement, lost context and recovery; report evidence rather than a universal design score.
 
 The future direction is promising if local actions become more understandable and recoverable as they expand. It still needs evidence that this different evolutionary path produces a better experience.
+
+## Subsequent colour and continuity revision
+
+The initiator rejected the blue direction after this audit. The [warm inline experiment](INLINE_EVOLUTION.md) and [colour research](COLOUR_RESEARCH.md) record the next revision. Both menus now combine private messages and public channels with explicit type/audience distinctions. The audit tables above describe the baseline reviewed before that change; the [blue iteration](../prototypes/experience-blue.html) is preserved.

@@ -49,7 +49,7 @@ Android and desktop share Compose Multiplatform components with model, API, plat
 
 ## Plans are evidence of questions, not guarantees
 
-The published chat-relay launch plan discusses large public channels, relay state, distinct channel presentation and unresolved delivery/UI work. It should not be read as a current release checklist. Our small private group must not be presented as equivalent to a public channel. [Chat-relay plan](https://github.com/simplex-chat/simplex-chat/blob/stable/plans/chat-relays-mvp-launch-plan.md).
+Updated research, 4 October 2026: SimpleX announced channels in v6.5 as a beta. Current published privacy documentation still describes public channels as experimental. Channel content is visible to chat relays; protecting participation is distinct from keeping content private. Our small private group must not be presented as equivalent to a public channel. The earlier launch plan is historical context, not a current feature checklist. [SimpleX channels announcement](https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html), [current privacy documentation](https://github.com/simplex-chat/simplex-chat/blob/stable/PRIVACY.md), [channels overview](https://simplex.chat/docs/protocol/channels-overview.html).
 
 The earlier statement about future email integration came from the initiator. The sources reviewed here do not establish a committed release date or an implemented mailbox. Keep email as a clearly labelled speculative branch.
 

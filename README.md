@@ -65,6 +65,10 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), use a [design proposal or finding](http
 
 Maintainers curate a coherent direction and record decisions with their evidence. Popularity alone does not establish usability or privacy.
 
+## Latest experiment: a relationship unfolds
+
+[Try the warm inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Chalk, Charcoal and Moss replace the blue direction. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
+
 ## Try and edit the prototype
 
 Start with the current [nine-screen experience](experience.html) or its [full-screen mobile mode](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#home). Read the [mobile agency audit](docs/KINGS_MOBILE_AUDIT.md) for the build map, findings and open validation work. Edit `prototypes/src/experience.html`, `prototypes/src/experience.css` and `prototypes/src/experience.js`, then run `node scripts/build-demo.mjs`. The studies below preserve earlier iterations.

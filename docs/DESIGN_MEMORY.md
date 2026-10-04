@@ -27,11 +27,19 @@ Reject a concept that relies only on “fluid”, “futuristic”, blue gradien
 
 ## Current expression
 
-The [complete experience](../experience.html) explores nine connected contexts. The compact menu and ink/porcelain/cyan hierarchy are the current visual direction, not immutable rules. The [2028 reset](2028_DESIGN_RESET.md) remains the audit that explains why the previous five V2 screens were an insufficient future vision.
+The [complete experience](../experience.html) explores nine connected contexts. The compact menu now explores warm Charcoal/Chalk/Moss materials with restrained ember/clay/sand actions. Blue was rejected by the initiator for this direction; colour is not the evolutionary thesis. The [2028 reset](2028_DESIGN_RESET.md) remains the audit that explains why the previous five V2 screens were an insufficient future vision.
 
 ## Research anchor and spatial consequence
 
 The [expanded project map](SIMPLEX_PROJECT_MAP.md) grounds the different-evolution analogy in resource-based network addressing and endpoint application logic. The [surface audit](MOBILE_SURFACE_AUDIT.md) applies it to space: ordinary conversation remains the coordinating context; the active tool earns its surface; explanations unfold on request; simulation controls stay outside the proposed app.
+
+## One menu, different audiences
+
+Private messages and public channels belong in the same menu with explicit type labels, different identity shapes and distinct material roles. Colour reinforces the difference but cannot carry it alone. Channel expansion must state its public audience and permitted actions; it must never masquerade as a private reply. The [colour research](COLOUR_RESEARCH.md) records the rationale and measured token pairs.
+
+## Inline evolution — colour and continuity
+
+The [inline relationship experiment](../unfold.html) makes the list the coordinating surface. A relationship unfolds locally; proposal, image and trust controls stay attached to its source. A separate reply draft survives tool changes and folding. Concealment is explicit, not automatic. Read the [rationale](INLINE_EVOLUTION.md) and compare against the nine-screen baseline.
 
 ## Mobile agency audit — 4 October 2026
 

@@ -18,7 +18,7 @@ The email branch is a separate future hypothesis. It retains external transport 
 
 | Design | Structural layout | Evolutionary interpretation | Decision or edge state |
 |---|---|---|---|
-| Your people | Profile → local search/filter → compact rows with two messages → context tools | Coordination without a public social graph | No results; hidden previews; drafts retained |
+| Your space | Profile → local search/filter → compact rows with two messages → context tools | Coordination without a public social graph | No results; hidden previews; drafts retained |
 | Read & reply | Relationship → source messages → local proposal tool → anchored composer | Local action around a relationship | Empty send disabled; draft retained when leaving |
 | Share an image | Audience → whole image → caption → explicit send | Local touch and whole-context understanding | Failed send retains selection; explicit retry; annotation point |
 | Shape a plan | Source → private draft → included content → share version | Adaptable form growing from a question | Editing a draft never changes a shared snapshot |
@@ -30,7 +30,7 @@ The email branch is a separate future hypothesis. It retains external transport 
 
 ## Visual system and space
 
-Ink, Porcelain and Cobalt use the same component hierarchy. Content appears on a distinct surface; blue/cyan concentrate attention on an available action. State is always also expressed in text. The phone has a bounded height, with an internal scrolling content region. Conversation composers remain anchored; short decisions place actions beside their content. Study controls and repeated branding now sit outside the app surface. This still needs testing with native keyboards, safe areas, large text and screen readers.
+Charcoal, Chalk and Moss use the same component hierarchy. Content appears on a distinct surface; ember/clay/sand concentrate attention on an available action. The earlier blue direction remains recorded in the iteration history. State is always also expressed in text. The phone has a bounded height, with an internal scrolling content region. Conversation composers remain anchored; short decisions place actions beside their content. Study controls and repeated branding now sit outside the app surface. This still needs testing with native keyboards, safe areas, large text and screen readers.
 
 The same source message, draft and audience survive moving to relevant tools. Earlier prototypes explored literal arms. This set explores their functional implication. The potential failure is becoming an ordinary screen-by-screen messenger again: test whether local actions actually feel continuous, and consider inline expansion if transitions cause loss of context. Do not call a pale card or curved corner “octopus-inspired” without explaining its behavioural purpose.
 

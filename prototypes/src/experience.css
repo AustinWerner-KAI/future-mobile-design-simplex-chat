@@ -31,3 +31,22 @@
 /* Editing and keyboard focus use the same legible tokens as navigation. */
 .device input::placeholder,.device textarea::placeholder{color:var(--muted);opacity:1}
 .device textarea:focus-visible,.device select:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+/* Warm material study: content leads; colour marks a deliberate action. */
+body{background:#171816;color:#f4f0e8}
+.device{--base:#20211f;--panel:#30332e;--text:#f6f1e7;--muted:#c0bdb3;--rule:#777a70;--signal:#f2ac8e;--action:#f2ac8e;--action-ink:#302019;--field:#262824;--pearl:#ece6d9;--pearl-ink:#282b25;--pearl-muted:#5c6055}
+.device[data-palette=day]{--base:#f3eee3;--panel:#e5ded0;--text:#252b24;--muted:#5b6055;--rule:#85897c;--signal:#8d3e2b;--action:#8d3e2b;--action-ink:#fff7ed;--field:#faf6ee;--pearl:#fffaf0;--pearl-ink:#282b25;--pearl-muted:#5c6055}
+.device[data-palette=cobalt]{--base:#25342b;--panel:#34473a;--text:#f6f2e7;--muted:#c7cebe;--rule:#889b83;--signal:#eac69d;--action:#eac69d;--action-ink:#293229;--field:#293b30;--pearl:#e5ebdc;--pearl-ink:#243a2b;--pearl-muted:#52614d}
+.bezel{background:#33362f}
+.mast h1 em,.steps button[aria-pressed=true] span{color:#f2ac8e}
+.steps button[aria-pressed=true]:after{background:#f2ac8e}
+.palette button[aria-pressed=true]{border-color:#bcbba8;background:#2b2e27}
+.ink-dot{background:#f2ac8e}.day-dot{background:#f3eee3}.cobalt-dot{background:#556e55}
+nav,.mast p,.mast .small,.eyebrow,.study-note,.stage-desc,.palette p,.palette button,.steps button,.gallery p,.tokens dt,.tokens dd,.flow{color:#c0bdb3}
+.device .point{background:var(--action);color:var(--action-ink);border-color:var(--pearl)}
+.device .toggle input{accent-color:var(--signal)}
+button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline-color:#f2ac8e}
+
+.device{--channelFill:#3d4937;--channelInk:#d1ddbc}.device[data-palette=day]{--channelFill:#dfe6d7;--channelInk:#364c34}.device[data-palette=cobalt]{--channelFill:#554a34;--channelInk:#f1d8a6}
+.device .entry-kind{display:block;font-size:10px;color:var(--muted);margin-bottom:5px}
+.device .channel-row{border-left:3px double var(--channelInk);padding-left:12px;background:var(--channelFill);border-radius:7px;margin:8px 0}
+.device .channel-row .entry-kind{color:var(--channelInk)}

@@ -59,3 +59,6 @@ writeFileSync(new URL('../experience.html', import.meta.url), experienceTemplate
   .replace('/* EXPERIENCE_CSS */', () => readFileSync(new URL('../prototypes/src/experience.css', import.meta.url), 'utf8'))
   .replace('/* EXPERIENCE_JS */', () => readFileSync(new URL('../prototypes/src/experience.js', import.meta.url), 'utf8')));
 console.log('Built experience.html complete design study');
+
+writeFileSync(new URL('../unfold.html', import.meta.url), readFileSync(new URL('../prototypes/src/unfold.html', import.meta.url), 'utf8'));
+console.log('Built unfold.html local relationship experiment');
