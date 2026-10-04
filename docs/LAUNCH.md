@@ -23,3 +23,7 @@ The first maintainer is AustinWerner-KAI. A dedicated private moderation contact
 Start with the home and opening/closing interaction. Ask for one concrete critique or small variation. Record decisions and evidence. Broaden the work after participants can explain the core experience and sharing boundaries.
 
 This launch publishes a design exploration, not a production messenger or an endorsed SimpleX roadmap. No messages were sent to SimpleX maintainers or outside designers as part of publication.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

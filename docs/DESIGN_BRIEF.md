@@ -91,3 +91,7 @@ Success must be assessed through comprehension, lost work, unintended sharing, r
 Choose one assumption, preserve its source and explain what you changed. Designers can propose alternative densities or disclosure patterns; researchers can test audience comprehension; engineers can map a component to a native client. Open an issue for a hypothesis or a pull request with rationale, before/after visuals and validation. See [contributor guidance](../CONTRIBUTING.md) and [open challenges](CHALLENGES.md).
 
 The question for every contribution: **what comes from SimpleX’s foundations, what comes from the octopus analogy, what changes for the person, and what evidence could make us abandon it?**
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

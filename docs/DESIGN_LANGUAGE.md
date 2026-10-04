@@ -37,3 +37,7 @@ Ask: what does this curve help someone do? Does the motion clarify the destinati
 ## V2 progression
 
 The original V2 palette adapted the website’s blue family, including blue text. This is now a historical direction. All five current V2 screens and previews follow the approved palette above. The five screens remain a concrete baseline for invites, profiles, trust and membership; the current inline study advances coordination and local action. See [the evolutionary mapping](EVOLUTION_FROM_ANATOMY.md) and [visual progression](../studies/concept-progression.html).
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

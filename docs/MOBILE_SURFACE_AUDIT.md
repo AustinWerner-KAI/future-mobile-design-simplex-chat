@@ -65,3 +65,7 @@ Browser verification covers 81 palette/screen/width combinations and the decisio
 A reduced viewport models available height; it does not emulate a real iOS or Android keyboard. CSS text enlargement is a stress test, not a complete Dynamic Type implementation. Browser safe-area variables are supported, but real device insets, keyboard behaviour, screen readers and participant comprehension still need native testing. No accessibility-conformance or user-performance claim is made.
 
 The [expanded SimpleX project review](SIMPLEX_PROJECT_MAP.md) records the architecture and source material behind these decisions. Its implications are design interpretation, not an upstream roadmap.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

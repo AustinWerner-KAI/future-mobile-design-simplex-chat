@@ -33,3 +33,7 @@ Five challenges are open on GitHub. Sketches and small experiments are welcome.
 **Problem:** chat and email can appear together while obscuring delivery and privacy differences.
 **Deliverable:** one person's mixed conversation with an explicit reply-channel choice.
 **Check:** sender address, subject, threading, forwarding, attachment scope, duplicate identities and failed delivery. Do not invent an email security guarantee.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

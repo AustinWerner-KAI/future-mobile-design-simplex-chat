@@ -170,3 +170,11 @@ The concept gallery and [progression page](../studies/concept-progression.html) 
 ## Contributor journey audit — 4 October 2026
 
 The README now leads to the current inline experience and a numbered reading route. Added [current uploads](CURRENT_UPLOADS.md) with status, previews and sources, corrected contribution instructions and welcome text, and separated [the current critique](CRITIQUE.md) from [the historical combined critique](CRITIQUE_EARLY_COMBINED.md). [The audit](CONTRIBUTOR_JOURNEY_AUDIT.md) records discoverability gaps, fixes and verification limits.
+
+## Documentation accuracy and provenance audit — 4 October 2026
+
+Corrected stale current-palette language, labelled superseded decisions, pinned upstream repository citations and added [the source register](SOURCES.md), [visual provenance](ASSET_PROVENANCE.json) and [documentation audit](DOCUMENTATION_AUDIT.md). Kept original ideas separate from external facts and historical browser-run records. Missing original prompts/logs remain explicit; the documentation audit does not claim to reproduce every earlier test.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

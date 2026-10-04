@@ -23,3 +23,7 @@ The relationship list now coordinates private messages, public channels and exte
 The recorded checks cover browser interactions, explicit sharing guards, draft isolation, navigation, sampled colour contrast and viewport fit. The V2 refresh checked 30 screen/window/appearance combinations. Gallery checks verified images, links and responsive fit. These are implementation checks; no representative participant results or full accessibility conformance are claimed. See [current uploads](CURRENT_UPLOADS.md), [inline evolution](INLINE_EVOLUTION.md) and [email evolution](EMAIL_EVOLUTION.md) for sources and state models.
 
 Contribute a reproducible observation or a competing flow, name which version you tested and show what changed for the person. The [shared brief](DESIGN_BRIEF.md) and [design memory](DESIGN_MEMORY.md) explain what should survive and what remains a hypothesis.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

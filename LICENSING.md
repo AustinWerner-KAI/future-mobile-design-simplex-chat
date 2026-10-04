@@ -14,3 +14,5 @@ Concept boards were generated with AI assistance. Two preserved generation promp
 The standalone demo uses an original minimal project wrapper and does not bundle Codex's visualization runtime. Optional host APIs are guarded so the exported prototype works without them.
 
 Contributors retain copyright. Unless explicitly stated otherwise and agreed before inclusion, original code contributions are provided under MIT and original documentation/design contributions under CC BY 4.0. Identify third-party assets and their licences. No copyright transfer or CLA is required.
+
+Asset origin, retained prompt availability and content hashes are recorded in [the provenance register](docs/ASSET_PROVENANCE.json) and [source register](docs/SOURCES.md). A recorded origin or hash is not proof of exclusive copyright. External SimpleX source retains its upstream licence; this project’s MIT terms apply to original project code, not externally linked code.

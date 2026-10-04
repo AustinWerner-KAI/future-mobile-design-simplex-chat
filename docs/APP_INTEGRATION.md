@@ -8,7 +8,7 @@ Future-fit considerations, 3 October 2026. The initiator clarified that integrat
 
 If the community later investigates implementation, an optional native chat-list experiment is one possible feasibility study, not the current project objective. Preserve the app's profile access, new-connection entry, group actions, settings and current full-conversation route. A row can reveal additional context locally; opening the full conversation remains available. Use the active authorised profile's existing data and theme preferences.
 
-The [website-colour menu](../prototypes/menu-simplex.html) shows the visual and interaction direction. It is a partial browser study; its present-app scope excludes the speculative email channel.
+The [V2 menu variant](../prototypes/menu-simplex.html) shows the visual and interaction direction. It is a partial browser study; its present-app scope excludes the speculative email channel.
 
 ## Mapping to the native app
 
@@ -27,7 +27,7 @@ The current browser study demonstrates only some of these interactions with fict
 
 ## Platform entry points to inspect
 
-For iOS, start with the documented ChatList and Chat views, ChatModel/ItemsModel and AppTheme. For Android/desktop, inspect the documented chat-list views, ChatModel and theme layer. Bind to the existing core-facing handlers; do not call the transport directly from a new UI component. These are proposed starting points based on the official development documents, not a file-by-file code review. [iOS](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/ios/README.md), [multiplatform](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/multiplatform/README.md).
+For iOS, start with the documented ChatList and Chat views, ChatModel/ItemsModel and AppTheme. For Android/desktop, inspect the documented chat-list views, ChatModel and theme layer. Bind to the existing core-facing handlers; do not call the transport directly from a new UI component. These are proposed starting points based on the official development documents, not a file-by-file code review. [iOS](https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/ios/README.md), [multiplatform](https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/multiplatform/README.md).
 
 ## Foundations future experiments should respect
 
@@ -38,3 +38,7 @@ No new global identity, server-side conversation index or automatic merging of p
 Find a chat in a long list; preview without falsely marking all messages read; switch profiles without leaking previews or drafts; reply with the right role and recipient; resume a draft after opening another chat; reach the existing full conversation; handle failed sending; test lock/unlock, notifications and share-extension entry. Include TalkBack/VoiceOver, 200% text, right-to-left labels, virtual keyboard, reduced motion and Android Back/iOS back gestures.
 
 First explore and compare future experiences. If a direction earns further investigation, discuss a small native feasibility experiment with maintainers. Until that happens, this project publishes a proposal rather than an app integration.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

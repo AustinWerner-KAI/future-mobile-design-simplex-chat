@@ -29,7 +29,7 @@ Reject a concept that relies only on “fluid”, “futuristic”, blue gradien
 
 ## Current expression
 
-The [complete experience](../experience.html) explores nine connected contexts. The compact menu now explores warm Charcoal/Chalk/Moss materials with restrained ember/clay/sand actions. The initiator later refined the blue rejection: subtle blue materials are welcome for familiarity, while all lettering stays neutral; colour is not the evolutionary thesis. The [2028 reset](2028_DESIGN_RESET.md) remains the audit that explains why the previous five V2 screens were an insufficient future vision.
+The [complete experience](../experience.html) explores nine connected contexts. The current compact menu uses white Chalk with subtle blue materials, neutral lettering and clay actions; Charcoal is the dark alternative, with Moss/Citrus/Petal retained for comparison. The initiator later refined the blue rejection: subtle blue materials are welcome for familiarity, while all lettering stays neutral; colour is not the evolutionary thesis. The [2028 reset](2028_DESIGN_RESET.md) remains the audit that explains why the previous five V2 screens were an insufficient future vision.
 
 ## Research anchor and spatial consequence
 
@@ -47,9 +47,9 @@ The [inline relationship experiment](../unfold.html) makes the list the coordina
 
 The [nine-screen mobile agency audit](KINGS_MOBILE_AUDIT.md) records the published build, navigation/recovery fixes and unresolved native validation. The octopus analogy must produce continuity in action, not just curved surfaces. Retained in-page drafts do not imply persistence after reload; a shared proposal is a snapshot, not agreement. Browser Back and Forward now recover route context, and identical unchanged proposal versions cannot be sent twice.
 
-## Email and broader material variation
+## Historical step: email and six material variations
 
-The inline menu now includes email as an external transport with explicit From/To addresses and independent drafts. Never let a unified UI imply that email inherits SimpleX security, or silently share email into chat. The in-phone Colour selector compares six distinct expressions: Chalk, Charcoal, Moss, Plum, Citrus and Petal. Theme changes preserve task state.
+The inline menu now includes email as an external transport with explicit From/To addresses and independent drafts. Never let a unified UI imply that email inherits SimpleX security, or silently share email into chat. At this earlier step, the in-phone Colour selector compared six distinct expressions: Chalk, Charcoal, Moss, Plum, Citrus and Petal. Theme changes preserve task state.
 
 ## Email innovation — carry a detail, keep the source
 
@@ -59,11 +59,11 @@ The [email evolution study](EMAIL_EVOLUTION.md) adds a private editable detail, 
 
 The initiator rejected the Plum treatment. Remove it from active options and use Chalk for the email journey. Colour variation must serve reading, hierarchy and action; an unfamiliar full-field hue is not a future-design argument. Earlier six-palette notes record the exploration, not the current selection.
 
-## Subtle service tones
+## Historical step: sage service tones
 
 Use one coherent reading system: private messages in warm white, channels in muted sage, email in pale oat. Preserve the same text hierarchy and clear labels across all three. In the dark alternative, use related neutral grey materials. Recommended light/dark directions are Chalk and Charcoal; other themes are comparisons. Do not claim a universal best hue or medical eye benefit.
 
-## White canvas — final light refinement
+## Historical step: white canvas refinement
 
 The initiator suggested white as the background. The current light study uses a white canvas and white private messages, with muted sage channels and pale oat email. Treat this as the current direction superseding the earlier warm-paper canvas; keep a dark alternative and measure contrast.
 
@@ -74,3 +74,7 @@ The initiator requested familiar blue tones subtly while prohibiting blue words.
 ## Every image belongs to the progression
 
 Use [the visual progression](../studies/concept-progression.html) to present original concepts, updated V2 foundations and current unfolding together. Preserve original board colours as process evidence and label them historical. New imagery follows the approved white/subtle-blue/neutral-text system. [The evolution rationale](EVOLUTION_FROM_ANATOMY.md) is the source for explaining the octopus’s different branch from humanity and the analogy to SimpleX. Never claim that a biological difference or a protocol difference alone proves better usability.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

@@ -8,6 +8,8 @@ This is not an evolutionary ladder, and humans did not evolve from octopuses. We
 
 SimpleX describes communication without user IDs and contacts and groups held on the user’s device. Those foundations prompt a different set of interface questions from a global account directory. [SimpleX](https://simplex.chat/). This project explores the consequence; it is not a biological model of a network or a claim that every familiar messaging convention must disappear.
 
+Colour and texture changes provide the camouflage reference. Deliberate UI visibility is our interpretation of that observation, not the animal’s intention mapped into software. [Smithsonian Ocean](https://ocean.si.edu/ocean-life/invertebrates/how-octopuses-and-squids-change-color).
+
 ## Translate differences into testable design
 
 | Biological inspiration | Design interpretation | Concrete expression | Limit |
@@ -37,3 +39,7 @@ The original nine bitmap boards remain historical artefacts with their original 
 ## Build on the difference
 
 Choose one transition and compare it with a conventional flow. Record source retrieval, draft loss, audience mistakes and recovery. Contribute a competing sketch or implementation with its reason, what survives from the analogy and what you reject. Different evolution is our starting question, not proof that our answer is better.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

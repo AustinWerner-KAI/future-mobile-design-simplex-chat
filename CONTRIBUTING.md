@@ -52,3 +52,7 @@ Maintainers should record accepted and rejected directions in `docs/DECISIONS.md
 Identify what you created and list sources, assets and licences. Concept boards in `visuals/` were AI-generated; two preserved prompts are provided; exact prompts for the earlier seven boards are unavailable. Do not imply they are manufactured products or finished engineering specifications.
 
 Original code contributions use MIT; original design and documentation contributions use CC BY 4.0 with attribution. See LICENSING.md for scope and third-party exclusions. No CLA or transfer of ownership is requested.
+
+## Cite the basis for your work
+
+Use [SOURCES.md](docs/SOURCES.md) to distinguish sourced facts, original ideas and test evidence. Cite factual claims beside the text; identify assets, licences and changes. Retain test methods and outputs when practical. Mark missing records explicitly rather than reconstructing evidence.

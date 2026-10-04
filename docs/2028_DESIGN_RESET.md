@@ -90,3 +90,7 @@ No participant outcomes exist yet. A future claim earns credibility through a ch
 ## Browser verification
 
 Checked 45 combinations of five stages, three palettes and widths of 360, 390 and 1440 pixels for horizontal overflow. Verified proposal edits, pending invitations, declining, accepting and fixed invitation versions. No JavaScript page errors occurred. Rendered previews were captured and the ink sharing view was visually inspected. These checks establish browser behaviour only; participant usability, native accessibility, protocol feasibility and contrast across every component still require evaluation.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

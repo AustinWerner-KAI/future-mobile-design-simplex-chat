@@ -47,7 +47,7 @@ Bring a question, a sketch or runnable study, the evidence you have, and what re
 
 ## My design lens
 
-Jony Ive's work prompted a set of working principles: solve complexity before simplifying appearance; design the whole experience; understand the material; care for unnoticed details; let usefulness guide form.
+Jony Ive’s design work is an inspiration; [Apple’s historical account](https://www.apple.com/newsroom/2019/06/jony-ive-to-form-independent-design-company-with-apple-as-client/) establishes that context. Our own working principles are: solve complexity before simplifying appearance; design the whole experience; understand the material; care for unnoticed details; let usefulness guide form.
 
 I am using those principles as questions, not borrowing his authority to approve the concept. We cannot know what he would think of it. The strongest question for our work is: does each curve, movement and control earn its place?
 
@@ -87,7 +87,7 @@ Sources: [University of Chicago: octopus nervous-system anatomy](https://biologi
 
 A named relationship remains recognisable. Touching it opens the same region into a conversation. An image expands into a shared surface. Tools emerge locally. Leaving restores the prior context and keeps the draft.
 
-The visual vocabulary is restrained: warm white, deep petrol ink, shallow relief, readable type, generous space and a small number of meaningful contours. Boundaries should describe audiences. Movement should explain transitions. Neither should become decoration for its own sake.
+The first visual vocabulary used warm white and petrol. The current direction uses white, subtle blue materials, neutral text, oat email and clay actions, with readable type and purposeful space. Boundaries should describe audiences. Movement should explain transitions. Neither should become decoration for its own sake.
 
 The phone's rectangular display is a constraint we can work with. Our current work is about fluid interface behaviour, not a claim that flexible or organic hardware will be ready by 2028.
 
@@ -109,7 +109,7 @@ Concept boards are AI-generated visual studies. They contain inconsistencies and
 
 The design became more convincing when we admitted that organic outlines alone were not enough.
 
-The home still resembles rounded rows. Several flows expand from a generic region instead of their real source. Large contact sets, screen readers and real protocol permissions remain unresolved. Drafts survive local navigation; full reload restoration across every flow does not yet work consistently.
+Earlier path studies reused a generic expansion region. The current inline study attaches tools to the opened relationship; large contact sets, screen readers and real protocol permissions remain unresolved. Drafts survive in-page navigation; reload deliberately clears the current simulation. [Current critique](CRITIQUE.md).
 
 The task now is to earn the form through behaviour. We need to test whether people can discover actions, reverse them, understand the audience and retain their place. Beautiful motion cannot excuse uncertainty about sending or access.
 
@@ -132,3 +132,7 @@ The direction is shared; the answer is open. I would rather learn from a thought
 ## Where the exploration stands now
 
 The [evolution rationale](EVOLUTION_FROM_ANATOMY.md) connects the octopus’s different branch from humanity to our design analogy. [The progression gallery](../studies/concept-progression.html) connects all nine original boards, five updated V2 screens and the current inline/email studies. We keep the originals to expose the thought process; the current hypothesis changes behaviour through local expansion and deliberate sharing. The [shared brief](DESIGN_BRIEF.md) is the reference for new contributions.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

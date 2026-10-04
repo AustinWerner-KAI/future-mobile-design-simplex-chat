@@ -2,7 +2,7 @@
 
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
-4 October 2026. Applies the `kings-of-mobile-design` framework to all nine current designs. This is a source and browser review, not participant research or native validation. Read the [design memory](DESIGN_MEMORY.md), [spatial audit](MOBILE_SURFACE_AUDIT.md) and [SimpleX project map](SIMPLEX_PROJECT_MAP.md) alongside it.
+4 October 2026. Applies the `kings-of-mobile-design` framework to the nine-screen design set at that audit stage. This is a source and browser review, not participant research or native validation. Read the [design memory](DESIGN_MEMORY.md), [spatial audit](MOBILE_SURFACE_AUDIT.md) and [SimpleX project map](SIMPLEX_PROJECT_MAP.md) alongside it.
 
 ## Judgment
 
@@ -83,4 +83,10 @@ The future direction is promising if local actions become more understandable an
 
 ## Subsequent colour and continuity revision
 
-The initiator rejected the blue direction after this audit. The [warm inline experiment](INLINE_EVOLUTION.md) and [colour research](COLOUR_RESEARCH.md) record the next revision. Both menus now combine private messages and public channels with explicit type/audience distinctions. The audit tables above describe the baseline reviewed before that change; the [blue iteration](../prototypes/experience-blue.html) is preserved.
+The initiator rejected the blue direction after this audit. The [inline experiment](INLINE_EVOLUTION.md) and [colour research](COLOUR_RESEARCH.md) record the next revision. Both menus now combine private messages and public channels with explicit type/audience distinctions. The audit tables above describe the baseline reviewed before that change; the [blue iteration](../prototypes/experience-blue.html) is preserved.
+
+The later approved direction restores subtle blue surfaces with neutral lettering. See [current design language](DESIGN_LANGUAGE.md); the palette judgments above describe the earlier audit stage.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

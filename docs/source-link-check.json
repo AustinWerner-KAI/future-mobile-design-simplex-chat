@@ -1,0 +1,161 @@
+{
+  "checked_on": "2026-10-04",
+  "scope": "HTTP reachability only; not verification of every claim",
+  "results": [
+    {
+      "url": "https://biologicalsciences.uchicago.edu/news/unique-octopus-nervous-system",
+      "http_status": 200,
+      "final_url": "https://biologicalsciences.uchicago.edu/news/unique-octopus-nervous-system"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "http_status": 200,
+      "final_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+      "http_status": 200,
+      "final_url": "https://creativecommons.org/licenses/by/4.0/legalcode.en"
+    },
+    {
+      "url": "https://design.google/library/expressive-material-design-google-research",
+      "http_status": 200,
+      "final_url": "https://design.google/library/expressive-material-design-google-research"
+    },
+    {
+      "url": "https://developer.android.com/codelabs/m3-design-theming",
+      "http_status": 200,
+      "final_url": "https://developer.android.com/codelabs/m3-design-theming"
+    },
+    {
+      "url": "https://developer.android.com/design/ui/mobile/guides/foundations/accessibility",
+      "http_status": 200,
+      "final_url": "https://developer.android.com/design/ui/mobile/guides/foundations/accessibility"
+    },
+    {
+      "url": "https://github.com/AustinWerner-KAI",
+      "http_status": 200,
+      "final_url": "https://github.com/AustinWerner-KAI"
+    },
+    {
+      "url": "https://github.com/simplex-chat",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat"
+    },
+    {
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat/simplex-chat"
+    },
+    {
+      "url": "https://github.com/simplex-chat/simplex-chat#contribute",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat/simplex-chat"
+    },
+    {
+      "url": "https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/PRIVACY.md",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/PRIVACY.md"
+    },
+    {
+      "url": "https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/ios/README.md",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/ios/README.md"
+    },
+    {
+      "url": "https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/multiplatform/README.md",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/multiplatform/README.md"
+    },
+    {
+      "url": "https://github.com/simplex-chat/simplexmq",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat/simplexmq"
+    },
+    {
+      "url": "https://github.com/simplex-chat/simplexmq/blob/27a37387be98d9c7ec0e62373e125539675d0095/protocol/overview-tjr.md",
+      "http_status": 200,
+      "final_url": "https://github.com/simplex-chat/simplexmq/blob/27a37387be98d9c7ec0e62373e125539675d0095/protocol/overview-tjr.md"
+    },
+    {
+      "url": "https://ocean.si.edu/ocean-life/invertebrates/how-octopuses-and-squids-change-color",
+      "error": "HTTP Error 403: Forbidden",
+      "alternative_verification": "Article content retrieved and read with the browsing tool on 2026-10-04; direct automated request returned HTTP 403. Retain the valid source with this limitation."
+    },
+    {
+      "url": "https://simplex.chat/",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/"
+    },
+    {
+      "url": "https://simplex.chat/about/",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/about/"
+    },
+    {
+      "url": "https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html"
+    },
+    {
+      "url": "https://simplex.chat/docs/guide/chat-profiles.html",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/docs/guide/chat-profiles.html"
+    },
+    {
+      "url": "https://simplex.chat/docs/guide/making-connections.html",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/docs/guide/making-connections.html"
+    },
+    {
+      "url": "https://simplex.chat/docs/guide/privacy-security.html",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/docs/guide/privacy-security.html"
+    },
+    {
+      "url": "https://simplex.chat/docs/guide/secret-groups.html",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/docs/guide/secret-groups.html"
+    },
+    {
+      "url": "https://simplex.chat/docs/protocol/channels-overview.html",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/docs/protocol/channels-overview.html"
+    },
+    {
+      "url": "https://simplex.chat/security/",
+      "http_status": 200,
+      "final_url": "https://simplex.chat/security/"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2019/06/jony-ive-to-form-independent-design-company-with-apple-as-client/",
+      "http_status": 200,
+      "final_url": "https://www.apple.com/newsroom/2019/06/jony-ive-to-form-independent-design-company-with-apple-as-client/"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+      "http_status": 200,
+      "final_url": "https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/"
+    },
+    {
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+    }
+  ]
+}

@@ -14,9 +14,9 @@ The octopus analogy informs local action, adaptable form and deliberate visibili
 
 ## Colour
 
-Chalk gives the field a warm paper tone, dark ink and a clay action. Charcoal keeps content luminous against a neutral dark ground with an ember action. Moss explores a quiet living material with a sand action. Colour does not encode trust, membership or delivery; words carry those states. The nine-screen study uses the same new palette so colour can be compared independently of navigation.
+Current Chalk uses white canvas/private reading, pale blue channels, oat email, neutral lettering and clay actions. Small blue avatar/selection surfaces provide familiarity. Charcoal is the dark alternative; Moss, Citrus and Petal are comparison candidates. Colour does not encode trust, membership or delivery; words carry those states. [Current token roles and evidence](COLOUR_RESEARCH.md).
 
-The initiator rejected blue here. That is a direction for this project, not a claim that blue is universally bad. The former strong blue/cyan field gave decoration too much weight and made the design feel closer to inherited messaging conventions. All variants still need component contrast and device evaluation before any accessibility conformance claim.
+Earlier warm paper, sage and blanket blue rejection are recorded in [the iteration history](ITERATIONS.md). The initiator later welcomed subtle blue materials while prohibiting blue words. This is a preference, not an eye-health claim. Sampled contrast checks are not full accessibility conformance.
 
 ## What changed for the person
 
@@ -47,7 +47,7 @@ The next integration design must handle multiple accounts, authentication/reconn
 
 ## Five colour expressions
 
-Chalk, Charcoal and Moss retain the quieter material studies. Citrus and Petal broaden hue and luminance substantially. The in-phone Colour control makes all five available in full-screen mode; switching material preserves the active relationship, tool and draft. These are comparison candidates rather than a final brand selection.
+Chalk, Charcoal and Moss retain the quieter material studies. Citrus and Petal broaden hue and luminance substantially. The in-phone Colour control makes all five available in full-screen mode; switching material preserves the active relationship, tool and draft. Chalk and Charcoal are the recommended light/dark direction; the other three are comparison candidates.
 
 ## Tradeoffs and the next test
 
@@ -60,3 +60,7 @@ Browser checks cover independent drafts, tool continuity, duplicate prevention, 
 ## Next email iteration
 
 The [email evolution experiment](EMAIL_EVOLUTION.md) advances this baseline with private detail preparation, explicit crossing into Maya’s conversation and email queue/uncertain-outcome states. The previous reading-and-reply iteration is preserved in Git history at commit `9b216a3`.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

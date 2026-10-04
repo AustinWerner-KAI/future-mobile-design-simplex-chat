@@ -6,11 +6,11 @@ Research checked 3 October 2026. Primary sources only: official website, user gu
 
 ## What the project is
 
-SimpleX Chat Ltd develops the SimpleX network and software. Its stated mission concerns decentralisation and people's control over identity, contacts and communities. The network is a foundation for applications; SimpleX Chat is its messaging application. That makes this project about an interface for a particular communication model, rather than another messenger skin. [About SimpleX](https://simplex.chat/about/), [protocol overview](https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md).
+SimpleX Chat Ltd develops the SimpleX network and software. Its stated mission concerns decentralisation and people's control over identity, contacts and communities. The network is a foundation for applications; SimpleX Chat is its messaging application. That makes this project about an interface for a particular communication model, rather than another messenger skin. [About SimpleX](https://simplex.chat/about/), [protocol overview](https://github.com/simplex-chat/simplexmq/blob/27a37387be98d9c7ec0e62373e125539675d0095/protocol/overview-tjr.md).
 
 ## What is different
 
-SimpleX does not require a globally unique user identifier for communication. Its messaging layer uses recipient-created, one-way queues on routers; client software builds conversations on that transport. Routers are still part of the system. “No user IDs” does not mean no queues, addresses, local records or infrastructure. The protocol overview also discusses transport trust and traffic-correlation limitations; avoid translating its architecture into absolute anonymity claims. [Protocol overview](https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md).
+SimpleX does not require a globally unique user identifier for communication. Its messaging layer uses recipient-created, one-way queues on routers; client software builds conversations on that transport. Routers are still part of the system. “No user IDs” does not mean no queues, addresses, local records or infrastructure. The protocol overview also discusses transport trust and traffic-correlation limitations; avoid translating its architecture into absolute anonymity claims. [Protocol overview](https://github.com/simplex-chat/simplexmq/blob/27a37387be98d9c7ec0e62373e125539675d0095/protocol/overview-tjr.md).
 
 **Design implication:** make the relationship and its local context understandable without introducing a global account or public friend graph.
 
@@ -40,13 +40,13 @@ The guide exposes security-code verification, database-passphrase controls, inco
 
 ## Existing app structure matters
 
-The iOS documentation describes SwiftUI views and state, a shared framework, notification/share extensions and a Haskell-core bridge. The Android/desktop documentation describes Compose Multiplatform UI, app state, theme components and native-core bindings. A browser prototype is a design reference, not code that can be dropped into those clients. [iOS development](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/ios/README.md), [multiplatform development](https://github.com/simplex-chat/simplex-chat/blob/stable/apps/multiplatform/README.md).
+The iOS documentation describes SwiftUI views and state, a shared framework, notification/share extensions and a Haskell-core bridge. The Android/desktop documentation describes Compose Multiplatform UI, app state, theme components and native-core bindings. A browser prototype is a design reference, not code that can be dropped into those clients. [iOS development](https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/ios/README.md), [multiplatform development](https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/apps/multiplatform/README.md).
 
 **Future feasibility consideration:** if implementation is later explored, investigate the native presentation layer with existing state and navigation. Do not create a second message store or bypass existing send, read, authentication and permission handlers. See [the proposed integration plan](APP_INTEGRATION.md).
 
 ## Visual identity
 
-The current website uses blues, cyan, white and pale-blue gradients, with some warm highlights. The [aligned menu](../prototypes/menu-simplex.html) adapts those observed colours to a legible conversation interface. The original petrol/sage study remains an alternative. Its proposed dark values are our adaptation, not sampled official app tokens. [Current website](https://simplex.chat/).
+The initial website observation informed the original blue V2 treatment. The current [menu variant](../prototypes/menu-simplex.html) and V2 screens now use our approved white canvas, subtle blue materials, neutral text and clay actions. These are project design choices, not official SimpleX native-app tokens. Earlier petrol/sage and broad-blue studies remain historical comparisons. [Website reference](https://simplex.chat/) · [current design language](DESIGN_LANGUAGE.md).
 
 ## What this changes in our thesis
 
@@ -57,3 +57,7 @@ Our future-experience study explores a conversation list with contextual expansi
 ## Expanded repository review
 
 4 October 2026: [the project map](SIMPLEX_PROJECT_MAP.md) now connects the network/agent/application layers to our nine designs. It records the implications for invitations, local identity, groups, verification and native implementation, and distinguishes published plans from implemented features. [The mobile-surface audit](MOBILE_SURFACE_AUDIT.md) applies this learning to the layouts.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

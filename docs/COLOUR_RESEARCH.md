@@ -25,7 +25,7 @@ Visual information necessary to identify an active control or its state needs 3:
 | Reading field | White `#FFFFFF` | Warm neutral `#20211F` | Deep moss `#25342B` |
 | Primary text | Ink `#252B24` | Chalk `#F6F1E7` | Chalk `#F6F2E7` |
 | Action | Clay `#8D3E2B` | Ember `#F2AC8E` | Sand `#EAC69D` |
-| Public channel material | Pale moss / dark leaf | Dark leaf / light leaf | Earth / light sand |
+| Public channel material | Pale blue / neutral ink | Dark leaf / light leaf | Earth / light sand |
 | State | Written status and explicit controls | Same semantics | Same semantics |
 
 All private entries retain the quiet reading field. Channel colour indicates content type, not encryption quality. Errors need explicit failure text and recovery; verification remains a distinct cryptographic state that this prototype cannot establish. Do not reuse action colour as a reassuring “verified” signal.
@@ -38,7 +38,7 @@ This is a token-pair check, not a full rendered accessibility audit. It does not
 
 ## Channel research changes the meaning of colour
 
-SimpleX’s v6.5 announcement introduced channels as a beta; its current privacy documentation labels public channels experimental. Public channel content is visible to relays, while participation privacy has its own model. A unified menu must preserve that difference from private messaging. [Official announcement](https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html), [current privacy documentation](https://github.com/simplex-chat/simplex-chat/blob/stable/PRIVACY.md).
+SimpleX’s v6.5 announcement introduced channels as a beta; its current privacy documentation labels public channels experimental. Public channel content is visible to relays, while participation privacy has its own model. A unified menu must preserve that difference from private messaging. [Official announcement](https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html), [current privacy documentation](https://github.com/simplex-chat/simplex-chat/blob/479548ee53ffb73db73841e77acbeee5a78dbbd5/PRIVACY.md).
 
 The sample channels here are public publications with comments off. These are fictional configurations, not complete implementations of the channel protocol. Private replies and public posting must never share an ambiguous composer.
 
@@ -61,3 +61,7 @@ Following the initiator’s suggestion, the light study now uses a white canvas 
 ## Familiarity refinement — subtle blue materials
 
 The current light study introduces pale blue channel surfaces (`#E7EFF5`), ice-blue private identity fills (`#F0F5F9`) and a powder-blue selected filter (`#DCE9F3`). The canvas and private reading surfaces remain white; external email remains oat. Text, links, labels and symbols remain neutral ink. These materials supersede sage in the current Chalk direction. The choice follows the initiator's preference for familiarity and neutral lettering; it does not establish medical harm from blue words. Contrast measurements cover the updated service tokens.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

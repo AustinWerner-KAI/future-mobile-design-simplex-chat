@@ -132,3 +132,7 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 ## Follow the progression
 
 [Anatomy → V2 → current unfolding](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) brings all nine original boards, all five refreshed V2 previews and the current inline/email visuals together. Read the [different-evolution rationale](docs/EVOLUTION_FROM_ANATOMY.md) for the biology, design mapping and limits.
+
+## Sources and attribution
+
+[Research and evidence register](docs/SOURCES.md) · [documentation audit](docs/DOCUMENTATION_AUDIT.md) · [complete visual provenance](docs/ASSET_PROVENANCE.json). Original thinking, sourced facts, browser evidence and historical imagery are distinguished explicitly.

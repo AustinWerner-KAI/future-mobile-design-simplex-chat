@@ -1,0 +1,614 @@
+{
+  "reviewed_on": "2026-10-04",
+  "scope": "All files under visuals; recorded origins, not independent rights verification",
+  "assets": [
+    {
+      "path": "visuals/anatomy-to-interface.png",
+      "sha256": "3bdc6f3cc0cc4506c624ec7401a83706e1014f2d38163f725b050f66dafcba1d",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Exact original prompt unavailable"
+    },
+    {
+      "path": "visuals/catalogue.json",
+      "sha256": "e800ea865980ebc5578434d18e5e7644b1141f953acd2308f713906ac8a3da44",
+      "category": "Project metadata",
+      "credited_origin": "Project record",
+      "record": "visuals/catalogue.json",
+      "prompt_or_capture_record": "Not applicable"
+    },
+    {
+      "path": "visuals/demo-qr.svg",
+      "sha256": "f58254fcba0c1f42a7a7a27576084c79f2f584e6ad47af2d48f5afab96ab7716",
+      "category": "Project-authored SVG",
+      "credited_origin": "Original project asset with AI assistance",
+      "record": "visuals/demo-qr.svg",
+      "prompt_or_capture_record": "Not applicable"
+    },
+    {
+      "path": "visuals/design-direction.svg",
+      "sha256": "1b8a92130eeababf946b705075bceabee167215a159933c6c14aedf27388d2e1",
+      "category": "Project-authored SVG",
+      "credited_origin": "Original project asset with AI assistance",
+      "record": "visuals/design-direction.svg",
+      "prompt_or_capture_record": "Not applicable"
+    },
+    {
+      "path": "visuals/five-designs.png",
+      "sha256": "a803089af8cc558a322be25bf7f71457e0f2002bedbccc4fe37aa4bb1cab16c8",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Preserved in visuals/image-prompts.txt"
+    },
+    {
+      "path": "visuals/focus-spaces-threadline.png",
+      "sha256": "33e2b925f95a3f6b05716d78a483803ad8ed77ffdc5f9b9feaed04fe12dd79dc",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Exact original prompt unavailable"
+    },
+    {
+      "path": "visuals/image-prompts.txt",
+      "sha256": "7883b5fbb6cb94df8aa9cc98586bb0648bf6af59115611ddaf7fa6463a83c681",
+      "category": "Project metadata",
+      "credited_origin": "Project record",
+      "record": "visuals/image-prompts.txt",
+      "prompt_or_capture_record": "Not applicable"
+    },
+    {
+      "path": "visuals/previews/blue-experience-chat.png",
+      "sha256": "8261286f05b2cb1f753672c3586d37f7130337d10efc7911d37b860b59400396",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-connect.png",
+      "sha256": "47aa7f90b2e0645f342565b8ea4d3686a17777a3dd3e55bdf07f5d67264a6ba3",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-email.png",
+      "sha256": "375c33ee10a7c97aef0771dbf3e32505e2dc78615e14cb32e921a029468bb8ae",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-group.png",
+      "sha256": "698920c5d5b9530ea7b5173a6db3169484171026a0a3483d3b4a044f5ac3076e",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-home.png",
+      "sha256": "5ced232b08b6ad5a9ff22ca45c63ba030ee02fdde79a40db6f5b15ee1f8d3492",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-photo.png",
+      "sha256": "b54232a649ff748b35072615c9b6f20916015b3c25b84f254875ebd5bc6eb99b",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-plan.png",
+      "sha256": "8fb70fc56e9c48db2b3bcd6ef03dbd46b0c267fe788ba80cf0dd241e26694a66",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-privacy.png",
+      "sha256": "8e50cc71874243a29bf3a99a7587cf35cda7a5718a6a948ffcbcdbede645fe31",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/blue-experience-trust.png",
+      "sha256": "a494b3622a00e3d2df901b223752888d1d94ac7f440b7f1590dcef0ca49d50bd",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/combined-conversation.png",
+      "sha256": "640c07eeab41cd5227eef280e9546ae9464a292306e3584ecd65b75b382e0911",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/combined.png",
+      "sha256": "8e2cc3c24fa048e1cd462f78b7cb67b40fe094b176724c7c0284eab138e1e5de",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/email-boundary-review.png",
+      "sha256": "9f58846ec6fe369bc8d495b4204d4b720f570f815b4865a940c791c7ef00ceba",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/email-maya-detail.png",
+      "sha256": "66288d3a3dd2fe534e9644c7e5897dea6224b42762edf412ae2b30c13dd95686",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/email-source.png",
+      "sha256": "0599f58d0d9ecc1908dce84277032f4ea66180d02ddf50fcebf48beced5e09f6",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/email-uncertain.png",
+      "sha256": "a10feb56026177eb426dcb81a5864bd882bc2e81596606b1f483f7bc66771a40",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-chat.png",
+      "sha256": "f94c16dca6f476764ab468e02826c3fff4caf6a8baf6fca3ccaae6cd6e439cf4",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-connect.png",
+      "sha256": "ab7d26c71227ba87e116bb87f54c2401ed88e6fb6fa6e9e482f49538ebc500b9",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-email.png",
+      "sha256": "71047a939ade3f61dd2e047c04f4378ea9a4ee3f392207417bc2b35a33f08e6a",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-group.png",
+      "sha256": "0e5ecf810969f7a085b675f67b4348203c0857a15a38d794b9fa10b7952012c6",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-home.png",
+      "sha256": "e62d0cf2ca98b166ffb2550393cef7065fa827fa976831732d1717a360526818",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-photo.png",
+      "sha256": "8f68e4570e455cc0ba9f521cdfada0786759666c60c7f66e1fb05c6bbb6e3fd1",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-plan.png",
+      "sha256": "0ab1382bb033a03735f81087094e48ed4bc37a88bc62704e3b1b49254a734c6a",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-privacy.png",
+      "sha256": "cfe7749186a22f439918c7a96032d5648661c480369ffc3b73eb0a58413372ec",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-trust.png",
+      "sha256": "4c563e8c8f8e5ed63515098ee29d4b76072e40413d15985694316d195a7c8fb4",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-chat.png",
+      "sha256": "5f87d87fec692d16518cfadf92a4cfc519a8da99d3c101127136ebfa4c9a98cc",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-connect.png",
+      "sha256": "0a0149cfe17dea552c54631b1e8e2c411faed44fca18ccec6209220bade5521a",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-email.png",
+      "sha256": "a6e34c869ec2750e91d31022b40a83c9e31fefb9efabcfe26bd3bd493c4d52fc",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-group.png",
+      "sha256": "bc81cbd69b49ccd507d5a9f402741bcb96afaa656e82b50b205aabc93805d463",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-home.png",
+      "sha256": "109e3a073fd6c21ddc297981694840cce37823699a2f61135b385eccb3383195",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-photo.png",
+      "sha256": "a74745172a09316c8a25dcd428f4ff0aba5e261d5ea27f1d6437e747e56787b3",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-plan.png",
+      "sha256": "df82ad0bba200fadcb71fde95e6055da120f1b7417ca4b07b8f12b18b784fd6d",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-privacy.png",
+      "sha256": "a829ebfa53f78960c7408e084f6a5712664f036b3a5fab7e5df5081d849d86c7",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/experience-v1/experience-trust.png",
+      "sha256": "4ca687c30f2795d59013277d7098a7b121c19a42dce2abf7f8c5e284c83aab15",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/future-cobalt.png",
+      "sha256": "88d21ec93e4afb9470a2cc1c109a760fb039a3d2bd5ae5a729a9c512d8fafee0",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/future-day.png",
+      "sha256": "35016ccab535b8f9578c1751f9d36a36a68b9d8276f4da49dd0a33bf6e14847f",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/future-ink.png",
+      "sha256": "f7e5262e8c5ccce138027d4ca1bf5626456ca5a7504ecaabb6a3d412a175c9c5",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/future-journey.png",
+      "sha256": "fce6de9efa60184cb97e32401b7394bc922cf7a3e195c7ff8cea9e54c8a30411",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/future-mobile.png",
+      "sha256": "4cad390a1f7ef89347df7cf1610bc88ccc5de0d17feae784872ed3e5963bef19",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/material-chalk.png",
+      "sha256": "407a68763edfb8b3b11ff5031a9273ccdf4a19e50ceee3f1c41afee4dffe3be8",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/material-charcoal.png",
+      "sha256": "6c6eb0ae0a2d9df78cc0b0653c7cead082437a743c8912f010e071e55c9dd9e4",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/material-citrus.png",
+      "sha256": "46dd10654654bcb4ab7c353b9826bc7145d4d8dcbc5e2863ac4599f8f08ff0f4",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/material-moss.png",
+      "sha256": "16b2ffcde64095ad23c26be625dd69503546eff72bbf4197507feebab61672e4",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/material-petal.png",
+      "sha256": "9a3841619b42e521ab57920113f87f52f292464b35b1233327f7c2beee758f57",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/material-plum.png",
+      "sha256": "357d7b4c7b55583a241c53fac8759280ddef885ee088b8d6357f5a7c8d21362a",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/materials-comparison.png",
+      "sha256": "fc89e71e459922b2f8535c1a678d7499e4d3893a174c580fcb6acf5baaab4a36",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/maya-opening.png",
+      "sha256": "12345d86e4497a972ba52f9aca8e59b3bd432b1cc739f12537243dc63c77bead",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/maya-photo.png",
+      "sha256": "358a73a0a828a5c513b317862a78299781811f87bf0d6eb854c6ab30620734a3",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/menu-list-dark.png",
+      "sha256": "3af42f36ef2bd260884b013566a7b98defdf4daf427ab45b54dd701cb9b9fdad",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/menu-list-open.png",
+      "sha256": "ba2c04c502980909d2630dc7bf3db083187bef904e291fa562587c874d5b0892",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/menu-list.png",
+      "sha256": "8f6f42e8a60b5d38871f9e8112738b53c616542bbab884a6a8ed02ea75236b66",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/mobile-surface-group.png",
+      "sha256": "e822f949eb2b16a473161b9b242f93e4590c0f91842896106889b6c91fb64c17",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/mobile-surface-home.png",
+      "sha256": "fd78553dc9f753049a3da4fa7c4aba4c3b1b55d45edaba23999618439e981c62",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/mobile-surface-photo.png",
+      "sha256": "f28da22366c62a12099d4ddf429dc9faf0394693b55399191134e560fe1c175f",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/mobile-surface-trust.png",
+      "sha256": "e27213d0fa0cb7f9434e18e9d5aa417110f12ea1d5662953062dfff1948c3ac2",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/shared-plan.png",
+      "sha256": "c2789773507c2e805b16856dc6cc5a4119a23bd82f47889fda1120fd562aa2f2",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/unfold-email.png",
+      "sha256": "0599f58d0d9ecc1908dce84277032f4ea66180d02ddf50fcebf48beced5e09f6",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/unfold-menu.png",
+      "sha256": "407a68763edfb8b3b11ff5031a9273ccdf4a19e50ceee3f1c41afee4dffe3be8",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/unfold-plan.png",
+      "sha256": "6a5fd3d34f875571e168a38c090738129680290f7b335f76850e4441e63dcfe4",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/v2-01.png",
+      "sha256": "b2669b3c7fd2792cd41ad52559d115abd184303a1ca579d03fd6c4b1232b5908",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/v2-02.png",
+      "sha256": "c94eaecc39fcc9ee711a4e05655f22fa6a3b95f66be7e375dd1ded7ca503456a",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/v2-03.png",
+      "sha256": "a861614b2e7ca98bc0e70b62aa4bdb1a333dbc5ec6023207a8aee320ad0cf68f",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/v2-04.png",
+      "sha256": "4a32641d2792d03acf3da066de27187eeefe83662e72f837bfa9710ea7cdd319",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/previews/v2-05.png",
+      "sha256": "93ba16cfd2e5e105f8e22c6ab62e7d9a91948399d29b849e4616cb858500b41b",
+      "category": "Recorded browser preview",
+      "credited_origin": "Capture of project prototype; includes historical variants",
+      "record": "docs/CURRENT_UPLOADS.md; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Not applicable; exact capture script/log not retained for every asset"
+    },
+    {
+      "path": "visuals/quiet-index-open-spaces-lens.png",
+      "sha256": "6610171b5cd30be408e5188827077d840dfa3d3d3dd2d80734de4babead221ac",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Exact original prompt unavailable"
+    },
+    {
+      "path": "visuals/quiet-messaging-flow.png",
+      "sha256": "675fee1c7263a1cba3bfe9105e19749dabf4ce95516da9f4d1ee58d4f71ab4bf",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Exact original prompt unavailable"
+    },
+    {
+      "path": "visuals/rest-touch-return.png",
+      "sha256": "7148e7d82a7d89e061d528dee7bebfe9f001b839586796ea9e76752e5e6de3f4",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Exact original prompt unavailable"
+    },
+    {
+      "path": "visuals/storyboard.png",
+      "sha256": "a36737a792805a88dda7dd8c24fafa0218fdcc2c3666330d371a9c19e465403e",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Preserved in visuals/image-prompts.txt"
+    },
+    {
+      "path": "visuals/surface-study.png",
+      "sha256": "04e95bb28bd48cdfc1e4f1220624f11158e8e89e249ee3ebd650e6dd234d5359",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Exact original prompt unavailable"
+    },
+    {
+      "path": "visuals/tide-branch-clearing.png",
+      "sha256": "b42409a9c17d91c54e6acbb50dc5e03ec04a92dc2c51d2eb10038610e663be70",
+      "category": "AI-generated concept board, historical",
+      "credited_origin": "Project conversation; directed by AustinWerner-KAI with AI assistance",
+      "record": "visuals/catalogue.json; docs/ITERATIONS.md",
+      "prompt_or_capture_record": "Exact original prompt unavailable"
+    }
+  ]
+}

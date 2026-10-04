@@ -17,3 +17,7 @@ The visual boards look organic; their behaviour is not yet equally resolved. Thi
 Checks performed during exploration: local browser interactions for draft preservation, photo preview and point reply; explicit membership versus date confirmation; connection acceptance; source navigation; email draft retention; horizontal fit at narrow widths. These do not substitute for participant testing, a screen-reader audit or production feasibility review.
 
 The [prototype audit and revision](PROTOTYPE_AUDIT.md) addresses the initiator’s alignment screenshot. This improves composition; it does not validate the 2028 concept.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

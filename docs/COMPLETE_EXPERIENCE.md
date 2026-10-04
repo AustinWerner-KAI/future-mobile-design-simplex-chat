@@ -61,3 +61,7 @@ Reproduce the browser checks with `node scripts/check-experience.cjs` in an envi
 ## Surface audit refinement
 
 [The audit of all nine mobile surfaces](MOBILE_SURFACE_AUDIT.md) records per-screen critiques, measured comparisons, corrections and limits. [The expanded project review](SIMPLEX_PROJECT_MAP.md) grounds the refinements in SimpleX’s network, identity, invitation, group and native-client models. The [previous experience](../prototypes/experience-v1.html) is preserved.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

@@ -78,3 +78,7 @@ Review actions use semantic buttons and an exact text preview. Draft inputs have
 `scripts/check-email-evolution.cjs` verifies review/cancel, exact snapshot sharing, draft isolation, offline queue/cancel, unknown outcome, duplicate prevention and 15 review/palette/window combinations. `check-unfold.cjs` retains the wider interaction/layout checks. The five-palette colour pairs are measured separately; no full accessibility conformance or participant outcome is asserted.
 
 Ask participants to reply to the booking, carry only the time to Maya, explain who sees each piece, interrupt the task and return. Then introduce an uncertain email send. Observe accidental disclosure, mistaken agreement, duplicate attempts and lost drafts. Compare with conventional forwarding and copy/paste. Keep the simpler flow if the new model makes those tasks harder.
+
+## Evidence and attribution
+
+[Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.
