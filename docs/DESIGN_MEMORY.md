@@ -32,3 +32,7 @@ The [complete experience](../experience.html) explores nine connected contexts. 
 ## Research anchor and spatial consequence
 
 The [expanded project map](SIMPLEX_PROJECT_MAP.md) grounds the different-evolution analogy in resource-based network addressing and endpoint application logic. The [surface audit](MOBILE_SURFACE_AUDIT.md) applies it to space: ordinary conversation remains the coordinating context; the active tool earns its surface; explanations unfold on request; simulation controls stay outside the proposed app.
+
+## Mobile agency audit — 4 October 2026
+
+The [nine-screen mobile agency audit](KINGS_MOBILE_AUDIT.md) records the published build, navigation/recovery fixes and unresolved native validation. The octopus analogy must produce continuity in action, not just curved surfaces. Retained in-page drafts do not imply persistence after reload; a shared proposal is a snapshot, not agreement. Browser Back and Forward now recover route context, and identical unchanged proposal versions cannot be sent twice.

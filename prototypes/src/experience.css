@@ -27,3 +27,7 @@
 .device .photo{aspect-ratio:auto;max-height:none;max-width:min(100%,473px);margin-inline:auto}.image-canvas{position:relative;aspect-ratio:600/380}.device .image-canvas svg{height:100%;aspect-ratio:auto}.device .photo figcaption{position:static}
 @media(max-width:700px),(max-height:600px){.device .photo{max-width:min(100%,379px)}}@media(max-height:580px){.device .photo{max-width:min(100%,284px)}}
 .device .mobile-exit{display:none}.mobile-study .device .mobile-exit{display:inline-flex}
+
+/* Editing and keyboard focus use the same legible tokens as navigation. */
+.device input::placeholder,.device textarea::placeholder{color:var(--muted);opacity:1}
+.device textarea:focus-visible,.device select:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
