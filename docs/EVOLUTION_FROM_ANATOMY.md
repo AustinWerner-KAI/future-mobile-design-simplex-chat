@@ -1,5 +1,7 @@
 # From different evolution to a different interface
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 ## The starting idea
 
 Octopuses and humans share deep animal ancestry, then developed along different branches: octopuses are invertebrate molluscs; humans are vertebrate mammals. Octopuses have flexible arms and nervous-system arrangements unlike ours. Research on their inter-arm nerve connections offers an example of alternative structures supporting sensing and movement. [University of Chicago research summary](https://biologicalsciences.uchicago.edu/news/unique-octopus-nervous-system).
@@ -30,7 +32,7 @@ Colour and texture changes provide the camouflage reference. Deliberate UI visib
 6. **Material refinement:** broad blue text, weak colour, Plum, warm paper and sage were explored. Current direction is white, subtle blue surfaces, neutral words, oat email and clay actions.
 7. **Email boundary:** prepare one useful detail privately; review exact text and destination; share a snapshot while retaining the external source and reply.
 
-[V2](../v2.html) remains the baseline. [The inline study](../unfold.html?mobile=1) is the current behavioural hypothesis. [The email storyboard](../studies/email-storyboard.html) follows one crossing between transports. [The visual progression](../studies/concept-progression.html) places these beside the original imagery.
+[V2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) is the current project reference. [The inline study](../unfold.html?mobile=1) is a supporting behavioural experiment. [The email storyboard](../studies/email-storyboard.html) follows one crossing between transports. [The visual progression](../studies/concept-progression.html) places these beside the original imagery.
 
 ## How imagery is maintained
 

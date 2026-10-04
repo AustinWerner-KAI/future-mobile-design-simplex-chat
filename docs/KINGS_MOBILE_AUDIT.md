@@ -1,5 +1,7 @@
 # From anatomy to interface — mobile agency audit
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 4 October 2026. Applies the `kings-of-mobile-design` framework to the nine-screen design set at that audit stage. This is a source and browser review, not participant research or native validation. Read the [design memory](DESIGN_MEMORY.md), [spatial audit](MOBILE_SURFACE_AUDIT.md) and [SimpleX project map](SIMPLEX_PROJECT_MAP.md) alongside it.

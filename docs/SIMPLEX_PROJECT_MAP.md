@@ -1,5 +1,7 @@
 # SimpleX project map — what the design grows from
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 Research expanded 4 October 2026, starting at the [SimpleX GitHub organisation](https://github.com/simplex-chat). Primary project documentation only. Repository file references were pinned on 4 October 2026 to upstream revisions recorded in [the source register](SOURCES.md). Website guides remain mutable observations, not a frozen specification or an independent security audit.

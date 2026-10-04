@@ -1,12 +1,14 @@
 # Contributing
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 **[Next iteration: three priorities and how to contribute →](docs/NEXT_STEPS.md)**
 
 
-**[Current design: illustrated walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
+**[Supporting inline experiment: walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
 
 
-**Start here: [HTML contributor walkthrough](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html).** Ready for participants; 15–20 minutes, six tasks, no coding needed. Human results are not yet collected.
+**Contributor tasks: [HTML contributor walkthrough](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html).** Ready for participants; 15–20 minutes, six tasks, no coding needed. Human results are not yet collected.
 
 Before proposing a direction, read [the design memory](docs/DESIGN_MEMORY.md): the octopus’s different evolutionary path is the central analogy for an experience growing from SimpleX’s network and chat foundations. Explain the behavioural consequence of your proposal, not just its visual style.
 
@@ -14,7 +16,7 @@ You do not need to code to participate. Start with one concrete interaction and 
 
 ## Start with the right version
 
-Follow [the design progression](studies/concept-progression.html), read [the shared brief](docs/DESIGN_BRIEF.md), then try [the current inline study](unfold.html?mobile=1). [Current uploads](docs/CURRENT_UPLOADS.md) maps every study to its source and status. V2 is the foundation baseline; older combined/path studies are historical comparisons.
+Follow [the design progression](studies/concept-progression.html), read [the shared brief](docs/DESIGN_BRIEF.md), then review [the current V2 designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). [Current uploads](docs/CURRENT_UPLOADS.md) maps every study to its source and status. V2 is the current review and contribution reference. Inline and nine-context studies are supporting experiments; older combined/path studies are historical comparisons.
 
 ## A first contribution without designing a screen
 
@@ -47,7 +49,7 @@ Name the state, action and consequence. For example: “After opening Photo, my 
 1. Open a [scoped design proposal](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new?template=design-proposal.yml), report a [finding](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new?template=usability-finding.yml), or join an [existing challenge](docs/CHALLENGES.md).
 2. Fork the repository and work on a branch.
 3. Keep one problem per pull request. Link the issue and include before/after evidence.
-4. Edit `prototypes/src/unfold.html` for the current inline prototype. For V2, use `prototypes/src/v2.css`, `v2.js`, `v2-screens.json` and the chat-menu sources listed in [Current uploads](docs/CURRENT_UPLOADS.md). The historical combined prototype uses `prototypes/src/octopus-continuous.html`. If submitting a separate experiment, use a descriptive folder under `prototypes/experiments/` with its own README and runnable preview.
+4. Edit `prototypes/src/unfold.html` for the supporting inline prototype. For V2, use `prototypes/src/v2.css`, `v2.js`, `v2-screens.json` and the chat-menu sources listed in [Current uploads](docs/CURRENT_UPLOADS.md). The historical combined prototype uses `prototypes/src/octopus-continuous.html`. If submitting a separate experiment, use a descriptive folder under `prototypes/experiments/` with its own README and runnable preview.
 5. Do not silently diverge source and preview. Explain your export process; rebuild the reference preview with `node scripts/build-demo.mjs`. Standalone experiments may use ordinary HTML/CSS/JavaScript.
 6. Include validation appropriate to the change, without claiming user testing or accessibility compliance you have not performed.
 

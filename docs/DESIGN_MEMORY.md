@@ -1,5 +1,7 @@
 # Design memory: a different evolutionary path
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 Project: **From anatomy to interface**. Maintainer direction recorded 4 October 2026.
@@ -78,3 +80,7 @@ Use [the visual progression](../studies/concept-progression.html) to present ori
 ## Evidence and attribution
 
 [Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.
+
+## Current-reference decision — 4 October 2026
+
+The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as where the project currently stands. Use it as the primary review, navigation and contribution destination. Keep inline/unfolding, email and nine-context experiments accessible as supporting work. Earlier audits describe the scope reviewed on their dates; they do not override this selection. This is a reference/status change, not new functionality or validation.

@@ -1,10 +1,12 @@
 # From anatomy to interface
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
-## Walk through the current design
+## Supporting experiment: illustrated walkthrough
 
-**[Open the illustrated current-design walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
+**[Supporting inline experiment: walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
 
 23 captured states: mixed menu, private tools, image, channel, email sharing/recovery, connection handoff and all nine companion contexts. [Findings and next decisions](docs/CURRENT_DESIGN_WALKTHROUGH.md). Agent review; human testing remains open.
 
@@ -18,7 +20,7 @@
 
 These are open priorities, not completed work or a release schedule.
 
-## Start here: first contributor walkthrough
+## Contributor discovery tasks
 
 **Ready for participants · human results not yet collected.**
 
@@ -33,7 +35,7 @@ Six tasks to check whether a new designer can follow the journey, find the curre
 
 ## A contributor’s starting route
 
-1. [Follow the visual progression](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html): anatomy, nine original boards, five V2 screens and the current unfolding experience.
+1. [Follow the visual progression](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html): anatomy, nine original boards, five V2 screens and the inline experiment experience.
 2. [Read the shared design brief](docs/DESIGN_BRIEF.md) and [evolution rationale](docs/EVOLUTION_FROM_ANATOMY.md): goals, foundations, analogy and limits.
 3. [Try the current mobile study](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1), then [follow the email storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/email-storyboard.html).
 4. [Check every current upload and its source](docs/CURRENT_UPLOADS.md). Earlier studies are labelled for comparison.
@@ -41,7 +43,7 @@ Six tasks to check whether a new designer can follow the journey, find the curre
 
 **Current direction:** white canvas, subtle blue surfaces, neutral words, oat email and clay actions. The relationship coordinates; tools unfold locally; sharing crosses an explicit reviewed boundary. All prototypes are local simulations.
 
-## Start here: from anatomy to interface
+## Design history: from anatomy to interface
 
 A coordinating centre. Flexible arms. Local touch points. This is the opening model for the story: how anatomy suggested a different way to organise interaction. Then follow the earlier sketches, each visual iteration and the working studies.
 
@@ -69,7 +71,7 @@ The anatomy board opens the explanation. [The iteration record](docs/ITERATIONS.
 
 V2 improved familiar screens but did not yet demonstrate a different experience. [Read the audit and refined goals](docs/2028_DESIGN_RESET.md), then [explore one continuous journey in three stronger colour treatments](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/future.html). The study follows a source question into a private proposal, an explicit sharing boundary and a quiet return. It is a hypothesis for community testing, not a finished answer.
 
-## Five V2 baseline studies
+## V2 — current project reference
 
 **[Explore all five V2 designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html)**: chat list, QR invitations, profile privacy, conversation verification and group membership. These now use the approved white canvas, subtle blue surfaces and neutral lettering and are informed by [SimpleX research](docs/SIMPLEX_RESEARCH.md). [The future-fit notes](docs/APP_INTEGRATION.md) explore how an evolved experience could belong in SimpleX. The objective is discovering the future, not reinventing today’s app. All flows remain independent browser simulations.
 
@@ -104,7 +106,7 @@ Maintainers curate a coherent direction and record decisions with their evidence
 
 ## Latest experiment: a relationship unfolds
 
-[Try the current inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Five colour studies—Chalk, Charcoal, Moss, Citrus and Petal—are available from the in-phone Colour control. Private messages, public channels and speculative external email share one menu with explicit type/audience boundaries. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
+[Explore the supporting inline experiment](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Five colour studies—Chalk, Charcoal, Moss, Citrus and Petal—are available from the in-phone Colour control. Private messages, public channels and speculative external email share one menu with explicit type/audience boundaries. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
 
 ## Email as a connected experience
 
@@ -126,7 +128,7 @@ Open `prototypes/continuous-demo.html` directly in a modern browser. It covers p
 
 All participants and incoming messages are fictional. Sending and acceptance are simulated locally. No real SimpleX connection, email delivery or cryptographic access control is implemented. Photos are selected locally and remain memory-only. This is a design study.
 
-For the historical combined study, edit `prototypes/src/octopus-continuous.html`. For the current inline study, edit `prototypes/src/unfold.html`. Rebuild the generated previews with Node:
+For the historical combined study, edit `prototypes/src/octopus-continuous.html`. For the supporting inline study, edit `prototypes/src/unfold.html`. Rebuild the generated previews with Node:
 
 ```sh
 node scripts/build-demo.mjs
@@ -140,7 +142,7 @@ python3 -m http.server 8000
 
 ## What still needs work
 
-The current inline list tests local expansion and deliberate sharing; large contact sets, native keyboard/lifecycle behaviour, assistive technology and protocol feasibility remain open. Reload clears its in-memory work. Earlier coordinated-path studies and generated boards remain comparison material. See the current critique before treating a prototype as a specification.
+The supporting inline list tests local expansion and deliberate sharing; large contact sets, native keyboard/lifecycle behaviour, assistive technology and protocol feasibility remain open. Reload clears its in-memory work. Earlier coordinated-path studies and generated boards remain comparison material. See the current critique before treating a prototype as a specification.
 
 ![Storyboard from invitation to shared activity](visuals/storyboard.png)
 
@@ -158,7 +160,7 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 
 ## Follow the progression
 
-[Anatomy → V2 → current unfolding](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) brings all nine original boards, all five refreshed V2 previews and the current inline/email visuals together. Read the [different-evolution rationale](docs/EVOLUTION_FROM_ANATOMY.md) for the biology, design mapping and limits.
+[Anatomy → V2 → inline experiment](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) brings all nine original boards, all five refreshed V2 previews and the supporting inline/email visuals together. Read the [different-evolution rationale](docs/EVOLUTION_FROM_ANATOMY.md) for the biology, design mapping and limits.
 
 ## Sources and attribution
 

@@ -1,5 +1,7 @@
 # Contributor journey audit — 4 October 2026
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 Scope: repository entry points, design chronology, current-upload visibility, source guidance, critique freshness and local link/image integrity. This is a documentation/discoverability audit, not a participant usability study.
 
 ## Findings and fixes

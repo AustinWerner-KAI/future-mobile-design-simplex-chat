@@ -1,5 +1,7 @@
 # Prototype audit — from anatomy to interface
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 2026-10-03 · Review of the combined study against the initiator’s screenshot, the anatomy board and the project’s design principles. This is a heuristic and implementation review, not participant research or Jony Ive’s opinion.

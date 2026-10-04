@@ -1,5 +1,7 @@
 # Nine connected designs — space follows attention
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 4 October 2026. Independent exploratory design for the future of simplex.chat. **Read the [design memory](DESIGN_MEMORY.md) first.** The octopus’s different evolutionary path is the central analogy for an interface growing from SimpleX’s distinct network and chat foundations.

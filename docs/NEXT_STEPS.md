@@ -1,5 +1,7 @@
 # Next iteration: make the unfolding experience complete
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 Published 4 October 2026. These are proposed next steps following the [current-design walkthrough and audit](CURRENT_DESIGN_WALKTHROUGH.md), not completed features or a committed SimpleX release schedule. Work is open for contributors; no owners or delivery dates are assigned.
 
 The octopus analogy remains the starting question: distinct foundations can produce distinct behaviour. Keep the list as a coordinating surface, actions local to their relationship, and disclosure deliberate. Space follows attention; design has no ego.

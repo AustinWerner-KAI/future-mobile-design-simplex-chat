@@ -1,5 +1,7 @@
 # From anatomy to interface — shared design brief
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 Updated 4 October 2026. Independent community exploration for [simplex.chat](https://simplex.chat/), maintained by AustinWerner-KAI. This document is the shared reference for the GitHub project, its public presentation website and its mobile interaction studies. It is not an official SimpleX brief, endorsement or roadmap.
 
 ## Project overview
@@ -80,7 +82,7 @@ Production integration would require maintainer review of the existing iOS/Andro
 
 ## Deliverables and validation
 
-The community reference consists of this brief, the design memory, iteration history, visual guide, V2 baseline gallery, current inline prototype and email storyboard. Keep older thinking available while marking the current direction clearly.
+The community reference consists of this brief, the design memory, iteration history, visual guide, current V2 gallery, supporting inline prototype and email storyboard. Keep older thinking available while marking the current direction clearly.
 
 First research milestone: compare opening Maya, preserving a reply, preparing a private object, reviewing its audience, cancelling or sharing deliberately and returning to the source. The email variant carries one editable detail across an explicit boundary. Test with long content, many relationships, small windows, enlarged text, reduced motion and assistive input.
 

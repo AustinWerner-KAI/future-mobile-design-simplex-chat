@@ -1,9 +1,11 @@
 # Current uploads and source map
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 **[Next iteration: three priorities and how to contribute →](NEXT_STEPS.md)**
 
 
-**[Current design: illustrated walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
+**[Supporting inline experiment: walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
 
 
 Updated 4 October 2026. This index is the repository’s current reference. “Current” means part of the active exploration, not production-ready or validated by participants. All interactions are fictional local simulations.
@@ -20,7 +22,8 @@ Updated 4 October 2026. This index is the repository’s current reference. “C
 
 | Upload | Status / purpose | Editable source |
 |---|---|---|
-| [Inline mobile experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1) | Primary current behavioural hypothesis: private, public-channel and email menu, local tools, explicit sharing | `prototypes/src/unfold.html` |
+| [V2 — START HERE](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) | **Current project reference: all five designs** | `v2.html`; shared V2 and menu sources listed below |
+| [Inline mobile experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1) | Supporting behavioural experiment: private, public-channel and email menu, local tools, explicit sharing | `prototypes/src/unfold.html` |
 | [Email storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/email-storyboard.html) | Current source → preparation → review → sharing/recovery journey | `prototypes/src/email-storyboard.html`; behaviour in `unfold.html` source |
 | [Five material comparison](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/materials.html) | Approved Chalk/Charcoal plus comparison materials; Plum excluded | `prototypes/src/materials.html` |
 | [Concept progression](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) | Original nine boards, refreshed V2, current inline/email and visual direction | `studies/concept-progression.html` |
@@ -30,7 +33,7 @@ Updated 4 October 2026. This index is the repository’s current reference. “C
 
 ## All five refreshed V2 foundations
 
-V2 is the concrete baseline for comparison with the inline evolution. All five use white, subtle blue surfaces and neutral lettering. [Open the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html).
+V2 is the owner-selected current project reference and first destination for review. Inline evolution remains a supporting experiment. All five use white, subtle blue surfaces and neutral lettering. [Open the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html).
 
 | Study | Current rendered preview | Editable source |
 |---|---|---|

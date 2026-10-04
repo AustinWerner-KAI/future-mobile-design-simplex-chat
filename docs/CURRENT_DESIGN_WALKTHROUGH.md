@@ -1,4 +1,6 @@
-# Current design walkthrough and audit
+# Supporting inline experiment — walkthrough and audit
+
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
 
 Reviewed 4 October 2026. This is an agent-operated walkthrough of the published Chrome browser prototypes with fictional content, not participant research, native app testing or a SimpleX security assessment.
 

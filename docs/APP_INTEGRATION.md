@@ -1,5 +1,7 @@
 # How a future experience could belong in SimpleX
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 Future-fit considerations, 3 October 2026. The initiator clarified that integration means belonging within SimpleX, rather than adding external services. The purpose remains exploring the future experience, not reinventing today’s app. No upstream app code has been changed, no native build has been made, and no maintainer acceptance is implied.

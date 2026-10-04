@@ -1,5 +1,7 @@
 # First contributor walkthrough
 
+> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+
 [Illustrated current-design tour and audit](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html) — use after first-discovery tasks to avoid leading participants.
 
 [Open the participant walkthrough in HTML](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html). Editable page: [studies/contributor-walkthrough.html](../studies/contributor-walkthrough.html).
@@ -10,7 +12,7 @@ Prepared 4 October 2026. **Human sessions have not started.** The published-rout
 
 ## Decision we need to make
 
-Can a designer unfamiliar with the project follow the design journey, identify the current experience and make a useful first contribution without the maintainer explaining the repository?
+Can a designer unfamiliar with the project follow the design journey, identify the current V2 reference and make a useful first contribution without the maintainer explaining the repository?
 
 If they cannot, revise the entry point, version labels or contribution route before adding more concepts. This round tests contributor orientation; it does not validate the messaging design or predict 2028 adoption.
 
@@ -41,7 +43,7 @@ Between tasks ask only neutral prompts, such as “What are you looking for?” 
 
 - Task 1: independent speculative project, rather than official SimpleX work or a production app.
 - Task 2: anatomy is the opening explanation, while actual creation order is preserved; different evolution informs behaviour rather than a literal eight-arm interface.
-- Task 3: current inline experience distinguished from V2 foundations and historical path studies.
+- Task 3: V2 gallery identified as the current reference; inline/unfolding and historical path studies identified as supporting material.
 - Task 4: correct relationship, draft remains unsent and retained in page memory; no assumption of real delivery or reload persistence.
 - Task 5: V2 Connect preview and its shared source/data located; generated output not mistaken for the only editable source.
 - Task 6: scoped issue/proposal route, a stated problem and an evidence plan; no requirement to code.
