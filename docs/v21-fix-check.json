@@ -1,0 +1,20 @@
+{
+  "executed_at_utc": "2026-10-04T16:16:42.002Z",
+  "method": "Agent-operated Chrome regression checks of generated V2.1 build",
+  "results": [
+    "Cleared proposal remains empty after tool changes",
+    "Empty proposal cannot be shared",
+    "Cleared proposal remains empty after leaving and reopening",
+    "Proposal correction preserves separate reply",
+    "On-screen Back does not add a history step reopening Maya",
+    "Studio has its own sender",
+    "Studio has its own subject and content",
+    "Studio does not show café booking",
+    "Studio reply destination matches sender",
+    "Studio detail starts from its own email",
+    "Shared Studio detail retains source name",
+    "Return from cross-entity flow restores home search",
+    "Café retains its own booking identity",
+    "Direct entity link returns home without leaving study"
+  ]
+}

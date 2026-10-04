@@ -200,3 +200,7 @@ The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.
 ## V2.1 begins — 4 October 2026
 
 Added a relationship-led home with grid/list favourites and recent activity, local entity workspaces, provider chat/email boundaries and same-page invitations. [V2.1 brief](V2_1.md) records scope and limits; V2 remains the current reference. No participant research is claimed.
+
+## V2.1 continuity and identity fixes — 4 October 2026
+
+Corrected cleared proposals restoring default text, the extra history entry from on-screen Back, and Studio displaying Harbour Café’s email. [Targeted check record](v21-fix-check.json); [updated V2.1 brief](V2_1.md). Existing avatar initials contain no scannable connection data.
