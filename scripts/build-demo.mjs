@@ -62,3 +62,5 @@ console.log('Built experience.html complete design study');
 
 writeFileSync(new URL('../unfold.html', import.meta.url), readFileSync(new URL('../prototypes/src/unfold.html', import.meta.url), 'utf8'));
 console.log('Built unfold.html local relationship experiment');
+writeFileSync(new URL('../studies/materials.html', import.meta.url), readFileSync(new URL('../prototypes/src/materials.html', import.meta.url), 'utf8'));
+console.log('Built studies/materials.html colour comparison');

@@ -37,10 +37,20 @@ Edit `prototypes/src/unfold.html` and run `node scripts/build-demo.mjs`. The res
 
 All data is fictional and memory-only; reload clears it. Sending is simulated. There is no actual picker, QR connection, persistent draft, security comparison or SimpleX integration. Quiet mode provides visual concealment, not authentication or a security boundary. Browser history does not become a hidden-profile mechanism.
 
+## Email, beside chat
+
+The mixed menu now includes an external email context alongside private messages and public channels. Its envelope mark, dashed material boundary and “Email · external” label distinguish the transport. Opening the booking shows exact From/To addresses, an account-specific reply and a separate draft. Sending the email never adds it to Maya’s chat or to a channel. No mailbox is connected; integration and its security model remain speculative.
+
+The next integration design must handle multiple accounts, authentication/reconnection, offline queues, attachments and any explicit sharing of email into chat. Shared UI must not imply shared security or silently change the audience.
+
+## Six colour expressions
+
+Chalk, Charcoal and Moss retain the quieter material studies. Plum, Citrus and Petal broaden hue and luminance substantially. The in-phone Colour control makes all six available in full-screen mode; switching material preserves the active relationship, tool and draft. These are comparison candidates rather than a final brand selection.
+
 ## Tradeoffs and the next test
 
 An expanded row pushes other conversations down. Long histories or many objects could turn the list into a cumbersome scroll. This experiment deliberately tests that risk rather than declaring inline expansion superior. The keyboard may reduce the visible source; there is no physical-device keyboard evidence yet.
 
 Compare this variant with the nine-screen study using the same task: open Maya, draft a reply, shape a private proposal, explain exactly what sharing discloses, share one version, then return to the unsent reply. Interrupt by switching to Alex and returning. Record wrong audience assumptions, lost context and recovery effort. Also test long lists, large text and screen-reader traversal. Retain a conventional destination if it makes those tasks clearer.
 
-Browser checks cover independent drafts, tool continuity, duplicate prevention, folding, Back, concealment, 48 tool/palette/window layouts and short/landscape full-screen layouts. They establish operation and geometry, not participant usability, native behaviour or protocol feasibility.
+Browser checks cover independent drafts, tool continuity, duplicate prevention, folding, Back, concealment, 96 tool/palette/window layouts and short/landscape full-screen layouts. They establish operation and geometry, not participant usability, native behaviour or protocol feasibility.

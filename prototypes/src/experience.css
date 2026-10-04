@@ -50,3 +50,5 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{o
 .device .entry-kind{display:block;font-size:10px;color:var(--muted);margin-bottom:5px}
 .device .channel-row{border-left:3px double var(--channelInk);padding-left:12px;background:var(--channelFill);border-radius:7px;margin:8px 0}
 .device .channel-row .entry-kind{color:var(--channelInk)}
+
+.device .email-row{border-left:1px dashed var(--muted);padding-left:12px;background:var(--field);border-radius:3px;margin:8px 0}

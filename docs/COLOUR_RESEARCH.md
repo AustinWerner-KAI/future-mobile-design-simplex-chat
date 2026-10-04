@@ -4,7 +4,7 @@
 
 ## Recommendation for this project
 
-Use Chalk as the light expression, Charcoal as the dark expression and Moss as a comparison. Keep reading surfaces quiet, concentrate the warm accent on an available action, and distinguish public channels with labelled publication shapes and a secondary material. Blue is no longer the current direction. This is a design choice for this product, not a scientifically “best” hue or a universal colour-psychology claim.
+Use Chalk as the light expression, Charcoal as the dark expression and Moss as a comparison. The inline experiment also offers distinctly different Plum (deep purple/peach), Citrus (chartreuse/forest) and Petal (pink/raspberry), selectable from the mobile Colour control. Keep reading surfaces quiet, concentrate the warm accent on an available action, and distinguish public channels with labelled publication shapes and a secondary material. Blue is no longer the current direction. This is a design choice for this product, not a scientifically “best” hue or a universal colour-psychology claim.
 
 ## What primary guidance supports
 
@@ -30,7 +30,7 @@ All private entries retain the quiet reading field. Channel colour indicates con
 
 ## What we measured
 
-Run `node scripts/check-colour.cjs` with Playwright available. The check reads resolved CSS tokens from both generated pages across all three palettes and measures 60 foreground/background pairs. It covers body/secondary/placeholder/action/channel text and essential field/focus pairs. The result is recorded in [colour-contrast.json](colour-contrast.json).
+Run `node scripts/check-colour.cjs` with Playwright available. The check reads resolved CSS tokens from both generated pages across the three baseline and six inline palettes and measures 90 foreground/background pairs. It covers body/secondary/placeholder/action/channel text and essential field/focus pairs. The result is recorded in [colour-contrast.json](colour-contrast.json).
 
 This is a token-pair check, not a full rendered accessibility audit. It does not cover every disclosure surface, photograph, disabled opacity, animation frame, device display, colour-vision condition or native component. Full WCAG conformance is not claimed. Large text, forced colours, sunlight/low-light readability and physical-device appearance remain evaluation tasks.
 

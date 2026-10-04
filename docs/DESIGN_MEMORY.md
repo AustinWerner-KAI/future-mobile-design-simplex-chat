@@ -44,3 +44,7 @@ The [inline relationship experiment](../unfold.html) makes the list the coordina
 ## Mobile agency audit — 4 October 2026
 
 The [nine-screen mobile agency audit](KINGS_MOBILE_AUDIT.md) records the published build, navigation/recovery fixes and unresolved native validation. The octopus analogy must produce continuity in action, not just curved surfaces. Retained in-page drafts do not imply persistence after reload; a shared proposal is a snapshot, not agreement. Browser Back and Forward now recover route context, and identical unchanged proposal versions cannot be sent twice.
+
+## Email and broader material variation
+
+The inline menu now includes email as an external transport with explicit From/To addresses and independent drafts. Never let a unified UI imply that email inherits SimpleX security, or silently share email into chat. The in-phone Colour selector compares six distinct expressions: Chalk, Charcoal, Moss, Plum, Citrus and Petal. Theme changes preserve task state.

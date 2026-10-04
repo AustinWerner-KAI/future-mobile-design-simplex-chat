@@ -67,7 +67,7 @@ Maintainers curate a coherent direction and record decisions with their evidence
 
 ## Latest experiment: a relationship unfolds
 
-[Try the warm inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Chalk, Charcoal and Moss replace the blue direction. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
+[Try the warm inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Six distinct colour studies—Chalk, Charcoal, Moss, Plum, Citrus and Petal—are available from the in-phone Colour control. Private messages, public channels and speculative external email share one menu with explicit type/audience boundaries. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
 
 ## Try and edit the prototype
 
