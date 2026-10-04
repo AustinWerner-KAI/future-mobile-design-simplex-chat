@@ -144,3 +144,7 @@ The initiator asked for the website palette, integration into the existing app, 
 The critique above summarises the originating conversation; it is not user-study evidence. The opening analogy, visual generation order and working-prototype order are distinguished deliberately. All generated boards, all available working studies and the structural wireframes are linked from the [concept library](../concepts.html).
 
 Next contributions should add the question, response, evidence, critique and resulting decision to this record. Preserve earlier directions rather than silently replacing them.
+
+### Mobile space refinement
+
+The initiator questioned the presentation-like use of mobile space. The future study now uses a bounded viewport with internal content scrolling, smaller headings, tighter spacing and five visible conversations at 390 × 844. Touch controls retain at least 44-pixel height. The expanded source card still trades list density for context and should be compared with the compact menu. The new list rows beyond Maya remain illustrative, not implemented conversation routes. [Mobile preview](../visuals/previews/future-mobile.png). Responsive stage and decision-path checks passed again.
