@@ -26,11 +26,12 @@ Updated 4 October 2026. This index is the repository’s current reference. “C
 
 [Anatomy → early concepts → V2 → current unfolding](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) shows the visual progression. [The complete iteration record](ITERATIONS.md) retains the actual order, critiques and decisions. [The shared brief](DESIGN_BRIEF.md), [evolution rationale](EVOLUTION_FROM_ANATOMY.md) and [current critique](CRITIQUE.md) explain the direction and unresolved questions.
 
-## Current reference and companion studies
+## Latest edit, earlier baseline and companion studies
 
 | Upload | Status / purpose | Editable source |
 |---|---|---|
-| [V2 — START HERE](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) | **Current project reference: all five designs** | `v2.html`; shared V2 and menu sources listed below |
+| [V2.1.2.1 — START HERE](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) | **Latest edit: 14 captured states of the implemented candidate** | `v2121.html`; `prototypes/src/v21/`; `scripts/capture-v2121-interface.cjs` |
+| [V2 — earlier baseline](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) | Earlier reference: five foundation designs | `v2.html`; shared V2 and menu sources listed below |
 | [Inline mobile experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1) | Supporting behavioural experiment: private, public-channel and email menu, local tools, explicit sharing | `prototypes/src/unfold.html` |
 | [Email storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/email-storyboard.html) | Current source → preparation → review → sharing/recovery journey | `prototypes/src/email-storyboard.html`; behaviour in `unfold.html` source |
 | [Five material comparison](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/materials.html) | Approved Chalk/Charcoal plus comparison materials; Plum excluded | `prototypes/src/materials.html` |
@@ -41,7 +42,7 @@ Updated 4 October 2026. This index is the repository’s current reference. “C
 
 ## All five refreshed V2 foundations
 
-V2 is the owner-selected current project reference and first destination for review. Inline evolution remains a supporting experiment. All five use white, subtle blue surfaces and neutral lettering. [Open the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html).
+V2 records the earlier five-design reference. Start new reviews at [V2.1.2.1](../v2121.html). Inline evolution remains a supporting experiment. All five use white, subtle blue surfaces and neutral lettering. [Open the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html).
 
 | Study | Current rendered preview | Editable source |
 |---|---|---|
@@ -98,3 +99,7 @@ For local browsing run `python3 -m http.server 8000`. No app install or framewor
 ## V2.1.2.1 — manual-test refinement
 
 [View the mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) · [Detailed manual report](COMMUNITY_MANUAL_TEST.md) · [Fix checks](community-ux-fixes-check.json). Five findings addressed; original live-browser captures preserved. No continuous video was recorded.
+
+## V2.1.2.1 coverage boundary
+
+“Complete interface” means the implemented V2.1.2.1 candidate shown in 14 captured states. It does not mean a complete messaging app or exhaustive state coverage. Attachments, durable draft recovery, broader group lifecycle, real transport integration and physical-device/participant validation remain open in the task tracker. [Open tasks](NEXT_STEPS.md).

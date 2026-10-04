@@ -49,13 +49,13 @@ Supersede the earlier broad blue V2 palette with white, subtle blue materials, n
 
 [Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.
 
-## Current-reference decision — 4 October 2026
+## Earlier V2 reference decision — 4 October 2026
 
-The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as where the project currently stands. Use it as the primary review, navigation and contribution destination. Keep inline/unfolding, email and nine-context experiments accessible as supporting work. Earlier audits describe the scope reviewed on their dates; they do not override this selection. This is a reference/status change, not new functionality or validation.
+The owner initially selected [V2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as the review reference. This decision is retained as history. The later request to make **[V2.1.2.1](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) the latest edit** supersedes that navigation priority. Lead review and contribution routes to the latest mockup and interactive candidate; preserve V2 and supporting experiments as earlier work. This changes publication status, not production readiness or validation.
 
 ## Flow architecture clarification — 4 October 2026
 
-The owner clarified that the octopus theory is the architecture of the flow. Human relationships determine the entities; the octopus model informs interaction coordination, locality, adaptation, continuity and disclosure. [Canonical rules](EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 remains the selected current reference.
+The owner clarified that the octopus theory is the architecture of the flow. Human relationships determine the entities; the octopus model informs interaction coordination, locality, adaptation, continuity and disclosure. [Canonical rules](EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 was the selected reference at this stage; the later V2.1.2.1 publication decision below supersedes that navigation priority.
 
 ## 4 October 2026 — latest-edit discovery
 

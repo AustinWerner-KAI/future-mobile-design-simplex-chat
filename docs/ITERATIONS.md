@@ -195,7 +195,7 @@ Published the [illustrated tour](https://austinwerner-kai.github.io/future-mobil
 
 ## Current-reference decision — 4 October 2026
 
-The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as where the project currently stands. Use it as the primary review, navigation and contribution destination. Keep inline/unfolding, email and nine-context experiments accessible as supporting work. Earlier audits describe the scope reviewed on their dates; they do not override this selection. This is a reference/status change, not new functionality or validation.
+Historical decision, superseded for navigation by the later V2.1.2.1 latest-edit decision: the project owner selected [the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as the project reference at that stage. It was then the primary review, navigation and contribution destination. Keep inline/unfolding, email and nine-context experiments accessible as supporting work. Earlier audits describe the scope reviewed on their dates; they retain their original scope. This is a reference/status change, not new functionality or validation.
 
 ## V2.1 begins — 4 October 2026
 
@@ -224,3 +224,7 @@ Preserved the restarted live-browser run and 23 captures in the [detailed manual
 ## V2.1.2.1 complete interface publication — 4 October 2026
 
 Expanded the candidate mockup from two detail screens to fourteen actual interface states, with context links and instructions. Shared fixes remain in the common V2.1 runtime. Corrected Family’s proposal default to Saturday in the community scenario. Earlier variants and V2 reference remain available. [Gallery](../v2121.html) · [Capture and viewport evidence](v2121-interface-check.json). Agent browser checks are not participant or native-device validation.
+
+## V2.1.2.1 documentation corrections — 4 October 2026
+
+Resolved remaining V2 priority statements in the upload index, design memory, evolution rationale and decision history. Registered the latest captures and test evidence in SOURCES, and clarified that the complete mockup covers the implemented candidate only. Checked 542 relative file links with no missing targets; external destinations and section anchors were not revalidated. No interaction tests were rerun for these copy-only changes.

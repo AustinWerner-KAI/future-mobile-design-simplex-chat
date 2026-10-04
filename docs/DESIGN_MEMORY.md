@@ -85,6 +85,6 @@ Use [the visual progression](../studies/concept-progression.html) to present ori
 
 [Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.
 
-## Current-reference decision — 4 October 2026
+## Earlier V2 reference decision — 4 October 2026
 
-The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as where the project currently stands. Use it as the primary review, navigation and contribution destination. Keep inline/unfolding, email and nine-context experiments accessible as supporting work. Earlier audits describe the scope reviewed on their dates; they do not override this selection. This is a reference/status change, not new functionality or validation.
+The owner initially selected [V2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as the review reference. This decision is retained as history. The later request to make **[V2.1.2.1](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) the latest edit** supersedes that navigation priority. Lead review and contribution routes to the latest mockup and interactive candidate; preserve V2 and supporting experiments as earlier work. This changes publication status, not production readiness or validation.

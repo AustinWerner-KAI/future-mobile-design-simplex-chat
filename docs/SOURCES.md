@@ -38,6 +38,8 @@ Upstream repository citations were frozen to the two full commit IDs above on 4 
 
 | Recorded work | Inspectable project evidence | Limit |
 |---|---|---|
+| V2.1.2.1 interface mockup | [14-state gallery](../v2121.html), [capture script](../scripts/capture-v2121-interface.cjs), [capture and viewport record](v2121-interface-check.json), [runtime source](../prototypes/src/v21/app.js) | Headless Chrome captures at 390 × 844 CSS pixels; 15 document-overflow checks across five contexts and three widths. Not full UI coverage, native-device or participant validation |
+| Community manual baseline and fixes | [Manual report](COMMUNITY_MANUAL_TEST.md), [original evidence manifest](community-manual-test-evidence.json), [13 fix checks](community-ux-fixes-check.json), [18 journey checks](community-journey-check.json) | Original manual baseline is V2.1.2; later scripted verification covers V2.1.2.1. No continuous video or human participant results |
 | Current inline state, tools and drafts | [inline source](../prototypes/src/unfold.html), [check-unfold](../scripts/check-unfold.cjs) | RAM-only local simulation, not networking or durable retention |
 | Email boundary/outbox recovery | Same inline source, [email checks](../scripts/check-email-evolution.cjs), [state model](EMAIL_EVOLUTION.md) | Fixed fictional recipient/provider outcomes; no mailbox |
 | Nine-context behaviour/navigation | [experience source](../prototypes/src/experience.js), [experience checks](../scripts/check-experience.cjs), [agency checks](../scripts/check-mobile-agency.cjs) | Browser routes and fixtures, not native state |
@@ -63,3 +65,7 @@ Cite a primary source beside factual claims; distinguish observation, inference 
 ## Contributor walkthrough method
 
 [The walkthrough guide](CONTRIBUTOR_WALKTHROUGH.md) uses task-based observation and neutral prompts informed by [GOV.UK moderated usability-testing guidance](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing). Its short duration and three-person target are project decisions. [The pilot route record](contributor-pilot-check.json) describes an agent-operated browser check, not participant research. Human results remain uncollected.
+
+### V2.1.2.1 capture provenance
+
+The 14 PNGs in `studies/v2121-captures/` are browser captures of original project UI, not AI-generated mockup images. The [capture record](v2121-interface-check.json) supplies state identifiers, viewport and creation time; the [script](../scripts/capture-v2121-interface.cjs) defines the interactions. These captures are mutable previews, distinct from the original manual-test evidence retained with hashes. Original project code is MIT and original design material CC BY 4.0, subject to [licensing exclusions](../LICENSING.md).
