@@ -4,6 +4,16 @@
 
 ![From anatomy to interface — the starting model](visuals/anatomy-to-interface.png)
 
+## A contributor’s starting route
+
+1. [Follow the visual progression](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html): anatomy, nine original boards, five V2 screens and the current unfolding experience.
+2. [Read the shared design brief](docs/DESIGN_BRIEF.md) and [evolution rationale](docs/EVOLUTION_FROM_ANATOMY.md): goals, foundations, analogy and limits.
+3. [Try the current mobile study](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1), then [follow the email storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/email-storyboard.html).
+4. [Check every current upload and its source](docs/CURRENT_UPLOADS.md). Earlier studies are labelled for comparison.
+5. [Read the current critique](docs/CRITIQUE.md), choose an [open challenge](docs/CHALLENGES.md) and follow [the contribution guide](CONTRIBUTING.md).
+
+**Current direction:** white canvas, subtle blue surfaces, neutral words, oat email and clay actions. The relationship coordinates; tools unfold locally; sharing crosses an explicit reviewed boundary. All prototypes are local simulations.
+
 ## Start here: from anatomy to interface
 
 A coordinating centre. Flexible arms. Local touch points. This is the opening model for the story: how anatomy suggested a different way to organise interaction. Then follow the earlier sketches, each visual iteration and the working studies.
@@ -16,11 +26,11 @@ My starting principle was **“design has no ego.”** The person, the relations
 
 The octopus followed a different evolutionary journey from us. That gives this project its central question: could simplex.chat evolve an interface from its own foundations, rather than inherit every convention from WhatsApp and Telegram? Flexible form, local action and selective visibility are starting points for that exploration. This repository takes you through that thinking, shows the concepts and working interactions, and invites passionate designers, researchers and builders to challenge and extend them.
 
-**[Read the illustrated journey](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/)** · **[Try the interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/prototypes/continuous-demo.html)** · **[Join the welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/discussions/1)**
+**[Read the illustrated journey](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/)** · **[Try the current interaction](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1)** · **[Join the welcome discussion](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/discussions/1)**
 
 The project presentation and working study are hosted on GitHub Pages. You can also open `index.html` locally. No application install is required.
 
-**[All concepts: nine boards and five working studies](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/concepts.html)**
+**[All concepts: original boards, updated V2 and current studies](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/concepts.html)**
 
 The anatomy board opens the explanation. [The iteration record](docs/ITERATIONS.md) preserves actual creation order, including the earlier designs that did not yet resolve the idea.
 
@@ -67,7 +77,7 @@ Maintainers curate a coherent direction and record decisions with their evidence
 
 ## Latest experiment: a relationship unfolds
 
-[Try the warm inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Five colour studies—Chalk, Charcoal, Moss, Citrus and Petal—are available from the in-phone Colour control. Private messages, public channels and speculative external email share one menu with explicit type/audience boundaries. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
+[Try the current inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Five colour studies—Chalk, Charcoal, Moss, Citrus and Petal—are available from the in-phone Colour control. Private messages, public channels and speculative external email share one menu with explicit type/audience boundaries. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
 
 ## Email as a connected experience
 
@@ -75,7 +85,7 @@ Maintainers curate a coherent direction and record decisions with their evidence
 
 ## Try and edit the prototype
 
-Start with the current [nine-screen experience](experience.html) or its [full-screen mobile mode](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#home). Read the [mobile agency audit](docs/KINGS_MOBILE_AUDIT.md) for the build map, findings and open validation work. Edit `prototypes/src/experience.html`, `prototypes/src/experience.css` and `prototypes/src/experience.js`, then run `node scripts/build-demo.mjs`. The studies below preserve earlier iterations.
+Start with the current [inline experience](unfold.html) and its source `prototypes/src/unfold.html`. The [nine-screen experience](experience.html) is a comparative study or its [full-screen mobile mode](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#home). Read the [mobile agency audit](docs/KINGS_MOBILE_AUDIT.md) for the build map, findings and open validation work. Edit `prototypes/src/experience.html`, `prototypes/src/experience.css` and `prototypes/src/experience.js`, then run `node scripts/build-demo.mjs`. The studies below preserve earlier iterations.
 
 The [concept library](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/concepts.html) links all working studies:
 
@@ -89,7 +99,7 @@ Open `prototypes/continuous-demo.html` directly in a modern browser. It covers p
 
 All participants and incoming messages are fictional. Sending and acceptance are simulated locally. No real SimpleX connection, email delivery or cryptographic access control is implemented. Photos are selected locally and remain memory-only. This is a design study.
 
-Edit `prototypes/src/octopus-continuous.html`, then rebuild the standalone preview with Node:
+For the historical combined study, edit `prototypes/src/octopus-continuous.html`. For the current inline study, edit `prototypes/src/unfold.html`. Rebuild the generated previews with Node:
 
 ```sh
 node scripts/build-demo.mjs
@@ -103,7 +113,7 @@ python3 -m http.server 8000
 
 ## What still needs work
 
-The home now explores coordinated paths around a centre; navigation with many contacts remains unproven. Several flows use a generic expansion origin. Large contact sets, screen readers, full reload restoration and protocol feasibility need further work. The boards and prototype differ in detail. See the critique before treating either as a specification.
+The current inline list tests local expansion and deliberate sharing; large contact sets, native keyboard/lifecycle behaviour, assistive technology and protocol feasibility remain open. Reload clears its in-memory work. Earlier coordinated-path studies and generated boards remain comparison material. See the current critique before treating a prototype as a specification.
 
 ![Storyboard from invitation to shared activity](visuals/storyboard.png)
 

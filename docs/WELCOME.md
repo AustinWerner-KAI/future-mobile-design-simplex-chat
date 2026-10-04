@@ -6,7 +6,7 @@ We are exploring what the mobile experience of [simplex.chat](https://simplex.ch
 
 A conversation opens into a workspace. Tools appear where they are needed. Images become places to discuss details. Sharing boundaries remain visible. Returning should feel calm and preserve your place.
 
-Follow the [illustrated story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/) from anatomy to interface, then explore the [complete concept library](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/concepts.html): nine visual boards, five runnable studies and editable wireframes. The [iteration record](ITERATIONS.md) explains the question, response, critique and next step behind each direction.
+Follow the [illustrated story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/) from anatomy to interface, then explore the [complete concept library](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/concepts.html): nine original visual boards, five refreshed V2 studies, current inline/email experiences and editable wireframes. The [iteration record](ITERATIONS.md) explains the question, response, critique and next step behind each direction.
 
 We have several unresolved problems. The home now explores both coordinated paths and a multi-message list. Scale, accessibility, real protocol permissions and mixed chat/email behaviour need careful work.
 
@@ -15,4 +15,4 @@ You can help with a sketch, an observation, a motion study, a usability session 
 SimpleX is our first design case. This is an independent community exploration, not an official redesign. Contributions should improve the experience and provide useful evidence that maintainers could consider.
 
 
-Try the [new multi-message menu](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/prototypes/menu-list.html) and compare it with the coordinated paths. Read [the thinking](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/THINKING.md) and [full audit](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/FULL_AUDIT.md). Develop, challenge or replace a behaviour: bring a question, an experiment, evidence and the next decision.
+Start with [the current inline menu](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1) and [current uploads](CURRENT_UPLOADS.md). Compare the [earlier multi-message menu](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/prototypes/menu-list.html) and compare it with the coordinated paths. Read [the thinking](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/THINKING.md) and [full audit](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/FULL_AUDIT.md). Develop, challenge or replace a behaviour: bring a question, an experiment, evidence and the next decision.

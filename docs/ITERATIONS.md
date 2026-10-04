@@ -166,3 +166,7 @@ All five baseline studies and their gallery now follow the approved white canvas
 ## Concept imagery and narrative reconciliation — 4 October 2026
 
 The concept gallery and [progression page](../studies/concept-progression.html) now place every original board beside five refreshed V2 previews and current inline/email imagery. Original bitmaps remain labelled history rather than being repainted. Every design document points to the current shared brief, rationale and progression; current language replaces stale website-blue descriptions. The [evolution rationale](EVOLUTION_FROM_ANATOMY.md) distinguishes biological evidence from the network analogy and maps each inspiration to behaviour, a concrete expression and a limit. The next contribution should test a task consequence rather than defend a visual style.
+
+## Contributor journey audit — 4 October 2026
+
+The README now leads to the current inline experience and a numbered reading route. Added [current uploads](CURRENT_UPLOADS.md) with status, previews and sources, corrected contribution instructions and welcome text, and separated [the current critique](CRITIQUE.md) from [the historical combined critique](CRITIQUE_EARLY_COMBINED.md). [The audit](CONTRIBUTOR_JOURNEY_AUDIT.md) records discoverability gaps, fixes and verification limits.

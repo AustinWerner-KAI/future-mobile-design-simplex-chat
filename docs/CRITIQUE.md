@@ -1,19 +1,25 @@
-# Current critique
+# Current critique — inline relationship experience
 
-> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+Reviewed 4 October 2026. This applies to [the current inline study](../unfold.html?mobile=1), its email handoff and the refreshed V2 comparison set. [The earlier combined-experience critique](CRITIQUE_EARLY_COMBINED.md) remains history. This is a design assessment, not participant research.
 
-The visual boards look organic; their behaviour is not yet equally resolved. This is a design assessment, not a user-study result.
+## What has progressed
 
-1. **Home organisation remains exploratory.** Revision 02 replaces the vertical stack with coordinated paths around a centre. Test whether people can find a relationship as quickly, and extend the design to large contact sets.
-2. **Generic expansion origin.** Some secondary flows reuse Maya's expansion region instead of expanding from the control actually touched. Preserve the originating object's identity.
-3. **Curves need jobs.** Reserve unusual geometry for useful transitions, contact points and real audience boundaries.
-4. **Scale is unproven.** Four attractive branches do not solve hundreds of conversations. Keep an accessible searchable route in the next iteration.
-5. **Visual boards and prototype differ.** Boards contain inconsistent participant imagery and some premature membership cues. The prototype separates invitations, joining and agreement, but needs a fresh visual pass.
-6. **Assistance is hypothetical.** Quiet return currently points to a fictional source message; it is not an AI summariser.
-7. **Persistence needs consolidation.** Several prototype handlers save separate snapshots. Drafts survive local navigation, but full reload restoration across all flows is not complete. Selected photographs remain memory-only.
-8. **No production security claim.** Audience boundaries are simulated UI state, not protocol access controls.
-9. **Email integration is an assumption.** Test address visibility and reply-channel comprehension; validate any real architecture with SimpleX maintainers.
+The relationship list now coordinates private messages, public channels and external email. One relationship unfolds locally; tool changes retain its reply draft. Explicit review precedes sharing a proposal or email detail. The current light direction uses white, subtle blue materials, neutral lettering and oat email. V2 previews and the progression gallery reflect this direction.
 
-Checks performed during exploration: local browser interactions for draft preservation, photo preview and point reply; explicit membership versus date confirmation; connection acceptance; source navigation; email draft retention; horizontal fit at narrow widths. These do not substitute for participant testing, a screen-reader audit or production feasibility review.
+## Questions contributors should challenge
 
-The [prototype audit and revision](PROTOTYPE_AUDIT.md) addresses the initiator’s alignment screenshot. This improves composition; it does not validate the 2028 concept.
+1. **Density and scale.** The fixture has eight relationships, not hundreds. Compare search, long names, unread signals and locating a distant conversation. The current inline menu has type filters but no implemented search; the older list study does.
+2. **Orientation after unfolding.** Opening an item brings it into view. Test whether this loses useful list context, especially on short windows and after Back.
+3. **Audience comprehension.** Labels and materials distinguish private, public and external transport. Test whether people can explain the actual recipient and content before sharing. Colour is supporting evidence, not access control.
+4. **Email identity mapping.** The handoff has a fixed fictional Maya destination. Real recipient selection, multiple accounts, threads and attachments need explicit design and engineering review.
+5. **Recovery and retention.** Drafts survive local navigation in the current page session; reload clears them. Email queue and unknown-outcome states are simulated. Provider reconciliation, durable retention and lifecycle restoration remain open.
+6. **Native and accessible input.** Browser checks do not prove native keyboard handling, Dynamic Type, VoiceOver/TalkBack, permission refusal or background resumption. Screen-reader evaluation remains necessary.
+7. **Media and shared objects.** Proposal and image tools are hypotheses; anchored-image replies in earlier studies do not establish a production coordinate/accessibility model. Test source retrieval and editing rather than only the attractive object.
+8. **Feasibility and privacy.** No real connection, verification, authentication or delivery occurs. Maintainers must assess protocol and native-client fit. Email must not inherit chat security by appearance.
+9. **Evidence for the future claim.** A different evolutionary starting point and a fluid surface do not prove improvement. Compare task effort, draft loss, audience mistakes and recovery against V2 and a conventional flow.
+
+## Evidence and limits
+
+The recorded checks cover browser interactions, explicit sharing guards, draft isolation, navigation, sampled colour contrast and viewport fit. The V2 refresh checked 30 screen/window/appearance combinations. Gallery checks verified images, links and responsive fit. These are implementation checks; no representative participant results or full accessibility conformance are claimed. See [current uploads](CURRENT_UPLOADS.md), [inline evolution](INLINE_EVOLUTION.md) and [email evolution](EMAIL_EVOLUTION.md) for sources and state models.
+
+Contribute a reproducible observation or a competing flow, name which version you tested and show what changed for the person. The [shared brief](DESIGN_BRIEF.md) and [design memory](DESIGN_MEMORY.md) explain what should survive and what remains a hypothesis.

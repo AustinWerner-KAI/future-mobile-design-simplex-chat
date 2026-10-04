@@ -4,6 +4,10 @@ Before proposing a direction, read [the design memory](docs/DESIGN_MEMORY.md): t
 
 You do not need to code to participate. Start with one concrete interaction and explain what changes for the person using it.
 
+## Start with the right version
+
+Follow [the design progression](studies/concept-progression.html), read [the shared brief](docs/DESIGN_BRIEF.md), then try [the current inline study](unfold.html?mobile=1). [Current uploads](docs/CURRENT_UPLOADS.md) maps every study to its source and status. V2 is the foundation baseline; older combined/path studies are historical comparisons.
+
 ## Ways to help
 
 - **Design:** a sketch, wireframe, motion study, alternative flow or component specification.
@@ -31,7 +35,7 @@ Name the state, action and consequence. For example: “After opening Photo, my 
 1. Open a scoped issue or join an existing challenge.
 2. Fork the repository and work on a branch.
 3. Keep one problem per pull request. Link the issue and include before/after evidence.
-4. Edit `prototypes/src/octopus-continuous.html` for the reference prototype. If submitting a separate experiment, use a descriptive folder under `prototypes/experiments/` with its own README and runnable preview.
+4. Edit `prototypes/src/unfold.html` for the current inline prototype. For V2, use `prototypes/src/v2.css`, `v2.js`, `v2-screens.json` and the chat-menu sources listed in [Current uploads](docs/CURRENT_UPLOADS.md). The historical combined prototype uses `prototypes/src/octopus-continuous.html`. If submitting a separate experiment, use a descriptive folder under `prototypes/experiments/` with its own README and runnable preview.
 5. Do not silently diverge source and preview. Explain your export process; rebuild the reference preview with `node scripts/build-demo.mjs`. Standalone experiments may use ordinary HTML/CSS/JavaScript.
 6. Include validation appropriate to the change, without claiming user testing or accessibility compliance you have not performed.
 
