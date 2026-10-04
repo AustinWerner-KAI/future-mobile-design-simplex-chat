@@ -1,5 +1,5 @@
 {
-  "executed_at_utc": "2026-10-04T16:42:50.051Z",
+  "executed_at_utc": "2026-10-04T16:54:25.596Z",
   "method": "Agent-operated Chrome simulation of local generated build; not human or physical-device testing",
   "target": "v21.html",
   "viewport": {
@@ -68,7 +68,7 @@
     },
     {
       "file": "studies/v21-captures/09-invitation.png",
-      "sha256": "32c3511586f05aab4e44659859de69ab4c4dd83c9ddbce158e328efcc1a0ab9f"
+      "sha256": "f8cd3c4ac5be3648fa75cb756b8fca8d96bf68c1df3bf8653d8ec4ac24125163"
     },
     {
       "file": "studies/v21-captures/10-desktop.png",

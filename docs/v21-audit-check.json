@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-04T16:54:16.197Z",
+  "method": "Agent-operated Chrome; targeted consistency and navigation audit, not human usability evidence",
+  "checks": [
+    "Renamed membership label updates safely",
+    "Feedback scoped to active dialog",
+    "Collection editor restores focus",
+    "Alex proposal follows source context",
+    "Favourites editor restores focus",
+    "2.1.1 mobile link preserves variant",
+    "2.1.2 mobile link preserves variant",
+    "2.1.3 mobile link preserves variant",
+    "index.html fits 390",
+    "index.html fits 1440",
+    "concepts.html fits 390",
+    "concepts.html fits 1440",
+    "v21-options.html fits 390",
+    "v21-options.html fits 1440",
+    "studies/why-grids.html fits 390",
+    "studies/why-grids.html fits 1440",
+    "studies/contributor-walkthrough.html fits 390",
+    "studies/contributor-walkthrough.html fits 1440",
+    "studies/current-design-walkthrough.html fits 390",
+    "studies/current-design-walkthrough.html fits 1440",
+    "studies/concept-progression.html fits 390",
+    "studies/concept-progression.html fits 1440",
+    "No page JavaScript errors"
+  ]
+}

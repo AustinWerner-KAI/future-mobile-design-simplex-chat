@@ -43,3 +43,5 @@ Chrome mobile viewport simulation covers 320/390/768 CSS-pixel page fit, collect
 Comparison images are browser captures of the revised implementation, not generated product promises. Fictional unread counts, timestamps and activity order remain static. No network delivery, persistence, real QR invitation, account authentication or transport integration is implemented. Public publications are read-only; private groups have explicit audience labels. The design needs real-device keyboard and screen-reader work, contrast review across states, and participant comparison before selecting a winner.
 
 Original code: MIT. Original design material: CC BY 4.0. This refinement draws on the [design memory](DESIGN_MEMORY.md), [V2.1 brief](V2_1.md) and [source register](SOURCES.md); it introduces no new biological or protocol claims.
+
+[Subsequent consistency audit and fixes — 4 October 2026](V21_CONSISTENCY_AUDIT.md).
