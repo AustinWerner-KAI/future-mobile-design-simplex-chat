@@ -179,3 +179,7 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 ## Sources and attribution
 
 [Research and evidence register](docs/SOURCES.md) · [documentation audit](docs/DOCUMENTATION_AUDIT.md) · [complete visual provenance](docs/ASSET_PROVENANCE.json). Original thinking, sourced facts, browser evidence and historical imagery are distinguished explicitly.
+
+## Small-community journey and live todo record
+
+[Try the journey and session checklist](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/community-journey.html) · [Project task checklist](docs/NEXT_STEPS.md). T04 is a prototype milestone; real participant testing remains open.

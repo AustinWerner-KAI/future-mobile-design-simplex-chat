@@ -83,3 +83,7 @@ The agent route check can be inspected in [check-contributor-route.cjs](../scrip
 ## Interactive V2.1 candidates — 4 October 2026
 
 [Play and compare all three](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html), embedded or full screen. [Why grids: rationale, trade-offs and comparison tasks](WHY_GRIDS.md). Fictional, independent page sessions; no external sending. V2 remains the current project reference.
+
+## Small-community journey and live todo record
+
+[Try the journey and session checklist](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/community-journey.html) · [Project task checklist](NEXT_STEPS.md). T04 is a prototype milestone; real participant testing remains open.

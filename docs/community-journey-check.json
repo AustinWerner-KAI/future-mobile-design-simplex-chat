@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-04T17:10:18.745Z",
+  "method": "Agent-operated Chrome local simulation; not human participant or physical-device evidence",
+  "checks": [
+    "Proposal review states group audience",
+    "Cancel keeps title private",
+    "Duplicate unchanged title blocked",
+    "Only proposal title enters Family",
+    "Private source message excluded",
+    "Provider receives no group history",
+    "Email review identifies Family",
+    "Email review cancellation retains prepared excerpt",
+    "Email draft excluded and retained",
+    "Only reviewed excerpt enters Family",
+    "Family draft retained",
+    "Maya draft survives complete journey",
+    "Journey returns to coordinating home",
+    "Reviewer checklist updates",
+    "Checklist reset works",
+    "Journey page fits 390",
+    "Journey page fits 1440",
+    "No JavaScript errors"
+  ]
+}

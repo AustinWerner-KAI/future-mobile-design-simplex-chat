@@ -212,3 +212,7 @@ Added V2.1.1 grid, V2.1.2 compact favourites strip and V2.1.3 user-arranged coll
 ## Playable comparison and grid rationale — 4 October 2026
 
 Made the refined V2.1 candidates playable inside the comparison gallery and linked them from the project landing page, concept index, progression and walkthroughs. Added [why grids](WHY_GRIDS.md): a design hypothesis with explicit trade-offs and a participant comparison plan, not a claim that grids are universally better. Existing historical work remains available.
+
+## Small-community flow and task tracker — 4 October 2026
+
+Added a [complete fictional journey](../studies/community-journey.html): Maya → reviewed title to Family → provider email → reviewed excerpt to Family → retained Maya draft. The [todo record](NEXT_STEPS.md) now uses stable IDs and evidence-linked completion. Session test ticks are manual and temporary; human testing remains open. [Flow and limits](COMMUNITY_JOURNEY.md).

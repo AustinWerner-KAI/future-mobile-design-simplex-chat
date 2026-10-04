@@ -18,7 +18,7 @@ A privacy-sensitive mobile-web study for frequent, interrupted communication wit
 | Type recognised before identity | Each entity has a monogram plus a distinct container shape; group, publication and provider symbols are smaller badges | These fictional monograms are not globally unique identifiers or verification; user-selected images need a later study |
 | Metadata too small | Essential metadata increased to at least 12 CSS px; previews to 14px and row names to 16px | Longer content uses more vertical space |
 | Lost place on tool change | Per-relationship/tool scroll positions and email disclosure state are retained; home search, selected collection and favourite-strip position survive return | Memory only, cleared by reload |
-| Unclear sharing and error feedback | Empty email details remain disabled after returning; favourite-limit feedback is visible as well as announced | Email handoff still demonstrates only Maya as the destination |
+| Unclear sharing and error feedback | Empty email details remain disabled after returning; favourite-limit feedback is visible as well as announced | Baseline handoff demonstrates Maya; the later community scenario explicitly targets Family. General destination selection is still open |
 | Inappropriate favourite control in collections | The collection variant offers arrangement from the relationship header | This opens the collection editor, not a separate profile |
 
 ## The octopus architecture is the flow
