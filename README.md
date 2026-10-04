@@ -1,9 +1,8 @@
 # From anatomy to interface
 
-> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-
-**[V2.1.2.1 · complete interface mockup — 14 states](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html)** · [Play the refined candidate](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Home, conversations, groups, publications, providers, email, security and invitations. V2 remains the current reference.
+**[V2.1.2.1 · complete interface mockup — 14 states](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html)** · [Play the refined candidate](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Home, conversations, groups, publications, providers, email, security and invitations. V2 is the earlier reference baseline.
 
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
@@ -13,13 +12,13 @@
 
 [Compare V2.1.1, V2.1.2 and V2.1.3](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html): refined favourites grid, compact strip and overlapping personal collections. [What changed and how it was checked](docs/V21_REFINEMENT.md).
 
-A working exploration of favourites grid/list, entity-based navigation, local proposals and chat/email within a provider relationship. [Scope, storyboard and check evidence](docs/V2_1.md). V2 remains the current reference while we test this next iteration.
+A working exploration of favourites grid/list, entity-based navigation, local proposals and chat/email within a provider relationship. [Scope, storyboard and check evidence](docs/V2_1.md). V2 is the earlier reference baseline while we test this next iteration.
 
 **[Why grids? Design rationale and trade-offs](docs/WHY_GRIDS.md)** · [Illustrated rationale](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/why-grids.html). The comparison gallery includes playable previews and a short task guide; each also opens full screen.
 
 ## Flow architecture
 
-**The octopus theory is the architecture of the flow. Human relationships organise the interface.** People and entities supply recognisable context; coordination, local action, adaptable space, retained state, deliberate sharing and coherent return govern movement through it. This applies to a grid or list without prescribing an octopus-shaped UI. It is an interaction architecture hypothesis, not a claim about SimpleX’s protocol implementation. [Read the flow rules and evaluation criteria](docs/EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 remains the current review reference; implementation gaps remain explicit.
+**The octopus theory is the architecture of the flow. Human relationships organise the interface.** People and entities supply recognisable context; coordination, local action, adaptable space, retained state, deliberate sharing and coherent return govern movement through it. This applies to a grid or list without prescribing an octopus-shaped UI. It is an interaction architecture hypothesis, not a claim about SimpleX’s protocol implementation. [Read the flow rules and evaluation criteria](docs/EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 is the earlier review baseline; implementation gaps remain explicit.
 
 ## Supporting experiment: illustrated walkthrough
 
@@ -88,7 +87,7 @@ The anatomy board opens the explanation. [The iteration record](docs/ITERATIONS.
 
 V2 improved familiar screens but did not yet demonstrate a different experience. [Read the audit and refined goals](docs/2028_DESIGN_RESET.md), then [explore one continuous journey in three stronger colour treatments](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/future.html). The study follows a source question into a private proposal, an explicit sharing boundary and a quiet return. It is a hypothesis for community testing, not a finished answer.
 
-## V2 — current project reference
+## V2 — earlier baseline
 
 **[Explore all five V2 designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html)**: chat list, QR invitations, profile privacy, conversation verification and group membership. These now use the approved white canvas, subtle blue surfaces and neutral lettering and are informed by [SimpleX research](docs/SIMPLEX_RESEARCH.md). [The future-fit notes](docs/APP_INTEGRATION.md) explore how an evolved experience could belong in SimpleX. The objective is discovering the future, not reinventing today’s app. All flows remain independent browser simulations.
 

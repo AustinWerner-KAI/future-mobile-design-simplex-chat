@@ -1,6 +1,8 @@
 # Small-community journey — T04
 
-4 October 2026. [Open the interactive test](../studies/community-journey.html) · [Project todo checklist](NEXT_STEPS.md). V2 remains the current project reference; this is a candidate scenario using V2.1.2.
+> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+
+4 October 2026. [Open the interactive test](../studies/community-journey.html) · [Project todo checklist](NEXT_STEPS.md). V2 is the earlier reference baseline; this is a candidate scenario using V2.1.2.
 
 ## Product intention
 

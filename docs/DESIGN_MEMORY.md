@@ -1,6 +1,6 @@
 # Design memory: a different evolutionary path
 
-> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
@@ -14,7 +14,7 @@ This is Austin’s design thesis, not an official SimpleX statement or roadmap. 
 
 ## Flow architecture
 
-**The octopus theory is the architecture of the flow. Human relationships organise the interface.** People and entities supply recognisable context; coordination, local action, adaptable space, retained state, deliberate sharing and coherent return govern movement through it. This applies to a grid or list without prescribing an octopus-shaped UI. It is an interaction architecture hypothesis, not a claim about SimpleX’s protocol implementation. [Read the flow rules and evaluation criteria](EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 remains the current review reference; implementation gaps remain explicit.
+**The octopus theory is the architecture of the flow. Human relationships organise the interface.** People and entities supply recognisable context; coordination, local action, adaptable space, retained state, deliberate sharing and coherent return govern movement through it. This applies to a grid or list without prescribing an octopus-shaped UI. It is an interaction architecture hypothesis, not a claim about SimpleX’s protocol implementation. [Read the flow rules and evaluation criteria](EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 is the earlier review baseline; implementation gaps remain explicit.
 
 ## What must survive every iteration
 

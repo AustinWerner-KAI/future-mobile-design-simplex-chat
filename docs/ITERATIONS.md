@@ -1,6 +1,6 @@
 # The design journey — every step
 
-> **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
+> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
 > Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
@@ -199,7 +199,7 @@ The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.
 
 ## V2.1 begins — 4 October 2026
 
-Added a relationship-led home with grid/list favourites and recent activity, local entity workspaces, provider chat/email boundaries and same-page invitations. [V2.1 brief](V2_1.md) records scope and limits; V2 remains the current reference. No participant research is claimed.
+Added a relationship-led home with grid/list favourites and recent activity, local entity workspaces, provider chat/email boundaries and same-page invitations. [V2.1 brief](V2_1.md) records scope and limits; V2 is the earlier reference baseline. No participant research is claimed.
 
 ## V2.1 continuity and identity fixes — 4 October 2026
 
@@ -207,7 +207,7 @@ Corrected cleared proposals restoring default text, the extra history entry from
 
 ## Three V2.1 options — 4 October 2026
 
-Added V2.1.1 grid, V2.1.2 compact favourites strip and V2.1.3 user-arranged collections. Distinct icon structures and text labels separate individuals, groups, publications and providers in each option. [Compare the directions](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html). These are candidate layouts; V2 remains the current reference.
+Added V2.1.1 grid, V2.1.2 compact favourites strip and V2.1.3 user-arranged collections. Distinct icon structures and text labels separate individuals, groups, publications and providers in each option. [Compare the directions](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html). These are candidate layouts; V2 is the earlier reference baseline.
 
 ## Playable comparison and grid rationale — 4 October 2026
 
