@@ -53,3 +53,9 @@ console.log('Built five prototypes/v2 studies');
 
 writeFileSync(new URL('../future.html', import.meta.url), readFileSync(new URL('../prototypes/src/future-study.html', import.meta.url), 'utf8'));
 console.log('Built future.html experience hypothesis');
+
+const experienceTemplate = readFileSync(new URL('../prototypes/src/experience.html', import.meta.url), 'utf8');
+writeFileSync(new URL('../experience.html', import.meta.url), experienceTemplate
+  .replace('/* EXPERIENCE_CSS */', () => readFileSync(new URL('../prototypes/src/experience.css', import.meta.url), 'utf8'))
+  .replace('/* EXPERIENCE_JS */', () => readFileSync(new URL('../prototypes/src/experience.js', import.meta.url), 'utf8')));
+console.log('Built experience.html complete design study');
