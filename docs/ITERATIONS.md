@@ -175,6 +175,10 @@ The README now leads to the current inline experience and a numbered reading rou
 
 Corrected stale current-palette language, labelled superseded decisions, pinned upstream repository citations and added [the source register](SOURCES.md), [visual provenance](ASSET_PROVENANCE.json) and [documentation audit](DOCUMENTATION_AUDIT.md). Kept original ideas separate from external facts and historical browser-run records. Missing original prompts/logs remain explicit; the documentation audit does not claim to reproduce every earlier test.
 
+## First contributor walkthrough — 4 October 2026
+
+Ran an agent-operated check of the published README → progression → current inline experience → uploads → contribution guide. Added direct proposal/challenge routes at the end of the progression and direct issue-form links in the contribution guide. Published [six neutral tasks and an observation sheet](CONTRIBUTOR_WALKTHROUGH.md). Human sessions have not started; the route check is recorded separately and is not participant evidence.
+
 ## Evidence and attribution
 
 [Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.

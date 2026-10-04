@@ -43,6 +43,10 @@
 | [THINKING.md](THINKING.md) | Original project narrative, guidance or decisions; attribution/source register linked |
 | [WELCOME.md](WELCOME.md) | Original project narrative, guidance or decisions; attribution/source register linked |
 
+## Subsequent contributor walkthrough
+
+[The walkthrough guide](CONTRIBUTOR_WALKTHROUGH.md) and [published-route record](contributor-pilot-check.json) were added after this documentation audit. They distinguish the agent review from uncollected human results and cite GOV.UK for the task-based method.
+
 ## Verification and limits
 
 The external URL pass covered 31 distinct citation URLs present when it ran: 30 returned successfully, while the Smithsonian article returned HTTP 403 to the automated requester. Its article content was independently retrieved and read through the browsing tool; the exception is recorded in [source-link-check.json](source-link-check.json). Additional primary context sources added during the review were opened through the browsing tool. Reachability is not a claim-verification method by itself.

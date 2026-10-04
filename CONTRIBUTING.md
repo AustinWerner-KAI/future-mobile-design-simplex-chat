@@ -8,6 +8,10 @@ You do not need to code to participate. Start with one concrete interaction and 
 
 Follow [the design progression](studies/concept-progression.html), read [the shared brief](docs/DESIGN_BRIEF.md), then try [the current inline study](unfold.html?mobile=1). [Current uploads](docs/CURRENT_UPLOADS.md) maps every study to its source and status. V2 is the foundation baseline; older combined/path studies are historical comparisons.
 
+## A first contribution without designing a screen
+
+Try the [short contributor walkthrough](docs/CONTRIBUTOR_WALKTHROUGH.md): can you explain the journey, find the current design and locate an editable source without help? Report one concrete point of confusion using [the finding form](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new?template=usability-finding.yml). Public submissions should omit personal details.
+
 ## Ways to help
 
 - **Design:** a sketch, wireframe, motion study, alternative flow or component specification.
@@ -32,7 +36,7 @@ Name the state, action and consequence. For example: “After opening Photo, my 
 
 ## Submit changes
 
-1. Open a scoped issue or join an existing challenge.
+1. Open a [scoped design proposal](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new?template=design-proposal.yml), report a [finding](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new?template=usability-finding.yml), or join an [existing challenge](docs/CHALLENGES.md).
 2. Fork the repository and work on a branch.
 3. Keep one problem per pull request. Link the issue and include before/after evidence.
 4. Edit `prototypes/src/unfold.html` for the current inline prototype. For V2, use `prototypes/src/v2.css`, `v2.js`, `v2-screens.json` and the chat-menu sources listed in [Current uploads](docs/CURRENT_UPLOADS.md). The historical combined prototype uses `prototypes/src/octopus-continuous.html`. If submitting a separate experiment, use a descriptive folder under `prototypes/experiments/` with its own README and runnable preview.

@@ -54,3 +54,7 @@ PNG files under `visuals/previews` are recorded browser captures of project stud
 ## Citation rule for contributors
 
 Cite a primary source beside factual claims; distinguish observation, inference and proposal. Pin upstream code references when practical. For original work, credit its creator and record the iteration; for images, give origin, licence and changes. For test results, retain the method, conditions and output when possible. Never convert an uncited claim, missing prompt or unavailable log into invented evidence.
+
+## Contributor walkthrough method
+
+[The walkthrough guide](CONTRIBUTOR_WALKTHROUGH.md) uses task-based observation and neutral prompts informed by [GOV.UK moderated usability-testing guidance](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing). Its short duration and three-person target are project decisions. [The pilot route record](contributor-pilot-check.json) describes an agent-operated browser check, not participant research. Human results remain uncollected.

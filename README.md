@@ -136,3 +136,7 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 ## Sources and attribution
 
 [Research and evidence register](docs/SOURCES.md) · [documentation audit](docs/DOCUMENTATION_AUDIT.md) · [complete visual provenance](docs/ASSET_PROVENANCE.json). Original thinking, sourced facts, browser evidence and historical imagery are distinguished explicitly.
+
+## First contributor walkthrough
+
+[Use the short walkthrough guide](docs/CONTRIBUTOR_WALKTHROUGH.md) to test whether a new designer can understand the journey, identify current work and find an editable source. Human results are not yet collected; the separate published-route check is an agent review.
