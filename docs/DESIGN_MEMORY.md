@@ -60,3 +60,7 @@ The initiator rejected the Plum treatment. Remove it from active options and use
 ## Subtle service tones
 
 Use one coherent reading system: private messages in warm white, channels in muted sage, email in pale oat. Preserve the same text hierarchy and clear labels across all three. In the dark alternative, use related neutral grey materials. Recommended light/dark directions are Chalk and Charcoal; other themes are comparisons. Do not claim a universal best hue or medical eye benefit.
+
+## White canvas — final light refinement
+
+The initiator suggested white as the background. The current light study uses a white canvas and white private messages, with muted sage channels and pale oat email. Treat this as the current direction superseding the earlier warm-paper canvas; keep a dark alternative and measure contrast.

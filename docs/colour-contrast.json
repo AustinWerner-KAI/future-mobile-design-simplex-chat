@@ -94,8 +94,8 @@
     "palette": "day",
     "role": "body",
     "foreground": "#252b24",
-    "background": "#f3eee3",
-    "ratio": 12.52,
+    "background": "#ffffff",
+    "ratio": 14.49,
     "minimum": 4.5
   },
   {
@@ -103,8 +103,8 @@
     "palette": "day",
     "role": "secondary",
     "foreground": "#5b6055",
-    "background": "#f3eee3",
-    "ratio": 5.59,
+    "background": "#ffffff",
+    "ratio": 6.46,
     "minimum": 4.5
   },
   {
@@ -112,8 +112,8 @@
     "palette": "day",
     "role": "secondary on surface",
     "foreground": "#5b6055",
-    "background": "#e5ded0",
-    "ratio": 4.83,
+    "background": "#f3f4f0",
+    "ratio": 5.85,
     "minimum": 4.5
   },
   {
@@ -121,8 +121,8 @@
     "palette": "day",
     "role": "placeholder",
     "foreground": "#5b6055",
-    "background": "#faf6ee",
-    "ratio": 6,
+    "background": "#f5f5f1",
+    "ratio": 5.91,
     "minimum": 4.5
   },
   {
@@ -166,8 +166,8 @@
     "palette": "day",
     "role": "field boundary",
     "foreground": "#85897c",
-    "background": "#faf6ee",
-    "ratio": 3.32,
+    "background": "#f5f5f1",
+    "ratio": 3.28,
     "minimum": 3
   },
   {
@@ -175,8 +175,8 @@
     "palette": "day",
     "role": "focus on surface",
     "foreground": "#8d3e2b",
-    "background": "#e5ded0",
-    "ratio": 5.49,
+    "background": "#f3f4f0",
+    "ratio": 6.65,
     "minimum": 3
   },
   {
@@ -274,8 +274,8 @@
     "palette": "chalk",
     "role": "body",
     "foreground": "#252b24",
-    "background": "#f3eee3",
-    "ratio": 12.52,
+    "background": "#ffffff",
+    "ratio": 14.49,
     "minimum": 4.5
   },
   {
@@ -283,8 +283,8 @@
     "palette": "chalk",
     "role": "secondary",
     "foreground": "#5b6055",
-    "background": "#f3eee3",
-    "ratio": 5.59,
+    "background": "#ffffff",
+    "ratio": 6.46,
     "minimum": 4.5
   },
   {
@@ -292,8 +292,8 @@
     "palette": "chalk",
     "role": "secondary on surface",
     "foreground": "#5b6055",
-    "background": "#fffbf2",
-    "ratio": 6.26,
+    "background": "#ffffff",
+    "ratio": 6.46,
     "minimum": 4.5
   },
   {
@@ -301,8 +301,8 @@
     "palette": "chalk",
     "role": "placeholder",
     "foreground": "#5b6055",
-    "background": "#ece6d8",
-    "ratio": 5.19,
+    "background": "#f5f5f1",
+    "ratio": 5.91,
     "minimum": 4.5
   },
   {
@@ -346,8 +346,8 @@
     "palette": "chalk",
     "role": "field boundary",
     "foreground": "#7d8271",
-    "background": "#ece6d8",
-    "ratio": 3.18,
+    "background": "#f5f5f1",
+    "ratio": 3.62,
     "minimum": 3
   },
   {
@@ -355,8 +355,8 @@
     "palette": "chalk",
     "role": "focus on surface",
     "foreground": "#8d3e2b",
-    "background": "#fffbf2",
-    "ratio": 7.12,
+    "background": "#ffffff",
+    "ratio": 7.35,
     "minimum": 3
   },
   {

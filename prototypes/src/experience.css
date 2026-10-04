@@ -57,3 +57,5 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{o
 .device[data-palette=day]{--privateSurface:#fffbf2;--channelFill:#e6e9df;--channelInk:#55604d;--emailSurface:#eee3d2}
 .device[data-palette=cobalt]{--privateSurface:#34473a;--channelFill:#3b4933;--channelInk:#cdd5be;--emailSurface:#423b30}
 .device .private-row{background:var(--privateSurface);border-radius:14px;padding-left:12px;padding-right:12px;margin:8px 0}.device .email-row{background:var(--emailSurface)}
+
+.device[data-palette=day]{--base:#ffffff;--panel:#f3f4f0;--field:#f5f5f1;--pearl:#ffffff;--privateSurface:#ffffff}

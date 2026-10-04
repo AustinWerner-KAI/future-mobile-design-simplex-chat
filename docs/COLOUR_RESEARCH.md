@@ -20,7 +20,7 @@ Visual information necessary to identify an active control or its state needs 3:
 
 | Role | Chalk | Charcoal | Moss |
 |---|---|---|---|
-| Reading field | Warm paper `#F3EEE3` | Warm neutral `#20211F` | Deep moss `#25342B` |
+| Reading field | White `#FFFFFF` | Warm neutral `#20211F` | Deep moss `#25342B` |
 | Primary text | Ink `#252B24` | Chalk `#F6F1E7` | Chalk `#F6F2E7` |
 | Action | Clay `#8D3E2B` | Ember `#F2AC8E` | Sand `#EAC69D` |
 | Public channel material | Pale moss / dark leaf | Dark leaf / light leaf | Earth / light sand |
@@ -46,8 +46,12 @@ The initiator rejected Plum on 4 October 2026. Its broad purple surface gave the
 
 ## Service tones: one reading system
 
-Current recommendation: Chalk for the light reading study, Charcoal for the dark alternative. Keep the canvas and primary reading hierarchy neutral. Private messages use warm white (`#FFFBF2` when expanded), public channels use a pale sage surface (`#E6E9DF`), and email uses pale oat (`#EEE3D2`). Service labels, identity shapes and recipient information still carry meaning. The dark version uses closely related charcoal, sage-grey and brown-grey surfaces.
+Current recommendation: Chalk for the light reading study, Charcoal for the dark alternative. Keep the canvas and primary reading hierarchy neutral. Private messages use white (`#FFFFFF`), public channels use a pale sage surface (`#E6E9DF`), and email uses pale oat (`#EEE3D2`). Service labels, identity shapes and recipient information still carry meaning. The dark version uses closely related charcoal, sage-grey and brown-grey surfaces.
 
 Citrus, Petal and Moss remain comparison candidates, not claims of superior reading comfort. A palette cannot be called universally best for eyes. Text/background luminance contrast is a stronger supported basis for legibility than assigning a special benefit to a hue. Match the display to the user and environment, and test brightness, text size and preference on real devices. [W3C contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
 
 The service text/preview pairs are now measured separately, bringing the sampled pair count to 100. This does not measure visual fatigue or establish an eye-health benefit.
+
+## White canvas refinement
+
+Following the initiator’s suggestion, the light study now uses a white canvas and white private-message surfaces. Sage channels and oat email retain their subtle service tones. Pale colour occupies the relevant service surface rather than colouring the entire reading field. Charcoal remains the dark alternative. This is a visual refinement to test, not a universal claim about eye comfort.
