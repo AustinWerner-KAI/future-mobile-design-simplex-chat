@@ -34,7 +34,7 @@ V2 improved familiar screens but did not yet demonstrate a different experience.
 
 ## Five V2 baseline studies
 
-**[Explore all five V2 designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html)**: chat list, QR invitations, profile privacy, conversation verification and group membership. These use a website-aligned blue palette and are informed by [SimpleX research](docs/SIMPLEX_RESEARCH.md). [The future-fit notes](docs/APP_INTEGRATION.md) explore how an evolved experience could belong in SimpleX. The objective is discovering the future, not reinventing today’s app. All flows remain independent browser simulations.
+**[Explore all five V2 designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html)**: chat list, QR invitations, profile privacy, conversation verification and group membership. These now use the approved white canvas, subtle blue surfaces and neutral lettering and are informed by [SimpleX research](docs/SIMPLEX_RESEARCH.md). [The future-fit notes](docs/APP_INTEGRATION.md) explore how an evolved experience could belong in SimpleX. The objective is discovering the future, not reinventing today’s app. All flows remain independent browser simulations.
 
 ## Follow the thinking
 
@@ -114,3 +114,7 @@ Initiated by [AustinWerner-KAI](https://github.com/AustinWerner-KAI), shaped fro
 [simplex.chat](https://simplex.chat/) is our first design case. This project is unaffiliated with SimpleX or Jony Ive and does not represent their roadmap or endorsement.
 
 See [LICENSING.md](LICENSING.md) for current reuse terms. Contributors retain attribution. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community expectations.
+
+## Shared project brief
+
+Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypotheses, design rules, prototype scope, technical boundaries and ways to contribute. The [SVG visual guide](visuals/design-direction.svg) summarises the current materials and evolutionary thesis.
