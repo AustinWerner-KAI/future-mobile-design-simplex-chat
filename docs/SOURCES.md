@@ -1,5 +1,8 @@
 # Sources, evidence and attribution
 
+[Current-design walkthrough and audit](CURRENT_DESIGN_WALKTHROUGH.md) records 23 browser captures, exercised paths and unresolved integration gaps. [Capture/check evidence](current-design-walkthrough-check.json). Agent simulation; no participant or native-device validation.
+
+
 Reviewed 4 October 2026. This register distinguishes external facts, original project thinking, implementation evidence and visual provenance. A citation supports the claim beside it; it does not endorse this concept or validate the whole product. [Documentation audit](DOCUMENTATION_AUDIT.md) · [asset register](ASSET_PROVENANCE.json) · [external-link check](source-link-check.json).
 
 ## Original project work

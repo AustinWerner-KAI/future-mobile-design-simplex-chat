@@ -182,3 +182,7 @@ Ran an agent-operated check of the published README → progression → current 
 ## Evidence and attribution
 
 [Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.
+
+## Complete current-design walkthrough — 4 October 2026
+
+Published the [illustrated tour](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html) and [audit](CURRENT_DESIGN_WALKTHROUGH.md), with 23 recorded browser states and reusable checks. The review confirms local draft continuity and explicit email handoff in the simulated paths, while exposing the separate connection/group/profile models and incomplete attachment lifecycle. No new design direction or participant evidence is implied.

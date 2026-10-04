@@ -1,0 +1,257 @@
+{
+  "executed_at_utc": "2026-10-04T11:48:18.287Z",
+  "base": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat",
+  "method": "Agent-operated Chrome browser walkthrough with fictional fixtures, not human or native-device testing",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "additionalWidths": [
+    360,
+    768
+  ],
+  "steps": [
+    {
+      "id": "01-menu",
+      "title": "One menu, three audience types",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1",
+      "result": "Eight entries; private, public channel and external email have text labels and distinct surfaces."
+    },
+    {
+      "id": "02-reply",
+      "title": "Open a relationship, keep the list",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Maya",
+      "result": "Maya expands in place. Reply draft belongs to Maya."
+    },
+    {
+      "id": "03-proposal",
+      "title": "Private work before sharing",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Maya",
+      "result": "Proposal and audience are shown beside the retained unsent reply."
+    },
+    {
+      "id": "04-image",
+      "title": "Image and caption have an audience",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Maya",
+      "result": "Sample illustration; no picker or camera integration."
+    },
+    {
+      "id": "05-security",
+      "title": "Inspect trust without implying verification",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Maya",
+      "result": "No real security code; invitation and verification are explicitly different."
+    },
+    {
+      "id": "06-channel",
+      "title": "A publication is not a private conversation",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Coast%20Journal",
+      "result": "Public readers, reading mode and comments-off state are explicit."
+    },
+    {
+      "id": "07-email",
+      "title": "External email keeps its source",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Harbour%20bookings",
+      "result": "Sender and email reply recipient are visible; no mailbox is connected."
+    },
+    {
+      "id": "08-review",
+      "title": "Review what crosses the boundary",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Harbour%20bookings",
+      "result": "Only selected text will enter Maya’s chat; addresses, attachments and original email stay outside."
+    },
+    {
+      "id": "09-arrival",
+      "title": "Selected detail arrives in Maya",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Maya",
+      "result": "Only the reviewed text appears; transport remains explicit in the source."
+    },
+    {
+      "id": "10-queued",
+      "title": "Queued is not sent",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Harbour%20bookings",
+      "result": "Offline scenario queues locally."
+    },
+    {
+      "id": "11-unknown",
+      "title": "An uncertain outcome needs inspection",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Harbour%20bookings",
+      "result": "Outcome unknown exposes check rather than a blind resend."
+    },
+    {
+      "id": "12-quiet",
+      "title": "Selective visibility",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1",
+      "result": "Quiet hides previews and folds active work; it is not authentication or device locking."
+    },
+    {
+      "id": "13-charcoal",
+      "title": "Alternate material, same behaviour",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Maya",
+      "result": "Charcoal changes appearance while retaining the relationship state."
+    },
+    {
+      "id": "14-connect",
+      "title": "Connection handoff to the comparative study",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#connect",
+      "result": "Inline menu leaves its page for the nine-context connection study; inline state is not shared."
+    },
+    {
+      "id": "15-invitation",
+      "title": "Pending invitation is not connection",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#connect",
+      "result": "Demo invitation shows disclosure and pending state."
+    },
+    {
+      "id": "context-home",
+      "title": "Comparative context: home",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#home",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    },
+    {
+      "id": "context-chat",
+      "title": "Comparative context: chat",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#chat",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    },
+    {
+      "id": "context-photo",
+      "title": "Comparative context: photo",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#photo",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    },
+    {
+      "id": "context-plan",
+      "title": "Comparative context: plan",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#plan",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    },
+    {
+      "id": "context-group",
+      "title": "Comparative context: group",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#group",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    },
+    {
+      "id": "context-privacy",
+      "title": "Comparative context: privacy",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#privacy",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    },
+    {
+      "id": "context-trust",
+      "title": "Comparative context: trust",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#trust",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    },
+    {
+      "id": "context-email",
+      "title": "Comparative context: email",
+      "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#email",
+      "result": "Separate nine-screen baseline; not equivalent to a completed inline implementation."
+    }
+  ],
+  "errors": [],
+  "captures": [
+    {
+      "file": "studies/walkthrough-captures/01-menu.png",
+      "sha256": "407a68763edfb8b3b11ff5031a9273ccdf4a19e50ceee3f1c41afee4dffe3be8"
+    },
+    {
+      "file": "studies/walkthrough-captures/02-reply.png",
+      "sha256": "6dea11b8b4de1ac5a502eaf62ff726ae787d91faba5f28ce914c6e31ad239c83"
+    },
+    {
+      "file": "studies/walkthrough-captures/03-proposal.png",
+      "sha256": "3f4af9ba1421c6865347b3b0d781da2ab58a5da88393f9105d0c9edddbfdda03"
+    },
+    {
+      "file": "studies/walkthrough-captures/04-image.png",
+      "sha256": "2ce377dc9da3289b538d233fa6970a239f3aa641bf99d3e9b55108c059b8e8ca"
+    },
+    {
+      "file": "studies/walkthrough-captures/05-security.png",
+      "sha256": "fd28330910838e0f784beb16423e11775c96efc1231f93eb11f968254ed09c33"
+    },
+    {
+      "file": "studies/walkthrough-captures/06-channel.png",
+      "sha256": "ff8304e6556c2436174b189e7d61f48a6f9ef066281592929d06a63626fbd659"
+    },
+    {
+      "file": "studies/walkthrough-captures/07-email.png",
+      "sha256": "f422da671e3466748947802ed9f85cb58da28ebb362d28f9e6d00adde5412069"
+    },
+    {
+      "file": "studies/walkthrough-captures/08-review.png",
+      "sha256": "10b0dffe22d98413aca9a7a07cfb6ae1ce45d4dd61e8aee5118fd4220142a507"
+    },
+    {
+      "file": "studies/walkthrough-captures/09-arrival.png",
+      "sha256": "5f4cb929cf81e1ffae357ff085cf1227a75126a3ef7c5c68428258cf10797d9d"
+    },
+    {
+      "file": "studies/walkthrough-captures/10-queued.png",
+      "sha256": "c39869abc2e061b5f591dd9b9bd9c4ab8a709e324bd1d98b6d3ac0034675770e"
+    },
+    {
+      "file": "studies/walkthrough-captures/11-unknown.png",
+      "sha256": "7845011e1179c20e3f014344fa161cb02956cc0725ed78392424293d70e13941"
+    },
+    {
+      "file": "studies/walkthrough-captures/12-quiet.png",
+      "sha256": "f25a8b342bab42ad00df397b7f6661a435e5e4bafb15a73f99732ee0cfa8247e"
+    },
+    {
+      "file": "studies/walkthrough-captures/13-charcoal.png",
+      "sha256": "22834c430de05141f6fd35fc00a50e5b70ade1675d9a2ad9fa7fb0436cdf2a03"
+    },
+    {
+      "file": "studies/walkthrough-captures/14-connect.png",
+      "sha256": "cf78aa27f84ec02c8f52cf497946079a6ce9a2a561180202299fca309c027725"
+    },
+    {
+      "file": "studies/walkthrough-captures/15-invitation.png",
+      "sha256": "246ca604958de2afd7b48911680cdb663c3fdb9156b133437b2df6f2ad48b839"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-home.png",
+      "sha256": "fd78553dc9f753049a3da4fa7c4aba4c3b1b55d45edaba23999618439e981c62"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-chat.png",
+      "sha256": "e425b1ffba8797f2b2dcda274ca2c66b6672f89dbbe1e0ca21633d45ab4b5d4f"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-photo.png",
+      "sha256": "854b2d1e9ee3fcd4b530e57c1c0bd18aa58a31dfab694f5299bb3629c2b6e718"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-plan.png",
+      "sha256": "deb39692da7c503a616e3daebc780fd706ea4914e526ce8875915d2dae575a01"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-group.png",
+      "sha256": "61760cbea72e32e0ee0792d7937a03e69636d7e8e3c436b3f5eaeb0fbc39a04b"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-privacy.png",
+      "sha256": "326e402c4b84916f2ee484856a9c6a8ca22bfa2a951a8038faa91a636c18a50e"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-trust.png",
+      "sha256": "d7328c321d2abd16a7c8a744ffc0381380574f463d4eae6a43625b3954e76580"
+    },
+    {
+      "file": "studies/walkthrough-captures/context-email.png",
+      "sha256": "9a050131972d863bdcb3e15b73a0b71edd45e6cb130425ad47cf90e5d7a715e5"
+    }
+  ],
+  "companionInteractionChecks": [
+    "Image failure retains caption and exposes retry",
+    "Image retry succeeds in simulation",
+    "Image point does not invent a recipient reply",
+    "Observer membership has no send composer",
+    "Work profile has two scoped entries",
+    "Work search excludes personal Maya",
+    "Reviewing security process does not imply verification"
+  ]
+}

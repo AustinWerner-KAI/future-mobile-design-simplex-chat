@@ -2,6 +2,12 @@
 
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
+## Walk through the current design
+
+**[Open the illustrated current-design walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
+
+23 captured states: mixed menu, private tools, image, channel, email sharing/recovery, connection handoff and all nine companion contexts. [Findings and next decisions](docs/CURRENT_DESIGN_WALKTHROUGH.md). Agent review; human testing remains open.
+
 ## Start here: first contributor walkthrough
 
 **Ready for participants · human results not yet collected.**

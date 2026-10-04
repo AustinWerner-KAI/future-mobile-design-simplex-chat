@@ -1,5 +1,8 @@
 # Current critique — inline relationship experience
 
+[Current-design walkthrough and audit](CURRENT_DESIGN_WALKTHROUGH.md) records 23 browser captures, exercised paths and unresolved integration gaps. [Capture/check evidence](current-design-walkthrough-check.json). Agent simulation; no participant or native-device validation.
+
+
 Reviewed 4 October 2026. This applies to [the current inline study](../unfold.html?mobile=1), its email handoff and the refreshed V2 comparison set. [The earlier combined-experience critique](CRITIQUE_EARLY_COMBINED.md) remains history. This is a design assessment, not participant research.
 
 ## What has progressed

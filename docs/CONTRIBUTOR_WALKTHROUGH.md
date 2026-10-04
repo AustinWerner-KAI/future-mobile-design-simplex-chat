@@ -1,5 +1,7 @@
 # First contributor walkthrough
 
+[Illustrated current-design tour and audit](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html) — use after first-discovery tasks to avoid leading participants.
+
 [Open the participant walkthrough in HTML](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html). Editable page: [studies/contributor-walkthrough.html](../studies/contributor-walkthrough.html).
 
 **Status: ready for participants. Human results: not yet collected.**

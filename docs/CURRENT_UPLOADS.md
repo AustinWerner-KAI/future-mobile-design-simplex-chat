@@ -1,5 +1,8 @@
 # Current uploads and source map
 
+**[Current design: illustrated walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
+
+
 Updated 4 October 2026. This index is the repository’s current reference. “Current” means part of the active exploration, not production-ready or validated by participants. All interactions are fictional local simulations.
 
 ## Start here: contributor walkthrough
