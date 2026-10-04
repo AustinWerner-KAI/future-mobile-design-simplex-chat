@@ -52,3 +52,7 @@ Supersede the earlier broad blue V2 palette with white, subtle blue materials, n
 ## Current-reference decision — 4 October 2026
 
 The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as where the project currently stands. Use it as the primary review, navigation and contribution destination. Keep inline/unfolding, email and nine-context experiments accessible as supporting work. Earlier audits describe the scope reviewed on their dates; they do not override this selection. This is a reference/status change, not new functionality or validation.
+
+## Flow architecture clarification — 4 October 2026
+
+The owner clarified that the octopus theory is the architecture of the flow. Human relationships determine the entities; the octopus model informs interaction coordination, locality, adaptation, continuity and disclosure. [Canonical rules](EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 remains the selected current reference.

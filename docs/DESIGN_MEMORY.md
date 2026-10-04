@@ -12,6 +12,10 @@ This is the central premise of the project. The octopus followed a different evo
 
 This is Austin’s design thesis, not an official SimpleX statement or roadmap. Evolution is not a ladder of progress. Do not claim that the octopus is the most evolved animal, the most distant animal from humans, universally communal, or literally has nine independent brains. Keep the useful analogy without turning metaphor into biological evidence.
 
+## Flow architecture
+
+**The octopus theory is the architecture of the flow. Human relationships organise the interface.** People and entities supply recognisable context; coordination, local action, adaptable space, retained state, deliberate sharing and coherent return govern movement through it. This applies to a grid or list without prescribing an octopus-shaped UI. It is an interaction architecture hypothesis, not a claim about SimpleX’s protocol implementation. [Read the flow rules and evaluation criteria](EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 remains the current review reference; implementation gaps remain explicit.
+
 ## What must survive every iteration
 
 1. **Different foundations must change behaviour.** No required global user identifier, contextual identity, deliberate connections and understandable membership should affect how people enter and move through the experience. Consult the [SimpleX research](SIMPLEX_RESEARCH.md); do not invent protocol capabilities.

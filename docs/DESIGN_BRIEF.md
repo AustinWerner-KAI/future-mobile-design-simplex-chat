@@ -4,6 +4,10 @@
 
 Updated 4 October 2026. Independent community exploration for [simplex.chat](https://simplex.chat/), maintained by AustinWerner-KAI. This document is the shared reference for the GitHub project, its public presentation website and its mobile interaction studies. It is not an official SimpleX brief, endorsement or roadmap.
 
+## Flow architecture
+
+**The octopus theory is the architecture of the flow. Human relationships organise the interface.** People and entities supply recognisable context; coordination, local action, adaptable space, retained state, deliberate sharing and coherent return govern movement through it. This applies to a grid or list without prescribing an octopus-shaped UI. It is an interaction architecture hypothesis, not a claim about SimpleX’s protocol implementation. [Read the flow rules and evaluation criteria](EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 remains the current review reference; implementation gaps remain explicit.
+
 ## Project overview
 
 Explore what messaging could become by 2028 when its interface grows from SimpleX’s different network and identity foundations. The mission is to help people act together without losing their place, draft or understanding of who can see what. The vision is a relationship that becomes a workspace when needed and settles back into a compact menu when the task is finished.

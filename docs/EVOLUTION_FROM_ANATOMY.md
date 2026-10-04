@@ -2,6 +2,27 @@
 
 > **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
 
+## The octopus theory is the architecture of the flow
+
+**Human relationships define what the interface contains. The octopus theory informs how the experience flows.** This is the project owner’s architectural design thesis, clarified on 4 October 2026.
+
+People, groups, publications, providers and potentially places give people recognisable destinations. The octopus model informs coordination, local action, flexible working space and controlled movement between those destinations. A grid or a list can express this architecture: neither requires a radial layout or an animal silhouette.
+
+Here, “architecture” means the intended organisation of interaction, state and transitions. It does not describe SimpleX’s protocol topology, its implementation architecture or a literal biological simulation. It is a design hypothesis to test, not proof that the current V2 screens already implement every rule.
+
+| Flow rule | Required behaviour | What to evaluate |
+|---|---|---|
+| Coordinate | A recognisable home connects the person to their entities and preserves orientation. | Can someone find an entity and return to their previous position? |
+| Act locally | Tools belong to the selected relationship or content, with source and audience visible. | Can someone act without reconstructing the context? |
+| Adapt the working space | The active task can unfold while its origin remains understandable. | Does expansion improve the task on a small screen and with a keyboard? |
+| Retain useful state | Drafts and selections survive supported task changes; retention limits are explicit. | What survives back, cancellation, switching and interruption? |
+| Cross deliberately | Content moves into another audience only through a clear, intentional action. | Can someone identify exactly what is shared, with whom and through which transport? |
+| Return coherently | Completing or dismissing a task restores an understandable relationship context. | Is the person’s position, draft and outcome still clear? |
+
+An example flow is **find Maya → open the relationship → prepare something privately → review its audience → share deliberately → return to Maya with the remaining draft intact**. This is a proposed interaction contract. V2 is the current review reference; the inline and email experiments supply partial demonstrations and expose gaps.
+
+The distinction gives contributors two questions: **Does the structure reflect human relationships? Does the flow preserve coordination, locality, continuity and deliberate disclosure?** The biological research below explains the origin of the idea; these interaction rules are the project’s interpretation.
+
 ## The starting idea
 
 Octopuses and humans share deep animal ancestry, then developed along different branches: octopuses are invertebrate molluscs; humans are vertebrate mammals. Octopuses have flexible arms and nervous-system arrangements unlike ours. Research on their inter-arm nerve connections offers an example of alternative structures supporting sensing and movement. [University of Chicago research summary](https://biologicalsciences.uchicago.edu/news/unique-octopus-nervous-system).
