@@ -6,11 +6,11 @@
 
 **Human relationships define what the interface contains. The octopus theory informs how the experience flows.** This is the project owner’s architectural design thesis, clarified on 4 October 2026.
 
-People, groups, publications, providers and potentially places give people recognisable destinations. The octopus model informs coordination, local action, flexible working space and controlled movement between those destinations. A grid or a list can express this architecture: neither requires a radial layout or an animal silhouette.
+People, groups, publications, providers and potentially places are proposed destinations. Whether people recognise and organise them this way requires research. The octopus model informs coordination, local action, flexible working space and controlled movement between those destinations. A grid or a list can express this architecture: neither requires a radial layout or an animal silhouette.
 
 Here, “architecture” means the intended organisation of interaction, state and transitions. It does not describe SimpleX’s protocol topology, its implementation architecture or a literal biological simulation. It is a design hypothesis to test, not proof that the current V2 screens already implement every rule.
 
-| Flow rule | Required behaviour | What to evaluate |
+| Flow rule | Intended behaviour (not a completion claim) | What to evaluate |
 |---|---|---|
 | Coordinate | A recognisable home connects the person to their entities and preserves orientation. | Can someone find an entity and return to their previous position? |
 | Act locally | Tools belong to the selected relationship or content, with source and audience visible. | Can someone act without reconstructing the context? |
@@ -25,13 +25,13 @@ The distinction gives contributors two questions: **Does the structure reflect h
 
 ## The starting idea
 
-Octopuses and humans share deep animal ancestry, then developed along different branches: octopuses are invertebrate molluscs; humans are vertebrate mammals. Octopuses have flexible arms and nervous-system arrangements unlike ours. Research on their inter-arm nerve connections offers an example of alternative structures supporting sensing and movement. [University of Chicago research summary](https://biologicalsciences.uchicago.edu/news/unique-octopus-nervous-system).
+Octopuses and humans share deep animal ancestry, then developed along different branches: octopuses are invertebrate molluscs; humans are vertebrate mammals. Octopuses have flexible arms and nervous-system arrangements unlike ours. A 2022 anatomical study identified intramuscular nerve cords connecting different arms. The researchers proposed possible roles in coordination and sensory feedback, but the cited report explicitly said the function of this particular arrangement was not yet known. It supports interest in alternative structures, not a proven control model for our interface. [University of Chicago research summary](https://biologicalsciences.uchicago.edu/news/unique-octopus-nervous-system).
 
 This is not an evolutionary ladder, and humans did not evolve from octopuses. We do not claim nine independent brains, that octopuses are universally communal or that they are the most evolved animal. Our useful question is: **if the foundations differ, why should the resulting interface follow the same path?**
 
 SimpleX describes communication without user IDs and contacts and groups held on the user’s device. Those foundations prompt a different set of interface questions from a global account directory. [SimpleX](https://simplex.chat/). This project explores the consequence; it is not a biological model of a network or a claim that every familiar messaging convention must disappear.
 
-Colour and texture changes provide the camouflage reference. Deliberate UI visibility is our interpretation of that observation, not the animal’s intention mapped into software. [Smithsonian Ocean](https://ocean.si.edu/ocean-life/invertebrates/how-octopuses-and-squids-change-color).
+Cephalopod colour changes provide the camouflage reference. Deliberate UI visibility is our interpretation of that observation, not the animal’s intention mapped into software. [Smithsonian Ocean](https://ocean.si.edu/ocean-life/invertebrates/how-octopuses-and-squids-change-color).
 
 ## Translate differences into testable design
 
@@ -45,11 +45,11 @@ Colour and texture changes provide the camouflage reference. Deliberate UI visib
 
 ## The progression we want contributors to see
 
-1. **Early appearance studies:** cleaner lists, spaces and lenses. Critique: a new appearance did not change the task.
-2. **Nature and anatomy:** branches, flexible regions and local points. Critique: literal geometry did not scale or prove usability.
+1. **Early appearance studies:** cleaner lists, spaces and lenses. Design assessment: the appearance changed more than the underlying interaction model.
+2. **Nature and anatomy:** branches, flexible regions and local points. Design concern: literal geometry might not scale; scalability and usability were not established by participant testing.
 3. **Complete flow and sculptural studies:** invites, images and plans. Critique: continuity was often visual while navigation still rebuilt context.
 4. **V2 foundations:** five concrete studies grounded invitations, profiles, verification and membership. Critique: still close to contemporary messaging.
-5. **Behaviour reset:** the relationship becomes the workspace; source and draft survive tool changes. Question: does unfolding help people recover and understand the audience?
+5. **Behaviour reset:** the relationship becomes the workspace; the supporting browser experiment retains the reply draft across the tested local tool changes within the page session; reload clears its state. Question: does unfolding help people recover and understand the audience?
 6. **Material refinement:** broad blue text, weak colour, Plum, warm paper and sage were explored. Current direction is white, subtle blue surfaces, neutral words, oat email and clay actions.
 7. **Email boundary:** prepare one useful detail privately; review exact text and destination; share a snapshot while retaining the external source and reply.
 
@@ -57,11 +57,15 @@ Colour and texture changes provide the camouflage reference. Deliberate UI visib
 
 ## How imagery is maintained
 
-The original nine bitmap boards remain historical artefacts with their original colours and inconsistencies. Repainting them would conceal why the thinking changed. Their gallery captions and catalogue now connect each to the V2/current progression. Current screen previews are rendered from the updated source, not generated substitutes for functioning controls. The editable SVG board summarises the approved visual direction.
+The original nine bitmap boards remain historical artefacts with their original colours and inconsistencies. Repainting them would conceal why the thinking changed. Their gallery captions and catalogue place them in the documented progression. V2 is the owner-selected current reference, not a claim that it was created last. Rendered browser previews capture particular recorded states; they are static images and do not demonstrate that every control works or that the entire flow is validated. Capture/provenance records are listed in [SOURCES.md](SOURCES.md) and [ASSET_PROVENANCE.json](ASSET_PROVENANCE.json). The editable SVG board summarises the approved visual direction.
 
 ## Build on the difference
 
 Choose one transition and compare it with a conventional flow. Record source retrieval, draft loss, audience mistakes and recovery. Contribute a competing sketch or implementation with its reason, what survives from the analogy and what you reject. Different evolution is our starting question, not proof that our answer is better.
+
+## Accuracy review — 4 October 2026
+
+Rechecked the cited University of Chicago, SimpleX and Smithsonian pages. Qualified the uncertain function of the inter-arm nerve arrangement; marked the entity model and flow rules as proposals; replaced the unsupported claim of demonstrated scaling failure with an open design concern; scoped draft retention to tested in-page changes; and distinguished static previews from implementation evidence. No participant results or verified protocol implementation are claimed.
 
 ## Evidence and attribution
 
