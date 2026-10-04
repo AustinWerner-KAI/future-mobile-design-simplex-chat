@@ -1,5 +1,7 @@
 # Contributing
 
+**Start here: [first contributor walkthrough](docs/CONTRIBUTOR_WALKTHROUGH.md).** Ready for participants; 15–20 minutes, six tasks, no coding needed. Human results are not yet collected.
+
 Before proposing a direction, read [the design memory](docs/DESIGN_MEMORY.md): the octopus’s different evolutionary path is the central analogy for an experience growing from SimpleX’s network and chat foundations. Explain the behavioural consequence of your proposal, not just its visual style.
 
 You do not need to code to participate. Start with one concrete interaction and explain what changes for the person using it.

@@ -1,5 +1,7 @@
 # First contributor walkthrough
 
+**Status: ready for participants. Human results: not yet collected.**
+
 Prepared 4 October 2026. **Human sessions have not started.** The published-route check is an agent review, recorded separately in [contributor-pilot-check.json](contributor-pilot-check.json). This guide is ready for a small first round; it contains no participant findings.
 
 ## Decision we need to make

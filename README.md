@@ -2,6 +2,15 @@
 
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
+## Start here: first contributor walkthrough
+
+**Ready for participants · human results not yet collected.**
+
+**[Open the 15–20 minute contributor walkthrough →](docs/CONTRIBUTOR_WALKTHROUGH.md)**
+
+Six tasks to check whether a new designer can follow the journey, find the current designs and locate an editable source. Includes a facilitator guide and blank observation sheet. No coding needed. [Report a finding](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new?template=usability-finding.yml). The recorded browser pilot is an agent review, separate from participant results.
+
+
 ![From anatomy to interface — the starting model](visuals/anatomy-to-interface.png)
 
 ## A contributor’s starting route
@@ -137,6 +146,3 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 
 [Research and evidence register](docs/SOURCES.md) · [documentation audit](docs/DOCUMENTATION_AUDIT.md) · [complete visual provenance](docs/ASSET_PROVENANCE.json). Original thinking, sourced facts, browser evidence and historical imagery are distinguished explicitly.
 
-## First contributor walkthrough
-
-[Use the short walkthrough guide](docs/CONTRIBUTOR_WALKTHROUGH.md) to test whether a new designer can understand the journey, identify current work and find an editable source. Human results are not yet collected; the separate published-route check is an agent review.

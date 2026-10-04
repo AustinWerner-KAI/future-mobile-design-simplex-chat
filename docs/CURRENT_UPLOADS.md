@@ -2,6 +2,10 @@
 
 Updated 4 October 2026. This index is the repository’s current reference. “Current” means part of the active exploration, not production-ready or validated by participants. All interactions are fictional local simulations.
 
+## Start here: contributor walkthrough
+
+**[Open the first contributor walkthrough](CONTRIBUTOR_WALKTHROUGH.md)** — ready for participants; six tasks, facilitator guide and observation sheet. Human results are not yet collected. [Agent route-check record](contributor-pilot-check.json).
+
 ## Follow the journey
 
 [Anatomy → early concepts → V2 → current unfolding](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) shows the visual progression. [The complete iteration record](ITERATIONS.md) retains the actual order, critiques and decisions. [The shared brief](DESIGN_BRIEF.md), [evolution rationale](EVOLUTION_FROM_ANATOMY.md) and [current critique](CRITIQUE.md) explain the direction and unresolved questions.
