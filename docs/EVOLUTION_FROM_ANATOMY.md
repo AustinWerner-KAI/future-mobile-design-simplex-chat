@@ -35,7 +35,7 @@ Cephalopod colour changes provide the camouflage reference. Deliberate UI visibi
 
 ## Translate differences into testable design
 
-| Biological inspiration | Design interpretation | Concrete expression | Limit |
+| Biological inspiration | Design interpretation | Proposed expression / supporting experiment | Limit |
 |---|---|---|---|
 | Alternative nervous-system organisation | Coordination with local action | Relationship index; tools beside the source | UI analogy, not a literal mapping to network topology |
 | Flexible arms | Space adapts to the task | A compact row unfolds into a working surface | Curves must not reduce legibility or touch space |
@@ -45,6 +45,8 @@ Cephalopod colour changes provide the camouflage reference. Deliberate UI visibi
 
 ## The progression we want contributors to see
 
+This is a thematic summary, not a precise creation timeline. Consult [ITERATIONS.md](ITERATIONS.md) for the dated sequence and [the current-design check record](current-design-walkthrough-check.json) for the scope of browser observations.
+
 1. **Early appearance studies:** cleaner lists, spaces and lenses. Design assessment: the appearance changed more than the underlying interaction model.
 2. **Nature and anatomy:** branches, flexible regions and local points. Design concern: literal geometry might not scale; scalability and usability were not established by participant testing.
 3. **Complete flow and sculptural studies:** invites, images and plans. Critique: continuity was often visual while navigation still rebuilt context.
@@ -53,7 +55,7 @@ Cephalopod colour changes provide the camouflage reference. Deliberate UI visibi
 6. **Material refinement:** broad blue text, weak colour, Plum, warm paper and sage were explored. Current direction is white, subtle blue surfaces, neutral words, oat email and clay actions.
 7. **Email boundary:** prepare one useful detail privately; review exact text and destination; share a snapshot while retaining the external source and reply.
 
-[V2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) is the current project reference. [The inline study](../unfold.html?mobile=1) is a supporting behavioural experiment. [The email storyboard](../studies/email-storyboard.html) follows one crossing between transports. [The visual progression](../studies/concept-progression.html) places these beside the original imagery.
+[V2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) is the current project reference. [The inline study](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1) is a supporting behavioural experiment. [The email storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/email-storyboard.html) follows one crossing between transports. [The visual progression](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) places these beside the original imagery.
 
 ## How imagery is maintained
 
