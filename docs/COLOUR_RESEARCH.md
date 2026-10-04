@@ -4,7 +4,7 @@
 
 ## Recommendation for this project
 
-Use Chalk as the light expression, Charcoal as the dark expression and Moss as a comparison. The inline experiment also offers distinctly different Citrus (chartreuse/forest) and Petal (pink/raspberry), selectable from the mobile Colour control. Keep reading surfaces quiet, concentrate the warm accent on an available action, and distinguish public channels with labelled publication shapes and a secondary material. Blue is no longer the current direction. This is a design choice for this product, not a scientifically “best” hue or a universal colour-psychology claim.
+Use Chalk as the light expression, Charcoal as the dark expression and Moss as a comparison. The inline experiment also offers distinctly different Citrus (chartreuse/forest) and Petal (pink/raspberry), selectable from the mobile Colour control. Keep reading surfaces quiet, concentrate the warm accent on an available action, and distinguish public channels with labelled publication shapes and a secondary material. Subtle blue material cues support familiarity in the current light direction; lettering stays neutral. This is a design choice for this product, not a scientifically “best” hue or a universal colour-psychology claim.
 
 ## What primary guidance supports
 
@@ -46,7 +46,7 @@ The initiator rejected Plum on 4 October 2026. Its broad purple surface gave the
 
 ## Service tones: one reading system
 
-Current recommendation: Chalk for the light reading study, Charcoal for the dark alternative. Keep the canvas and primary reading hierarchy neutral. Private messages use white (`#FFFFFF`), public channels use a pale sage surface (`#E6E9DF`), and email uses pale oat (`#EEE3D2`). Service labels, identity shapes and recipient information still carry meaning. The dark version uses closely related charcoal, sage-grey and brown-grey surfaces.
+Current recommendation: Chalk for the light reading study, Charcoal for the dark alternative. Keep the canvas and primary reading hierarchy neutral. Private messages use white (`#FFFFFF`), public channels use a pale blue surface (`#E7EFF5`), and email uses pale oat (`#EEE3D2`). Service labels, identity shapes and recipient information still carry meaning. The dark version uses closely related charcoal, sage-grey and brown-grey surfaces.
 
 Citrus, Petal and Moss remain comparison candidates, not claims of superior reading comfort. A palette cannot be called universally best for eyes. Text/background luminance contrast is a stronger supported basis for legibility than assigning a special benefit to a hue. Match the display to the user and environment, and test brightness, text size and preference on real devices. [W3C contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
 
@@ -54,4 +54,8 @@ The service text/preview pairs are now measured separately, bringing the sampled
 
 ## White canvas refinement
 
-Following the initiator’s suggestion, the light study now uses a white canvas and white private-message surfaces. Sage channels and oat email retain their subtle service tones. Pale colour occupies the relevant service surface rather than colouring the entire reading field. Charcoal remains the dark alternative. This is a visual refinement to test, not a universal claim about eye comfort.
+Following the initiator’s suggestion, the light study now uses a white canvas and white private-message surfaces. Pale blue channels and oat email retain their subtle service tones. Pale colour occupies the relevant service surface rather than colouring the entire reading field. Charcoal remains the dark alternative. This is a visual refinement to test, not a universal claim about eye comfort.
+
+## Familiarity refinement — subtle blue materials
+
+The current light study introduces pale blue channel surfaces (`#E7EFF5`), ice-blue private identity fills (`#F0F5F9`) and a powder-blue selected filter (`#DCE9F3`). The canvas and private reading surfaces remain white; external email remains oat. Text, links, labels and symbols remain neutral ink. These materials supersede sage in the current Chalk direction. The choice follows the initiator's preference for familiarity and neutral lettering; it does not establish medical harm from blue words. Contrast measurements cover the updated service tokens.

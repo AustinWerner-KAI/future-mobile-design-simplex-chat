@@ -27,7 +27,7 @@ Reject a concept that relies only on “fluid”, “futuristic”, blue gradien
 
 ## Current expression
 
-The [complete experience](../experience.html) explores nine connected contexts. The compact menu now explores warm Charcoal/Chalk/Moss materials with restrained ember/clay/sand actions. Blue was rejected by the initiator for this direction; colour is not the evolutionary thesis. The [2028 reset](2028_DESIGN_RESET.md) remains the audit that explains why the previous five V2 screens were an insufficient future vision.
+The [complete experience](../experience.html) explores nine connected contexts. The compact menu now explores warm Charcoal/Chalk/Moss materials with restrained ember/clay/sand actions. The initiator later refined the blue rejection: subtle blue materials are welcome for familiarity, while all lettering stays neutral; colour is not the evolutionary thesis. The [2028 reset](2028_DESIGN_RESET.md) remains the audit that explains why the previous five V2 screens were an insufficient future vision.
 
 ## Research anchor and spatial consequence
 
@@ -64,3 +64,7 @@ Use one coherent reading system: private messages in warm white, channels in mut
 ## White canvas — final light refinement
 
 The initiator suggested white as the background. The current light study uses a white canvas and white private messages, with muted sage channels and pale oat email. Treat this as the current direction superseding the earlier warm-paper canvas; keep a dark alternative and measure contrast.
+
+## Familiar blue, neutral words — 4 October 2026
+
+The initiator requested familiar blue tones subtly while prohibiting blue words. This supersedes the blanket blue rejection: the current Chalk study keeps its white canvas and white private-message surfaces, adds ice-blue private identity fills and selection surfaces, and uses pale blue for channels. Email retains warm oat. All lettering, including links and channel labels, stays neutral; blue is a material cue. The octopus thesis remains local expansion, coordination and deliberate disclosure. This is a visual preference, not a claim that blue text is medically harmful.
