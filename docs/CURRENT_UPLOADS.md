@@ -2,6 +2,9 @@
 
 > **Current project reference — [V2: five designs](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html). Start here.** Selected by the project owner on 4 October 2026. Inline/unfolding, email and nine-context pages are supporting experiments; dated audits below retain their original scope.
 
+
+**[V2.1.2.1 · complete interface mockup — 14 states](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html)** · [Play the refined candidate](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Home, conversations, groups, publications, providers, email, security and invitations. V2 remains the current reference.
+
 **[Next iteration: three priorities and how to contribute →](NEXT_STEPS.md)**
 
 

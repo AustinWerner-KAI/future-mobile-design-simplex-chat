@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-04T17:44:24.269Z",
+  "method": "Headless Chrome, simulated mobile viewport; no physical-device or participant testing",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "overflowChecks": 15,
+  "errors": [],
+  "shots": [
+    {
+      "id": "home",
+      "title": "01 · Your connections",
+      "description": "Individuals, groups, publications and providers share one menu. Shape, labels and subtle materials distinguish them.",
+      "href": "v21.html?mobile=1&version=2.1.2.1",
+      "step": ""
+    },
+    {
+      "id": "favourites",
+      "title": "02 · Keep people close",
+      "description": "Choose up to six favourites without changing audiences.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#",
+      "step": "Choose Edit favourites."
+    },
+    {
+      "id": "conversation",
+      "title": "03 · Private conversation",
+      "description": "Keep a private reply while preparing a separate shared title.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#maya",
+      "step": ""
+    },
+    {
+      "id": "proposal",
+      "title": "04 · Prepare locally",
+      "description": "The working title belongs to this relationship. Family is the explicit intended destination.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#maya",
+      "step": "Choose Proposal."
+    },
+    {
+      "id": "title-review",
+      "title": "05 · Cross deliberately",
+      "description": "Review the exact title and Family audience. Keep it private remains available.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#maya",
+      "step": "Choose Proposal, then Review title for Family."
+    },
+    {
+      "id": "family",
+      "title": "06 · Family",
+      "description": "Only the reviewed title arrives in the simulated group. Maya’s private reply stays with Maya.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#family",
+      "step": ""
+    },
+    {
+      "id": "members",
+      "title": "07 · Membership",
+      "description": "Group membership and proposal agreement remain distinct. Roles here are fictional samples.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#family",
+      "step": "Choose Members."
+    },
+    {
+      "id": "publication",
+      "title": "08 · Publication",
+      "description": "Public reading has a distinct audience label and no private-message composer.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#coast",
+      "step": ""
+    },
+    {
+      "id": "provider",
+      "title": "09 · Provider",
+      "description": "The café is the destination. Staff chat and email are ways to communicate inside that context.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#harbour",
+      "step": ""
+    },
+    {
+      "id": "email",
+      "title": "10 · Email source",
+      "description": "Addresses and the external transport boundary stay visible. Email has its own reply draft.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#harbour",
+      "step": "Choose Email."
+    },
+    {
+      "id": "email-review",
+      "title": "11 · Selected detail",
+      "description": "Family receives only reviewed text in simulation. Exclusions unfold on request.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#harbour",
+      "step": "Choose Email, Bring a detail to Family, then Review sharing."
+    },
+    {
+      "id": "security",
+      "title": "12 · Connection security",
+      "description": "An invitation is not identity verification. This prototype contains no real verification codes.",
+      "href": "v21.html?mobile=1&version=2.1.2.1#maya",
+      "step": "Choose Security."
+    },
+    {
+      "id": "invitation",
+      "title": "13 · Deliberate invitation",
+      "description": "Review the sample identity before creating a demo invitation. Pending is separate from accepted and verified.",
+      "href": "v21.html?mobile=1&version=2.1.2.1",
+      "step": "Choose New connection, incognito identity, then Create demo invitation."
+    },
+    {
+      "id": "quiet",
+      "title": "14 · Preview control",
+      "description": "Hide menu snippets explicitly. This is visual concealment, not authentication.",
+      "href": "v21.html?mobile=1&version=2.1.2.1",
+      "step": "Choose Hide previews."
+    }
+  ]
+}

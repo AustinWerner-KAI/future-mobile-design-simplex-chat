@@ -220,3 +220,7 @@ Added a [complete fictional journey](../studies/community-journey.html): Maya �
 ## V2.1.2.1 — response to manual test
 
 Preserved the restarted live-browser run and 23 captures in the [detailed manual report](COMMUNITY_MANUAL_TEST.md). Refined the compact community journey with one destination, valid default review, coherent dates, shorter local panels and focused testing. [Mockup](../v2121.html) · [fix evidence](community-ux-fixes-check.json). T13–T18 are tracked; real-phone/human testing remains open.
+
+## V2.1.2.1 complete interface publication — 4 October 2026
+
+Expanded the candidate mockup from two detail screens to fourteen actual interface states, with context links and instructions. Shared fixes remain in the common V2.1 runtime. Corrected Family’s proposal default to Saturday in the community scenario. Earlier variants and V2 reference remain available. [Gallery](../v2121.html) · [Capture and viewport evidence](v2121-interface-check.json). Agent browser checks are not participant or native-device validation.
