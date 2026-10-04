@@ -135,6 +135,10 @@ One conversation now unfolds at a time while the surrounding list stays in place
 
 The initiator asked for the website palette, integration into the existing app, deeper research and application of privacy/QR concepts. [The five studies](../v2.html) now cover the list, deliberate invitation, profile privacy, trust review and group membership. Colour and behaviour changes are explained in [the research](SIMPLEX_RESEARCH.md) and [integration proposal](APP_INTEGRATION.md). The sample QR encodes a design-study marker; no real invitation, keys, delivery or authentication are implemented. Browser checks passed for all five studies at 360, 390 and 1440 pixels, light/dark appearance and the main simulated decision paths. Native feasibility, large-contact performance and participant testing remain open.
 
+### 2028 reset — behaviour and colour
+
+4 October 2026. The initiator challenged V2 as too contemporary and its colouring as weak. [The reset audit](2028_DESIGN_RESET.md) questions the premise, considers seven directions and defines five testable goals. [The new experience study](../future.html) follows one intention through five moments, comparing Ink + signal, Porcelain + blue and Cobalt + ice. The octopus informs local action, coordination and continuity. Colour separates structure, content and action. This is a directed hypothesis with simulated membership, not evidence of usability or protocol feasibility. Earlier designs remain available for comparison.
+
 ## What the record means
 
 The critique above summarises the originating conversation; it is not user-study evidence. The opening analogy, visual generation order and working-prototype order are distinguished deliberately. All generated boards, all available working studies and the structural wireframes are linked from the [concept library](../concepts.html).

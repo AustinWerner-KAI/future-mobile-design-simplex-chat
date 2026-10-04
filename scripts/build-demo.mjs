@@ -50,3 +50,6 @@ for (const screen of v2Screens) {
   writeFileSync(new URL('../prototypes/v2/' + screen.file, import.meta.url), document);
 }
 console.log('Built five prototypes/v2 studies');
+
+writeFileSync(new URL('../future.html', import.meta.url), readFileSync(new URL('../prototypes/src/future-study.html', import.meta.url), 'utf8'));
+console.log('Built future.html experience hypothesis');
