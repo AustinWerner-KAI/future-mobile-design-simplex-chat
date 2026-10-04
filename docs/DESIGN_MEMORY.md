@@ -28,3 +28,7 @@ Reject a concept that relies only on “fluid”, “futuristic”, blue gradien
 ## Current expression
 
 The [complete experience](../experience.html) explores nine connected contexts. The compact menu and ink/porcelain/cyan hierarchy are the current visual direction, not immutable rules. The [2028 reset](2028_DESIGN_RESET.md) remains the audit that explains why the previous five V2 screens were an insufficient future vision.
+
+## Research anchor and spatial consequence
+
+The [expanded project map](SIMPLEX_PROJECT_MAP.md) grounds the different-evolution analogy in resource-based network addressing and endpoint application logic. The [surface audit](MOBILE_SURFACE_AUDIT.md) applies it to space: ordinary conversation remains the coordinating context; the active tool earns its surface; explanations unfold on request; simulation controls stay outside the proposed app.

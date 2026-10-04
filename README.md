@@ -26,7 +26,7 @@ The anatomy board opens the explanation. [The iteration record](docs/ITERATIONS.
 
 ## Nine connected designs
 
-**[Explore the complete experience and storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html)** — menu, conversation, image sharing, plans, QR connection, groups, privacy, trust and a future email hypothesis. Compare three palettes. [Read the design memory](docs/DESIGN_MEMORY.md), [rationale and contributor questions](docs/COMPLETE_EXPERIENCE.md), and [structural wireframes](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/experience-wireframes.html). The octopus’s different evolutionary path remains the central analogy for a different experience growing from SimpleX’s foundations.
+**[Explore the complete experience and storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html)** — menu, conversation, image sharing, plans, QR connection, groups, privacy, trust and a future email hypothesis. Compare three palettes. [Try full-screen mobile mode](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/experience.html?mobile=1#home). [Read the nine-screen surface audit](docs/MOBILE_SURFACE_AUDIT.md) and [expanded SimpleX project review](docs/SIMPLEX_PROJECT_MAP.md). [Read the design memory](docs/DESIGN_MEMORY.md), [rationale and contributor questions](docs/COMPLETE_EXPERIENCE.md), and [structural wireframes](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/experience-wireframes.html). The octopus’s different evolutionary path remains the central analogy for a different experience growing from SimpleX’s foundations.
 
 ## The 2028 reset — questioning V2
 

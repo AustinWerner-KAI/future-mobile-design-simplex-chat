@@ -51,3 +51,7 @@ The current website uses blues, cyan, white and pale-blue gradients, with some w
 The octopus analogy should help us ask how another set of foundations leads to another way of coordinating action. For SimpleX, that means local identity, deliberate connection and visible boundaries. It does not justify an eight-arm menu, global social graph, invented permissions or decorative biological shapes.
 
 Our future-experience study explores a conversation list with contextual expansion as one hypothesis, not a proposal to rebuild the present app. Email, anchored shared-image discussion and new shared-plan objects remain future experiments until their fit is established. The next contribution should explain both the human benefit and compatibility with the real app.
+
+## Expanded repository review
+
+4 October 2026: [the project map](SIMPLEX_PROJECT_MAP.md) now connects the network/agent/application layers to our nine designs. It records the implications for invitations, local identity, groups, verification and native implementation, and distinguishes published plans from implemented features. [The mobile-surface audit](MOBILE_SURFACE_AUDIT.md) applies this learning to the layouts.

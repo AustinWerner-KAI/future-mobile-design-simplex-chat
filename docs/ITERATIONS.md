@@ -152,3 +152,7 @@ The initiator questioned the presentation-like use of mobile space. The future s
 ### Nine connected contexts — a different evolutionary path
 
 The initiator approved the denser direction and asked to design the full set, then reaffirmed the octopus evolutionary analogy as the project’s central idea. [The complete experience](../experience.html) applies the hierarchy across nine contexts and three palettes, with working local decision states and a rendered storyboard. [Design memory](DESIGN_MEMORY.md) makes the premise durable for contributors; [the specification](COMPLETE_EXPERIENCE.md) records limitations and questions. Earlier work remains intact.
+
+### Mobile surface audit — task-specific space
+
+The initiator requested an audit of all nine screens and a deeper review of the SimpleX GitHub organisation. [The surface audit](MOBILE_SURFACE_AUDIT.md) records repeated chrome, disconnected actions, explanation-heavy layouts, reduced-height fit and image cropping. The revision keeps conversation composers anchored, brings decision controls beside their content, preserves whole images and moves scenario apparatus outside the app. [The project map](SIMPLEX_PROJECT_MAP.md) records the architecture and semantic implications. [The previous design set](../prototypes/experience-v1.html) remains available; [full-screen mode](../experience.html?mobile=1#home) allows direct surface evaluation. Native-device and participant evidence remain open.
