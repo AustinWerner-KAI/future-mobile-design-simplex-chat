@@ -43,9 +43,9 @@ The mixed menu now includes an external email context alongside private messages
 
 The next integration design must handle multiple accounts, authentication/reconnection, offline queues, attachments and any explicit sharing of email into chat. Shared UI must not imply shared security or silently change the audience.
 
-## Six colour expressions
+## Five colour expressions
 
-Chalk, Charcoal and Moss retain the quieter material studies. Plum, Citrus and Petal broaden hue and luminance substantially. The in-phone Colour control makes all six available in full-screen mode; switching material preserves the active relationship, tool and draft. These are comparison candidates rather than a final brand selection.
+Chalk, Charcoal and Moss retain the quieter material studies. Citrus and Petal broaden hue and luminance substantially. The in-phone Colour control makes all five available in full-screen mode; switching material preserves the active relationship, tool and draft. These are comparison candidates rather than a final brand selection.
 
 ## Tradeoffs and the next test
 
@@ -53,4 +53,8 @@ An expanded row pushes other conversations down. Long histories or many objects 
 
 Compare this variant with the nine-screen study using the same task: open Maya, draft a reply, shape a private proposal, explain exactly what sharing discloses, share one version, then return to the unsent reply. Interrupt by switching to Alex and returning. Record wrong audience assumptions, lost context and recovery effort. Also test long lists, large text and screen-reader traversal. Retain a conventional destination if it makes those tasks clearer.
 
-Browser checks cover independent drafts, tool continuity, duplicate prevention, folding, Back, concealment, 96 tool/palette/window layouts and short/landscape full-screen layouts. They establish operation and geometry, not participant usability, native behaviour or protocol feasibility.
+Browser checks cover independent drafts, tool continuity, duplicate prevention, folding, Back, concealment, 80 tool/palette/window layouts and short/landscape full-screen layouts. They establish operation and geometry, not participant usability, native behaviour or protocol feasibility.
+
+## Next email iteration
+
+The [email evolution experiment](EMAIL_EVOLUTION.md) advances this baseline with private detail preparation, explicit crossing into Maya’s conversation and email queue/uncertain-outcome states. The previous reading-and-reply iteration is preserved in Git history at commit `9b216a3`.

@@ -64,3 +64,5 @@ writeFileSync(new URL('../unfold.html', import.meta.url), readFileSync(new URL('
 console.log('Built unfold.html local relationship experiment');
 writeFileSync(new URL('../studies/materials.html', import.meta.url), readFileSync(new URL('../prototypes/src/materials.html', import.meta.url), 'utf8'));
 console.log('Built studies/materials.html colour comparison');
+writeFileSync(new URL('../studies/email-storyboard.html', import.meta.url), readFileSync(new URL('../prototypes/src/email-storyboard.html', import.meta.url), 'utf8'));
+console.log('Built studies/email-storyboard.html email evolution');

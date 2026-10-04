@@ -52,3 +52,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{o
 .device .channel-row .entry-kind{color:var(--channelInk)}
 
 .device .email-row{border-left:1px dashed var(--muted);padding-left:12px;background:var(--field);border-radius:3px;margin:8px 0}
+/* The same restrained service materials as the inline experiment. */
+.device{--privateSurface:#30332e;--channelFill:#303b31;--channelInk:#c3cdbb;--emailSurface:#3b332a}
+.device[data-palette=day]{--privateSurface:#fffbf2;--channelFill:#e6e9df;--channelInk:#55604d;--emailSurface:#eee3d2}
+.device[data-palette=cobalt]{--privateSurface:#34473a;--channelFill:#3b4933;--channelInk:#cdd5be;--emailSurface:#423b30}
+.device .private-row{background:var(--privateSurface);border-radius:14px;padding-left:12px;padding-right:12px;margin:8px 0}.device .email-row{background:var(--emailSurface)}

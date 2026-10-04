@@ -48,3 +48,15 @@ The [nine-screen mobile agency audit](KINGS_MOBILE_AUDIT.md) records the publish
 ## Email and broader material variation
 
 The inline menu now includes email as an external transport with explicit From/To addresses and independent drafts. Never let a unified UI imply that email inherits SimpleX security, or silently share email into chat. The in-phone Colour selector compares six distinct expressions: Chalk, Charcoal, Moss, Plum, Citrus and Petal. Theme changes preserve task state.
+
+## Email innovation — carry a detail, keep the source
+
+The [email evolution study](EMAIL_EVOLUTION.md) adds a private editable detail, exact recipient/content review and a snapshot handoff into Maya. The original email and independent email reply remain separate. Email replies now explore local queues, cancellation, uncertain outcomes and server acceptance without claiming delivery. The octopus premise is local action plus a deliberate crossing between contexts, not visual imitation.
+
+## Plum rejected — 4 October 2026
+
+The initiator rejected the Plum treatment. Remove it from active options and use Chalk for the email journey. Colour variation must serve reading, hierarchy and action; an unfamiliar full-field hue is not a future-design argument. Earlier six-palette notes record the exploration, not the current selection.
+
+## Subtle service tones
+
+Use one coherent reading system: private messages in warm white, channels in muted sage, email in pale oat. Preserve the same text hierarchy and clear labels across all three. In the dark alternative, use related neutral grey materials. Recommended light/dark directions are Chalk and Charcoal; other themes are comparisons. Do not claim a universal best hue or medical eye benefit.

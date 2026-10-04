@@ -67,7 +67,11 @@ Maintainers curate a coherent direction and record decisions with their evidence
 
 ## Latest experiment: a relationship unfolds
 
-[Try the warm inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Six distinct colour studies—Chalk, Charcoal, Moss, Plum, Citrus and Petal—are available from the in-phone Colour control. Private messages, public channels and speculative external email share one menu with explicit type/audience boundaries. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
+[Try the warm inline experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html) · [Full-screen mobile](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1). Maya expands within the conversation list. Proposal, image and security tools stay attached to that relationship; the reply draft remains separate from shared objects. Five colour studies—Chalk, Charcoal, Moss, Citrus and Petal—are available from the in-phone Colour control. Private messages, public channels and speculative external email share one menu with explicit type/audience boundaries. [Read the rationale and comparison task](docs/INLINE_EVOLUTION.md).
+
+## Email as a connected experience
+
+[Open the booking email](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1#Harbour%20bookings). [Follow the visual storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/email-storyboard.html). Choose **Carry a detail**, prepare it privately, review what Maya receives and share one snapshot. The email reply stays separate. Delivery scenarios explore queued and uncertain outcomes. [Read the mobile brief, state model and integration requirements](docs/EMAIL_EVOLUTION.md). This is a speculative local simulation, with no connected mailbox.
 
 ## Try and edit the prototype
 

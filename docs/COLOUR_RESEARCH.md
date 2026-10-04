@@ -4,7 +4,7 @@
 
 ## Recommendation for this project
 
-Use Chalk as the light expression, Charcoal as the dark expression and Moss as a comparison. The inline experiment also offers distinctly different Plum (deep purple/peach), Citrus (chartreuse/forest) and Petal (pink/raspberry), selectable from the mobile Colour control. Keep reading surfaces quiet, concentrate the warm accent on an available action, and distinguish public channels with labelled publication shapes and a secondary material. Blue is no longer the current direction. This is a design choice for this product, not a scientifically “best” hue or a universal colour-psychology claim.
+Use Chalk as the light expression, Charcoal as the dark expression and Moss as a comparison. The inline experiment also offers distinctly different Citrus (chartreuse/forest) and Petal (pink/raspberry), selectable from the mobile Colour control. Keep reading surfaces quiet, concentrate the warm accent on an available action, and distinguish public channels with labelled publication shapes and a secondary material. Blue is no longer the current direction. This is a design choice for this product, not a scientifically “best” hue or a universal colour-psychology claim.
 
 ## What primary guidance supports
 
@@ -30,7 +30,7 @@ All private entries retain the quiet reading field. Channel colour indicates con
 
 ## What we measured
 
-Run `node scripts/check-colour.cjs` with Playwright available. The check reads resolved CSS tokens from both generated pages across the three baseline and six inline palettes and measures 90 foreground/background pairs. It covers body/secondary/placeholder/action/channel text and essential field/focus pairs. The result is recorded in [colour-contrast.json](colour-contrast.json).
+Run `node scripts/check-colour.cjs` with Playwright available. The check reads resolved CSS tokens from both generated pages across the three baseline and five inline palettes and measures 100 foreground/background pairs. It covers body/secondary/placeholder/action/channel text and essential field/focus pairs. The result is recorded in [colour-contrast.json](colour-contrast.json).
 
 This is a token-pair check, not a full rendered accessibility audit. It does not cover every disclosure surface, photograph, disabled opacity, animation frame, device display, colour-vision condition or native component. Full WCAG conformance is not claimed. Large text, forced colours, sunlight/low-light readability and physical-device appearance remain evaluation tasks.
 
@@ -39,3 +39,15 @@ This is a token-pair check, not a full rendered accessibility audit. It does not
 SimpleX’s v6.5 announcement introduced channels as a beta; its current privacy documentation labels public channels experimental. Public channel content is visible to relays, while participation privacy has its own model. A unified menu must preserve that difference from private messaging. [Official announcement](https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html), [current privacy documentation](https://github.com/simplex-chat/simplex-chat/blob/stable/PRIVACY.md).
 
 The sample channels here are public publications with comments off. These are fictional configurations, not complete implementations of the channel protocol. Private replies and public posting must never share an ambiguous composer.
+
+## Rejected direction: Plum
+
+The initiator rejected Plum on 4 October 2026. Its broad purple surface gave the reading context an intrusive identity without adding meaningful hierarchy. It is removed from the current choices; the email storyboard returns to Chalk. Earlier imagery and the proposal remain in Git history, not as a recommendation. Novelty alone is insufficient evidence for a palette.
+
+## Service tones: one reading system
+
+Current recommendation: Chalk for the light reading study, Charcoal for the dark alternative. Keep the canvas and primary reading hierarchy neutral. Private messages use warm white (`#FFFBF2` when expanded), public channels use a pale sage surface (`#E6E9DF`), and email uses pale oat (`#EEE3D2`). Service labels, identity shapes and recipient information still carry meaning. The dark version uses closely related charcoal, sage-grey and brown-grey surfaces.
+
+Citrus, Petal and Moss remain comparison candidates, not claims of superior reading comfort. A palette cannot be called universally best for eyes. Text/background luminance contrast is a stronger supported basis for legibility than assigning a special benefit to a hue. Match the display to the user and environment, and test brightness, text size and preference on real devices. [W3C contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
+
+The service text/preview pairs are now measured separately, bringing the sampled pair count to 100. This does not measure visual fatigue or establish an eye-health benefit.
