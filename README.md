@@ -8,6 +8,16 @@
 
 23 captured states: mixed menu, private tools, image, channel, email sharing/recovery, connection handoff and all nine companion contexts. [Findings and next decisions](docs/CURRENT_DESIGN_WALKTHROUGH.md). Agent review; human testing remains open.
 
+## Help build the next iteration
+
+**[Next steps and contribution opportunities →](docs/NEXT_STEPS.md)**
+
+1. Bring connections, groups and profiles into the unfolding experience.
+2. Design draft recovery and complete image handling.
+3. Test with real designers on phones, including keyboards and larger text.
+
+These are open priorities, not completed work or a release schedule.
+
 ## Start here: first contributor walkthrough
 
 **Ready for participants · human results not yet collected.**

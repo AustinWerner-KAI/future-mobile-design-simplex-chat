@@ -1,5 +1,8 @@
 # Project documentation — start here
 
+**[Next iteration: three priorities and how to contribute →](NEXT_STEPS.md)**
+
+
 **[Current design: illustrated walkthrough and audit →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/current-design-walkthrough.html)**
 
 

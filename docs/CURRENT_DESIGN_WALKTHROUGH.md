@@ -16,6 +16,8 @@ The companion study additionally exercised image failure/retry and point annotat
 
 ## Findings and next iteration
 
+[Published next steps and contribution opportunities](NEXT_STEPS.md).
+
 | Priority | Finding | Consequence | Next design decision |
 |---|---|---|---|
 | High | New connection navigates from `unfold.html` into `experience.html`. The pages have separate state models. | The person leaves the coordinating surface; the demonstration does not prove inline draft continuity through connection creation. | Integrate invitation preparation, disclosure, pending and revoke states into the inline model, then test return to the original draft. |
