@@ -80,3 +80,7 @@ For local browsing run `python3 -m http.server 8000`. No app install or framewor
 ## Evidence and attribution
 
 [Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.
+
+### V2.1 candidate refinement — 4 October 2026
+
+[Updated three-option mockups](../v21-options.html) · [refinement record and limits](V21_REFINEMENT.md). Compact favourites, individual identity marks, editable overlapping collections and retained tool context. V2 remains the current reference.
