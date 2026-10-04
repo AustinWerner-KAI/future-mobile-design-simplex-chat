@@ -1,0 +1,247 @@
+{
+  "date": "2026-10-04",
+  "timezone": "Asia/Dubai",
+  "method": "Agent-operated manual live-browser walkthrough via computer-use controls; browser-page screenshots only. No continuous video, desktop or microphone recording.",
+  "url": "https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/community-journey.html",
+  "tested_revision": "7b9ca2006d4ad4e3726a825a0fbe78521aa5e789",
+  "run": "Restarted at user request; earlier three captures excluded",
+  "captures": [
+    {
+      "file": "studies/community-manual-test/03-restart-clean-state.jpg",
+      "label": "restart-clean-state",
+      "time": "2026-10-04T17:17:45.982Z",
+      "sha256": "268183b97ce5613a8343f401244948fb608bb0a253012813d4eaab9616b81737",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/04-01-maya-private-draft.jpg",
+      "label": "01-maya-private-draft",
+      "time": "2026-10-04T17:18:04.044Z",
+      "sha256": "c09f587e15410298f5f259959fd0f46cfe0f4c1bfc1fb762e626344c508be375",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/05-02-local-proposal.jpg",
+      "label": "02-local-proposal",
+      "time": "2026-10-04T17:18:04.450Z",
+      "sha256": "113c9ba76479a9b546b5f193906e4dcb2da91c60aac24cd6b7537ac39fdf68a1",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/06-03-proposal-prepared.jpg",
+      "label": "03-proposal-prepared",
+      "time": "2026-10-04T17:18:15.174Z",
+      "sha256": "8d022cd442c4b6f554015b679e934fc6de11ee3b93415f25aeef717231434a20",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/07-04-family-sharing-review.jpg",
+      "label": "04-family-sharing-review",
+      "time": "2026-10-04T17:18:15.580Z",
+      "sha256": "d1a4392c95f30a7e952ebd183474807e571a1676fb4ffa038338303f099e700d",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/08-05-cancelled-private.jpg",
+      "label": "05-cancelled-private",
+      "time": "2026-10-04T17:18:27.383Z",
+      "sha256": "430918e2863ba19163f64ddce43b0e3e2c5c1756e5482f14683269c1ff6f000d",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/09-06-title-shared-only.jpg",
+      "label": "06-title-shared-only",
+      "time": "2026-10-04T17:18:28.027Z",
+      "sha256": "abb56b7eb6a73080dd7192f43de316ff66b7516ab65d89e6600c5f0e8ceba2c5",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/10-07-family-title-no-private-history.jpg",
+      "label": "07-family-title-no-private-history",
+      "time": "2026-10-04T17:18:47.945Z",
+      "sha256": "6de6d75d4afa45fff9277e909ef9c7e3e0e47b470136fb6ec95298f224f53b31",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/11-08-family-independent-draft.jpg",
+      "label": "08-family-independent-draft",
+      "time": "2026-10-04T17:18:48.333Z",
+      "sha256": "58a2bd74623246a2ff9c3fd2f08cf048a16a33a928b092995270a308796ac870",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/12-09-provider-no-group-history.jpg",
+      "label": "09-provider-no-group-history",
+      "time": "2026-10-04T17:19:16.780Z",
+      "sha256": "169b9dd774a3d07a38b6924187d8377b5e2b579509513920638c35ef8119b1e2",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/13-10-external-email.jpg",
+      "label": "10-external-email",
+      "time": "2026-10-04T17:19:17.186Z",
+      "sha256": "1b956ccccd1ba12c915f0ab317a225ec9ecf68b8b184330731acd357f55d73e6",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/14-11-prepare-selected-email-detail.jpg",
+      "label": "11-prepare-selected-email-detail",
+      "time": "2026-10-04T17:19:25.488Z",
+      "sha256": "b94e0d894abdee02df05cbc0d7eb4bfff071188b9a749c4ffc5ab48cfd7ce061",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/15-12-email-audience-review.jpg",
+      "label": "12-email-audience-review",
+      "time": "2026-10-04T17:19:36.013Z",
+      "sha256": "b530f111298fc6c44bcd5ec7912d0e9e5215a6424b778d33ec7ebf8983683daf",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/16-13-cancel-review-excerpt-retained.jpg",
+      "label": "13-cancel-review-excerpt-retained",
+      "time": "2026-10-04T17:19:36.418Z",
+      "sha256": "24aea4f2f7e482605286078c49596210b44c902738ae82c054f9e5e6c64c6537",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/17-14-excerpt-shared-email-draft-retained.jpg",
+      "label": "14-excerpt-shared-email-draft-retained",
+      "time": "2026-10-04T17:19:48.051Z",
+      "sha256": "486d67a49eed1013a69f2e9f63d3743fb726f5caf292eefc351398de9e0a7981",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/18-15-family-excerpt-and-retained-draft.jpg",
+      "label": "15-family-excerpt-and-retained-draft",
+      "time": "2026-10-04T17:19:51.496Z",
+      "sha256": "d93296c48893f769c217b1f136f12f5dc8115c794a9a4bead8835e4a24bebaf7",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/19-16-return-maya-original-draft.jpg",
+      "label": "16-return-maya-original-draft",
+      "time": "2026-10-04T17:20:07.367Z",
+      "sha256": "30906dc694b64c3579ace387a447f18d065d6aba1a2b1b1fb63d0766450f838b",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/20-17-coherent-home-return.jpg",
+      "label": "17-coherent-home-return",
+      "time": "2026-10-04T17:20:10.807Z",
+      "sha256": "2cc82e342eca69671365cf826170236295d1e13e6ac8a3c75671ac5d153e8d68",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/21-18-search-provider.jpg",
+      "label": "18-search-provider",
+      "time": "2026-10-04T17:20:27.604Z",
+      "sha256": "44441111c3352c5f96ad6c5e7cd77603a6c162515bccb6c56c13c56d75bd01d0",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/22-19-email-reopened-draft-intact.jpg",
+      "label": "19-email-reopened-draft-intact",
+      "time": "2026-10-04T17:20:42.076Z",
+      "sha256": "1753450a0e8ac1797a11a2f19f782c8aa367b1df63692e48ab32aaf8eef49e6a",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/23-20-six-steps-complete.jpg",
+      "label": "20-six-steps-complete",
+      "time": "2026-10-04T17:20:45.525Z",
+      "sha256": "53a667c9e25814104ad67392afbd0e54195d11306c7550cbb2b1964d1551a7e6",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/24-21-inspect-email-draft-discrepancy.jpg",
+      "label": "21-inspect-email-draft-discrepancy",
+      "time": "2026-10-04T17:21:02.125Z",
+      "sha256": "ed6d47bfc1ee7d2ed49922f6c8013d85ca267180b6ec0c922da45ad141dabd99",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    },
+    {
+      "file": "studies/community-manual-test/25-22-final-home-checklist-complete.jpg",
+      "label": "22-final-home-checklist-complete",
+      "time": "2026-10-04T17:21:29.450Z",
+      "sha256": "b435e80f754cb66d4d98323ff6ad71a7847d1758837f804e902e2911bc670add",
+      "dimensions_px": [
+        1054,
+        765
+      ]
+    }
+  ],
+  "results": {
+    "reviewer_steps_completed": 6,
+    "reported_browser_console_errors": 0,
+    "human_participant_testing": false,
+    "physical_phone_testing": false,
+    "video_assembled": false
+  }
+}

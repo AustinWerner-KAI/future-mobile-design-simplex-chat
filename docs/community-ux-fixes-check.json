@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04T17:32:38.145Z",
+  "method": "Agent-operated Chrome verification of fixes; original manual baseline is separate",
+  "checks": [
+    "Prefilled valid title is reviewable",
+    "No competing Maya share action in community proposal",
+    "Empty title prevents sharing",
+    "Proposal and review occupy one local object",
+    "Group fixture matches Saturday scenario",
+    "Email exclusions available on demand",
+    "Expanded exclusions remain readable",
+    "Focused mode removes outer page scrolling",
+    "Focused prototype fits viewport 320",
+    "Focused prototype fits viewport 390",
+    "Focused prototype fits viewport 1440",
+    "Exiting returns focus to test entry",
+    "No JavaScript errors"
+  ]
+}

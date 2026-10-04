@@ -12,3 +12,5 @@
 .strip-person{flex-basis:6em}.avatar,.strip-person .avatar{width:2.75em;height:2.75em}.publication .avatar,.strip-person.publication .avatar{width:2.5em;height:2.75em}.round{width:2.2em;height:2.2em;min-width:44px;min-height:44px}.tile strong,.strip-person strong{max-width:100%;word-break:normal;overflow-wrap:normal;hyphens:auto}.strip-person small{overflow-wrap:normal}.identity-mark{font-size:1em}.grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,6em),1fr))}.type-mark{font-size:16px}.feedback{max-height:20dvh;overflow:auto}
 .relationship-flow .tabs{position:sticky;top:0;z-index:2;background:#fff;padding:8px 0;margin-top:0;border-bottom:1px solid #c7cbc3}
 summary{justify-content:space-between;gap:12px}summary::after{content:'＋';font-size:18px;flex:none}details[open]>summary::after{content:'−'}
+
+.community-next{display:flex;flex-wrap:wrap;gap:8px;padding:8px 0}.community-next button{border:1px solid #c7cbc3;border-radius:18px}.sharing-help{margin-top:8px}.sharing-help summary{font-size:13px}

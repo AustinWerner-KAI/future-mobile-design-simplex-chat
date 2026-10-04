@@ -183,3 +183,7 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 ## Small-community journey and live todo record
 
 [Try the journey and session checklist](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/community-journey.html) · [Project task checklist](docs/NEXT_STEPS.md). T04 is a prototype milestone; real participant testing remains open.
+
+## V2.1.2.1 — manual-test refinement
+
+[View the mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) · [Detailed manual report](docs/COMMUNITY_MANUAL_TEST.md) · [Fix checks](docs/community-ux-fixes-check.json). Five findings addressed; original live-browser captures preserved. No continuous video was recorded.

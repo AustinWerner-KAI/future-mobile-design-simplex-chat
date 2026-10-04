@@ -216,3 +216,7 @@ Made the refined V2.1 candidates playable inside the comparison gallery and link
 ## Small-community flow and task tracker — 4 October 2026
 
 Added a [complete fictional journey](../studies/community-journey.html): Maya → reviewed title to Family → provider email → reviewed excerpt to Family → retained Maya draft. The [todo record](NEXT_STEPS.md) now uses stable IDs and evidence-linked completion. Session test ticks are manual and temporary; human testing remains open. [Flow and limits](COMMUNITY_JOURNEY.md).
+
+## V2.1.2.1 — response to manual test
+
+Preserved the restarted live-browser run and 23 captures in the [detailed manual report](COMMUNITY_MANUAL_TEST.md). Refined the compact community journey with one destination, valid default review, coherent dates, shorter local panels and focused testing. [Mockup](../v2121.html) · [fix evidence](community-ux-fixes-check.json). T13–T18 are tracked; real-phone/human testing remains open.

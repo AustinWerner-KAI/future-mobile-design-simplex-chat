@@ -1,5 +1,5 @@
 {
-  "executed_at_utc": "2026-10-04T17:07:05.907Z",
+  "executed_at_utc": "2026-10-04T17:28:24.299Z",
   "method": "Agent-operated Chrome simulation of local generated build; not human or physical-device testing",
   "target": "v21.html",
   "viewport": {
@@ -44,15 +44,15 @@
     },
     {
       "file": "studies/v21-captures/03-proposal.png",
-      "sha256": "00c31acd1e6dcf74ebd36bbecd523488c086f1777b5ae1d18e69ada61fb7af91"
+      "sha256": "afcc4d32b3a72590286083475f463f29f3762f323fb83fde9c988984bc9b089b"
     },
     {
       "file": "studies/v21-captures/04-provider-email.png",
-      "sha256": "5f4d1cd817338e8d825e285a672696ebf732462ae74ae67e282265b4ab67f335"
+      "sha256": "32e3287aedaaff49f0f630464ea622502a2c2014425ab8f43f5cceb3526cc94a"
     },
     {
       "file": "studies/v21-captures/05-review.png",
-      "sha256": "bb07dac35c1e52aedd13e2c15b45734aa32503767a9e4d678091fca3ecd0e600"
+      "sha256": "c9038e0f0e25937d0cffe08a6648f9506077c0087d25a7aa1475ced413023185"
     },
     {
       "file": "studies/v21-captures/06-maya-return.png",

@@ -41,3 +41,7 @@ Browser captures of fictional local simulation, not real delivery:
 ![Proposal title reviewed for Family](../studies/community-captures/proposal-review.png)
 
 ![Email excerpt reviewed for Family](../studies/community-captures/email-review.png)
+
+## V2.1.2.1 — manual-test refinement
+
+[View the mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) · [Detailed manual report](COMMUNITY_MANUAL_TEST.md) · [Fix checks](community-ux-fixes-check.json). Five findings addressed; original live-browser captures preserved. No continuous video was recorded.
