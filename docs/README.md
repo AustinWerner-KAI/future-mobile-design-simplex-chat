@@ -1,6 +1,6 @@
 # Project documentation — start here
 
-**[First contributor walkthrough →](CONTRIBUTOR_WALKTHROUGH.md)**
+**[HTML contributor walkthrough →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html)**
 
 Ready for participants. Six tasks, 15–20 minutes, no coding needed. Human results are not yet collected; the [browser pilot](contributor-pilot-check.json) is an agent review.
 

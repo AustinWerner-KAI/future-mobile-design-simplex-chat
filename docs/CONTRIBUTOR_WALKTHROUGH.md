@@ -1,5 +1,7 @@
 # First contributor walkthrough
 
+[Open the participant walkthrough in HTML](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html). Editable page: [studies/contributor-walkthrough.html](../studies/contributor-walkthrough.html).
+
 **Status: ready for participants. Human results: not yet collected.**
 
 Prepared 4 October 2026. **Human sessions have not started.** The published-route check is an agent review, recorded separately in [contributor-pilot-check.json](contributor-pilot-check.json). This guide is ready for a small first round; it contains no participant findings.

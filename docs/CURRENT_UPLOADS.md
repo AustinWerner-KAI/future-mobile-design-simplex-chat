@@ -4,7 +4,7 @@ Updated 4 October 2026. This index is the repository’s current reference. “C
 
 ## Start here: contributor walkthrough
 
-**[Open the first contributor walkthrough](CONTRIBUTOR_WALKTHROUGH.md)** — ready for participants; six tasks, facilitator guide and observation sheet. Human results are not yet collected. [Agent route-check record](contributor-pilot-check.json).
+**[Open the HTML contributor walkthrough](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html)** — ready for participants; six tasks, facilitator guide and observation sheet. Human results are not yet collected. [Agent route-check record](contributor-pilot-check.json).
 
 ## Follow the journey
 
