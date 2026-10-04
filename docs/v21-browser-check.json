@@ -1,5 +1,5 @@
 {
-  "executed_at_utc": "2026-10-04T16:17:14.532Z",
+  "executed_at_utc": "2026-10-04T16:25:39.978Z",
   "method": "Agent-operated Chrome simulation of local generated build; not human or physical-device testing",
   "target": "v21.html",
   "viewport": {
@@ -36,43 +36,43 @@
   "captures": [
     {
       "file": "studies/v21-captures/01-home.png",
-      "sha256": "a5ac08673e7e2710319a8c9bac2093bea7c272590e29f90ca0af235b90111ad1"
+      "sha256": "4456ebaa6e1152b4c42d765618e7c4703a97b2c4d5a5fcc31cf3f4760d70d6c8"
     },
     {
       "file": "studies/v21-captures/02-list.png",
-      "sha256": "2309db5bdc628ddf2f81f76f1f7ee5b100022ce15380305396311d0eb1dcb570"
+      "sha256": "efee7f2689860b5fcad84fa45b3d7edccd5042bddb60ec54134b5e5a48b657a5"
     },
     {
       "file": "studies/v21-captures/03-proposal.png",
-      "sha256": "4d577beb4fd5ab9e8287591416a3e4a5ec323cf848bfc8ab17fe8dd2ea1dfd60"
+      "sha256": "ec6de18fa9d9ec0d06e8e128a3465935a9e4c200647a9070b45f39ac5bac0e43"
     },
     {
       "file": "studies/v21-captures/04-provider-email.png",
-      "sha256": "0811a37e0e72463604c4f5fbb31eef6a51f55ad03c40d4c567289b2a0302bdb9"
+      "sha256": "d644b52ec457ffd786886ef602c8d5d46cce8b67b15e1dc67285db306f73b7e1"
     },
     {
       "file": "studies/v21-captures/05-review.png",
-      "sha256": "ee1659610482ff40d06d6d1412904f92f08d5f42cb15cbed1f994a999fd59e44"
+      "sha256": "336f65145b6d110077d30ca20967ca5669661d1901f14cbee8dcaacfe0451fd6"
     },
     {
       "file": "studies/v21-captures/06-maya-return.png",
-      "sha256": "5698d0431856a05155d751b2aed8afe5b23d02352a7a7fb7aaec7ce8c669776d"
+      "sha256": "c4996e9c226a0cdb25b82f4ee7ec41dad81fba8e742f26431bd9cc7dc1ccf6e8"
     },
     {
       "file": "studies/v21-captures/07-publication.png",
-      "sha256": "329f6471d7db4ee9b13aa6c848aaedafea3b94bb9108116d594be1eb2499695f"
+      "sha256": "f0cf55b8692499de2c4c3a966a67626f32890888cbbb27af51fe8dc011ca209f"
     },
     {
       "file": "studies/v21-captures/08-group.png",
-      "sha256": "bcd28823a14e3a73b9aba36364623238a95fb86e53286ccc05b185cf67a345a7"
+      "sha256": "ed2fd0690dec7c8a7a49ef0d1d8b3e491da94be5ec4ee6f1b160a4f97f378ba4"
     },
     {
       "file": "studies/v21-captures/09-invitation.png",
-      "sha256": "78683662cad074d7406900858414797d2599d8d28abc6b90eebde8443776bda0"
+      "sha256": "cefac9a76ffb48505e3fce16bb5ae0c648eff4670facadb4ca0210bf7c6059a9"
     },
     {
       "file": "studies/v21-captures/10-desktop.png",
-      "sha256": "5c21ddff72106e7c233d8b269f446faac726d7ac91cfb9d0a59b5a951d2d14c8"
+      "sha256": "a39f026315eda0079765d8e65adeee501cf8b8ee330bcf86b58b8f80342a7641"
     }
   ]
 }

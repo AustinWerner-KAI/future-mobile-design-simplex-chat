@@ -8,6 +8,8 @@
 
 **[Try V2.1 — your people, your world →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html)**
 
+[Compare V2.1.1, V2.1.2 and V2.1.3](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html): favourites grid, compact strip and personal collections.
+
 A working exploration of favourites grid/list, entity-based navigation, local proposals and chat/email within a provider relationship. [Scope, storyboard and check evidence](docs/V2_1.md). V2 remains the current reference while we test this next iteration.
 
 ## Flow architecture

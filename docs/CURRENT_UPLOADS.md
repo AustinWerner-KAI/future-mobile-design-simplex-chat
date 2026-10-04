@@ -12,6 +12,8 @@ Updated 4 October 2026. This index is the repository’s current reference. “C
 
 ## New exploration: V2.1
 
+[Compare V2.1.1 / V2.1.2 / V2.1.3](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21-options.html) — grid, compact strip and personal collections, with distinct entity identities.
+
 [Try the relationship-led prototype](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html) · [Scope, sources and browser evidence](V2_1.md). V2 remains the current reference.
 
 ## Start here: contributor walkthrough
