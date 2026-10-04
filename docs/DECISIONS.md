@@ -1,5 +1,7 @@
 # Design decisions
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 ## Accepted working direction
 
 - The conversation can expand into a workspace and return with drafts intact.
@@ -36,3 +38,7 @@ Publish five research-informed studies with blue/cyan/pale-blue/white colours. U
 ## Clarified purpose / Future experience, not present-app reinvention
 
 The initiator reiterated that this is an exploration to determine what the future could look like. Use current SimpleX privacy, profiles and QR connections as foundations for future hypotheses. Native integration notes are conditional feasibility considerations, not a near-term implementation plan. Judge contributions by what they reveal about a future experience, rather than how closely they recreate the current app.
+
+## 2026-10-04 / Current imagery and progression
+
+Supersede the earlier broad blue V2 palette with white, subtle blue materials, neutral words and clay actions. Keep original concept bitmaps and dated audits as history; refresh current rendered screen previews. Present all nine originals, five V2 studies and current inline/email behaviour in one progression. Explain the different-evolution analogy with a cited biology reference and explicit limits. Budget, production rollout and native feasibility remain open.

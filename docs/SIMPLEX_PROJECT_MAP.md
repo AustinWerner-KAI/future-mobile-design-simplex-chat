@@ -1,5 +1,7 @@
 # SimpleX project map — what the design grows from
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 Research expanded 4 October 2026, starting at the [SimpleX GitHub organisation](https://github.com/simplex-chat). Primary project documentation only. References use mutable branches: they are observations from this review, not a frozen specification or an independent security audit.
 
 ## Two connected projects

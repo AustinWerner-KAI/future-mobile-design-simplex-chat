@@ -1,5 +1,7 @@
 # From anatomy to interface
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 ## Start here: from anatomy to interface
 
 ![From anatomy to interface](../visuals/anatomy-to-interface.png)
@@ -30,7 +32,7 @@ A list can still be the right way to find people. We should keep familiar struct
 
 ## Exploring the future from real foundations
 
-Research clarified what our different design journey must respect: invitations rather than global-user search, contextual profiles, deliberate verification and real group roles. [Read the research](SIMPLEX_RESEARCH.md). Our [five V2 studies](../v2.html) translate those ideas into a blue visual family aligned to the current website. The [future-fit notes](APP_INTEGRATION.md) keep the explorations connected to SimpleX’s identity and privacy model. They are not a plan to rebuild the current app. Our purpose is to discover what the future experience could feel like, and invite others to push these hypotheses further.
+Research clarified what our different design journey must respect: invitations rather than global-user search, contextual profiles, deliberate verification and real group roles. [Read the research](SIMPLEX_RESEARCH.md). Our [five V2 studies](../v2.html) now carry those ideas in the approved white canvas, subtle blue materials and neutral lettering. The [future-fit notes](APP_INTEGRATION.md) keep the explorations connected to SimpleX’s identity and privacy model. They are not a plan to rebuild the current app. Our purpose is to discover what the future experience could feel like, and invite others to push these hypotheses further.
 
 ## Build on this thinking
 
@@ -126,3 +128,7 @@ Bring a sketch, a motion study, a useful critique, an accessibility finding or a
 The direction is shared; the answer is open. I would rather learn from a thoughtful alternative than protect a visual simply because it was the first one I liked.
 
 — Project initiated by [AustinWerner-KAI](https://github.com/AustinWerner-KAI), shaped from the originating design conversation with AI assistance.
+
+## Where the exploration stands now
+
+The [evolution rationale](EVOLUTION_FROM_ANATOMY.md) connects the octopus’s different branch from humanity to our design analogy. [The progression gallery](../studies/concept-progression.html) connects all nine original boards, five updated V2 screens and the current inline/email studies. We keep the originals to expose the thought process; the current hypothesis changes behaviour through local expansion and deliberate sharing. The [shared brief](DESIGN_BRIEF.md) is the reference for new contributions.

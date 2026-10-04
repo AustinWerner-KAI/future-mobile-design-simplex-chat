@@ -1,5 +1,7 @@
 # Full project audit
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 3 October 2026 · From anatomy to interface
 
 ## Verdict

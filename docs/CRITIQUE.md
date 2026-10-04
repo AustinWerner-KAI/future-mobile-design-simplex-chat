@@ -1,5 +1,7 @@
 # Current critique
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 The visual boards look organic; their behaviour is not yet equally resolved. This is a design assessment, not a user-study result.
 
 1. **Home organisation remains exploratory.** Revision 02 replaces the vertical stack with coordinated paths around a centre. Test whether people can find a relationship as quickly, and extend the design to large contact sets.

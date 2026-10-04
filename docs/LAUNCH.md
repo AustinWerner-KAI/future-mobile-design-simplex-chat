@@ -1,5 +1,7 @@
 # Community launch record
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 Published on 2026-10-03 under AustinWerner-KAI, with public visibility explicitly authorised by the project initiator.
 
 - [Repository](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat)

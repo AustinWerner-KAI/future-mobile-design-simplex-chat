@@ -1,5 +1,7 @@
 # Understanding SimpleX before redesigning it
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 Research checked 3 October 2026. Primary sources only: official website, user guides, protocol overview and app-development documentation. Facts below describe those sources; recommendations are our design interpretation. This is a product and architecture study, not an independent cryptographic audit.
 
 ## What the project is

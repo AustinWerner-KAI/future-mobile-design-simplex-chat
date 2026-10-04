@@ -1,5 +1,7 @@
 # Design memory: a different evolutionary path
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 Project: **From anatomy to interface**. Maintainer direction recorded 4 October 2026.
 
 > “NEVER forget the Octopus theory and its different evolution tree — Simplex.chat is that for networks and chat protocols.”
@@ -68,3 +70,7 @@ The initiator suggested white as the background. The current light study uses a 
 ## Familiar blue, neutral words — 4 October 2026
 
 The initiator requested familiar blue tones subtly while prohibiting blue words. This supersedes the blanket blue rejection: the current Chalk study keeps its white canvas and white private-message surfaces, adds ice-blue private identity fills and selection surfaces, and uses pale blue for channels. Email retains warm oat. All lettering, including links and channel labels, stays neutral; blue is a material cue. The octopus thesis remains local expansion, coordination and deliberate disclosure. This is a visual preference, not a claim that blue text is medically harmful.
+
+## Every image belongs to the progression
+
+Use [the visual progression](../studies/concept-progression.html) to present original concepts, updated V2 foundations and current unfolding together. Preserve original board colours as process evidence and label them historical. New imagery follows the approved white/subtle-blue/neutral-text system. [The evolution rationale](EVOLUTION_FROM_ANATOMY.md) is the source for explaining the octopus’s different branch from humanity and the analogy to SimpleX. Never claim that a biological difference or a protocol difference alone proves better usability.

@@ -118,3 +118,7 @@ See [LICENSING.md](LICENSING.md) for current reuse terms. Contributors retain at
 ## Shared project brief
 
 Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypotheses, design rules, prototype scope, technical boundaries and ways to contribute. The [SVG visual guide](visuals/design-direction.svg) summarises the current materials and evolutionary thesis.
+
+## Follow the progression
+
+[Anatomy → V2 → current unfolding](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/concept-progression.html) brings all nine original boards, all five refreshed V2 previews and the current inline/email visuals together. Read the [different-evolution rationale](docs/EVOLUTION_FROM_ANATOMY.md) for the biology, design mapping and limits.

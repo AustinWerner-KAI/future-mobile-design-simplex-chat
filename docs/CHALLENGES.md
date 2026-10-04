@@ -1,5 +1,7 @@
 # Five starting challenges
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 Five challenges are open on GitHub. Sketches and small experiments are welcome.
 
 ## [A home that feels continuous](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/2)

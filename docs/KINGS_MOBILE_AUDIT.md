@@ -1,5 +1,7 @@
 # From anatomy to interface — mobile agency audit
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 4 October 2026. Applies the `kings-of-mobile-design` framework to all nine current designs. This is a source and browser review, not participant research or native validation. Read the [design memory](DESIGN_MEMORY.md), [spatial audit](MOBILE_SURFACE_AUDIT.md) and [SimpleX project map](SIMPLEX_PROJECT_MAP.md) alongside it.
 
 ## Judgment

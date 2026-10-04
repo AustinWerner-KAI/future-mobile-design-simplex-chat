@@ -1,5 +1,7 @@
 # Email evolves through deliberate handoffs
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 4 October 2026. Applies kings-of-mobile-design to the future SimpleX email concept. [Try the experiment](../unfold.html?mobile=1#Harbour%20bookings) · [Visual storyboard](../studies/email-storyboard.html) · [Design memory](DESIGN_MEMORY.md)
 
 ## Mobile brief
@@ -58,7 +60,7 @@ An identical reply already queued, unknown or accepted cannot be submitted again
 
 ## Craft and mobile behaviour
 
-The external email uses a pale oat service tone, envelope mark and dashed origin line. A shared reading hierarchy connects it to white private messages and sage channels. The carried detail uses a solid accent boundary, signifying a private working object and later an explicit destination. Written labels carry the meaning across all five palettes. The source remains above the tool rather than being replaced by an unrelated form.
+The external email uses a pale oat service tone, envelope mark and dashed origin line. A shared reading hierarchy connects it to white private messages and pale-blue channels. The carried detail uses a solid accent boundary, signifying a private working object and later an explicit destination. Written labels carry the meaning across all five palettes. The source remains above the tool rather than being replaced by an unrelated form.
 
 Review actions use semantic buttons and an exact text preview. Draft inputs have labels; changed state is announced. Browser checks cover small windows, landscape and enlarged text. These CSS controls are not evidence of native 44-point/48-dp targets. Keyboard appearance, safe areas and physical-device accessibility still require native/runtime validation.
 

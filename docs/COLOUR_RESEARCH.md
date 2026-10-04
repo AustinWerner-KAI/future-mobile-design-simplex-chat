@@ -1,5 +1,7 @@
 # Colour that explains the interface
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 4 October 2026. Research and application for the front-end mobile study. [Current nine designs](../experience.html) · [Inline alternative](../unfold.html)
 
 ## Recommendation for this project

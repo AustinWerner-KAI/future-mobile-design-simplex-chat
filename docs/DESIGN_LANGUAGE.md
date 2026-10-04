@@ -1,5 +1,7 @@
 # Design language
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 ## Intention
 
 Organised, clean to the eye, generous with space and capable of adapting. Design has no ego: content and human intent take priority over a signature shape.
@@ -8,9 +10,9 @@ Organised, clean to the eye, generous with space and capable of adapting. Design
 
 Use a continuous surface with a stable, named origin. The selected region expands into its workspace. Organic geometry should indicate an action or state; ordinary content can keep regular edges where that improves readability. Do not force eight controls or use a literal octopus as navigation.
 
-## Palette
+## Current palette
 
-Warm white `#F6F4EC` for space, deep petrol `#153C34` for primary text/actions, soft sage `#E4EADD` for the active surface. Secondary text `#4F655C`. Test actual contrast at rendered sizes. Provide a coherent dark appearance in the product prototype.
+White `#FFFFFF` for the canvas and private reading; pale blue `#E7EFF5` for channels; ice blue `#F0F5F9` for private identity fills; powder blue `#DCE9F3` for selected surfaces; oat `#EEE3D2` for external email. Neutral ink `#252B24` carries text. Clay `#8D3E2B` marks deliberate actions with warm-white lettering. Never write words in blue. Charcoal is the dark alternative. Colour reinforces labels and shapes; it does not establish privacy. See the [editable direction board](../visuals/design-direction.svg).
 
 ## Typography
 
@@ -32,6 +34,6 @@ Home must support stable user choices and an accessible route to all conversatio
 
 Ask: what does this curve help someone do? Does the motion clarify the destination? Can the person reverse it? Who sees the content? Does it still work with large text, a keyboard open and reduced motion?
 
-## V2 / SimpleX-aligned colour treatment
+## V2 progression
 
-Observed on the current website: deep blue `#023789`, action gradient values `#001AA7` to `#0095E7`, pale-blue `#E8F3FF` / `#C0E2FF` and white. V2 uses dark blue for legible text and actions, pale blue for open surfaces and cyan for a boundary edge. These are observed website values adapted to UI roles, not an official native-app token specification. Proposed dark tokens are in `prototypes/src/menu-simplex.css` and `v2.css`. Preserve the original petrol/sage direction for comparison.
+The original V2 palette adapted the website’s blue family, including blue text. This is now a historical direction. All five current V2 screens and previews follow the approved palette above. The five screens remain a concrete baseline for invites, profiles, trust and membership; the current inline study advances coordination and local action. See [the evolutionary mapping](EVOLUTION_FROM_ANATOMY.md) and [visual progression](../studies/concept-progression.html).

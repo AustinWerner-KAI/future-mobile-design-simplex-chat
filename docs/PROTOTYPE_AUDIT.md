@@ -1,5 +1,7 @@
 # Prototype audit — from anatomy to interface
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 2026-10-03 · Review of the combined study against the initiator’s screenshot, the anatomy board and the project’s design principles. This is a heuristic and implementation review, not participant research or Jony Ive’s opinion.
 
 ## The central finding

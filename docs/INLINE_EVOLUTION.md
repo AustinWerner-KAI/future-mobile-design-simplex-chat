@@ -1,5 +1,7 @@
 # One relationship. Room to unfold.
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 4 October 2026. A response to the initiator’s rejection of the blue palette and request to demonstrate the octopus thesis more convincingly.
 
 [Open the experiment](../unfold.html) · [Nine-screen comparison](../experience.html) · [Preserved blue iteration](../prototypes/experience-blue.html) · [Design memory](DESIGN_MEMORY.md)

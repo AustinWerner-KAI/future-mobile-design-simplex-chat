@@ -1,5 +1,7 @@
 # Nine connected designs — space follows attention
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 4 October 2026. Independent exploratory design for the future of simplex.chat. **Read the [design memory](DESIGN_MEMORY.md) first.** The octopus’s different evolutionary path is the central analogy for an interface growing from SimpleX’s distinct network and chat foundations.
 
 [Interactive experience and storyboard](../experience.html) · [Structural wireframes](../studies/experience-wireframes.html) · [Prior reset study](../future.html)

@@ -1,5 +1,7 @@
 # Mobile surface audit — all nine designs
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 4 October 2026. Audit and refinement of the complete experience. [Current study](../experience.html) · [Full-screen mobile study](../experience.html?mobile=1#home) · [Previous version](../prototypes/experience-v1.html).
 
 ## Finding

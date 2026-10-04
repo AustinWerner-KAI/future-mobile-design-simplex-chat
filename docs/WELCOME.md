@@ -1,5 +1,7 @@
 # From anatomy to interface — build with us
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 We are exploring what the mobile experience of [simplex.chat](https://simplex.chat/) could feel like in 2028. Our starting idea comes from the octopus: a different evolutionary journey can lead to different ways of sensing, acting and coordinating. My design thesis is that simplex.chat can explore an interface from its own foundations, rather than inherit every convention from WhatsApp and Telegram.
 
 A conversation opens into a workspace. Tools appear where they are needed. Images become places to discuss details. Sharing boundaries remain visible. Returning should feel calm and preserve your place.

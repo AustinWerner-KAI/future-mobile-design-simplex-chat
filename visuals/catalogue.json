@@ -8,7 +8,10 @@
     "question": "Could we reduce attention pressure?",
     "response": "Prioritised replies, grouped spaces and previews.",
     "critique": "The appearance changed more than the interaction model.",
-    "next": "Simplify the structure and remove visual ego."
+    "next": "Simplify the structure and remove visual ego.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "quiet-index-open-spaces-lens.png",
@@ -19,7 +22,10 @@
     "question": "What does organised and clean mean?",
     "response": "Quiet typography, open space and clearer grouping.",
     "critique": "Still a familiar messaging model.",
-    "next": "Look outside the standard model and learn from nature."
+    "next": "Look outside the standard model and learn from nature.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "tide-branch-clearing.png",
@@ -30,7 +36,10 @@
     "question": "Can nature change the organisation?",
     "response": "Shorelines for attention, branches for topics, gathering around an object.",
     "critique": "No single anatomical model unified the experience.",
-    "next": "Explore octopus flexibility, local sensing and selective visibility."
+    "next": "Explore octopus flexibility, local sensing and selective visibility.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "rest-touch-return.png",
@@ -41,7 +50,10 @@
     "question": "Can capability appear where we touch?",
     "response": "A conversation unfolds locally, then returns to the overview.",
     "critique": "The anatomical connection was still too hard to see.",
-    "next": "Translate centre, arms and contact points explicitly."
+    "next": "Translate centre, arms and contact points explicitly.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "anatomy-to-interface.png",
@@ -52,7 +64,10 @@
     "question": "How can anatomy become interface?",
     "response": "A coordinating anchor, branching relationships and local touch points.",
     "critique": "Eight branches are a constraint, not a rule; scale remains unproven.",
-    "next": "Follow the whole journey."
+    "next": "Follow the whole journey.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "quiet-messaging-flow.png",
@@ -63,7 +78,10 @@
     "question": "Does the idea cover the entire flow?",
     "response": "Invites, messages, photos, anchored replies and a plan.",
     "critique": "The sequence still relied on conventional separate screens.",
-    "next": "Explore continuous form and movement."
+    "next": "Explore continuous form and movement.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "surface-study.png",
@@ -74,7 +92,10 @@
     "question": "Can the surface reach, unfold and settle?",
     "response": "A sculptural membrane changes around the activity.",
     "critique": "Navigation, thumb reach and the behaviour behind the shape need testing.",
-    "next": "Map five predictions to concrete designs."
+    "next": "Map five predictions to concrete designs.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "five-designs.png",
@@ -85,7 +106,10 @@
     "question": "How does each prediction become a design?",
     "response": "Five behaviours share one visual family.",
     "critique": "Curves need useful jobs; invitation and participant cues need correction.",
-    "next": "Connect the behaviours through one story."
+    "next": "Connect the behaviours through one story.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   },
   {
     "file": "storyboard.png",
@@ -96,6 +120,9 @@
     "question": "Can the relationship persist through the story?",
     "response": "Invite, accept, write, choose, send, touch, gather and return.",
     "critique": "The screens still need continuity beyond their appearance.",
-    "next": "Build opening and closing, then photo and sharing interactions."
+    "next": "Build opening and closing, then photo and sharing interactions.",
+    "status": "Historical original \u2014 retain for progression",
+    "current_reference": "../studies/concept-progression.html",
+    "evolution_note": "Different evolutionary foundations inspire coordination, local action and adaptive space; V2 grounds connection/privacy semantics, while the current inline study tests continuity."
   }
 ]

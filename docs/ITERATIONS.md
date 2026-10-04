@@ -1,5 +1,7 @@
 # The design journey — every step
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 ## Start here: From anatomy to interface
 
 ![From anatomy to interface](../visuals/anatomy-to-interface.png)
@@ -160,3 +162,7 @@ The initiator requested an audit of all nine screens and a deeper review of the 
 ## V2 visual alignment and shared brief — 4 October 2026
 
 All five baseline studies and their gallery now follow the approved white canvas, subtle blue materials, neutral lettering and clay actions. Their original screen responsibilities remain available for comparison with the inline evolution. Refreshed all five previews. Expanded the [shared brief](DESIGN_BRIEF.md) to cover project purpose, audience hypotheses, design rules, technical scope and contribution paths, with an [editable SVG direction board](../visuals/design-direction.svg). Previous colour treatments remain in Git history. Browser checks covered 30 screen/window/appearance combinations at widths 360, 390 and 844 CSS px; no horizontal overflow or saturated blue lettering was detected. Six sampled light/dark text pairs exceeded 4.5:1. These are limited implementation checks, not native or participant validation.
+
+## Concept imagery and narrative reconciliation — 4 October 2026
+
+The concept gallery and [progression page](../studies/concept-progression.html) now place every original board beside five refreshed V2 previews and current inline/email imagery. Original bitmaps remain labelled history rather than being repainted. Every design document points to the current shared brief, rationale and progression; current language replaces stale website-blue descriptions. The [evolution rationale](EVOLUTION_FROM_ANATOMY.md) distinguishes biological evidence from the network analogy and maps each inspiration to behaviour, a concrete expression and a limit. The next contribution should test a task consequence rather than defend a visual style.

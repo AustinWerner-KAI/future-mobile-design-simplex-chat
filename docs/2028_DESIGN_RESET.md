@@ -1,5 +1,7 @@
 # 2028 design reset — audit, question, refine
 
+> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+
 4 October 2026. A response to the initiator’s critique that V2 feels like today and the colour is weak. This is a design assessment and a set of hypotheses, not measured research or a technology forecast.
 
 ## Our actual goal
