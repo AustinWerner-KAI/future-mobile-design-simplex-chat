@@ -66,3 +66,8 @@ writeFileSync(new URL('../studies/materials.html', import.meta.url), readFileSyn
 console.log('Built studies/materials.html colour comparison');
 writeFileSync(new URL('../studies/email-storyboard.html', import.meta.url), readFileSync(new URL('../prototypes/src/email-storyboard.html', import.meta.url), 'utf8'));
 console.log('Built studies/email-storyboard.html email evolution');
+
+writeFileSync(new URL('../v21.html', import.meta.url), readFileSync(new URL('../prototypes/src/v21/index.html', import.meta.url), 'utf8')
+  .replace('/* V21_CSS */', () => readFileSync(new URL('../prototypes/src/v21/style.css', import.meta.url), 'utf8'))
+  .replace('/* V21_JS */', () => readFileSync(new URL('../prototypes/src/v21/app.js', import.meta.url), 'utf8')));
+console.log('Built v21.html entity-first exploration');

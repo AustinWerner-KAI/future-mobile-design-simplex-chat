@@ -1,0 +1,78 @@
+{
+  "executed_at_utc": "2026-10-04T16:06:33.741Z",
+  "method": "Agent-operated Chrome simulation of local generated build; not human or physical-device testing",
+  "target": "v21.html",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "checks": [
+    "Six favourites, entities not transports",
+    "Favourite list comparison",
+    "Empty search recovery",
+    "Search finds entity",
+    "Duplicate proposal blocked",
+    "Draft survives proposal share",
+    "Trust disclosure",
+    "Provider transports have separate drafts",
+    "Review cancellation retains detail",
+    "Reviewed detail arrives in Maya",
+    "Maya draft retained across entity switching",
+    "Publication has no private reply composer",
+    "Group audience stated",
+    "Favourite choice updates grid",
+    "Pending invitation identity frozen",
+    "Revoke restores preparation",
+    "Dialog Escape dismissal",
+    "Concealment retains entity names",
+    "Provider chat draft retained",
+    "Browser Back returns home",
+    "No horizontal document overflow at 360",
+    "No horizontal document overflow at 390",
+    "No horizontal document overflow at 768",
+    "Reload/new page clears retained state",
+    "No browser JavaScript errors"
+  ],
+  "captures": [
+    {
+      "file": "studies/v21-captures/01-home.png",
+      "sha256": "a5ac08673e7e2710319a8c9bac2093bea7c272590e29f90ca0af235b90111ad1"
+    },
+    {
+      "file": "studies/v21-captures/02-list.png",
+      "sha256": "2309db5bdc628ddf2f81f76f1f7ee5b100022ce15380305396311d0eb1dcb570"
+    },
+    {
+      "file": "studies/v21-captures/03-proposal.png",
+      "sha256": "4d577beb4fd5ab9e8287591416a3e4a5ec323cf848bfc8ab17fe8dd2ea1dfd60"
+    },
+    {
+      "file": "studies/v21-captures/04-provider-email.png",
+      "sha256": "0811a37e0e72463604c4f5fbb31eef6a51f55ad03c40d4c567289b2a0302bdb9"
+    },
+    {
+      "file": "studies/v21-captures/05-review.png",
+      "sha256": "ee1659610482ff40d06d6d1412904f92f08d5f42cb15cbed1f994a999fd59e44"
+    },
+    {
+      "file": "studies/v21-captures/06-maya-return.png",
+      "sha256": "5698d0431856a05155d751b2aed8afe5b23d02352a7a7fb7aaec7ce8c669776d"
+    },
+    {
+      "file": "studies/v21-captures/07-publication.png",
+      "sha256": "329f6471d7db4ee9b13aa6c848aaedafea3b94bb9108116d594be1eb2499695f"
+    },
+    {
+      "file": "studies/v21-captures/08-group.png",
+      "sha256": "bcd28823a14e3a73b9aba36364623238a95fb86e53286ccc05b185cf67a345a7"
+    },
+    {
+      "file": "studies/v21-captures/09-invitation.png",
+      "sha256": "78683662cad074d7406900858414797d2599d8d28abc6b90eebde8443776bda0"
+    },
+    {
+      "file": "studies/v21-captures/10-desktop.png",
+      "sha256": "5c21ddff72106e7c233d8b269f446faac726d7ac91cfb9d0a59b5a951d2d14c8"
+    }
+  ]
+}

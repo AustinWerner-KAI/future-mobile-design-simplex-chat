@@ -23,3 +23,7 @@ Ready for participants. Six tasks, 15–20 minutes, no coding needed. Human resu
 - [Sources and attribution](SOURCES.md) and [documentation audit](DOCUMENTATION_AUDIT.md)
 
 The current direction is white canvas, subtle blue surfaces, neutral lettering, oat email and clay actions. Dated earlier proposals remain design history. All interactive studies are fictional local simulations.
+
+## Next exploration
+
+[V2.1: relationships first](V2_1.md) — scope, storyboard, sources and test evidence. [Try it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html).

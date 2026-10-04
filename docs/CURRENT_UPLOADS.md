@@ -10,6 +10,10 @@
 
 Updated 4 October 2026. This index is the repository’s current reference. “Current” means part of the active exploration, not production-ready or validated by participants. All interactions are fictional local simulations.
 
+## New exploration: V2.1
+
+[Try the relationship-led prototype](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html) · [Scope, sources and browser evidence](V2_1.md). V2 remains the current reference.
+
 ## Start here: contributor walkthrough
 
 **[Open the HTML contributor walkthrough](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/contributor-walkthrough.html)** — ready for participants; six tasks, facilitator guide and observation sheet. Human results are not yet collected. [Agent route-check record](contributor-pilot-check.json).

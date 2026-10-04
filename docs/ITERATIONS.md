@@ -196,3 +196,7 @@ Published the [illustrated tour](https://austinwerner-kai.github.io/future-mobil
 ## Current-reference decision — 4 October 2026
 
 The project owner explicitly selected [the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as where the project currently stands. Use it as the primary review, navigation and contribution destination. Keep inline/unfolding, email and nine-context experiments accessible as supporting work. Earlier audits describe the scope reviewed on their dates; they do not override this selection. This is a reference/status change, not new functionality or validation.
+
+## V2.1 begins — 4 October 2026
+
+Added a relationship-led home with grid/list favourites and recent activity, local entity workspaces, provider chat/email boundaries and same-page invitations. [V2.1 brief](V2_1.md) records scope and limits; V2 remains the current reference. No participant research is claimed.

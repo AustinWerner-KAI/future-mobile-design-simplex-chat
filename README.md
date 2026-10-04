@@ -4,6 +4,12 @@
 
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
+## Developing V2.1
+
+**[Try V2.1 — your people, your world →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html)**
+
+A working exploration of favourites grid/list, entity-based navigation, local proposals and chat/email within a provider relationship. [Scope, storyboard and check evidence](docs/V2_1.md). V2 remains the current reference while we test this next iteration.
+
 ## Flow architecture
 
 **The octopus theory is the architecture of the flow. Human relationships organise the interface.** People and entities supply recognisable context; coordination, local action, adaptable space, retained state, deliberate sharing and coherent return govern movement through it. This applies to a grid or list without prescribing an octopus-shaped UI. It is an interaction architecture hypothesis, not a claim about SimpleX’s protocol implementation. [Read the flow rules and evaluation criteria](docs/EVOLUTION_FROM_ANATOMY.md#the-octopus-theory-is-the-architecture-of-the-flow). V2 remains the current review reference; implementation gaps remain explicit.
