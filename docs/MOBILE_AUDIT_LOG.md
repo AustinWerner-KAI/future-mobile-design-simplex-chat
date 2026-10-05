@@ -17,6 +17,21 @@ Target: `studies/identity.html` and `docs/IDENTITY_MODEL.md`, a static design st
 | G3 | Consistency | The New connection close button sat at the top left; the runtime dialog puts it at the right. | Moved to the right. |
 | G4 | Large text | Owner found "Conversati on", "Propos al" and "Securi ty" in frame 8 on a narrow phone. The shared study stylesheet had `overflow-wrap:anywhere` on the body, fixed-width strip tiles and tabs laid out as grids, so the check mark also dropped onto its own line. The same stylesheet broke "Comment", "Forward" and "reactions" in the T19 study, and its "All" tab was 39 px wide. | Body uses `break-word`; tabs and switch segments are flex with `white-space:nowrap`, 44 px minimum width, and wrap as a row; strip tiles have a minimum and maximum width with hyphenation. New `scripts/check-studies.cjs` runs 60 checks on both studies at 320 and 390 wide with 16, 24 and 32 px text: words whole, targets 44 px, text 12 px or more, no clipping, no overflow. It fails on the pre-fix files. |
 
+### Shape pass (same day, owner asked for a critique of the shapes)
+
+Method: computed `border-radius` inventory of every element in the study phones, plus the four frames at 390 wide. Owner approved all fixes.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| S1 | Shape | Nine radii with no scale: 50%, 999, 22, 18, 14, 12, 8, 6 and 4 px. Tabs 14, the Active chip 999, buttons 22, cards and inputs 14, composer 12, focus ring 8. | Three shapes plus the entity marks. Circle for people and round controls; pill for every tappable action and selected state (buttons, tabs, chips); 12 px for every container (cards, inputs, composer, pending, focus ring). The sheet is 16 px over 12 px cards. Inventory after: 50%, 999, 16 (sheet), 12, 6 (publication mark), 4 (checkbox). |
+| S2 | Regression | The G4 selector `.strip span` also matched the avatar spans, so favourites rendered as 72 × 38 ovals. | `.strip > span`. Circles restored. |
+| S3 | Cue | Group and provider marks were both 12 px rounded squares, told apart by tint alone (green-grey vs oat). Colour was the only cue. | The runtime's type badges (people cluster, page, storefront) drawn on the marks as CSS pseudo-elements, as in the runtime. Providers get their own class. |
+| S4 | Cue | Your profile mark and a contact's mark were both letter circles; a 2 px vs 1 px ring was the only difference, beside a third 44 px circle (+). | The self mark and the profile-sheet marks are filled with the blue identity material. "You" is the only filled circle on the screen. |
+| S5 | Crossing | 3 px clay rule, no radius, same on every frame. | Kept. |
+| S6 | Nesting | Phone 28, sheet 18, cards 14 did not step evenly. | Sheet 16 over cards 12. |
+
+`check-studies.cjs` now asserts that every radius in a study phone belongs to the scale (70 checks).
+
 **Owner decision (5 October 2026):** the home shows the profile mark only, no name in the header. E1 holds without exception. The study and model are updated; the risk moves to T05: can people tell which profile they are in from the mark alone?
 
 **Not covered:** screen readers, native text scaling, physical devices, participants. Whether an incognito name can change later, or be detected, is unverified and is a maintainer question.
