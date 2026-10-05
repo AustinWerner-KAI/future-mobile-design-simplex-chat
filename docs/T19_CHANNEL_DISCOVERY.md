@@ -31,7 +31,7 @@ Forwarding a post is named but not built. It is a separate crossing that should 
 - **Adapt the space:** the listing stays compact until a row is opened.
 - **Retain context:** the directory keeps its query, tab and scroll; reactions, comments and drafts per post are kept while the page runs.
 - **Cross deliberately:** three facts and an identity choice before Join; the first comment names who you will appear as.
-- **Return coherently:** joining returns to the home with the new row visible; leaving returns to the home; the directory's return route is always "← Your connections".
+- **Return coherently:** joining returns to the home with the new row visible; leaving returns to the home; the directory's return route is always "← Your connections". A publication opened from a directory row returns to the directory with its search kept (IA5, 5 October 2026).
 
 ## Evidence
 

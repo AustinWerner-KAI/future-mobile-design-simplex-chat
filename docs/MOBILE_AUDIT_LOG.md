@@ -4,6 +4,21 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 6. Information architecture — 5 October 2026
+
+Structural audit of the V2.1.2.1 runtime after T11 and T19: site map, navigation model, content hierarchy, flows, naming, reuse, growth and URLs. Full document: [INFORMATION_ARCHITECTURE](INFORMATION_ARCHITECTURE.md). Evidence level: code inspection and browser simulation.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| IA1 | Naming | "Channel" in the home door and search button; "Publication" on every row since D2. | Open. Proposed rule: channel is what you find, Publication is what it becomes. |
+| IA2 | Naming | Three names for the home: "Back to your world", "Back to your connections", "Your connections". | Open. |
+| IA3 | Naming | Two search placeholders across candidates. | Open. |
+| IA4 | Naming | "Chat" and "conversation" both name a thread. | Open. |
+| IA5 | Return | A publication opened from the directory returned to the home, not the directory. | **Fixed.** Return strip says "← Public directory"; Back goes there with the search kept. Four new assertions; the full suite still passes. |
+| IA6 | URL | `#directory` is bookmarkable while the model calls the directory a task. | Open. Documented as a task with a URL for testing. |
+
+Passed: no primary navigation (by thesis); three taps to the deepest action; one material for every crossing; the dock reserved for the composer.
+
 ## 5. T19 in the runtime — 5 October 2026
 
 Self-audit of the T19 build in `v21.html?mobile=1&version=2.1.2.1` before opening the PR. Method: the T19 check script (54 assertions), the full suite in a scratch copy, and captures of the five journey screens at 390 × 844.

@@ -55,6 +55,16 @@ ck(await p.evaluate(()=>document.activeElement.dataset.open)==='tides','Focus la
 ck(await p.evaluate(()=>{const r=document.querySelector('.rows [data-open=tides]').getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}),'The new connection is on screen after the return');
 await p.locator('.beyond [data-action=directory]').click();
 ck((await p.locator('#dirsearch').inputValue())==='tide'&&(await p.locator('.listing:has([data-listing=tides]) .preview').innerText()).includes('Already in your connections'),'Directory keeps the search and marks the joined row');
+// 4b. Return route from a publication opened out of the directory (IA5)
+await p.locator('.listing:has([data-listing=tides]) [data-open=tides]').click();
+ck((await p.locator('.return-context button').innerText()).includes('Public directory'),'Opened from the directory, the return route names the directory');
+await p.locator('[data-action=resume-home]').click();await p.waitForTimeout(100);
+ck((await p.locator('.head h2').innerText())==='Public directory'&&(await p.locator('#dirsearch').inputValue())==='tide','Back returns to the directory with the search kept');
+await p.locator('[data-action=home]').click();await p.waitForTimeout(100);
+ck((await p.locator('.head h2').innerText())==='Close at hand.','Back from the directory returns home');
+await p.goto(url+'#tides');
+ck(!(await p.locator('.return-context button').innerText()).includes('Public directory'),'Opened directly, the return route is the home');
+await p.goto(url);await p.locator('.beyond [data-action=directory]').click();await p.locator('[data-dirtab=all]').click();
 // 5. Admin review request and duplicate guard
 await p.locator('#dirsearch').fill('walkers');
 await p.locator('[data-listing=walkers]').click();await p.waitForTimeout(700);
