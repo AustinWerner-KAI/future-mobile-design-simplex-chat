@@ -86,7 +86,7 @@ Critiqued against the Kings of Mobile Design framework on 5 October 2026, findin
 
 **Vocabulary:** the type word is always Publication or Group, as in the home. "Public" is the audience word, never part of the type name.
 
-**Maintainer questions:** does opening a channel link contact relays before any tap? Does the link itself carry a name and description, or only an address?
+**Maintainer questions:** see [MAINTAINER_QUESTIONS](MAINTAINER_QUESTIONS.md), items 1, 2 and 5.
 
 ## Sources
 
