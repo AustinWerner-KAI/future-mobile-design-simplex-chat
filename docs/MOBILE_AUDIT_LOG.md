@@ -4,6 +4,39 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 3. Flow, state and colour semantics — 5 October 2026
+
+**Scope:** a scripted walkthrough of the V2.1.2.1 candidate plus T11 at 390 × 844. Steps: Maya reply and draft, return home, search to Family, proposal, resume home, browser Back, Coast Journal, Harbour Café chat and email send, invitation accept, quiet mode. Each step was judged against the six flow rules and framework sections 2, 3 and 5. Evidence level: browser simulation.
+
+**Passed:**
+
+- Drafts survive leaving and returning, and the home row shows "Draft".
+- The return label names where you came from ("← Search results"), and the search text is kept.
+- Focus moves to the relationship heading on open and to the composer after send.
+- Browser Back from home leaves the study cleanly.
+- Publications have no composer.
+- Quiet mode hides previews but keeps an opened relationship readable.
+
+| ID | Severity | Finding | Evidence | Proposed fix |
+|---|---|---|---|---|
+| F1 | P2 | Oat is used for the status bar ("Send simulated. No external delivery.") on every screen, including private chats. Oat is meant to mark external email only. | `.feedback{background:#eee3d2}`. The bar shows on Maya's chat after a send. | Use the neutral white or subtle blue for feedback, with a ruled top line. Keep oat for email surfaces only. |
+| F2 | P2 | Your outgoing messages render below the local tool cards, not under the message they answer. In Maya, "See you then" sits below the Saturday lunch card. In Harbour Café, the email reply sits below the picker and the Return buttons. The conversation reads out of order. | Captures 03 and 08 in this audit. | Render the message log directly after the source message, and the tool or community cards after it. Act locally, but keep chronology intact. |
+| F3 | P2 | An email reply shows only "You · simulated action". It doesn't say it went by email, to whom, or what state it's in. The earlier email study modelled queued, unknown and accepted states, but V2.1 drops them. | Harbour Café → Email → send: the log shows "We will take it / You · simulated action". | Label it "Email to bookings@example.com · accepted by server in simulation · delivery unconfirmed". That reuses the EMAIL_EVOLUTION state model without new storage. |
+| F4 | P3 | The unread badge stays after you open and reply to a chat. Maya still shows "1 unread". | The home row after replying to Maya. | Decide the rule. SIMPLEX_RESEARCH warns that expansion shouldn't fake a read acknowledgement. Either clear the badge on reply, or show "Seen here, not acknowledged". Owner decision. |
+| F5 | P3 | An accepted invitation goes nowhere. The dialog says "Accepted in simulation", but no new relationship appears and there's no next step. The coherent return breaks at the end of the connection flow. | 7 entities before and after acceptance. | Ties to T06 and T08. Don't fake a contact; offer "Back to your connections" with the accepted state stated. Defer to T08. |
+
+**Owner decision (5 October 2026):** fix F1 to F4. F5 is deferred to T08.
+
+#### Fixes applied
+
+- **F1:** the status bar is now white with a ruled top line. Oat appears only on email surfaces.
+- **F2:** your messages now render directly after the source message, with tools and community cards below them. In Harbour Café email, replies sit under the email and above the picker.
+- **F3:** an email reply now reads "Email to bookings@example.com · accepted by server in simulation · delivery unconfirmed". Chat replies keep "You · simulated action".
+- **F4:** sending a reply clears that relationship's unread count. Opening alone does not, so viewing is not treated as acknowledgement.
+- **Checks:** five new assertions in `scripts/check-email-recipient.cjs`, now 36 in total, all passing. The full suite gives the same results as before. A full rescan found no target, contrast, overflow or blue-text issues.
+
+**Not covered:** gallery pages, `v21-options.html`, desktop recomposition, and participants (T05).
+
 ## 1. Whole candidate, V2.1.2.1 plus T11 — 5 October 2026
 
 **Scope:** `v21.html?mobile=1&version=2.1.2.1` on branch `t11-email-recipient-choice`. It covers home, search empty state, the favourites and invitation dialogs, Maya, Family, Coast Journal and Harbour Café with every tab, and the open email picker. Viewports: 390 × 844, 320 × 640, 844 × 390 landscape and 200% page zoom.
