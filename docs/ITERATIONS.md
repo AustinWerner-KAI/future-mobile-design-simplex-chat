@@ -228,3 +228,7 @@ Expanded the candidate mockup from two detail screens to fourteen actual interfa
 ## V2.1.2.1 documentation corrections — 4 October 2026
 
 Resolved remaining V2 priority statements in the upload index, design memory, evolution rationale and decision history. Registered the latest captures and test evidence in SOURCES, and clarified that the complete mockup covers the implemented candidate only. Checked 542 relative file links with no missing targets; external destinations and section anchors were not revalidated. No interaction tests were rerun for these copy-only changes.
+
+## T11 general email handoff — 5 October 2026
+
+The email detail no longer goes to a fixed chat. The person chooses Maya, Family, Alex or Book club, reviews the exact text, audience and identity, then shares or cancels. Same text to the same chat is blocked. Book club now shows its own sample members. [Record and limits](T11_EMAIL_HANDOFF.md). The V2.1.2.1 gallery captures are kept as the pre-T11 record. Mobile audits and their fixes: [running audit log](MOBILE_AUDIT_LOG.md).
