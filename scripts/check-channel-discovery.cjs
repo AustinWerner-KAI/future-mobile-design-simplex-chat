@@ -46,7 +46,7 @@ ck(await p.locator('.join-preview').count()===0&&(await p.locator('#dirsearch').
 await p.locator('[data-listing=tides]').click();await p.waitForTimeout(700);
 await p.locator('label.seg:has([value=incognito])').click();
 await p.locator('[data-action=join]').click();
-await p.waitForTimeout(50);
+await p.waitForFunction(()=>document.querySelector('.app .feedback')?.textContent.includes('added to your connections'),null,{timeout:3000}).catch(()=>{});
 ck((await p.locator('.head h2').innerText())==='Close at hand.','Joining returns to the home');
 ck((await p.locator('.app .feedback').innerText()).includes('added to your connections'),'Return names what was added');
 const newRow=p.locator('.rows [data-open=tides]');
