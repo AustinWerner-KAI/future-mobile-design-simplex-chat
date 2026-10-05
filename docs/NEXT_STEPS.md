@@ -2,7 +2,7 @@
 
 > **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-Updated 4 October 2026. **[V2 is the earlier reference baseline](../v2.html).** V2.1 candidates and the community journey are the next experiments. This checklist is the durable project record: update it in Git with a link to the implementation and evidence when an item is complete. Browser test-page ticks record a reviewer’s current session, not project completion.
+Updated 5 October 2026 (T11). **[V2 is the earlier reference baseline](../v2.html).** V2.1 candidates and the community journey are the next experiments. This checklist is the durable project record: update it in Git with a link to the implementation and evidence when an item is complete. Browser test-page ticks record a reviewer’s current session, not project completion.
 
 Human relationships organise the interface. The octopus theory governs coordination, local action, adaptable space, retained context, deliberate crossing and coherent return. These are original design hypotheses, not an official SimpleX roadmap.
 
@@ -12,6 +12,7 @@ Human relationships organise the interface. The octopus theory governs coordinat
 - [x] **T02 — In-page invitation simulation:** identity choice, pending/accepted/revoked states and clear verification limits. [Scope and evidence](V2_1.md). This completes the browser demonstration, not real connections.
 - [x] **T03 — Context continuity:** separate drafts, retained tool reading positions, return context and corrected navigation. [Audit](V21_CONSISTENCY_AUDIT.md).
 - [x] **T04 — Small-community journey:** Maya proposal → reviewed title to Family → Harbour Café email → reviewed excerpt to Family → return to Maya’s draft. [Interactive test](../studies/community-journey.html) · [browser evidence](community-journey-check.json). Fictional groups and transport; no agreement or delivery implied.
+- [x] **T11 — General email handoff:** choose a chat (Maya, Family, Alex or Book club), review exact text, audience and identity, cancel to share nothing, and block the same text to the same chat. No recipient preselected. [Record](T11_EMAIL_HANDOFF.md) · [browser evidence](email-recipient-check.json). Simulation only; human comprehension remains under T05.
 
 ## Manual test and refinement milestones
 
@@ -32,7 +33,6 @@ T14–T18 mark implemented prototype fixes, checked in [V2.1.2.1](../v2121.html)
 - [ ] **T08 — Contextual identity and profiles:** active identity, incognito choice, switching and isolated drafts/search. Validate privacy boundaries against upstream implementation before making security claims.
 - [ ] **T09 — Complete attachment lifecycle:** select/replace image, caption, cancel, denied permission, failure and safe retry. Distinguish preparation, queue, server acceptance and delivery.
 - [ ] **T10 — Recovery after closing/reloading:** define retention choice, location, lifetime and clearing of sensitive drafts. No storage is currently implemented. Specify recovery before adding persistence.
-- [ ] **T11 — General email handoff:** choose a recipient rather than using fixed destinations, review content and audience, cancel, and prevent accidental duplicate sharing. Maya is the baseline destination; Family is the explicit community scenario.
 - [ ] **T12 — Engineering feasibility:** map the chosen flow to current SimpleX mobile architecture, identities, group permissions and transport constraints. Separate supported features from speculative entities and integrations.
 
 ## How to tick off work
