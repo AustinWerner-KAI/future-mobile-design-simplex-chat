@@ -1,0 +1,21 @@
+// T05 — facilitator page: tasks render, log captures entries, export produces JSON, no errors. Browser simulation only.
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE);
+(async()=>{const b=await chromium.launch({headless:true,executablePath:process.env.BROWSER_PATH});const ctx=await b.newContext({viewport:{width:390,height:844},acceptDownloads:true});const p=await ctx.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));
+const checks=[],ck=(v,t)=>{if(!v)throw Error('FAIL: '+t);checks.push(t)};
+await p.goto('file://'+process.cwd()+'/studies/t05-session.html');
+ck(await p.locator('#tasks .card').count()===8,'Eight task cards: T-A on three homes plus T-B to T-F');
+ck((await p.locator('.script').first().innerText()).includes('Find Alex'),'Scripts are shown verbatim');
+ck(await p.locator('.probes li').count()===9,'Nine probe questions');
+await p.fill('#pid','P1');await p.fill('#phone','Test phone');
+await p.locator('label:has([data-f=consent]) input').check();
+await p.locator('[name="o-T-A 2.1.2.1"][value=success]').check();
+await p.locator('[data-task="T-B"][data-f=probe][data-probe="0"]').fill('Book club only');
+const [dl]=await Promise.all([p.waitForEvent('download'),p.locator('[data-action=export]').click()]);
+const path=await dl.path();const j=JSON.parse(require('fs').readFileSync(path,'utf8'));
+ck(dl.suggestedFilename()==='P1.json','Export is named after the participant');
+ck(j.tasks['T-A 2.1.2.1'].outcome==='success'&&j.tasks['T-B'].probes['Who can see what you just sent?']==='Book club only','Export carries outcomes and verbatim probe answers');
+ck(j.consent===true&&!!j.exportedAt,'Export records consent and time');
+ck(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No horizontal overflow at 390');
+ck(await p.evaluate(()=>[...document.querySelectorAll('button,input,select,textarea,.links a')].map(e=>(e.type==='radio'||e.type==='checkbox')?e.closest('label'):e).filter(e=>e.getBoundingClientRect().height>0&&e.getBoundingClientRect().height<44).length===0),'All tap targets at least 44 px (radio and checkbox labels count)');
+ck(errors.length===0,'No page errors');
+await b.close();console.log('PASS '+checks.length+' T05 session page checks');})().catch(e=>{console.error(e.message);process.exit(1)});
