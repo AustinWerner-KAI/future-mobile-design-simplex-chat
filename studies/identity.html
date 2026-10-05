@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Identity — profiles, hidden profiles and incognito</title>
+<style>
+:root{--ink:#252b24;--muted:#555d63;--blue:#e7eff5;--pub:#dce9f3;--line:#7d8271;--soft:#c7cbc3;--clay:#8d3e2b;--white:#fff;--canvas:#f1f5f8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font:1rem/1.5 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:4px;overflow-wrap:anywhere}
+main{max-width:1240px;margin:0 auto;padding:40px 24px 64px}
+.eyebrow{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font:2.6rem/1.08 Georgia,serif;letter-spacing:-.03em;margin:10px 0 14px}
+.lede{max-width:760px;margin:0 0 8px}
+.note{font-size:.8125rem;color:var(--muted)}
+.rules{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 30px;padding:0;list-style:none}
+.rules li{border:1px solid var(--soft);border-radius:999px;padding:4px 12px;font-size:.8125rem;background:var(--white)}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:24px;align-items:start}
+figure{margin:0}
+figcaption{margin-top:12px}
+figcaption strong{display:block;font-size:.9375rem}
+figcaption span{font-size:.8125rem;color:var(--muted)}
+.phone{background:var(--white);border:1px solid var(--line);border-radius:28px;overflow:hidden;min-height:690px;display:flex;flex-direction:column}
+.head{display:flex;align-items:center;gap:10px;padding:14px 14px 10px}
+.round{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none;font-size:1.1rem}
+.head h2{font-size:1.35rem;font-weight:550;letter-spacing:-.03em;margin:0;line-height:1.1}
+.head small{display:block;font-size:.75rem;color:var(--muted)}
+.ctx{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;padding:6px 14px;font-size:.75rem;background:#f0f5f9;border-top:1px solid var(--soft);border-bottom:1px solid var(--soft)}
+.ctx span:last-child{color:var(--muted)}
+.body{flex:1;padding:4px 14px 12px;border-left:3px solid #dce9f3;overflow-wrap:anywhere}
+.msg{border-left:1px solid var(--line);padding-left:12px;margin:12px 0}
+.msg small{font-size:.75rem;color:var(--muted);display:block}
+.msg p{margin:4px 0;font-size:.9rem}
+.pending{border:1px dashed var(--line);border-radius:12px;padding:8px 10px;font-size:.8125rem;margin:8px 0}
+.pending b{display:block;font-weight:600}
+.card{border:1px solid var(--soft);border-radius:14px;padding:10px;display:flex;gap:10px;align-items:center;background:var(--white)}
+.av{width:38px;height:42px;border:1px solid var(--line);border-radius:6px;background:var(--pub);display:grid;place-items:center;font-size:.8rem;font-weight:600;flex:none;position:relative}
+.av.person{border-radius:50%;background:#f0f5f9;width:38px;height:38px}
+.av.group{border-radius:12px;background:#eef1e7;width:38px;height:38px}
+.card b{font-size:.9rem;font-weight:550;display:block}
+.card .meta{font-size:.75rem;color:var(--muted)}
+.btn{display:block;width:100%;text-align:center;border-radius:22px;min-height:44px;padding:10px 12px;font-size:.875rem;line-height:1.4;margin-top:8px;border:1px solid var(--line);background:var(--white)}
+.btn.primary{background:var(--clay);border-color:var(--clay);color:#fff7ed}
+.crossing{border-left:3px solid var(--clay);padding:2px 0 2px 12px;margin:12px 0}
+.crossing h3{font-size:1rem;margin:0 0 6px;font-weight:600}
+.crossing ul{margin:0 0 6px;padding-left:18px;font-size:.8125rem}
+.crossing li{margin:2px 0}
+.idrow{border:1px solid var(--soft);border-radius:12px;padding:8px 10px;font-size:.8125rem;margin:8px 0}
+.idrow b{display:block;margin-bottom:6px;font-weight:600}
+.switch{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:.8125rem}
+.switch span{flex:1;text-align:center;min-height:44px;display:grid;place-items:center;padding:0 8px}
+.switch span+span{border-left:2px solid var(--line)}
+.switch .on{background:var(--blue);font-weight:600}
+.switch .on::before,.tabs .on::before{content:"\2713\00a0"}
+.strip{display:flex;gap:10px;overflow:hidden;margin:4px 0 8px}
+.strip span{flex:none;width:72px;text-align:center;font-size:.75rem}
+.strip .av{margin:0 auto 4px}
+.beyond{margin-top:16px;padding-top:12px;border-top:1px solid var(--soft)}
+.search{border:1px solid var(--line);border-radius:14px;background:var(--canvas);padding:8px 12px;font-size:.95rem;margin:6px 0 10px}
+.group-h{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;font-weight:600;margin:12px 0 6px}
+.group-h span{font-weight:400;color:var(--muted);font-size:.75rem}
+.empty{font-size:.8rem;color:var(--muted);margin:0 0 6px}
+.row{display:flex;gap:10px;align-items:center;min-height:48px;padding:8px 0;border-bottom:1px solid var(--soft)}
+.row b{font-size:.88rem;font-weight:550;display:block}
+.row .meta{font-size:.75rem;color:var(--muted)}
+.tabs{display:flex;gap:8px;margin:4px 0 8px}
+.tabs span{font-size:.8125rem;min-height:44px;display:grid;place-items:center;padding:0 12px;border-radius:14px}
+.tabs .on{background:var(--blue);font-weight:600}
+.toast{background:var(--white);border-top:1px solid var(--soft);padding:10px 14px;font-size:.8125rem}
+.dock{border-top:1px solid var(--line);padding:8px 14px 12px}
+.dock .note{font-size:.75rem;margin:0 0 4px}
+.composer{border:1px solid var(--line);border-radius:12px;background:var(--canvas);min-height:44px;display:flex;align-items:center;padding:8px 10px;font-size:.8125rem;color:var(--muted)}
+.intents{margin:44px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px}
+.intent{background:var(--white);border:1px solid var(--soft);border-radius:16px;padding:14px}
+.intent b{display:block;margin-bottom:4px}
+.intent p{margin:0;font-size:.85rem}
+.n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1px solid var(--line);font-size:.75rem;margin-right:6px}
+footer{margin-top:40px}
+.journey{font:1.35rem/1.2 Georgia,serif;letter-spacing:-.02em;margin:36px 0 14px;font-weight:400}
+@media (max-width:640px){main{padding:24px 16px 48px}h1{font-size:2rem}}
+
+/* T08 additions */
+.sheet{margin:10px 0 0;border:1px solid var(--line);border-radius:18px 18px 0 0;background:var(--white);padding:10px 12px 12px;box-shadow:0 -4px 16px #252b2414}
+.sheet h3{font-size:1rem;margin:4px 0 8px;font-weight:600}
+.prow{display:flex;gap:10px;align-items:center;min-height:48px;padding:6px 0;border-bottom:1px solid var(--soft)}
+.prow b{font-size:.9rem;font-weight:550;display:block}
+.prow .meta{font-size:.75rem;color:var(--muted)}
+.prow .on{margin-left:auto;font-size:.8125rem;font-weight:600;background:var(--blue);border-radius:999px;padding:6px 10px}
+.prow .on::before{content:"\2713\00a0"}
+.av.me{border-radius:50%;width:38px;height:38px;background:#f0f5f9;border-width:2px}
+.mark{width:44px;height:44px;border:2px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none;font-size:.9rem;font-weight:600;background:#f0f5f9}
+.dim{opacity:.55}
+.check{display:flex;gap:10px;align-items:center;min-height:44px;font-size:.875rem}
+.check i{width:20px;height:20px;border:1px solid var(--line);border-radius:4px;display:grid;place-items:center;font-style:normal;font-size:.8rem;flex:none}
+.frame-note{font-size:.8125rem;color:var(--muted);margin:0 0 10px}
+.draft{font-weight:600;color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">From anatomy to interface · T08 study · design hypothesis</p>
+<h1>One phone, several worlds.</h1>
+<p class="lede">How profiles, hidden profiles and incognito fit the home built on relationships. A profile decides whose connections you see. Incognito decides what one new contact sees of you. The two are kept apart. Fictional people. Static mockup; no profile, password or connection is real.</p>
+<p class="note">Read the model: <a href="../docs/IDENTITY_MODEL.md">IDENTITY_MODEL</a> · Facts: <a href="https://simplex.chat/docs/guide/chat-profiles.html">SimpleX chat profiles</a></p>
+<ul class="rules" aria-label="Octopus flow rules shown">
+<li>Coordinate</li><li>Act locally</li><li>Retain context</li><li>Cross deliberately</li><li>Return coherently</li>
+</ul>
+
+<h2 class="journey">Profiles: whose connections fill the home</h2>
+<section class="flow" aria-label="Profile journey">
+<figure>
+<div class="phone" role="img" aria-label="Home screen with the active profile named in the subtitle and a profile mark at the top left">
+<div class="head"><span class="mark">A</span><div><h2>Close at hand.</h2><small>Austin · your connections</small></div><span class="round" style="margin-left:auto">＋</span></div>
+<div class="body" style="border-left:0">
+<div class="search" style="color:var(--muted)">Find a connection</div>
+<div class="group-h">Keep close <span>Edit favourites</span></div>
+<div class="strip"><span><span class="av person">M</span>Maya</span><span><span class="av group">F</span>Family</span><span><span class="av">CJ</span>Coast Journal</span><span><span class="av group" style="background:#f3efe4">HC</span>Harbour Café</span></div>
+<div class="group-h">Recent activity <span>All connections</span></div>
+<div class="row"><span class="av person">M</span><span><b>Maya</b><span class="meta">Individual · Shall we go on Saturday? · <span class="draft">Draft</span></span></span></div>
+<div class="row"><span class="av group">F</span><span><b>Family</b><span class="meta">Group · private · Lunch on Sunday? · 2 unread</span></span></div>
+<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · A quieter route to the sea.</span></span></div>
+<div class="row"><span class="av group" style="background:#f3efe4">HC</span><span><b>Harbour Café</b><span class="meta">Provider · Your table is available at 12:30.</span></span></div>
+</div>
+</div>
+<figcaption><strong>1 · The home names its profile</strong><span>Coordinate. "Austin · your connections" says whose world this is. The mark at the top left is the only identity control on the home: a rare action at the top edge. Rows say nothing about identity.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Profile sheet over the home listing Austin, active, and Work, with Add profile">
+<div class="head"><span class="mark">A</span><div><h2>Close at hand.</h2><small>Austin · your connections</small></div><span class="round" style="margin-left:auto">＋</span></div>
+<div class="body dim" style="border-left:0">
+<div class="search" style="color:var(--muted)">Find a connection</div>
+<div class="group-h">Keep close <span>Edit favourites</span></div>
+<div class="strip"><span><span class="av person">M</span>Maya</span><span><span class="av group">F</span>Family</span><span><span class="av">CJ</span>Coast Journal</span></div>
+</div>
+<div class="sheet">
+<h3>Your profiles</h3>
+<div class="prow"><span class="av me">A</span><span><b>Austin</b><span class="meta">4 connections · 2 unread</span></span><span class="on">Active</span></div>
+<div class="prow"><span class="av me" style="background:#eef1e7">W</span><span><b>Work</b><span class="meta">3 connections · 1 unread</span></span></div>
+<span class="btn">Add profile</span>
+<p class="note" style="margin:8px 0 0">Profiles live only on this phone. Each has its own connections, drafts and search. A profile can be hidden behind a password in its settings.</p>
+</div>
+</div>
+<figcaption><strong>2 · The profile list</strong><span>Act locally. A sheet over the home, not a new screen. Each profile shows its own unread count. No hidden profile is listed or counted: saying one exists would defeat hiding it.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Home after switching to the Work profile: different connections, empty search, no draft marker">
+<div class="head"><span class="mark" style="background:#eef1e7">W</span><div><h2>Close at hand.</h2><small>Work · your connections</small></div><span class="round" style="margin-left:auto">＋</span></div>
+<div class="body" style="border-left:0">
+<div class="search" style="color:var(--muted)">Find a connection</div>
+<div class="group-h">Keep close <span>Edit favourites</span></div>
+<div class="strip"><span><span class="av person">P</span>Priya</span><span><span class="av group">ST</span>Studio team</span></div>
+<div class="group-h">Recent activity <span>All connections</span></div>
+<div class="row"><span class="av person">P</span><span><b>Priya</b><span class="meta">Individual · Can you send the brief? · 1 unread</span></span></div>
+<div class="row"><span class="av group">ST</span><span><b>Studio team</b><span class="meta">Group · private · Samples arrive Monday.</span></span></div>
+<div class="row"><span class="av group" style="background:#f3efe4">S</span><span><b>Studio</b><span class="meta">Provider · The material samples arrived.</span></span></div>
+</div>
+<div class="toast">Switched to Work. Austin's drafts and search are kept for when you switch back.</div>
+</div>
+<figcaption><strong>3 · Switched: a different world</strong><span>Retain context. Work has its own favourites, rows, search and drafts. Maya's draft is not here and never will be. Switching back restores Austin's search text, scroll and the Draft marker exactly.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Home search with the full password typed, showing one result: Unhide Personal profile">
+<div class="head"><span class="mark">A</span><div><h2>Close at hand.</h2><small>Austin · your connections</small></div><span class="round" style="margin-left:auto">＋</span></div>
+<div class="body" style="border-left:0">
+<div class="search">lighthouse-1874</div>
+<div class="group-h">Your connections <span>on this phone</span></div>
+<p class="empty">No connections found. Try another name.</p>
+<span class="btn">Unhide Personal profile</span>
+<p class="note" style="margin-top:6px">This profile was hidden behind a password. Unhiding adds it to your profiles and switches to it.</p>
+</div>
+</div>
+<figcaption><strong>4 · Unhiding, in the search field</strong><span>Mirrors the native app: the full password typed into search. Any other text, including a partial password, shows only "No connections found". The interface never confirms that a hidden profile exists.</span></figcaption>
+</figure>
+</section>
+
+<h2 class="journey">Incognito: what one new contact sees of you</h2>
+<section class="flow" aria-label="Incognito journey">
+<figure>
+<div class="phone" role="img" aria-label="New connection dialog with incognito chosen and the generated name River Finch shown before the invitation is created">
+<div class="head"><div><h2>Let someone in.</h2><small>New connection · as Austin or incognito</small></div><span class="round" style="margin-left:auto">×</span></div>
+<div class="body" style="border-left:0">
+<p class="frame-note">An invitation starts a connection. It does not verify who they are.</p>
+<div class="crossing">
+<h3>Who they will see</h3>
+<div class="check"><i>✓</i>Use an incognito name for this connection</div>
+<div class="idrow"><b>They will see: River Finch</b>A random name for this one contact. Your name and picture are not sent to them, now or when you edit your profile.</div>
+<p class="note" style="margin:6px 0 0">Chosen now, fixed afterwards. You cannot change what this contact sees later.</p>
+<span class="btn primary">Create invitation · simulation</span>
+</div>
+</div>
+<div class="dock"><p class="note">Nothing leaves the phone until the invitation is shared.</p></div>
+</div>
+<figcaption><strong>5 · Choose once, before the invitation exists</strong><span>Cross deliberately. The generated name is shown before anything is created, so the person knows what the other side gets. The line says it is fixed afterwards, which is the SimpleX rule, not ours.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Invitation pending with the identity choice frozen and a demo QR placeholder">
+<div class="head"><div><h2>Let someone in.</h2><small>New connection · pending</small></div><span class="round" style="margin-left:auto">×</span></div>
+<div class="body" style="border-left:0">
+<div class="check dim"><i>✓</i>Use an incognito name for this connection</div>
+<p class="note" style="margin:0 0 10px">Set when the invitation was created. To use a different name, revoke this and create another.</p>
+<div style="border:1px dashed var(--line);border-radius:12px;height:150px;display:grid;place-items:center;font-size:.8125rem;color:var(--muted)">Demo QR · not a valid invitation</div>
+<p class="pending" style="margin-top:10px"><b>Pending · no connection yet</b>They will see River Finch when they accept.</p>
+<span class="btn">Revoke invitation</span>
+</div>
+<div class="dock"><p class="note">One-time invitation. Accepting it creates the connection.</p></div>
+</div>
+<figcaption><strong>6 · Frozen while pending</strong><span>The "already" state. The checkbox is disabled with a reason, and the only way to change the identity is to revoke and start again. Nothing is faked.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Home after acceptance: new contact Sam at the top of Recent activity, focused, with a feedback line naming the incognito identity">
+<div class="head"><span class="mark">A</span><div><h2>Close at hand.</h2><small>Austin · your connections</small></div><span class="round" style="margin-left:auto">＋</span></div>
+<div class="body" style="border-left:0">
+<div class="search" style="color:var(--muted)">Find a connection</div>
+<div class="group-h">Keep close <span>Edit favourites</span></div>
+<div class="strip"><span><span class="av person">M</span>Maya</span><span><span class="av group">F</span>Family</span><span><span class="av">CJ</span>Coast Journal</span></div>
+<div class="group-h">Recent activity <span>All connections</span></div>
+<div class="row" style="outline:3px solid var(--clay);outline-offset:2px;border-radius:8px"><span class="av person">S</span><span><b>Sam</b><span class="meta">Individual · Connected just now · no messages yet</span></span></div>
+<div class="row"><span class="av person">M</span><span><b>Maya</b><span class="meta">Individual · Shall we go on Saturday? · <span class="draft">Draft</span></span></span></div>
+<div class="row"><span class="av group">F</span><span><b>Family</b><span class="meta">Group · private · Lunch on Sunday? · 2 unread</span></span></div>
+</div>
+<div class="toast">Sam accepted in simulation. They see you as River Finch.</div>
+</div>
+<figcaption><strong>7 · Accepted: the result is visible</strong><span>Return coherently. Closes F5. The new row is at the top and in focus; the feedback line names the identity once, at the moment it was settled. The row itself carries no identity.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Sam's conversation with the composer naming the incognito identity">
+<div class="head"><span class="round">‹</span><div><h2>Sam</h2><small>Individual · personal context</small></div><span class="round" style="margin-left:auto">☆</span></div>
+<div class="ctx"><span>← Your connections</span><span>Place &amp; drafts retained</span></div>
+<div class="body">
+<div class="tabs"><span class="on">Conversation</span><span>Proposal</span><span>Security</span></div>
+<p class="empty">No messages yet. Sam accepted your invitation.</p>
+<div class="crossing">
+<h3>Not verified</h3>
+<ul><li>Compare security codes through another channel before trusting this connection.</li><li>Sam knows you as River Finch. Changes to your Austin profile are not sent here.</li></ul>
+</div>
+</div>
+<div class="dock"><p class="note">Sam · private conversation · as River Finch</p><div class="composer">Reply to Sam · private · as River Finch</div></div>
+</div>
+<figcaption><strong>8 · Named where you act</strong><span>The incognito name appears in the dock, where the message is written, and nowhere while reading. Same rule as the channel comment crossing (E1).</span></figcaption>
+</figure>
+</section>
+
+<h2 class="journey">Edge: editing a profile that has incognito contacts</h2>
+<section class="flow" aria-label="Profile edit">
+<figure>
+<div class="phone" role="img" aria-label="Profile edit screen for Austin with a note that incognito contacts keep the name they were given">
+<div class="head"><span class="round">‹</span><div><h2>Austin</h2><small>Profile · this phone</small></div></div>
+<div class="ctx"><span>← Your connections</span><span>Place retained</span></div>
+<div class="body">
+<p class="note" style="margin:10px 0 4px">Display name</p>
+<div class="search" style="margin:0 0 10px">Austin</div>
+<p class="note" style="margin:0 0 4px">Picture</p>
+<div class="card"><span class="av me">A</span><span><b>Monogram</b><span class="meta">No photo set</span></span></div>
+<div class="crossing" style="margin-top:14px">
+<h3>Who gets this change</h3>
+<ul><li>Sent to your contacts in this profile.</li><li>Incognito contacts keep the name they were given. Sam still sees River Finch.</li><li>Other profiles on this phone are not affected.</li></ul>
+<span class="btn primary">Save · simulation</span>
+<span class="btn">Hide this profile behind a password</span>
+</div>
+</div>
+</div>
+<figcaption><strong>9 · Edits reach contacts, not incognito ones</strong><span>Fact 5 from the SimpleX guide stated at the point of action. Hiding is offered here, in the profile's own settings, not on the home.</span></figcaption>
+</figure>
+</section>
+
+<section class="intents" aria-label="What this study claims">
+<div class="intent"><b>Profile</b><p>Whose connections fill the home. Switched from the top left. Each keeps its own search, scroll and drafts.</p></div>
+<div class="intent"><b>Hidden profile</b><p>Out of the list behind a password. Unhidden by typing the full password into search. Never confirmed to exist.</p></div>
+<div class="intent"><b>Incognito</b><p>A random name for one new connection, chosen once with the name shown, fixed afterwards, named only in the composer.</p></div>
+<div class="intent"><b>Unverified</b><p>Whether an incognito name can be changed later, and whether the contact can tell. Maintainer question.</p></div>
+</section>
+
+<footer><p class="note">Static study. Nothing here creates a profile, stores a password or connects to anyone. Measured for 44 px targets and a 12 px text floor; see the mobile audit log.</p></footer>
+</main>
+</body>
+</html>
