@@ -34,13 +34,15 @@ figcaption span{font-size:.8125rem;color:var(--muted)}
 .msg p{margin:4px 0;font-size:.9rem}
 .pending{border:1px dashed var(--line);border-radius:12px;padding:8px 10px;font-size:.8125rem;margin:8px 0}
 .pending b{display:block;font-weight:600}
-.card{border:1px solid var(--soft);border-radius:14px;padding:10px;display:flex;gap:10px;align-items:center;background:var(--white)}
+.card{border:1px solid var(--soft);border-radius:12px;padding:10px;display:flex;gap:10px;align-items:center;background:var(--white)}
 .av{width:38px;height:42px;border:1px solid var(--line);border-radius:6px;background:var(--pub);display:grid;place-items:center;font-size:.8rem;font-weight:600;flex:none;position:relative}
 .av.person{border-radius:50%;background:#f0f5f9;width:38px;height:38px}
 .av.group{border-radius:12px;background:#eef1e7;width:38px;height:38px}
+.av.provider{border-radius:12px;background:#f3efe4;width:38px;height:38px}
+.av::after{position:absolute;right:-6px;bottom:-5px;width:16px;height:16px;border:1px solid var(--line);border-radius:5px;background:var(--white);display:grid;place-items:center;line-height:0}.av.group::after{content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='10' height='10' fill='none' stroke='%23252b24' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='16' cy='10' r='4'/><circle cx='6' cy='13' r='3'/><circle cx='26' cy='13' r='3'/><path d='M9 26v-4a7 7 0 0 1 14 0v4M1 25v-3a5 5 0 0 1 7-5M31 25v-3a5 5 0 0 0-7-5'/></svg>")}.av.pub::after,.av:not(.person):not(.group):not(.provider):not(.me)::after{content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='10' height='10' fill='none' stroke='%23252b24' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M7 3h18v26H7zM11 3v26M15 10h7M15 15h7M15 20h7'/></svg>")}.av.provider::after{content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='10' height='10' fill='none' stroke='%23252b24' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M5 13h22v15H5zM3 13l4-8h18l4 8M12 28V18h8v10M3 13h26'/></svg>")}
 .card b{font-size:.9rem;font-weight:550;display:block}
 .card .meta{font-size:.75rem;color:var(--muted)}
-.btn{display:block;width:100%;text-align:center;border-radius:22px;min-height:44px;padding:10px 12px;font-size:.875rem;line-height:1.4;margin-top:8px;border:1px solid var(--line);background:var(--white)}
+.btn{display:block;width:100%;text-align:center;border-radius:999px;min-height:44px;padding:10px 12px;font-size:.875rem;line-height:1.4;margin-top:8px;border:1px solid var(--line);background:var(--white)}
 .btn.primary{background:var(--clay);border-color:var(--clay);color:#fff7ed}
 .crossing{border-left:3px solid var(--clay);padding:2px 0 2px 12px;margin:12px 0}
 .crossing h3{font-size:1rem;margin:0 0 6px;font-weight:600}
@@ -54,10 +56,10 @@ figcaption span{font-size:.8125rem;color:var(--muted)}
 .switch .on{background:var(--blue);font-weight:600}
 .switch .on::before,.tabs .on::before{content:"\2713\00a0"}
 .strip{display:flex;gap:10px;overflow:hidden;margin:4px 0 8px}
-.strip span{flex:0 0 auto;min-width:72px;max-width:7em;text-align:center;font-size:.75rem;overflow-wrap:normal;hyphens:auto}
+.strip > span{flex:0 0 auto;min-width:72px;max-width:7em;text-align:center;font-size:.75rem;overflow-wrap:normal;hyphens:auto}
 .strip .av{margin:0 auto 4px}
 .beyond{margin-top:16px;padding-top:12px;border-top:1px solid var(--soft)}
-.search{border:1px solid var(--line);border-radius:14px;background:var(--canvas);padding:8px 12px;font-size:.95rem;margin:6px 0 10px}
+.search{border:1px solid var(--line);border-radius:12px;background:var(--canvas);padding:8px 12px;font-size:.95rem;margin:6px 0 10px}
 .group-h{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;font-weight:600;margin:12px 0 6px}
 .group-h span{font-weight:400;color:var(--muted);font-size:.75rem}
 .empty{font-size:.8rem;color:var(--muted);margin:0 0 6px}
@@ -65,7 +67,7 @@ figcaption span{font-size:.8125rem;color:var(--muted)}
 .row b{font-size:.88rem;font-weight:550;display:block}
 .row .meta{font-size:.75rem;color:var(--muted)}
 .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
-.tabs span{font-size:.8125rem;min-height:44px;min-width:44px;display:flex;align-items:center;justify-content:center;padding:0 12px;border-radius:14px;overflow-wrap:normal;white-space:nowrap}
+.tabs span{font-size:.8125rem;min-height:44px;min-width:44px;display:flex;align-items:center;justify-content:center;padding:0 14px;border-radius:999px;overflow-wrap:normal;white-space:nowrap}
 .tabs .on{background:var(--blue);font-weight:600}
 .toast{background:var(--white);border-top:1px solid var(--soft);padding:10px 14px;font-size:.8125rem}
 .dock{border-top:1px solid var(--line);padding:8px 14px 12px}
@@ -81,15 +83,15 @@ footer{margin-top:40px}
 @media (max-width:640px){main{padding:24px 16px 48px}h1{font-size:2rem}}
 
 /* T08 additions */
-.sheet{margin:10px 0 0;border:1px solid var(--line);border-radius:18px 18px 0 0;background:var(--white);padding:10px 12px 12px;box-shadow:0 -4px 16px #252b2414}
+.sheet{margin:10px 0 0;border:1px solid var(--line);border-radius:16px 16px 0 0;background:var(--white);padding:10px 12px 12px;box-shadow:0 -4px 16px #252b2414}
 .sheet h3{font-size:1rem;margin:4px 0 8px;font-weight:600}
 .prow{display:flex;gap:10px;align-items:center;min-height:48px;padding:6px 0;border-bottom:1px solid var(--soft)}
 .prow b{font-size:.9rem;font-weight:550;display:block}
 .prow .meta{font-size:.75rem;color:var(--muted)}
 .prow .on{margin-left:auto;font-size:.8125rem;font-weight:600;background:var(--blue);border-radius:999px;padding:6px 10px}
 .prow .on::before{content:"\2713\00a0"}
-.av.me{border-radius:50%;width:38px;height:38px;background:#f0f5f9;border-width:2px}
-.mark{width:44px;height:44px;border:2px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none;font-size:.9rem;font-weight:600;background:#f0f5f9}
+.av.me{border-radius:50%;width:38px;height:38px;background:#dce9f3;border-width:2px}
+.mark{width:44px;height:44px;border:2px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none;font-size:.9rem;font-weight:600;background:#dce9f3}
 .dim{opacity:.55}
 .check{display:flex;gap:10px;align-items:center;min-height:44px;font-size:.875rem}
 .check i{width:20px;height:20px;border:1px solid var(--line);border-radius:4px;display:grid;place-items:center;font-style:normal;font-size:.8rem;flex:none}
@@ -115,12 +117,12 @@ footer{margin-top:40px}
 <div class="body" style="border-left:0">
 <div class="search" style="color:var(--muted)">Find a connection</div>
 <div class="group-h">Keep close <span>Edit favourites</span></div>
-<div class="strip"><span><span class="av person">M</span>Maya</span><span><span class="av group">F</span>Family</span><span><span class="av">CJ</span>Coast Journal</span><span><span class="av group" style="background:#f3efe4">HC</span>Harbour Café</span></div>
+<div class="strip"><span><span class="av person">M</span>Maya</span><span><span class="av group">F</span>Family</span><span><span class="av">CJ</span>Coast Journal</span><span><span class="av provider">HC</span>Harbour Café</span></div>
 <div class="group-h">Recent activity <span>All connections</span></div>
 <div class="row"><span class="av person">M</span><span><b>Maya</b><span class="meta">Individual · Shall we go on Saturday? · <span class="draft">Draft</span></span></span></div>
 <div class="row"><span class="av group">F</span><span><b>Family</b><span class="meta">Group · private · Lunch on Sunday? · 2 unread</span></span></div>
 <div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · A quieter route to the sea.</span></span></div>
-<div class="row"><span class="av group" style="background:#f3efe4">HC</span><span><b>Harbour Café</b><span class="meta">Provider · Your table is available at 12:30.</span></span></div>
+<div class="row"><span class="av provider">HC</span><span><b>Harbour Café</b><span class="meta">Provider · Your table is available at 12:30.</span></span></div>
 </div>
 </div>
 <figcaption><strong>1 · The home carries a mark, not a name</strong><span>Coordinate. The profile mark at the top left is the only identity control on the home: a rare action at the top edge. No name is written in the header (owner decision, E1 holds). Rows say nothing about identity.</span></figcaption>
@@ -137,7 +139,7 @@ footer{margin-top:40px}
 <div class="sheet">
 <h3>Your profiles</h3>
 <div class="prow"><span class="av me">A</span><span><b>Austin</b><span class="meta">4 connections · 2 unread</span></span><span class="on">Active</span></div>
-<div class="prow"><span class="av me" style="background:#eef1e7">W</span><span><b>Work</b><span class="meta">3 connections · 1 unread</span></span></div>
+<div class="prow"><span class="av me">W</span><span><b>Work</b><span class="meta">3 connections · 1 unread</span></span></div>
 <span class="btn">Add profile</span>
 <p class="note" style="margin:8px 0 0">Profiles live only on this phone. Each has its own connections, drafts and search. A profile can be hidden behind a password in its settings.</p>
 </div>
@@ -147,7 +149,7 @@ footer{margin-top:40px}
 
 <figure>
 <div class="phone" role="img" aria-label="Home after switching to the Work profile: different connections, empty search, no draft marker">
-<div class="head"><span class="mark" style="background:#eef1e7">W</span><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div><span class="round" style="margin-left:auto">＋</span></div>
+<div class="head"><span class="mark">W</span><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div><span class="round" style="margin-left:auto">＋</span></div>
 <div class="body" style="border-left:0">
 <div class="search" style="color:var(--muted)">Find a connection</div>
 <div class="group-h">Keep close <span>Edit favourites</span></div>
@@ -155,7 +157,7 @@ footer{margin-top:40px}
 <div class="group-h">Recent activity <span>All connections</span></div>
 <div class="row"><span class="av person">P</span><span><b>Priya</b><span class="meta">Individual · Can you send the brief? · 1 unread</span></span></div>
 <div class="row"><span class="av group">ST</span><span><b>Studio team</b><span class="meta">Group · private · Samples arrive Monday.</span></span></div>
-<div class="row"><span class="av group" style="background:#f3efe4">S</span><span><b>Studio</b><span class="meta">Provider · The material samples arrived.</span></span></div>
+<div class="row"><span class="av provider">S</span><span><b>Studio</b><span class="meta">Provider · The material samples arrived.</span></span></div>
 </div>
 <div class="toast">Switched to Work. Austin's drafts and search are kept for when you switch back.</div>
 </div>
@@ -220,7 +222,7 @@ footer{margin-top:40px}
 <div class="group-h">Keep close <span>Edit favourites</span></div>
 <div class="strip"><span><span class="av person">M</span>Maya</span><span><span class="av group">F</span>Family</span><span><span class="av">CJ</span>Coast Journal</span></div>
 <div class="group-h">Recent activity <span>All connections</span></div>
-<div class="row" style="outline:3px solid var(--clay);outline-offset:2px;border-radius:8px"><span class="av person">S</span><span><b>Sam</b><span class="meta">Individual · Connected just now · no messages yet</span></span></div>
+<div class="row" style="outline:3px solid var(--clay);outline-offset:2px;border-radius:12px"><span class="av person">S</span><span><b>Sam</b><span class="meta">Individual · Connected just now · no messages yet</span></span></div>
 <div class="row"><span class="av person">M</span><span><b>Maya</b><span class="meta">Individual · Shall we go on Saturday? · <span class="draft">Draft</span></span></span></div>
 <div class="row"><span class="av group">F</span><span><b>Family</b><span class="meta">Group · private · Lunch on Sunday? · 2 unread</span></span></div>
 </div>
