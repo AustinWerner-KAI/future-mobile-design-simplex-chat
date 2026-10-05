@@ -33,8 +33,8 @@ Scoped on the owner's request (5 October 2026). Frames 1 to 5 of the [study](../
 | 1 | Home at rest | Your connections fill the screen. One door, "Find public channels and groups", sits after Recent activity. Not a tab, not above people. Nothing is fetched until it's tapped. |
 | 2 | Public directory | A temporary task, not a destination: the return route says "← Your connections". The listing loads once, then filters on the phone as the website does. Active, New, All. Rows name type and audience: "Publication · public · 1,240 subscribers". |
 | 3 | Preview | The row unfolds in place; the other results stay below. Three facts, one identity control, then Join. The same panel opens from a shared link or a `#name`. |
-| 4 | Channel page | Reading mode. Posts fill the screen. Reacting is local. The first comment is a second crossing that names who you'll appear as. Forward hides the source, as SimpleX does. No private reply to the publisher. Leave channel is one step from the header. |
-| 5 | Return | Back to the home. The channel sits among your connections, marked "joined just now as Austin". The directory keeps your last search. |
+| 4 | Channel page | Reading mode. Posts fill the screen. Reacting is local. Identity is never shown while reading, because readers are not visible to the owner or each other. Tapping Comment unfolds a second crossing under that post, and that is where the identity is named. Forward hides the source, as SimpleX does. No private reply to the publisher. Leave channel is one step from the header. |
+| 5 | Return | Back to the home. The channel sits among your connections, marked "joined just now". The directory keeps your last search. |
 
 Other doors (frames 6 to 9) all open the same preview as step 3: a link from a person, a `#name`, a forwarded post, a web link.
 
@@ -82,7 +82,7 @@ We won't simulate payments, credits or name purchases in the prototype. They're 
 
 ## Audit
 
-Critiqued against the Kings of Mobile Design framework on 5 October 2026, findings C1 to C10 and a second pass D1 to D6, in the [mobile audit log](MOBILE_AUDIT_LOG.md#4-t19-channel-discovery-study--5-october-2026). Applied: C1 to C10, D1, D2, D4, D5. Open: D3 (what a channel link carries) and D6 (loading state, to draw in the runtime).
+Critiqued against the Kings of Mobile Design framework on 5 October 2026, findings C1 to C10 and a second pass D1 to D6, in the [mobile audit log](MOBILE_AUDIT_LOG.md#4-t19-channel-discovery-study--5-october-2026). Applied: C1 to C10, D1, D2, D4, D5, E1 to E5. Open: D3 (what a channel link carries), D6 (loading state, to draw in the runtime) and E6 (corner target size, a runtime-wide question for after T05).
 
 **Vocabulary:** the type word is always Publication or Group, as in the home. "Public" is the audience word, never part of the type name.
 

@@ -52,6 +52,21 @@ Re-audited after C1 to C10. Method as above, plus computed contrast, 320 × 700 
 
 **Still untested:** screen readers, native text scaling, physical devices, participants. The study is static: its buttons are not controls, so focus order and keyboard use are not meaningful here and will be checked in the runtime build.
 
+### Third pass on the full journey (same day)
+
+After the owner scoped the journey end to end (home door, directory, preview, channel page, return), re-audited against the framework's placement, physical sizing, legibility and "one defining moment" rules. Owner approved E1 to E5 and logged E6.
+
+**Passed:** blue materials behind text are solid (12.5:1 ink, 6.1:1 muted); stacked buttons 8 px apart; the home door sits after the connections, mid to low screen; the preview unfolds beside its row; visual expression stays on the crossings.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| E1 | Integrity | "Reading as Austin" in the channel header and "joined just now as Austin" on the home row named an identity while reading. Owners can't see subscribers and readers can't see each other, so this implied a visibility that doesn't exist. | Identity is named only in the comment crossing. The channel page says "you are not visible while reading". |
+| E2 | Placement | The comment crossing sat at the bottom of the page, apart from the post it concerned, and both posts still offered Comment. | The crossing unfolds under the tapped post, whose Comment is marked. |
+| E3 | Clarity | The dock said Leave was in ⋯, but no ⋯ was drawn. | ⋯ drawn in the header beside the favourite star: a rare action at the top edge. |
+| E4 | Vocabulary | "1,240 readers" on the channel page; "subscribers" everywhere else. | Subscribers throughout. |
+| E5 | Touch | Tabs 4 px apart; identity switch halves touching. | Tabs 8 px apart. The switch keeps its segmented shape with a 2 px divider. |
+| E6 | Physical size | Back and + are 44 px in the top corners. The framework's physical rule asks 11 to 12 mm for corners; 44 px is about 7 to 8 mm on a modern phone. | Logged, not changed. This is the runtime's shared header. Decide after T05, when participants show whether corner reach is a problem. |
+
 ## 3. Flow, state and colour semantics — 5 October 2026
 
 **Scope:** a scripted walkthrough of the V2.1.2.1 candidate plus T11 at 390 × 844. Steps: Maya reply and draft, return home, search to Family, proposal, resume home, browser Back, Coast Journal, Harbour Café chat and email send, invitation accept, quiet mode. Each step was judged against the six flow rules and framework sections 2, 3 and 5. Evidence level: browser simulation.
