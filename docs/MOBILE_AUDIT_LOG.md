@@ -4,6 +4,69 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 4. T19 channel discovery study — 5 October 2026
+
+Target: `studies/channel-discovery.html` and `docs/CHANNEL_DISCOVERY_MODEL.md`, a static design study, not the runtime. Measured in headless Chromium at 390 × 844 with a script in the scratchpad; design judgement against the framework and the thesis. Owner approved all ten fixes.
+
+### Findings
+
+| # | Area | Finding | Fix applied |
+|---|---|---|---|
+| C1 | Integrity | Frame 1 showed "1,240 subscribers" before anything left the phone. A link carries name and description; a count needs a relay. Contradicted the study's own lookup rule. | Card shows "from Maya's link" plus description. A note says Preview fetches details from the relays. Counts appear in frame 2. |
+| C2 | Integrity | Frame 4's toast said "Back to Maya", but that journey started in search. | Return goes to the search with its query kept. The toast now says "you're back in your search". |
+| C3 | Integrity | Frame 4 mixed results and the joined toast with no preview between, so the crossing differed by path. | Frame 4 is results only, with a note that a row opens the frame 2 preview. New frame 5 holds the return. |
+| C4 | State | No offline, loading, empty, already-subscribed, admin-review or name-not-found states. | Frame 5 shows request sent, name not found and directory unavailable. The model gains a "States that must exist" table including loading, already subscribed and duplicate. |
+| C5 | Touch | All buttons 40 px tall; identity switch 23 px; tabs 26 px; back button 40 px. | Buttons, switch halves, tabs and back button are 44 px minimum. Rows 48 px minimum. |
+| C6 | Reading | 17 text runs at 11.5 px or 11.2 px, under the 12 px floor set in M1. | Smallest size is now 12 px (25 runs); most body text 13 px. |
+| C7 | Input | Selected tab and identity choice were shown by blue fill only. | Check mark and bold on the selected tab and identity. |
+| C8 | Clarity | "Join as Austin" plus a toggle also reading Austin. | One control: "Join as" with Austin or Incognito, the chosen one checked. |
+| C9 | Copy | "Public name · looks like a name". | "Public name · not yet looked up". |
+| C10 | Copy | Four preview bullets, two about relays. | Three bullets. "The owner's relays carry the posts and can read them" carries the hosting signal. |
+
+### After the fixes
+
+- Smallest tap target 44 px; smallest text 12 px; no blue text; no horizontal overflow at 390 or 1440; no clipped phone body at either width. Phone frames grew from 610 to 690 px to fit frame 5.
+- Kept: the preview beside the message, explicit taps for name lookup and directory search, no Explore tab.
+
+### Framework notes
+
+- **Evidence level:** code inspection and browser rendering of a static study. No runtime, device, screen reader or participant. Sizes are CSS pixels.
+- **State model:** the study now shows not-yet-fetched, loading (described), already subscribed (described), pending review, not found, offline and the return. Duplicate prevention is stated, not built.
+- **Open question for maintainers:** does opening a channel link contact relays before the person taps anything? The design assumes not. If native prefetches, C1's note is wrong and the honest line changes.
+- **Concept test:** *SimpleX foundations:* relays can read channel content, subscribers are hidden, identity is per connection. *Octopus flow:* preview as local action, join as a deliberate crossing, return to the originating search or chat. *What changes:* discovery stays inside relationships and search rather than a browse tab. *Abandon if:* T05 participants look for Explore, join without noticing the identity, or confuse a public group with a private one.
+
+### Second pass on the revised study (same day)
+
+Re-audited after C1 to C10. Method as above, plus computed contrast, 320 × 700 and 200% root text. Owner approved D1, D2, D4 and D5; D3 and D6 stay open.
+
+**Passed:** muted text 6.1:1 or better; primary button 6.9:1 on clay; no blue words; 320 px with no overflow or clipping; check marks render; 12 px floor holds; all targets 44 px or more.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| D1 | Integrity | Frame 5 combined contradictory states: "Directory unavailable" beside a channel just joined from the directory, and a lookup for "#coastjournal" after frame 3 looked up "#coast". | Split. Frame 5 is the return alone. Frame 6 shows the three failure outcomes, each captioned with the search that caused it and a line saying they would not appear at once. |
+| D2 | Integrity | Directory rows said "Public channel"; the home row said "Publication". Same fault as M4. | One vocabulary: "Publication · public · 1,240 subscribers", "Group · public · 85 members". The directory header says "Public publications and groups". |
+| D3 | Unverified | Frame 1 shows a description "from Maya's link". Not confirmed that SimpleX channel links carry a description. | Open. If links carry only an address, the card is name only, or "Channel link", until preview. Maintainer question added to the model. |
+| D4 | Large text | At 200% root text every phone body clipped (315 to 721 px hidden) and the page overflowed sideways. Fixed phone heights with overflow hidden. | Phones use min-height and grow with content; grid columns and long links can wrap. At 200% there is now no clipping and no overflow. |
+| D5 | Labels | Screen-reader labels on frames 3 and 4 described the pre-fix frames ("a public name match", "the return after joining"). | Rewritten to match the frames. |
+| D6 | State | The loading state (Join unavailable while details fetch) is described in the model but not drawn. | Open. Draw it when T19 is built in the runtime, where it can be tested. |
+
+**Still untested:** screen readers, native text scaling, physical devices, participants. The study is static: its buttons are not controls, so focus order and keyboard use are not meaningful here and will be checked in the runtime build.
+
+### Third pass on the full journey (same day)
+
+After the owner scoped the journey end to end (home door, directory, preview, channel page, return), re-audited against the framework's placement, physical sizing, legibility and "one defining moment" rules. Owner approved E1 to E5 and logged E6.
+
+**Passed:** blue materials behind text are solid (12.5:1 ink, 6.1:1 muted); stacked buttons 8 px apart; the home door sits after the connections, mid to low screen; the preview unfolds beside its row; visual expression stays on the crossings.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| E1 | Integrity | "Reading as Austin" in the channel header and "joined just now as Austin" on the home row named an identity while reading. Owners can't see subscribers and readers can't see each other, so this implied a visibility that doesn't exist. | Identity is named only in the comment crossing. The channel page says "you are not visible while reading". |
+| E2 | Placement | The comment crossing sat at the bottom of the page, apart from the post it concerned, and both posts still offered Comment. | The crossing unfolds under the tapped post, whose Comment is marked. |
+| E3 | Clarity | The dock said Leave was in ⋯, but no ⋯ was drawn. | ⋯ drawn in the header beside the favourite star: a rare action at the top edge. |
+| E4 | Vocabulary | "1,240 readers" on the channel page; "subscribers" everywhere else. | Subscribers throughout. |
+| E5 | Touch | Tabs 4 px apart; identity switch halves touching. | Tabs 8 px apart. The switch keeps its segmented shape with a 2 px divider. |
+| E6 | Physical size | Back and + are 44 px in the top corners. The framework's physical rule asks 11 to 12 mm for corners; 44 px is about 7 to 8 mm on a modern phone. | Logged, not changed. This is the runtime's shared header. Decide after T05, when participants show whether corner reach is a problem. |
+
 ## 3. Flow, state and colour semantics — 5 October 2026
 
 **Scope:** a scripted walkthrough of the V2.1.2.1 candidate plus T11 at 390 × 844. Steps: Maya reply and draft, return home, search to Family, proposal, resume home, browser Back, Coast Journal, Harbour Café chat and email send, invitation accept, quiet mode. Each step was judged against the six flow rules and framework sections 2, 3 and 5. Evidence level: browser simulation.
