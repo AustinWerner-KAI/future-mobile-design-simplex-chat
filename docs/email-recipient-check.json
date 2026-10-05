@@ -1,0 +1,68 @@
+{
+  "task": "T11",
+  "date": "2026-10-05",
+  "source": "v21.html (generated from prototypes/src/v21)",
+  "method": "Agent-operated headless Chromium via Playwright. Browser simulation only.",
+  "viewport": "390x844 plus 320/390 overflow checks",
+  "checks": [
+    "Summary no longer names a fixed destination",
+    "Four chat relationships offered",
+    "Publications and providers are not offered",
+    "No recipient is preselected",
+    "Review blocked until a recipient is chosen",
+    "Disabled state explains itself",
+    "Default email text is reviewable once a recipient is chosen",
+    "Blank detail cannot be reviewed",
+    "Review shows exact text",
+    "Review names group and its members",
+    "Review names the identity used",
+    "Change keeps the prepared text",
+    "Change keeps the chosen recipient",
+    "Status names the recipient",
+    "Focus moves to Open Family",
+    "Same text to same chat is blocked with a reason",
+    "Same text can be reviewed for a different chat",
+    "Review switches audience to Maya",
+    "Cancel closes the review",
+    "Cancel folds the tool",
+    "Cancel announces that nothing was shared",
+    "Cancel discards the preparation",
+    "Family received exactly one share",
+    "Maya received nothing after cancel",
+    "Prepared detail and recipient retained after leaving",
+    "Email reply draft stays independent",
+    "Book club review shows its own members",
+    "Baseline also requires a deliberate choice",
+    "No horizontal overflow at 320",
+    "No horizontal overflow at 390",
+    "F2: reply sits before local tool cards",
+    "F1: status bar is not oat",
+    "F4: replying clears unread",
+    "F3: email reply states transport, recipient and delivery limit",
+    "F2: email reply sits under the email, before the picker",
+    "No page errors"
+  ],
+  "captures": [
+    {
+      "path": "studies/t11-captures/01-choose.png",
+      "caption": "Prepare a detail and choose a chat. Nothing is preselected.",
+      "sha256": "adc897d204cdc6069c5c48746de08818104d0e09721892787b870c1e4303c41d"
+    },
+    {
+      "path": "studies/t11-captures/02-review-family.png",
+      "caption": "Review states exact text, audience and identity before sharing.",
+      "sha256": "dc2d35d4ef64f8494093a39004a311d8168e019ccceb1fc031a58aab0f52fe8a"
+    },
+    {
+      "path": "studies/t11-captures/03-duplicate-blocked.png",
+      "caption": "After sharing, the same text cannot go to the same chat again.",
+      "sha256": "73a576c5e266dfd1bdf5191f3b2a18e04742c4d1b658665ae3c8adf32d0d16f0"
+    }
+  ],
+  "limits": [
+    "No human participants or physical phones",
+    "No screen reader, native keyboard or enlarged-text testing",
+    "No real delivery, mailbox or SimpleX identity",
+    "RAM-only state; reload clears it"
+  ]
+}

@@ -1,0 +1,93 @@
+// T11 — general email handoff: recipient choice, review, cancel and duplicate prevention.
+// Browser simulation only. Writes docs/email-recipient-check.json and studies/t11-captures/.
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE),fs=require('fs'),crypto=require('crypto');
+(async()=>{
+const b=await chromium.launch({headless:true,executablePath:process.env.BROWSER_PATH});
+const checks=[],errors=[],captures=[];
+const ck=(v,t)=>{if(!v)throw Error('FAIL: '+t);checks.push(t)};
+fs.mkdirSync('studies/t11-captures',{recursive:true});
+const shot=async(p,name,caption)=>{const path='studies/t11-captures/'+name+'.png';await p.screenshot({path,animations:'disabled'});captures.push({path,caption,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')})};
+const open=async(p,query)=>{await p.goto('file://'+process.cwd()+'/v21.html?mobile=1&'+query+'#harbour');await p.locator('[data-tab=email]').click();await p.locator('.carry > summary').click()};
+const ctx=await b.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
+const p=await ctx.newPage();p.on('pageerror',e=>errors.push(e.message));
+await open(p,'version=2.1.2.1');
+const review=p.locator('[data-action=review-detail]');
+ck(await p.locator('.carry > summary').innerText()==='Bring a detail to a chat','Summary no longer names a fixed destination');
+ck(await p.locator('[name=detail-to]').count()===4,'Four chat relationships offered');
+const offered=await p.locator('.recipient strong').allTextContents();
+ck(!offered.includes('Coast Journal')&&!offered.includes('Studio')&&!offered.includes('Harbour Café'),'Publications and providers are not offered');
+ck(await p.locator('[name=detail-to]:checked').count()===0,'No recipient is preselected');
+ck(await review.isDisabled(),'Review blocked until a recipient is chosen');
+ck((await p.locator('.detail-hint').innerText()).includes('Choose who receives it'),'Disabled state explains itself');
+await shot(p,'01-choose','Prepare a detail and choose a chat. Nothing is preselected.');
+await p.locator('label.recipient:has([value=family])').click();
+ck(!(await review.isDisabled()),'Default email text is reviewable once a recipient is chosen');
+await p.locator('#detail').fill('   ');
+ck(await review.isDisabled(),'Blank detail cannot be reviewed');
+await p.locator('#detail').fill('Table at 12:30 on Saturday.');
+await review.click();
+const boundary=await p.locator('.carry .boundary').innerText();
+ck(boundary.includes('Table at 12:30 on Saturday.'),'Review shows exact text');
+ck(boundary.includes('To Family')&&boundary.includes('you, Maya and Alex'),'Review names group and its members');
+ck(boundary.includes('as Austin'),'Review names the identity used');
+await shot(p,'02-review-family','Review states exact text, audience and identity before sharing.');
+await p.locator('[data-action=edit-detail]').click();
+ck(await p.locator('#detail').inputValue()==='Table at 12:30 on Saturday.','Change keeps the prepared text');
+ck(await p.locator('[name=detail-to][value=family]').isChecked(),'Change keeps the chosen recipient');
+await review.click();
+await p.locator('[data-action=confirm-detail]').click();
+ck((await p.locator('.carry .status').innerText()).includes('Family'),'Status names the recipient');
+ck(await p.evaluate(()=>document.activeElement.dataset.open)==='family','Focus moves to Open Family');
+ck(await review.isDisabled()&&(await p.locator('.detail-hint').innerText()).includes('Already shared with Family'),'Same text to same chat is blocked with a reason');
+await shot(p,'03-duplicate-blocked','After sharing, the same text cannot go to the same chat again.');
+await p.locator('label.recipient:has([value=maya])').click();
+ck(!(await review.isDisabled()),'Same text can be reviewed for a different chat');
+await review.click();
+ck((await p.locator('.carry .boundary').innerText()).includes('To Maya · private conversation'),'Review switches audience to Maya');
+await p.locator('[data-action=cancel-detail]').click();
+ck(await p.locator('[data-action=confirm-detail]').count()===0,'Cancel closes the review');
+ck(!(await p.locator('.carry').evaluate(e=>e.open)),'Cancel folds the tool');
+ck((await p.locator('.app .feedback').innerText()).includes('Nothing shared'),'Cancel announces that nothing was shared');
+await p.locator('.carry > summary').click();
+ck(await p.locator('[name=detail-to]:checked').count()===0&&(await p.locator('#detail').inputValue())==='A table is available at 12:30.','Cancel discards the preparation');
+await p.locator('[data-open=family]').first().click();
+let log=await p.locator('.outgoing').allTextContents();
+ck(log.length===1&&log[0].includes('Table at 12:30 on Saturday.'),'Family received exactly one share');
+await p.locator('[data-action=home]').click();
+await p.locator('.rows [data-open=maya]').click();
+ck(await p.locator('.outgoing').count()===0,'Maya received nothing after cancel');
+// Draft and choice survive leaving the provider.
+await p.locator('[data-action=home]').click();
+await p.locator('.rows [data-open=harbour]').click();
+await p.locator('[data-tab=email]').click();
+if(!(await p.locator('.carry').evaluate(e=>e.open)))await p.locator('.carry > summary').click();
+await p.locator('#detail').fill('Ask for a window table.');
+await p.locator('label.recipient:has([value=bookclub])').click();
+await p.locator('#reply').fill('Thanks, we will take it.');
+await p.locator('[data-action=home]').click();
+await p.locator('.rows [data-open=harbour]').click();
+ck(await p.locator('#detail').inputValue()==='Ask for a window table.'&&await p.locator('[name=detail-to][value=bookclub]').isChecked(),'Prepared detail and recipient retained after leaving');
+ck(await p.locator('#reply').inputValue()==='Thanks, we will take it.','Email reply draft stays independent');
+await review.click();
+ck((await p.locator('.carry .boundary').innerText()).includes('you, Alex and Priya'),'Book club review shows its own members');
+// Baseline (non-community) path no longer forces Maya.
+const q=await ctx.newPage();q.on('pageerror',e=>errors.push(e.message));
+await open(q,'version=2.1.1');
+ck(await q.locator('[name=detail-to]:checked').count()===0,'Baseline also requires a deliberate choice');
+// Narrow fit.
+for(const w of [320,390]){const n=await b.newPage({viewport:{width:w,height:700}});await open(n,'version=2.1.2.1');await n.locator('label.recipient:has([value=alex])').click();await n.locator('[data-action=review-detail]').click();ck(await n.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No horizontal overflow at '+w);await n.close();}
+// Flow audit F1-F4 (MOBILE_AUDIT_LOG section 3).
+const f=await ctx.newPage();f.on('pageerror',e=>errors.push(e.message));
+await f.goto('file://'+process.cwd()+'/v21.html?mobile=1&version=2.1.2.1#maya');await f.locator('#reply').fill('See you then');await f.locator('[data-action=send]').click();
+ck(await f.evaluate(()=>{const o=document.querySelector('.outgoing'),c=document.querySelector('.community-object');return !!(o&&c&&(o.compareDocumentPosition(c)&Node.DOCUMENT_POSITION_FOLLOWING));}),'F2: reply sits before local tool cards');
+ck(await f.locator('.app .feedback').evaluate(e=>getComputedStyle(e).backgroundColor)==='rgb(255, 255, 255)','F1: status bar is not oat');
+await f.locator('[data-action=home]').click();
+ck(!(await f.locator('.rows [data-open=maya]').innerText()).includes('unread'),'F4: replying clears unread');
+await f.locator('.rows [data-open=harbour]').click();await f.locator('[data-tab=email]').click();await f.locator('#reply').fill('We will take it');await f.locator('[data-action=send]').click();
+ck((await f.locator('.outgoing').innerText()).includes('Email to bookings@example.com')&&(await f.locator('.outgoing').innerText()).includes('delivery unconfirmed'),'F3: email reply states transport, recipient and delivery limit');
+ck(await f.evaluate(()=>{const o=document.querySelector('.outgoing'),d=document.querySelector('.carry');return !!(o.compareDocumentPosition(d)&Node.DOCUMENT_POSITION_FOLLOWING);}),'F2: email reply sits under the email, before the picker');
+ck(errors.length===0,'No page errors');
+await b.close();
+fs.writeFileSync('docs/email-recipient-check.json',JSON.stringify({task:'T11',date:new Date().toISOString().slice(0,10),source:'v21.html (generated from prototypes/src/v21)',method:'Agent-operated headless Chromium via Playwright. Browser simulation only.',viewport:'390x844 plus 320/390 overflow checks',checks,captures,limits:['No human participants or physical phones','No screen reader, native keyboard or enlarged-text testing','No real delivery, mailbox or SimpleX identity','RAM-only state; reload clears it']},null,2)+'\n');
+console.log('PASS '+checks.length+' T11 email recipient checks');
+})().catch(e=>{console.error(e.message);process.exit(1)});
