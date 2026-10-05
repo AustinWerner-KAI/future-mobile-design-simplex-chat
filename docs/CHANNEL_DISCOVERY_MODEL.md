@@ -28,11 +28,25 @@ Ranked by fit with our thesis that human relationships organise the interface. T
 | Rule | Channel behaviour |
 |---|---|
 | **Coordinate** | Discovery starts where the person is: a conversation, or home search. Your own connections always come first in search. Looking up a `#name` and searching the public directory each happen only when tapped, because both leave the phone. |
-| **Act locally** | A shared channel opens as a preview *beside the message that carried it*, not on a new screen. The person decides there and stays in the conversation. |
+| **Act locally** | A shared channel opens as a preview *beside the message that carried it*, not on a new screen. The person decides there and stays in the conversation. The card shows only what the link carries (name, description). Subscriber counts and activity need a relay, so they appear after "Preview channel", and the card says so. |
 | **Adapt the space** | Subscribed channels stay compact in the home (one row, latest post), because people come first. A channel unfolds into reading mode when opened. Channels can be favourited, but they aren't promoted above people. |
 | **Retain context** | After previewing or joining, the person returns to the chat or search they came from, with drafts and scroll position intact. Each channel keeps its own reading position. |
-| **Cross deliberately** | Joining is a crossing into a public space. The preview says what's true before you join: public, relays can read posts, subscribers are hidden from each other, and you join as {profile}, with incognito available. Commenting is a second crossing: the first comment shows who you'll appear as. Sharing out of a channel into a private chat is a forward, and the recipient isn't told the source. |
-| **Return coherently** | After joining, focus returns to where you started, with a line saying "Coast Journal added to your connections as a publication". Leaving a channel is one step from its header, and you return to home. |
+| **Cross deliberately** | Joining is a crossing into a public space. The same preview opens whichever way you arrived (link, name, directory). It says three things before you join: public, the owner's relays carry and can read the posts, subscribers are hidden from each other. Then one identity control: join as {profile} or incognito, with the choice marked by more than colour. Commenting is a second crossing: the first comment shows who you'll appear as. Sharing out of a channel into a private chat is a forward, and the recipient isn't told the source. |
+| **Return coherently** | After joining, you return to where you started: the chat if a person shared it, the search with its query kept if you searched. A line says "Coast Journal added to your connections as a publication". Leaving a channel is one step from its header, and you return to home. |
+
+## States that must exist
+
+Discovery crosses the network, so it has more states than a local tool. Each gets a plain line in the place the person is, with their query kept:
+
+| State | What the person sees |
+|---|---|
+| Not yet fetched | Card from a link: name and description only, "Preview fetches details from its relays" |
+| Loading | "Fetching from Coast Journal's relays" on the preview, with Join unavailable until it arrives |
+| Already subscribed | The row or card says "Already in your connections", and offers Open instead of Join |
+| Admin review (groups) | "Request sent · an admin reviews new members · you'll be told here", nothing to retry |
+| Name not found | "No public name matches. Check the spelling, or ask who told you for the link" |
+| Directory unavailable | "Couldn't reach the directory. Your search is kept; try again when you're online" |
+| Duplicate | Join is one consequential action. A second tap while pending does nothing; the preview shows the pending state |
 
 ## Where the money shows up
 
@@ -40,7 +54,7 @@ It doesn't show up for readers. Subscribers never see prices, credits or relay c
 
 Two honest signals only:
 
-- **In the preview:** "Hosted by the owner on independent relays". It explains why the content is public to relays without implying the channel is free infrastructure.
+- **In the preview:** "The owner's relays carry the posts and can read them". One line does both jobs: it says who hosts and what relays can see. An earlier draft used two bullets and was merged on audit.
 - **For owners, later and out of scope:** relay capacity and credit status belong in an owner-only channel settings view, separate from reading.
 
 We won't simulate payments, credits or name purchases in the prototype. They're announced, not live, and the project keeps speculative capability separate from verified features.
@@ -50,6 +64,10 @@ We won't simulate payments, credits or name purchases in the prototype. They're 
 - If T05 participants look for an "Explore" tab and can't find search, we test a browse destination.
 - If people join without noticing it's public, or which identity they used, the preview has failed. Make the identity choice explicit before the Join button.
 - If `#name` search confuses people with contact search, we separate public names into their own result group with a "Public" label.
+
+## Audit
+
+Critiqued against the Kings of Mobile Design framework on 5 October 2026, findings C1 to C10 in the [mobile audit log](MOBILE_AUDIT_LOG.md#4-t19-channel-discovery-study--5-october-2026). All ten were applied to the study and this model.
 
 ## Sources
 

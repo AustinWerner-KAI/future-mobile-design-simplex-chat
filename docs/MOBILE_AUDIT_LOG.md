@@ -4,6 +4,37 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 4. T19 channel discovery study — 5 October 2026
+
+Target: `studies/channel-discovery.html` and `docs/CHANNEL_DISCOVERY_MODEL.md`, a static design study, not the runtime. Measured in headless Chromium at 390 × 844 with a script in the scratchpad; design judgement against the framework and the thesis. Owner approved all ten fixes.
+
+### Findings
+
+| # | Area | Finding | Fix applied |
+|---|---|---|---|
+| C1 | Integrity | Frame 1 showed "1,240 subscribers" before anything left the phone. A link carries name and description; a count needs a relay. Contradicted the study's own lookup rule. | Card shows "from Maya's link" plus description. A note says Preview fetches details from the relays. Counts appear in frame 2. |
+| C2 | Integrity | Frame 4's toast said "Back to Maya", but that journey started in search. | Return goes to the search with its query kept. The toast now says "you're back in your search". |
+| C3 | Integrity | Frame 4 mixed results and the joined toast with no preview between, so the crossing differed by path. | Frame 4 is results only, with a note that a row opens the frame 2 preview. New frame 5 holds the return. |
+| C4 | State | No offline, loading, empty, already-subscribed, admin-review or name-not-found states. | Frame 5 shows request sent, name not found and directory unavailable. The model gains a "States that must exist" table including loading, already subscribed and duplicate. |
+| C5 | Touch | All buttons 40 px tall; identity switch 23 px; tabs 26 px; back button 40 px. | Buttons, switch halves, tabs and back button are 44 px minimum. Rows 48 px minimum. |
+| C6 | Reading | 17 text runs at 11.5 px or 11.2 px, under the 12 px floor set in M1. | Smallest size is now 12 px (25 runs); most body text 13 px. |
+| C7 | Input | Selected tab and identity choice were shown by blue fill only. | Check mark and bold on the selected tab and identity. |
+| C8 | Clarity | "Join as Austin" plus a toggle also reading Austin. | One control: "Join as" with Austin or Incognito, the chosen one checked. |
+| C9 | Copy | "Public name · looks like a name". | "Public name · not yet looked up". |
+| C10 | Copy | Four preview bullets, two about relays. | Three bullets. "The owner's relays carry the posts and can read them" carries the hosting signal. |
+
+### After the fixes
+
+- Smallest tap target 44 px; smallest text 12 px; no blue text; no horizontal overflow at 390 or 1440; no clipped phone body at either width. Phone frames grew from 610 to 690 px to fit frame 5.
+- Kept: the preview beside the message, explicit taps for name lookup and directory search, no Explore tab.
+
+### Framework notes
+
+- **Evidence level:** code inspection and browser rendering of a static study. No runtime, device, screen reader or participant. Sizes are CSS pixels.
+- **State model:** the study now shows not-yet-fetched, loading (described), already subscribed (described), pending review, not found, offline and the return. Duplicate prevention is stated, not built.
+- **Open question for maintainers:** does opening a channel link contact relays before the person taps anything? The design assumes not. If native prefetches, C1's note is wrong and the honest line changes.
+- **Concept test:** *SimpleX foundations:* relays can read channel content, subscribers are hidden, identity is per connection. *Octopus flow:* preview as local action, join as a deliberate crossing, return to the originating search or chat. *What changes:* discovery stays inside relationships and search rather than a browse tab. *Abandon if:* T05 participants look for Explore, join without noticing the identity, or confuse a public group with a private one.
+
 ## 3. Flow, state and colour semantics — 5 October 2026
 
 **Scope:** a scripted walkthrough of the V2.1.2.1 candidate plus T11 at 390 × 844. Steps: Maya reply and draft, return home, search to Family, proposal, resume home, browser Back, Coast Journal, Harbour Café chat and email send, invitation accept, quiet mode. Each step was judged against the six flow rules and framework sections 2, 3 and 5. Evidence level: browser simulation.

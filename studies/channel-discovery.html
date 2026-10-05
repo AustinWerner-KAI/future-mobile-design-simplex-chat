@@ -16,51 +16,56 @@ h1{font:2.6rem/1.08 Georgia,serif;letter-spacing:-.03em;margin:10px 0 14px}
 .note{font-size:.8125rem;color:var(--muted)}
 .rules{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 30px;padding:0;list-style:none}
 .rules li{border:1px solid var(--soft);border-radius:999px;padding:4px 12px;font-size:.8125rem;background:var(--white)}
-.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:28px;align-items:start}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;align-items:start}
 figure{margin:0}
 figcaption{margin-top:12px}
 figcaption strong{display:block;font-size:.9375rem}
 figcaption span{font-size:.8125rem;color:var(--muted)}
-.phone{background:var(--white);border:1px solid var(--line);border-radius:28px;overflow:hidden;height:610px;display:flex;flex-direction:column}
+.phone{background:var(--white);border:1px solid var(--line);border-radius:28px;overflow:hidden;height:690px;display:flex;flex-direction:column}
 .head{display:flex;align-items:center;gap:10px;padding:14px 14px 10px}
-.round{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none;font-size:1.1rem}
+.round{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none;font-size:1.1rem}
 .head h2{font-size:1.35rem;font-weight:550;letter-spacing:-.03em;margin:0;line-height:1.1}
-.head small{display:block;font-size:.72rem;color:var(--muted)}
-.ctx{display:flex;justify-content:space-between;padding:4px 14px;font-size:.75rem;background:#f0f5f9;border-top:1px solid var(--soft);border-bottom:1px solid var(--soft)}
+.head small{display:block;font-size:.75rem;color:var(--muted)}
+.ctx{display:flex;justify-content:space-between;padding:6px 14px;font-size:.75rem;background:#f0f5f9;border-top:1px solid var(--soft);border-bottom:1px solid var(--soft)}
 .ctx span:last-child{color:var(--muted)}
 .body{flex:1;overflow:hidden;padding:4px 14px 12px;border-left:3px solid #dce9f3}
 .msg{border-left:1px solid var(--line);padding-left:12px;margin:12px 0}
-.msg small{font-size:.72rem;color:var(--muted);display:block}
+.msg small{font-size:.75rem;color:var(--muted);display:block}
 .msg p{margin:4px 0;font-size:.9rem}
+.pending{border:1px dashed var(--line);border-radius:12px;padding:8px 10px;font-size:.8125rem;margin:8px 0}
+.pending b{display:block;font-weight:600}
 .card{border:1px solid var(--soft);border-radius:14px;padding:10px;display:flex;gap:10px;align-items:center;background:var(--white)}
 .av{width:38px;height:42px;border:1px solid var(--line);border-radius:6px;background:var(--pub);display:grid;place-items:center;font-size:.8rem;font-weight:600;flex:none;position:relative}
 .av.person{border-radius:50%;background:#f0f5f9;width:38px;height:38px}
 .av.group{border-radius:12px;background:#eef1e7;width:38px;height:38px}
 .card b{font-size:.9rem;font-weight:550;display:block}
-.card .meta{font-size:.72rem;color:var(--muted)}
-.btn{display:block;width:100%;text-align:center;border-radius:22px;padding:9px 12px;font-size:.85rem;margin-top:8px;border:1px solid var(--line);background:var(--white)}
+.card .meta{font-size:.75rem;color:var(--muted)}
+.btn{display:block;width:100%;text-align:center;border-radius:22px;min-height:44px;padding:10px 12px;font-size:.875rem;line-height:1.4;margin-top:8px;border:1px solid var(--line);background:var(--white)}
 .btn.primary{background:var(--clay);border-color:var(--clay);color:#fff7ed}
 .crossing{border-left:3px solid var(--clay);padding:2px 0 2px 12px;margin:12px 0}
 .crossing h3{font-size:1rem;margin:0 0 6px;font-weight:600}
-.crossing ul{margin:0 0 6px;padding-left:18px;font-size:.8rem}
+.crossing ul{margin:0 0 6px;padding-left:18px;font-size:.8125rem}
 .crossing li{margin:2px 0}
-.idrow{display:flex;flex-wrap:wrap;gap:6px;justify-content:space-between;align-items:center;border:1px solid var(--soft);border-radius:12px;padding:6px 10px;font-size:.8rem;margin:8px 0}
-.switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:.72rem}
-.switch span{padding:3px 8px}.switch .on{background:var(--blue)}
+.idrow{border:1px solid var(--soft);border-radius:12px;padding:8px 10px;font-size:.8125rem;margin:8px 0}
+.idrow b{display:block;margin-bottom:6px;font-weight:600}
+.switch{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:.8125rem}
+.switch span{flex:1;text-align:center;min-height:44px;display:grid;place-items:center;padding:0 8px}
+.switch .on{background:var(--blue);font-weight:600}
+.switch .on::before,.tabs .on::before{content:"\2713\00a0"}
 .search{border:1px solid var(--line);border-radius:14px;background:var(--canvas);padding:8px 12px;font-size:.95rem;margin:6px 0 10px}
 .group-h{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;font-weight:600;margin:12px 0 6px}
-.group-h span{font-weight:400;color:var(--muted);font-size:.72rem}
+.group-h span{font-weight:400;color:var(--muted);font-size:.75rem}
 .empty{font-size:.8rem;color:var(--muted);margin:0 0 6px}
-.row{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--soft)}
+.row{display:flex;gap:10px;align-items:center;min-height:48px;padding:8px 0;border-bottom:1px solid var(--soft)}
 .row b{font-size:.88rem;font-weight:550;display:block}
-.row .meta{font-size:.72rem;color:var(--muted)}
+.row .meta{font-size:.75rem;color:var(--muted)}
 .tabs{display:flex;gap:4px;margin:4px 0 8px}
-.tabs span{font-size:.75rem;padding:4px 10px;border-radius:12px}
-.tabs .on{background:var(--blue)}
-.toast{background:var(--white);border-top:1px solid var(--soft);padding:10px 14px;font-size:.8rem}
+.tabs span{font-size:.8125rem;min-height:44px;display:grid;place-items:center;padding:0 12px;border-radius:14px}
+.tabs .on{background:var(--blue);font-weight:600}
+.toast{background:var(--white);border-top:1px solid var(--soft);padding:10px 14px;font-size:.8125rem}
 .dock{border-top:1px solid var(--line);padding:8px 14px 12px}
-.dock .note{font-size:.7rem;margin:0 0 4px}
-.composer{border:1px solid var(--line);border-radius:12px;background:var(--canvas);padding:8px 10px;font-size:.8rem;color:var(--muted)}
+.dock .note{font-size:.75rem;margin:0 0 4px}
+.composer{border:1px solid var(--line);border-radius:12px;background:var(--canvas);min-height:44px;display:flex;align-items:center;padding:8px 10px;font-size:.8125rem;color:var(--muted)}
 .intents{margin:44px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .intent{background:var(--white);border:1px solid var(--soft);border-radius:16px;padding:14px}
 .intent b{display:block;margin-bottom:4px}
@@ -80,19 +85,20 @@ footer{margin-top:40px}
 <li>Coordinate</li><li>Act locally</li><li>Adapt the space</li><li>Retain context</li><li>Cross deliberately</li><li>Return coherently</li>
 </ul>
 
-<section class="flow" aria-label="Four states">
+<section class="flow" aria-label="Five states">
 <figure>
 <div class="phone" role="img" aria-label="Maya's conversation with a shared channel card">
 <div class="head"><span class="round">‹</span><div><h2>Maya</h2><small>Individual · personal context</small></div></div>
 <div class="ctx"><span>← Your connections</span><span>Place &amp; drafts retained</span></div>
 <div class="body">
 <div class="msg"><small>Maya · private message</small><p>You'd like this one for Saturday's walk.</p></div>
-<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · 1,240 subscribers</span><br><span class="meta">A quieter route to the sea.</span></span></div>
+<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · from Maya's link</span><br><span class="meta">A quieter route to the sea.</span></span></div>
 <span class="btn">Preview channel</span>
+<p class="note" style="margin:6px 0 0">Preview fetches the channel's details from its relays. Nothing has left your phone yet.</p>
 </div>
 <div class="dock"><p class="note">Maya · private conversation</p><div class="composer">Reply to Maya · private</div></div>
 </div>
-<figcaption><strong>1 · Someone you know shares it</strong><span>Coordinate. The link becomes a channel card beside Maya's message. Nothing is joined yet.</span></figcaption>
+<figcaption><strong>1 · Someone you know shares it</strong><span>Coordinate. The card shows only what the link carries: name and description. Counts come after you tap Preview, and it says so.</span></figcaption>
 </figure>
 
 <figure>
@@ -100,23 +106,22 @@ footer{margin-top:40px}
 <div class="head"><span class="round">‹</span><div><h2>Maya</h2><small>Individual · personal context</small></div></div>
 <div class="ctx"><span>← Your connections</span><span>Place &amp; drafts retained</span></div>
 <div class="body">
-<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · active today</span></span></div>
+<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · 1,240 subscribers · active today</span></span></div>
 <div class="crossing">
 <h3>Before you join</h3>
 <ul>
 <li>Public. Anyone with the link can read it.</li>
-<li>Relays carry and can read the posts.</li>
+<li>The owner's relays carry the posts and can read them.</li>
 <li>Subscribers can't see each other.</li>
-<li>Hosted by its owner on independent relays.</li>
 </ul>
-<div class="idrow"><span>Join as <b>Austin</b></span><span class="switch"><span class="on">Austin</span><span>Incognito</span></span></div>
+<div class="idrow"><b>Join as</b><span class="switch"><span class="on">Austin</span><span>Incognito</span></span></div>
 <span class="btn primary">Join Coast Journal</span>
 <span class="btn">Not now · stay with Maya</span>
 </div>
 </div>
 <div class="dock"><p class="note">Maya · private conversation</p><div class="composer">Reply to Maya · private</div></div>
 </div>
-<figcaption><strong>2 · Preview where it was shared</strong><span>Act locally, cross deliberately. Audience, relay visibility and the identity you'll use, all before Join. Your reply to Maya stays put.</span></figcaption>
+<figcaption><strong>2 · Preview where it was shared</strong><span>Act locally, cross deliberately. Three facts and one identity choice, marked with a check, before Join. Every path (link, name, directory) opens this same panel. Your reply to Maya stays put.</span></figcaption>
 </figure>
 
 <figure>
@@ -126,7 +131,7 @@ footer{margin-top:40px}
 <div class="search">#coast</div>
 <div class="group-h">Your connections <span>on this phone</span></div>
 <p class="empty">None match "#coast".</p>
-<div class="group-h">Public name <span>looks like a name</span></div>
+<div class="group-h">Public name <span>not yet looked up</span></div>
 <span class="btn">Look up #coast</span>
 <p class="note" style="margin-top:6px">Private lookup when you tap: no server sees both the name and your address.</p>
 <div class="group-h">Not found what you need?</div>
@@ -145,11 +150,28 @@ footer{margin-top:40px}
 <div class="tabs"><span class="on">Active</span><span>New</span><span>All</span></div>
 <div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · 1,240 subscribers · active today</span></span></div>
 <div class="row"><span class="av">TT</span><span><b>Tide Tables</b><span class="meta">Public channel · 310 subscribers · active this week</span></span></div>
-<div class="row"><span class="av group">CW</span><span><b>Coastal Walkers</b><span class="meta">Public group · 85 members · new members reviewed</span></span></div>
+<div class="row"><span class="av group">CW</span><span><b>Coastal Walkers</b><span class="meta">Public group · 85 members · admin reviews new members</span></span></div>
+<p class="note" style="margin-top:10px">Tap a row to preview before joining, as in 2. Already subscribed rows say so instead of offering Join.</p>
 </div>
-<div class="toast"><b>Coast Journal added to your connections</b><br><span class="note">as a publication · Back to Maya</span></div>
+<div class="dock"><p class="note">Directory loaded 2 min ago · 524 listings</p></div>
 </div>
-<figcaption><strong>4 · Browse, join, return</strong><span>Retain context, return coherently. The search survives; after joining you go back to where you started.</span></figcaption>
+<figcaption><strong>4 · Browse the curated directory</strong><span>Retain context. Your query is kept. A row opens the same preview as frame 2; nothing joins from the list.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Return to search after joining, with pending and failure states">
+<div class="head"><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div></div>
+<div class="body" style="border-left:0">
+<div class="search">coast</div>
+<div class="group-h">Your connections <span>on this phone</span></div>
+<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · joined just now · as Austin</span></span></div>
+<div class="pending"><b>Coastal Walkers · request sent</b>An admin reviews new members. You'll be told here when it's answered. Nothing to do now.</div>
+<div class="pending"><b>#coastjournal · not found</b>No public name matches. Check the spelling, or ask who told you for the link.</div>
+<div class="pending"><b>Directory unavailable</b>Couldn't reach the directory. Your search is kept; try again when you're online.</div>
+</div>
+<div class="toast"><b>Coast Journal added to your connections</b><br><span class="note">as a publication · you're back in your search</span></div>
+</div>
+<figcaption><strong>5 · Return, and the states in between</strong><span>Return coherently. You come back to the search you left, not somewhere else. Pending review, name not found and directory offline each get a plain line, with the query kept.</span></figcaption>
 </figure>
 </section>
 
