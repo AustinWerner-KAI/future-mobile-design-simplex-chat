@@ -34,7 +34,7 @@ Not built: the profile edit screen (study frame 9), per-profile notifications, d
 
 ## Evidence
 
-- `scripts/check-identity.cjs`: 29 checks at 390 × 844 covering the mark, the sheet, isolation in both directions, partial and full password, unhiding, the frozen choice, acceptance focus and feedback, and the composer line.
+- `scripts/check-identity.cjs`: 35 checks at 390 × 844, plus the sheet at 320 wide with 32 px text, covering the mark and its spoken label, the sheet, isolation in both directions including the invitation, the directory's Join-as in a second profile, partial and full password, unhiding, the frozen choice, acceptance focus and feedback, and the composer line. The second-pass audit (J1–J6) is in the [audit log](MOBILE_AUDIT_LOG.md).
 - Full suite in a scratch copy unchanged: large-text 154, v21 audit 23, T19 58, T11 36, community 18, UX fixes 13, v21 fixes 14, refinement 39, shapes 26, studies 70, options 22, gallery 18. The T19 check's 50 ms wait after Join was a race under load and now waits for the feedback line.
 - Captures of the eight journey screens at 390 × 844 are kept with the owner (the connector cannot push PNGs).
 
