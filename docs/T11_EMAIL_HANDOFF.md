@@ -36,7 +36,7 @@ Fixture correction: Book club's security pane used to show Family's members. Gro
 
 ## Evidence
 
-- `scripts/check-email-recipient.cjs` → [email-recipient-check.json](email-recipient-check.json): 31 checks at 390 × 844, plus overflow at 320 and 390. Captures are in `studies/t11-captures/`.
+- `scripts/check-email-recipient.cjs` → [email-recipient-check.json](email-recipient-check.json): 36 checks at 390 × 844 (31 for T11, plus 5 from the flow audit), with overflow checks at 320 and 390. Captures are in `studies/t11-captures/`.
 - Earlier V2.1 scripts that click the email review were updated to choose a chat first: `check-v21`, `check-v21-fixes`, `check-community-journey`, `check-community-ux-fixes` and `capture-v2121-interface`. On 5 October 2026 every `scripts/check-*.cjs` was rerun in a scratch copy. All passed except `check-companion-walkthrough` and `check-contributor-route`, which failed identically on the unmodified `main` before this change. Their historical JSON records and captures were not regenerated or overwritten.
 - The [V2.1.2.1 gallery](../v2121.html) state 11 shows the pre-T11 fixed-Family review. It is kept as the published V2.1.2.1 record.
 
