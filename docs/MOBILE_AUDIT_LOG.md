@@ -16,7 +16,7 @@ Target: `studies/identity.html` and `docs/IDENTITY_MODEL.md`, a static design st
 | G2 | Clarity | The acceptance line carried three sentences, including the verification warning that frame 8 states in full. | Cut to two: who accepted and what they see. Verification stays on the connection page. |
 | G3 | Consistency | The New connection close button sat at the top left; the runtime dialog puts it at the right. | Moved to the right. |
 
-**Open for the owner:** the home subtitle "Austin · your connections" names the profile on the home, an exception to E1 argued in the model (it says whose world, not who sees you). Abandon if T05 participants read it as a contact.
+**Owner decision (5 October 2026):** the home shows the profile mark only, no name in the header. E1 holds without exception. The study and model are updated; the risk moves to T05: can people tell which profile they are in from the mark alone?
 
 **Not covered:** screen readers, native text scaling, physical devices, participants. Whether an incognito name can change later, or be detected, is unverified and is a maintainer question.
 

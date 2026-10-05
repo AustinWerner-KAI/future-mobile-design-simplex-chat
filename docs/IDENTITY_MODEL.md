@@ -27,11 +27,11 @@ The design keeps these three apart. A profile switch changes the whole home. Inc
 
 ## Where identity appears, and where it must not
 
-The channel audit set the rule: identity is named only at the point of action, never while reading (E1). Profiles add one exception, because the profile is not about who sees you but about whose world you are in.
+The channel audit set the rule: identity is named only at the point of action, never while reading (E1). Profiles do not get an exception. The home shows a profile mark, not a name; the name appears in the profile sheet when you open it. (Owner decision, 5 October 2026: mark only.)
 
 | Place | Shows | Why |
 |---|---|---|
-| Home header | The active profile's name, as the subtitle: "Austin · your connections". A profile mark at the top left opens the profile list. | The home is the coordinate. The person needs to know whose connections these are. Rare action, top edge. |
+| Home header | A profile mark (monogram) at the top left that opens the profile list. No profile name in the header. | The home is the coordinate; the mark says which world without writing a name on screen. Rare action, top edge. |
 | Home rows and favourites | Nothing about identity. | Rows are for recognising the other party. |
 | Search | Only the active profile's connections. A hidden profile's connections never appear. | Fact 3. The search field is also where the unhide password is typed. |
 | Composer dock | "Reply to Sam · private · as River Finch" when the connection is incognito. Nothing extra when it is the profile name. | Point of action. The incognito name is what Sam sees, so it is stated where you write to Sam. |
@@ -77,7 +77,7 @@ The New connection dialog already offers an incognito checkbox with a sample nam
 
 ## Octopus flow check
 
-- **Coordinate:** the profile decides whose connections fill the home. One mark, top left, rare.
+- **Coordinate:** the profile decides whose connections fill the home. One mark, top left, rare, no name.
 - **Act locally:** the profile list is a sheet over the home; unhiding happens in the search field that is already there.
 - **Retain context:** each profile keeps its own search, scroll and drafts; switching away and back loses nothing.
 - **Cross deliberately:** incognito is chosen once, at connection, with the generated name shown, then frozen.
@@ -85,7 +85,7 @@ The New connection dialog already offers an incognito checkbox with a sample nam
 
 ## What would make us abandon it
 
-- T05 participants read the home subtitle "Austin · your connections" as the name of a contact.
+- T05 participants cannot tell which profile they are in from the mark alone and switch into the wrong one.
 - People expect to change a contact's incognito name later and are confused that they cannot (this is a SimpleX constraint; the design can only state it).
 - The unhide-by-search pattern is found by nobody. It mirrors the native app, so this would be a finding about the native app too.
 
