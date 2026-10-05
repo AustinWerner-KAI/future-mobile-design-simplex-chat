@@ -4,6 +4,26 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 8. Runtime shape scale — 5 October 2026
+
+The S1 scale from the studies carried into the runtime, `prototypes/src/v21/style.css`, so the thing T05 participants hold matches the studies and nothing built later needs a retrofit. Evidence level: browser simulation.
+
+Before: fifteen radii (30, 24, 22, 18, 16, 15, 14, 12, 8, 7, 5, 4 px, 50%, 0). After: circle for people and round controls; pill for every action and selected state (switch, tabs, primary, collection buttons, door, post actions, dock buttons, badge); 12 px for every container (tile, object, boundary, outgoing, collection block, recipient, carry, pending, search, text input, textarea, fieldset, select); 16 px dialogs; 6 px publication mark; 5 px type badge; 30 px device frame on desktop.
+
+- `scripts/check-shapes.cjs`: 14 checks across six screens at 390 and 1440 wide plus both dialogs; fails on `main` (`type-mark 7px`, `avatar 4px`, `door 24px`).
+- Regression suite in a scratch copy, all unchanged: large-text 154, v21 audit 23, T19 58, T11 36, community 18, UX fixes 13, v21 fixes 14, refinement 39, studies 70.
+- Captures of home, Maya, Harbour Café email and the directory preview reviewed at 390 × 844.
+
+### Anchored tiles (same day, owner spotted it)
+
+The T11 recipient tiles looked off-centre. Measured: each tile is a 146 px grid cell with the mark 9 px from the left and the text ending 29 to 51 px short of the right; the tiles had a transparent border, so the content was left-aligned inside an invisible box. The owner has seen this pattern before, so it becomes a rule rather than a one-off fix.
+
+**Rule:** a tile inside a multi-column grid is anchored. Either it shows its edge (a visible border or a background) or its content is centred. Never left-aligned in an invisible cell.
+
+**Fix:** every recipient tile carries the soft 1 px edge; the chosen one keeps the blue fill and the stronger line. `check-shapes.cjs` now asserts the rule on every grid in the runtime (26 checks) and fails on the pre-fix tiles. T11 36 and large-text 154 unchanged.
+
+**Not covered:** `v2121.html` and `v21-options.html` are directly authored galleries and keep their own radii until re-captured; physical devices; participants.
+
 ## 7. T08 identity study — 5 October 2026
 
 Target: `studies/identity.html` and `docs/IDENTITY_MODEL.md`, a static design study for profiles, hidden profiles and incognito. Measured in headless Chromium at 390 × 844, 320 × 700, 1440 × 900 and 200% root text; judged against the framework and the identity rule from E1. Self-audit before showing the owner.
