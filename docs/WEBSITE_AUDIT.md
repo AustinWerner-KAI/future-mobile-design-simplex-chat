@@ -30,6 +30,19 @@ The page is careful, well sourced and honest about its limits, but it still tell
 | 10 | P3 | "2028" is unexplained to a first-time visitor ("OCTOPUS / 2028", "Exploring 2028", "2028 reset"). | Hero and nav | One phrase on first use, e.g. "designing for 2028" |
 | 11 | P3 | Two `simplex.chat` links sit a few lines apart in the hero. | Hero | Keep one |
 
+### Status
+
+Findings 1 to 4 fixed on this branch (`index.html`), not yet published:
+
+- Hero primary: "See the latest design, V2.1.2.1" to `v2121.html`, with "Try it" and "Read the idea". V2 is labelled "earlier baseline" in the nav and the prototype section.
+- One start route: "Latest V2.1 candidates" renamed "V2.1 home candidates"; the anatomy caption no longer says "Start here".
+- New section `#idea`, "Relationships organise. The octopus shapes the flow.": six principles, each with one interaction from the Maya, Family and Harbour Café journey, and the not-protocol qualification beside them.
+- New section `#latest`: three of the 14 captured states (01, 04, 05), what changed and why, and the limits. The third capture is hidden below 600 px.
+- A "How we got here" divider (`#history`) before the preserved history. History content is unchanged.
+- Also: brand link goes to `./`; the external arrow is removed from internal pages.
+
+Checked at 1440 and 390 in Chromium: no horizontal overflow, every local link and in-page anchor resolves, the captures load, no JavaScript errors. `scripts/check-v21-audit.cjs` passes (23 checks). Findings 5 (nav grouping) and 6 to 11 remain open.
+
 ### Passed
 
 - No horizontal overflow at 1440 or 390.
