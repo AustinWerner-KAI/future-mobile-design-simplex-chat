@@ -6,6 +6,8 @@
 
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
+**[Claude handoff — project learnings, implementation and next tasks](docs/CLAUDE_HANDOFF.md)** · [Claude entry instructions](CLAUDE.md). Prepared 5 October 2026.
+
 ## Developing V2.1
 
 **[Try V2.1 — your people, your world →](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html)**
