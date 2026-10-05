@@ -60,6 +60,18 @@ Method: the Kings of Mobile Design framework. Evidence level: agent-operated hea
 
 **Owner decision (5 October 2026):** fix M4 now. M2 and M3 stay open; each needs a separate agreement before changing shared styles. M1 was withdrawn after a re-check.
 
+#### M2 and M3 fixed (5 October 2026, on the owner's go-ahead to continue)
+
+- **M2:** all 61 px font sizes are now rem. At the default 16 px setting the layout is pixel-identical to `main`: 15 screen and width combinations (390, 320 and 1440 wide), compared with the composer placeholder masked. An earlier comparison against a stale build missed that a large-text rule also hid the header subtitle at normal size. It was caught before pushing and the breakpoint corrected. Raising the browser text size exposed real breakage that px had been hiding: names split mid-word ("Ma ya", "Harbo ur"), round buttons grew past touch size, and on a 320 × 640 screen the conversation shrank to 16 px. Fixes:
+  - Words break only when they must.
+  - Round buttons are clamped to 44 to 56 px.
+  - The header title is capped by screen width.
+  - Email addresses can wrap.
+  - The short-screen rules now use em, so they also apply when text is large.
+- **M3:** in short viewports the dock audience line is hidden, and the audience moves into the composer placeholder: "Reply to Maya · private", "Email reply to bookings@example.com". The screen-reader label still names the recipient, and every sharing review restates the full audience. The landscape conversation area grew from 174 px to 196 px.
+- **Evidence:** `scripts/check-large-text.cjs` → [large-text-check.json](large-text-check.json). It runs 154 checks using Chromium's real default-font-size setting at 16, 24 and 32 px, at 320 and 390 wide, across five screens, plus landscape. The same script fails on the pre-fix build (body text did not scale). The full suite gives the same results as before, and the rescan is clean.
+- **Limits:** browser text settings are not iOS Dynamic Type or Android font scale. Placeholder text truncates at 200%; the screen-reader label still names the recipient. No physical device or screen reader was used.
+
 **Not covered:** native keyboard, safe areas on real hardware, VoiceOver and TalkBack, reduced-motion review beyond the CSS guard, and participants (T05).
 
 **Sources:** [Apple HIG — Typography](https://developer.apple.com/design/human-interface-guidelines/typography) · [Material 3 type scale tokens](https://m3.material.io/styles/typography/type-scale-tokens).
