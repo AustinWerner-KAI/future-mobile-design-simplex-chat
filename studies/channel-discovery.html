@@ -8,7 +8,7 @@
 :root{--ink:#252b24;--muted:#555d63;--blue:#e7eff5;--pub:#dce9f3;--line:#7d8271;--soft:#c7cbc3;--clay:#8d3e2b;--white:#fff;--canvas:#f1f5f8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--canvas);color:var(--ink);font:1rem/1.5 system-ui,sans-serif}
-a{color:inherit;text-underline-offset:4px}
+a{color:inherit;text-underline-offset:4px;overflow-wrap:anywhere}
 main{max-width:1240px;margin:0 auto;padding:40px 24px 64px}
 .eyebrow{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0}
 h1{font:2.6rem/1.08 Georgia,serif;letter-spacing:-.03em;margin:10px 0 14px}
@@ -16,19 +16,19 @@ h1{font:2.6rem/1.08 Georgia,serif;letter-spacing:-.03em;margin:10px 0 14px}
 .note{font-size:.8125rem;color:var(--muted)}
 .rules{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 30px;padding:0;list-style:none}
 .rules li{border:1px solid var(--soft);border-radius:999px;padding:4px 12px;font-size:.8125rem;background:var(--white)}
-.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;align-items:start}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:24px;align-items:start}
 figure{margin:0}
 figcaption{margin-top:12px}
 figcaption strong{display:block;font-size:.9375rem}
 figcaption span{font-size:.8125rem;color:var(--muted)}
-.phone{background:var(--white);border:1px solid var(--line);border-radius:28px;overflow:hidden;height:690px;display:flex;flex-direction:column}
+.phone{background:var(--white);border:1px solid var(--line);border-radius:28px;overflow:hidden;min-height:690px;display:flex;flex-direction:column}
 .head{display:flex;align-items:center;gap:10px;padding:14px 14px 10px}
 .round{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none;font-size:1.1rem}
 .head h2{font-size:1.35rem;font-weight:550;letter-spacing:-.03em;margin:0;line-height:1.1}
 .head small{display:block;font-size:.75rem;color:var(--muted)}
-.ctx{display:flex;justify-content:space-between;padding:6px 14px;font-size:.75rem;background:#f0f5f9;border-top:1px solid var(--soft);border-bottom:1px solid var(--soft)}
+.ctx{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;padding:6px 14px;font-size:.75rem;background:#f0f5f9;border-top:1px solid var(--soft);border-bottom:1px solid var(--soft)}
 .ctx span:last-child{color:var(--muted)}
-.body{flex:1;overflow:hidden;padding:4px 14px 12px;border-left:3px solid #dce9f3}
+.body{flex:1;padding:4px 14px 12px;border-left:3px solid #dce9f3;overflow-wrap:anywhere}
 .msg{border-left:1px solid var(--line);padding-left:12px;margin:12px 0}
 .msg small{font-size:.75rem;color:var(--muted);display:block}
 .msg p{margin:4px 0;font-size:.9rem}
@@ -66,7 +66,7 @@ figcaption span{font-size:.8125rem;color:var(--muted)}
 .dock{border-top:1px solid var(--line);padding:8px 14px 12px}
 .dock .note{font-size:.75rem;margin:0 0 4px}
 .composer{border:1px solid var(--line);border-radius:12px;background:var(--canvas);min-height:44px;display:flex;align-items:center;padding:8px 10px;font-size:.8125rem;color:var(--muted)}
-.intents{margin:44px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.intents{margin:44px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px}
 .intent{background:var(--white);border:1px solid var(--soft);border-radius:16px;padding:14px}
 .intent b{display:block;margin-bottom:4px}
 .intent p{margin:0;font-size:.85rem}
@@ -85,14 +85,14 @@ footer{margin-top:40px}
 <li>Coordinate</li><li>Act locally</li><li>Adapt the space</li><li>Retain context</li><li>Cross deliberately</li><li>Return coherently</li>
 </ul>
 
-<section class="flow" aria-label="Five states">
+<section class="flow" aria-label="Six states">
 <figure>
 <div class="phone" role="img" aria-label="Maya's conversation with a shared channel card">
 <div class="head"><span class="round">‹</span><div><h2>Maya</h2><small>Individual · personal context</small></div></div>
 <div class="ctx"><span>← Your connections</span><span>Place &amp; drafts retained</span></div>
 <div class="body">
 <div class="msg"><small>Maya · private message</small><p>You'd like this one for Saturday's walk.</p></div>
-<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · from Maya's link</span><br><span class="meta">A quieter route to the sea.</span></span></div>
+<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · from Maya's link</span><br><span class="meta">A quieter route to the sea.</span></span></div>
 <span class="btn">Preview channel</span>
 <p class="note" style="margin:6px 0 0">Preview fetches the channel's details from its relays. Nothing has left your phone yet.</p>
 </div>
@@ -106,7 +106,7 @@ footer{margin-top:40px}
 <div class="head"><span class="round">‹</span><div><h2>Maya</h2><small>Individual · personal context</small></div></div>
 <div class="ctx"><span>← Your connections</span><span>Place &amp; drafts retained</span></div>
 <div class="body">
-<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · 1,240 subscribers · active today</span></span></div>
+<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · 1,240 subscribers · active today</span></span></div>
 <div class="crossing">
 <h3>Before you join</h3>
 <ul>
@@ -125,7 +125,7 @@ footer{margin-top:40px}
 </figure>
 
 <figure>
-<div class="phone" role="img" aria-label="Home search with a public name match and a separate directory step">
+<div class="phone" role="img" aria-label="Home search with a public name lookup and a separate directory step, each needing a tap">
 <div class="head"><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div></div>
 <div class="body" style="border-left:0">
 <div class="search">#coast</div>
@@ -143,14 +143,14 @@ footer{margin-top:40px}
 </figure>
 
 <figure>
-<div class="phone" role="img" aria-label="Directory results and the return after joining">
-<div class="head"><span class="round">‹</span><div><h2>Public directory</h2><small>Channels and groups · curated</small></div></div>
+<div class="phone" role="img" aria-label="Directory results, Active, New and All, with a note that a row opens the preview">
+<div class="head"><span class="round">‹</span><div><h2>Public directory</h2><small>Public publications and groups · curated</small></div></div>
 <div class="ctx"><span>← Search "coast"</span><span>Your search is kept</span></div>
 <div class="body">
 <div class="tabs"><span class="on">Active</span><span>New</span><span>All</span></div>
-<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Public channel · 1,240 subscribers · active today</span></span></div>
-<div class="row"><span class="av">TT</span><span><b>Tide Tables</b><span class="meta">Public channel · 310 subscribers · active this week</span></span></div>
-<div class="row"><span class="av group">CW</span><span><b>Coastal Walkers</b><span class="meta">Public group · 85 members · admin reviews new members</span></span></div>
+<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · 1,240 subscribers · active today</span></span></div>
+<div class="row"><span class="av">TT</span><span><b>Tide Tables</b><span class="meta">Publication · public · 310 subscribers · active this week</span></span></div>
+<div class="row"><span class="av group">CW</span><span><b>Coastal Walkers</b><span class="meta">Group · public · 85 members · admin reviews new members</span></span></div>
 <p class="note" style="margin-top:10px">Tap a row to preview before joining, as in 2. Already subscribed rows say so instead of offering Join.</p>
 </div>
 <div class="dock"><p class="note">Directory loaded 2 min ago · 524 listings</p></div>
@@ -159,19 +159,35 @@ footer{margin-top:40px}
 </figure>
 
 <figure>
-<div class="phone" role="img" aria-label="Return to search after joining, with pending and failure states">
+<div class="phone" role="img" aria-label="Return to search after joining Coast Journal">
 <div class="head"><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div></div>
 <div class="body" style="border-left:0">
 <div class="search">coast</div>
 <div class="group-h">Your connections <span>on this phone</span></div>
-<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · joined just now · as Austin</span></span></div>
-<div class="pending"><b>Coastal Walkers · request sent</b>An admin reviews new members. You'll be told here when it's answered. Nothing to do now.</div>
-<div class="pending"><b>#coastjournal · not found</b>No public name matches. Check the spelling, or ask who told you for the link.</div>
-<div class="pending"><b>Directory unavailable</b>Couldn't reach the directory. Your search is kept; try again when you're online.</div>
+<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · joined just now as Austin</span></span></div>
+<div class="group-h">Not found what you need?</div>
+<span class="btn">Search public channels and groups</span>
+<p class="note" style="margin-top:6px">Your directory results are kept.</p>
 </div>
 <div class="toast"><b>Coast Journal added to your connections</b><br><span class="note">as a publication · you're back in your search</span></div>
 </div>
-<figcaption><strong>5 · Return, and the states in between</strong><span>Return coherently. You come back to the search you left, not somewhere else. Pending review, name not found and directory offline each get a plain line, with the query kept.</span></figcaption>
+<figcaption><strong>5 · Return to where you started</strong><span>Return coherently. You come back to the search you left, with the query kept, and the channel now sits among your connections.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Three separate outcomes shown together: request pending, name not found, directory unavailable">
+<div class="head"><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div></div>
+<div class="body" style="border-left:0">
+<p class="note" style="margin:8px 0 0">Three outcomes, each from its own search. Shown together to save space; they would not appear at once.</p>
+<div class="group-h">After "coastal walkers"</div>
+<div class="pending"><b>Coastal Walkers · request sent</b>An admin reviews new members. You'll be told here when it's answered. Nothing to do now.</div>
+<div class="group-h">After "Look up #coast"</div>
+<div class="pending"><b>#coast · not found</b>No public name matches. Check the spelling, or ask who told you for the link.</div>
+<div class="group-h">After "Search public channels and groups", offline</div>
+<div class="pending"><b>Directory unavailable</b>Couldn't reach the directory. Your search is kept; try again when you're online.</div>
+</div>
+</div>
+<figcaption><strong>6 · When it doesn't go through</strong><span>Each outcome is a plain line in the place you were, with the query kept and nothing to retry by accident.</span></figcaption>
 </figure>
 </section>
 

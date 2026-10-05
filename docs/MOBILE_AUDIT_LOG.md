@@ -35,6 +35,23 @@ Target: `studies/channel-discovery.html` and `docs/CHANNEL_DISCOVERY_MODEL.md`, 
 - **Open question for maintainers:** does opening a channel link contact relays before the person taps anything? The design assumes not. If native prefetches, C1's note is wrong and the honest line changes.
 - **Concept test:** *SimpleX foundations:* relays can read channel content, subscribers are hidden, identity is per connection. *Octopus flow:* preview as local action, join as a deliberate crossing, return to the originating search or chat. *What changes:* discovery stays inside relationships and search rather than a browse tab. *Abandon if:* T05 participants look for Explore, join without noticing the identity, or confuse a public group with a private one.
 
+### Second pass on the revised study (same day)
+
+Re-audited after C1 to C10. Method as above, plus computed contrast, 320 × 700 and 200% root text. Owner approved D1, D2, D4 and D5; D3 and D6 stay open.
+
+**Passed:** muted text 6.1:1 or better; primary button 6.9:1 on clay; no blue words; 320 px with no overflow or clipping; check marks render; 12 px floor holds; all targets 44 px or more.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| D1 | Integrity | Frame 5 combined contradictory states: "Directory unavailable" beside a channel just joined from the directory, and a lookup for "#coastjournal" after frame 3 looked up "#coast". | Split. Frame 5 is the return alone. Frame 6 shows the three failure outcomes, each captioned with the search that caused it and a line saying they would not appear at once. |
+| D2 | Integrity | Directory rows said "Public channel"; the home row said "Publication". Same fault as M4. | One vocabulary: "Publication · public · 1,240 subscribers", "Group · public · 85 members". The directory header says "Public publications and groups". |
+| D3 | Unverified | Frame 1 shows a description "from Maya's link". Not confirmed that SimpleX channel links carry a description. | Open. If links carry only an address, the card is name only, or "Channel link", until preview. Maintainer question added to the model. |
+| D4 | Large text | At 200% root text every phone body clipped (315 to 721 px hidden) and the page overflowed sideways. Fixed phone heights with overflow hidden. | Phones use min-height and grow with content; grid columns and long links can wrap. At 200% there is now no clipping and no overflow. |
+| D5 | Labels | Screen-reader labels on frames 3 and 4 described the pre-fix frames ("a public name match", "the return after joining"). | Rewritten to match the frames. |
+| D6 | State | The loading state (Join unavailable while details fetch) is described in the model but not drawn. | Open. Draw it when T19 is built in the runtime, where it can be tested. |
+
+**Still untested:** screen readers, native text scaling, physical devices, participants. The study is static: its buttons are not controls, so focus order and keyboard use are not meaningful here and will be checked in the runtime build.
+
 ## 3. Flow, state and colour semantics — 5 October 2026
 
 **Scope:** a scripted walkthrough of the V2.1.2.1 candidate plus T11 at 390 × 844. Steps: Maya reply and draft, return home, search to Family, proposal, resume home, browser Back, Coast Journal, Harbour Café chat and email send, invitation accept, quiet mode. Each step was judged against the six flow rules and framework sections 2, 3 and 5. Evidence level: browser simulation.

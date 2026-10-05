@@ -67,7 +67,11 @@ We won't simulate payments, credits or name purchases in the prototype. They're 
 
 ## Audit
 
-Critiqued against the Kings of Mobile Design framework on 5 October 2026, findings C1 to C10 in the [mobile audit log](MOBILE_AUDIT_LOG.md#4-t19-channel-discovery-study--5-october-2026). All ten were applied to the study and this model.
+Critiqued against the Kings of Mobile Design framework on 5 October 2026, findings C1 to C10 and a second pass D1 to D6, in the [mobile audit log](MOBILE_AUDIT_LOG.md#4-t19-channel-discovery-study--5-october-2026). Applied: C1 to C10, D1, D2, D4, D5. Open: D3 (what a channel link carries) and D6 (loading state, to draw in the runtime).
+
+**Vocabulary:** the type word is always Publication or Group, as in the home. "Public" is the audience word, never part of the type name.
+
+**Maintainer questions:** does opening a channel link contact relays before any tap? Does the link itself carry a name and description, or only an address?
 
 ## Sources
 
