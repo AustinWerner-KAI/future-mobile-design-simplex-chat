@@ -4,6 +4,20 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 5. T19 in the runtime — 5 October 2026
+
+Self-audit of the T19 build in `v21.html?mobile=1&version=2.1.2.1` before opening the PR. Method: the T19 check script (54 assertions), the full suite in a scratch copy, and captures of the five journey screens at 390 × 844.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| R1 | Large text | Two corner buttons (★ and ⋯) on publications broke "Coast Journal" mid-word at 320 px with 24 px text. Caught by `check-large-text`. | Publications have one corner button. ⋯ opens a panel with favourite and Leave. |
+| R2 | Return | After joining, the home restored its previous scroll and the new row sat off screen. | The home scrolls to the top after a join and focuses the new row. Checked by assertion. |
+| R3 | Placement | The unfolded preview pushed Join below the fold at 390 × 844 (the A2 pattern). | The opened row is revealed so the name and Join are both on screen. Checked by assertion. |
+
+**Passed:** every visible control at least 44 px at 320 and 390; no horizontal overflow; no page errors; no identity in the channel header; the comment crossing sits inside its post; pending requests cannot be sent twice; the offline state keeps the search.
+
+**Not covered:** screen readers, native text scaling, physical devices, participants. Forwarding a post is not built.
+
 ## 4. T19 channel discovery study — 5 October 2026
 
 Target: `studies/channel-discovery.html` and `docs/CHANNEL_DISCOVERY_MODEL.md`, a static design study, not the runtime. Measured in headless Chromium at 390 × 844 with a script in the scratchpad; design judgement against the framework and the thesis. Owner approved all ten fixes.
