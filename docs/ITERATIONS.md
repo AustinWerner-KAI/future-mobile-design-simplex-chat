@@ -1,8 +1,8 @@
 # The design journey — every step
 
-> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+> Current reference, 5 October 2026: [V2.1.2.2 record](V2_1_2_2.md) · [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 ## Start here: From anatomy to interface
 
@@ -232,3 +232,19 @@ Resolved remaining V2 priority statements in the upload index, design memory, ev
 ## T11 general email handoff — 5 October 2026
 
 The email detail no longer goes to a fixed chat. The person chooses Maya, Family, Alex or Book club, reviews the exact text, audience and identity, then shares or cancels. Same text to the same chat is blocked. Book club now shows its own sample members. [Record and limits](T11_EMAIL_HANDOFF.md). The V2.1.2.1 gallery captures are kept as the pre-T11 record. Mobile audits and their fixes: [running audit log](MOBILE_AUDIT_LOG.md).
+
+## Flow and colour audit, large text — 5 October 2026
+
+A scripted walkthrough of the candidate found oat used for every status line, replies rendered below the tool cards, an email reply with no transport state, and an unread badge that survived a reply. All four fixed (F1–F4); F5, an acceptance that went nowhere, was deferred to T08. The same day every font size moved from px to rem, which exposed names breaking mid-word and round buttons growing past touch size at large text; both fixed and held by 154 checks. [Audit log §1 and §3](MOBILE_AUDIT_LOG.md).
+
+## T19 public discovery and the information architecture — 5 October 2026
+
+Designed in a six-frame study, audited three times (C1–C10, D1–D6, E1–E6) and built into the runtime: a door after Recent activity, a directory that filters on the phone, a preview that unfolds in its row, join and admin-review requests, an offline state, a channel page with a comment crossing. E1 set the rule that identity is named only at the point of action. A structural audit of the whole candidate followed; IA5 fixed the return from a directory-opened publication. [T19 record](T19_CHANNEL_DISCOVERY.md) · [information architecture](INFORMATION_ARCHITECTURE.md).
+
+## T08 identity study, the shape scale and anchored tiles — 5 October 2026
+
+A nine-frame study for profiles, hidden profiles and incognito, built from the SimpleX profile guide. The owner found words breaking mid-word in frame 8; the fix became a framework rule with a 70-check study suite behind it. A critique of the shapes found nine radii with no scale; one scale replaced them (circle, pill, 12, 16, 6, 5) and the owner chose mark-only for the home header. The scale was carried into the runtime the same day, and an off-centre tile the owner had seen before became the anchored-tiles rule. [Audit log §7 and §8](MOBILE_AUDIT_LOG.md) · [identity model](IDENTITY_MODEL.md) · [study](../studies/identity.html).
+
+## V2.1.2.2 — identity, discovery and the shape scale — 5 October 2026
+
+T08 built into the runtime: profile mark and sheet, switching with the whole state swapped, unhiding by password, incognito shown then frozen, acceptance that lands on the new row, a composer line that names the identity. A second-pass audit before merging found six more faults (J1–J6), among them a Join-as that still said Austin in the Work profile and an invitation that leaked across profiles; all fixed with checks that fail on the pre-fix build. Named V2.1.2.2 and linked from every entry point; `version=2.1.2.1` links stay valid as an alias. [Record](V2_1_2_2.md) · [T08 record](T08_IDENTITY.md) · [audit log §9](MOBILE_AUDIT_LOG.md). Browser simulation; T05 remains the next step.

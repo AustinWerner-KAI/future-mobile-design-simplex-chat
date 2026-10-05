@@ -1,8 +1,8 @@
 # From anatomy to interface — shared design brief
 
-> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-Updated 4 October 2026. Independent community exploration for [simplex.chat](https://simplex.chat/), maintained by AustinWerner-KAI. This document is the shared reference for the GitHub project, its public presentation website and its mobile interaction studies. It is not an official SimpleX brief, endorsement or roadmap.
+Updated 5 October 2026 for [V2.1.2.2](V2_1_2_2.md). Independent community exploration for [simplex.chat](https://simplex.chat/), maintained by AustinWerner-KAI. This document is the shared reference for the GitHub project, its public presentation website and its mobile interaction studies. It is not an official SimpleX brief, endorsement or roadmap.
 
 ## Flow architecture
 
@@ -101,3 +101,14 @@ The question for every contribution: **what comes from SimpleX’s foundations, 
 ## Evidence and attribution
 
 [Source, implementation-evidence and asset register](SOURCES.md). Project proposals and dated critiques are original interpretations; external facts, validation methods and visual provenance are distinguished in the register.
+
+## Rules added for V2.1.2.2 — 5 October 2026
+
+These came out of the audits and now have checks behind them. [Design language](DESIGN_LANGUAGE.md) carries the detail.
+
+- Identity is named only at the point of action: invitation, acceptance, comment crossing, composer. Never in a header or on a row.
+- One shape scale: circle, pill, 12 px, 16 px, 6 px publication mark, 5 px type badge. Nothing else.
+- Words stay whole at large text; every size in rem; round controls 44–56 px.
+- A tile in a multi-column grid shows its edge or centres its content.
+- Measure first, fix the shared stylesheet, add an assertion that fails on the pre-fix build. One running audit record: [MOBILE_AUDIT_LOG](MOBILE_AUDIT_LOG.md).
+- Research before polish: [T05](T05_PROTOCOL.md) is ready and comes before further visual work.

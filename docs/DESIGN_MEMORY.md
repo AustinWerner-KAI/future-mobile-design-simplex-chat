@@ -1,8 +1,8 @@
 # Design memory: a different evolutionary path
 
-> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+> Current reference, 5 October 2026: [V2.1.2.2 record](V2_1_2_2.md) · [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 Project: **From anatomy to interface**. Maintainer direction recorded 4 October 2026.
 
@@ -88,3 +88,16 @@ Use [the visual progression](../studies/concept-progression.html) to present ori
 ## Earlier V2 reference decision — 4 October 2026
 
 The owner initially selected [V2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) as the review reference. This decision is retained as history. The later request to make **[V2.1.2.1](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) the latest edit** supersedes that navigation priority. Lead review and contribution routes to the latest mockup and interactive candidate; preserve V2 and supporting experiments as earlier work. This changes publication status, not production readiness or validation.
+
+## V2.1.2.2 — identity, discovery and the shape scale — 5 October 2026
+
+The rail candidate grew in one day from the manual-test refinement into [V2.1.2.2](V2_1_2_2.md). What must survive from it:
+
+- **Identity is named only at the point of action.** The profile mark carries a letter, not a name; the channel header does not say who is reading; the home row does not say who joined. The name appears at the invitation, the acceptance line, the comment crossing and the composer. The owner chose mark-only over mark-plus-name; the risk moves to T05.
+- **Profiles are isolated by swapping the whole state.** Connections, drafts, search, scroll, tools and the invitation belong to one profile. A hidden profile is never listed, counted or named; it is unhidden by its full password in the search field, mirroring the native app. Nothing persists.
+- **Discovery stays inside relationships and search.** No Explore tab. A door after Recent activity, a directory that filters on the phone, a preview that unfolds in its row, and a return to where the person started.
+- **One shape scale.** Circle for people and round controls, pill for every action and selected state, 12 px for every container, 16 px for dialogs, 6 px publication mark, 5 px type badge. A new radius fails the build. Grid tiles show their edge or centre their content.
+- **Large text is real.** Every size is in rem; words stay whole at 32 px root text on a 320 px screen.
+- **Audit first, then fix, then assert.** Every fault found on 5 October 2026 was measured, fixed in the shared stylesheet or runtime, and given a check that fails on the pre-fix build. The [audit log](MOBILE_AUDIT_LOG.md) is the one running record. A fault the owner sees twice becomes a rule.
+
+Evidence remains browser simulation. T05 decides whether any of it works in a hand.

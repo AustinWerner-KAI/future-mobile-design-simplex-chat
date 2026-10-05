@@ -1,8 +1,8 @@
 # From anatomy to interface
 
-> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-**[V2.1.2.1 · complete interface mockup — 14 states](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html)** · [Play the refined candidate](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Home, conversations, groups, publications, providers, email, security and invitations. V2 is the earlier reference baseline.
+**[V2.1.2.2 · identity, discovery and the shape scale](docs/V2_1_2_2.md)** · [Play it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2). Home, conversations, groups, publications, providers, email, security, invitations, profiles and public discovery, with one shape scale and 35 + 58 + 36 + 154 + 26 checks behind the new work. The [V2.1.2.1 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) shows the 4 October 2026 state in 14 captures. V2 is the earlier reference baseline.
 
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
@@ -191,3 +191,7 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 ## V2.1.2.1 — manual-test refinement
 
 [View the mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) · [Detailed manual report](docs/COMMUNITY_MANUAL_TEST.md) · [Fix checks](docs/community-ux-fixes-check.json). Five findings addressed; original live-browser captures preserved. No continuous video was recorded.
+
+## V2.1.2.2 — identity, discovery and the shape scale
+
+[Open the runtime](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [Record](docs/V2_1_2_2.md) · [Running mobile audit](docs/MOBILE_AUDIT_LOG.md) · [Task tracker](docs/NEXT_STEPS.md). Built 5 October 2026: profiles, hidden profile and incognito ([T08](docs/T08_IDENTITY.md)); public channel and group discovery ([T19](docs/T19_CHANNEL_DISCOVERY.md)); email detail to a chosen chat ([T11](docs/T11_EMAIL_HANDOFF.md)); every size in rem with words whole at large text; one shape scale with anchored tiles; a feasibility desk review ([T12](docs/T12_FEASIBILITY.md)); and the [T05 protocol](docs/T05_PROTOCOL.md) ready to run. Identity is named only at the point of action. Browser simulation; no participant has used it yet.

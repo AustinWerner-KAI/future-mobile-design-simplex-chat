@@ -1,8 +1,8 @@
 # Design language
 
-> **Latest edit — [V2.1.2.1: complete interface mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1). Published 4 October 2026: 14 interface states and the community-test refinements. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-> Current reference, 4 October 2026: [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+> Current reference, 5 October 2026: [V2.1.2.2 record](V2_1_2_2.md) · [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 ## Flow architecture
 
@@ -20,9 +20,26 @@ Use a continuous surface with a stable, named origin. The selected region expand
 
 White `#FFFFFF` for the canvas and private reading; pale blue `#E7EFF5` for channels; ice blue `#F0F5F9` for private identity fills; powder blue `#DCE9F3` for selected surfaces; oat `#EEE3D2` for external email. Neutral ink `#252B24` carries text. Clay `#8D3E2B` marks deliberate actions with warm-white lettering. Never write words in blue. Charcoal is the dark alternative. Colour reinforces labels and shapes; it does not establish privacy. See the [editable direction board](../visuals/design-direction.svg).
 
+## Shape
+
+Set 5 October 2026 and held by `scripts/check-shapes.cjs` and `scripts/check-studies.cjs`. Six shapes, nothing else:
+
+| Shape | Radius | Used for |
+|---|---|---|
+| Circle | 50% | People, round controls (back, add, send, profile mark) |
+| Pill | 999 px | Every tappable action and selected state: buttons, tabs, chips, segments, badges, doors |
+| Container | 12 px | Cards, objects, boundaries, inputs, composer, tiles, fieldsets, pending notes, focus rings |
+| Dialog | 16 px | Dialogs and sheets; a sheet sits 16 over 12 px cards so nesting steps evenly |
+| Publication mark | 6 px | The page-shaped identity mark |
+| Type badge | 5 px | The small type badge on group, publication and provider marks |
+
+The crossing keeps its 3 px clay rule with no radius; it is the one defining moment. A tile inside a multi-column grid shows its edge (a visible border or background) or centres its content; never left-aligned in an invisible cell. Groups and providers are told apart by their badge, not by tint alone. The self mark is the only filled circle on the home.
+
 ## Typography
 
 The project presentation uses an editorial serif for the thinking and readable sans serif for practical detail. The product needs compact, legible labels, scalable text and an unambiguous hierarchy. The editorial website and mobile UI need not use identical typography.
+
+In the runtime every size is in rem, so the phone's text setting applies. Floor 12 px. Words stay whole at large text: `overflow-wrap: break-word`, tabs and chips in flex rows with `white-space: nowrap` and a 44 px minimum width, round controls clamped 44–56 px, avatars capped at 56 px, the header title capped by screen width. Checked at 16, 24 and 32 px root text on 320 and 390 wide screens.
 
 ## Movement
 
