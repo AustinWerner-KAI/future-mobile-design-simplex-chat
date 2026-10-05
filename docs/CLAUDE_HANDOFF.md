@@ -1,12 +1,13 @@
 # Claude handoff — From anatomy to interface
 
-Prepared for Austin on **5 October 2026, Asia/Dubai**. This is a transfer of project context and learnings, not a new design release. Project state before this handoff: commit `357ac96` on `main`.
+Prepared for Austin on **5 October 2026, Asia/Dubai**; updated the same day after V2.1.2.2 was merged. This is a transfer of project context and learnings, not a new design release. Project state at the first handoff: commit `357ac96` on `main`; at V2.1.2.2: PR #16 merged.
 
 ## Start here
 
 - Repository: https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat
-- Latest edit: [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html).
-- [Interactive mobile candidate](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.1).
+- Latest edit: [V2.1.2.2 — identity, discovery and the shape scale](V2_1_2_2.md), the interactive runtime: [open it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2).
+- [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html): the 4 October 2026 state, 14 captures, kept as history.
+- [Running mobile audit](MOBILE_AUDIT_LOG.md): nine dated sections, every finding with its fix and evidence.
 - [Community journey and focused test](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/community-journey.html).
 - [Durable todo list](NEXT_STEPS.md).
 
@@ -41,14 +42,15 @@ Do not reproduce private correspondence or unrelated political opinions. The pro
 
 ## Current design and version status
 
-V2.1.2.1 is the latest edit and leads GitHub About, README, documentation and review entry points. **V2 is the earlier reference baseline**. Older audits retain their original scope; do not rewrite them as tests of the latest version.
+V2.1.2.2 is the latest edit and leads README, documentation and review entry points; its record is [V2_1_2_2](V2_1_2_2.md). V2.1.2.1 is the 4 October 2026 gallery state of the same candidate. **V2 is the earlier reference baseline**. Older audits retain their original scope; do not rewrite them as tests of the latest version.
 
 Home candidates share a runtime:
 
 - 2.1.1: favourites grid/list, three initially visible, expand to six.
 - 2.1.2: horizontal favourites strip and mixed recent list.
 - 2.1.3: editable, overlapping personal collections; collections do not change permissions.
-- 2.1.2.1: refined compact strip plus the small-community scenario.
+- 2.1.2.1: refined compact strip plus the small-community scenario (gallery state, 4 October 2026).
+- 2.1.2.2: the same candidate with T11 email handoff, T19 discovery, IA5, large text in rem, the shape scale and T08 profiles (5 October 2026). `version=2.1.2.1` is an alias of this build.
 
 The latest gallery contains 14 captured states of the implemented candidate, not a complete messaging application or exhaustive state coverage. Individuals, groups, publications and providers have different identity shapes/badges plus explicit labels. Icons are monograms/type marks, **not real QR codes**. A unique persistent QR avatar could reveal/correlate contact data; that suggestion was not implemented. The invitation uses a clearly labelled invalid demo QR.
 
@@ -95,7 +97,9 @@ Browser checks establish the tested simulation behaviour. They do not establish 
 - Test host: `studies/community-journey.html`.
 - Capture script: `scripts/capture-v2121-interface.cjs`.
 - Captures: `studies/v2121-captures/`.
-- Scripts: `check-community-journey.cjs`, `check-community-ux-fixes.cjs`, `check-v21.cjs`, `check-v21-fixes.cjs` and other scoped variants.
+- Scripts: `check-identity.cjs` (T08), `check-channel-discovery.cjs` (T19), `check-email-recipient.cjs` (T11), `check-large-text.cjs`, `check-shapes.cjs`, `check-studies.cjs`, `check-community-journey.cjs`, `check-community-ux-fixes.cjs`, `check-v21.cjs`, `check-v21-fixes.cjs` and other scoped variants. Run the whole suite in a scratch copy before a push; several checks regenerate JSON records and PNGs that should not be committed by accident.
+- Design studies: `studies/identity.html`, `studies/channel-discovery.html`; models in `docs/IDENTITY_MODEL.md` and `docs/CHANNEL_DISCOVERY_MODEL.md`.
+- Publishing from a cloud session: direct `git push` is refused by the proxy; use the GitHub connector to create the branch and push files in parts, then `git fetch` and `git diff --stat HEAD FETCH_HEAD` must be empty before opening the PR. The connector cannot push PNGs; captures stay with the owner.
 
 Run a local server with `python3 -m http.server 8000`. Browser scripts require Playwright and Chrome supplied by the environment; dependencies are not bundled. On Austin's current machine:
 
@@ -109,16 +113,15 @@ The local checkout is `/Users/austinwernerltd/Documents/Codex/2026-10-03/who-is-
 
 ## What to do next
 
-Follow NEXT_STEPS IDs; do not invent completed research. T01–T04 and T13–T18 are completed prototype/documentation milestones. Open tasks:
+Follow NEXT_STEPS IDs; do not invent completed research. T01–T04, T08, T11–T19 are completed prototype/documentation milestones. Open tasks:
 
-- **T05, priority:** real-phone/participant comparison of the homes; audience comprehension, keyboard, larger text, interruption and return.
+- **T05, priority:** real-phone/participant comparison; protocol, facilitator page and session record are ready. Needs 6 to 9 people.
+- T20: five maintainer questions, written to post as-is.
 - T06: explicit user-controlled relationships between people/providers/places.
 - T07: group lifecycle, roles and permission changes.
-- T08: contextual identities/profiles with isolated drafts and search.
 - T09: full attachment preparation, cancellation, permission/failure and retry lifecycle.
 - T10: deliberate recovery after reload/closing.
-- T11: general recipient choice for email-to-chat handoff.
-- T12: feasibility against upstream SimpleX mobile architecture.
+- Open audit items: IA1–IA4, IA6, D3, D6, E6; the T08 profile edit screen.
 
 T05 needs people and devices; an agent cannot tick it off by running browser scripts. If Austin asks for more implementation while that research is pending, agree a specific open task and retain clear evidence limits. Do not relaunch a broad visual redesign or silently replace the latest candidate.
 
