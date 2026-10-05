@@ -28,7 +28,7 @@ The tradeoff is a review step and more local state to understand. The experiment
 
 The shared menu retains Private, Channels and Email type filters. Opening an email brings its expanded entry into view. Reply by email and Carry a detail are local tools, not separate top-level destinations. Tool changes preserve the original email reply draft. Folding, opening Maya and browser Back operate through relationship history. Colour changes preserve the working state.
 
-The email exposes its external transport, exact From/To and source body. The handoff exposes a private working object, then the destination relationship/profile and an exact text snapshot. No channel destination is silently offered as a substitute for a private recipient. This fixture supports one recipient, Maya; a real picker must require deliberate recipient/profile selection.
+The email exposes its external transport, exact From/To and source body. The handoff exposes a private working object, then the destination relationship/profile and an exact text snapshot. No channel destination is silently offered as a substitute for a private recipient. This fixture supports one recipient, Maya; a real picker must require deliberate recipient/profile selection. The V2.1 runtime now explores that picker; see [T11](T11_EMAIL_HANDOFF.md).
 
 ## Handoff state model
 
