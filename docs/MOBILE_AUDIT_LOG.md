@@ -4,6 +4,20 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 9. T08 in the runtime — 5 October 2026
+
+Self-audit of the T08 build in `v21.html?mobile=1&version=2.1.2.1` before opening the PR. Method: `scripts/check-identity.cjs` (29 assertions), the full suite in a scratch copy, and captures of the eight journey screens at 390 × 844. Evidence level: browser simulation.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| H1 | Integrity | First build broke the page: a template literal lost its opening backtick in the unverified-contact branch. | Caught by `node --check` before any capture; fixed. |
+| H2 | Test | The T19 check waited 50 ms after Join for a return that goes through `history.go`; under the full-suite load it failed once and passed three times in isolation. | The check now waits for the feedback line itself. Not a product change. |
+| H3 | Large text | A third 44 px control (the mark) in the home header risked the title breaking at 320 px with 32 px text, as R1 did. | `check-large-text` passes: the title is capped by viewport width and words stay whole. |
+
+**Passed:** no profile name in the header; the self mark is the only filled circle; the hidden profile is never named in the sheet or search; a partial password shows only the ordinary empty state; switching keeps Austin's search text and draft marker and shows Work an empty search; the switch feedback names no contact; acceptance closes the dialog, puts the new row on screen and in focus, and names the identity once; the row carries no identity; the composer and the unverified note name it; no horizontal overflow; no page errors.
+
+**Not covered:** screen readers, native text scaling, physical devices, participants. The profile edit screen is not built. The 2.1.1 and 2.1.3 homes have no mark.
+
 ## 8. Runtime shape scale — 5 October 2026
 
 The S1 scale from the studies carried into the runtime, `prototypes/src/v21/style.css`, so the thing T05 participants hold matches the studies and nothing built later needs a retrofit. Evidence level: browser simulation.
