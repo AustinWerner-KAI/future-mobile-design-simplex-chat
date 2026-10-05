@@ -35,6 +35,11 @@
     "Baseline also requires a deliberate choice",
     "No horizontal overflow at 320",
     "No horizontal overflow at 390",
+    "F2: reply sits before local tool cards",
+    "F1: status bar is not oat",
+    "F4: replying clears unread",
+    "F3: email reply states transport, recipient and delivery limit",
+    "F2: email reply sits under the email, before the picker",
     "No page errors"
   ],
   "captures": [
@@ -51,7 +56,7 @@
     {
       "path": "studies/t11-captures/03-duplicate-blocked.png",
       "caption": "After sharing, the same text cannot go to the same chat again.",
-      "sha256": "0de26c26652e06626b847d7dbc86485eccf663119c99d1d1604dcd2b1facec7c"
+      "sha256": "73a576c5e266dfd1bdf5191f3b2a18e04742c4d1b658665ae3c8adf32d0d16f0"
     }
   ],
   "limits": [

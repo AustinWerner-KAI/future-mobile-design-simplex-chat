@@ -76,6 +76,16 @@ await open(q,'version=2.1.1');
 ck(await q.locator('[name=detail-to]:checked').count()===0,'Baseline also requires a deliberate choice');
 // Narrow fit.
 for(const w of [320,390]){const n=await b.newPage({viewport:{width:w,height:700}});await open(n,'version=2.1.2.1');await n.locator('label.recipient:has([value=alex])').click();await n.locator('[data-action=review-detail]').click();ck(await n.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No horizontal overflow at '+w);await n.close();}
+// Flow audit F1-F4 (MOBILE_AUDIT_LOG section 3).
+const f=await ctx.newPage();f.on('pageerror',e=>errors.push(e.message));
+await f.goto('file://'+process.cwd()+'/v21.html?mobile=1&version=2.1.2.1#maya');await f.locator('#reply').fill('See you then');await f.locator('[data-action=send]').click();
+ck(await f.evaluate(()=>{const o=document.querySelector('.outgoing'),c=document.querySelector('.community-object');return !!(o&&c&&(o.compareDocumentPosition(c)&Node.DOCUMENT_POSITION_FOLLOWING));}),'F2: reply sits before local tool cards');
+ck(await f.locator('.app .feedback').evaluate(e=>getComputedStyle(e).backgroundColor)==='rgb(255, 255, 255)','F1: status bar is not oat');
+await f.locator('[data-action=home]').click();
+ck(!(await f.locator('.rows [data-open=maya]').innerText()).includes('unread'),'F4: replying clears unread');
+await f.locator('.rows [data-open=harbour]').click();await f.locator('[data-tab=email]').click();await f.locator('#reply').fill('We will take it');await f.locator('[data-action=send]').click();
+ck((await f.locator('.outgoing').innerText()).includes('Email to bookings@example.com')&&(await f.locator('.outgoing').innerText()).includes('delivery unconfirmed'),'F3: email reply states transport, recipient and delivery limit');
+ck(await f.evaluate(()=>{const o=document.querySelector('.outgoing'),d=document.querySelector('.carry');return !!(o.compareDocumentPosition(d)&Node.DOCUMENT_POSITION_FOLLOWING);}),'F2: email reply sits under the email, before the picker');
 ck(errors.length===0,'No page errors');
 await b.close();
 fs.writeFileSync('docs/email-recipient-check.json',JSON.stringify({task:'T11',date:new Date().toISOString().slice(0,10),source:'v21.html (generated from prototypes/src/v21)',method:'Agent-operated headless Chromium via Playwright. Browser simulation only.',viewport:'390x844 plus 320/390 overflow checks',checks,captures,limits:['No human participants or physical phones','No screen reader, native keyboard or enlarged-text testing','No real delivery, mailbox or SimpleX identity','RAM-only state; reload clears it']},null,2)+'\n');
