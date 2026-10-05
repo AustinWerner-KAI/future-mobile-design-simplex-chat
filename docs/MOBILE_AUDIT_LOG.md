@@ -14,6 +14,14 @@ Before: fifteen radii (30, 24, 22, 18, 16, 15, 14, 12, 8, 7, 5, 4 px, 50%, 0). A
 - Regression suite in a scratch copy, all unchanged: large-text 154, v21 audit 23, T19 58, T11 36, community 18, UX fixes 13, v21 fixes 14, refinement 39, studies 70.
 - Captures of home, Maya, Harbour Café email and the directory preview reviewed at 390 × 844.
 
+### Anchored tiles (same day, owner spotted it)
+
+The T11 recipient tiles looked off-centre. Measured: each tile is a 146 px grid cell with the mark 9 px from the left and the text ending 29 to 51 px short of the right; the tiles had a transparent border, so the content was left-aligned inside an invisible box. The owner has seen this pattern before, so it becomes a rule rather than a one-off fix.
+
+**Rule:** a tile inside a multi-column grid is anchored. Either it shows its edge (a visible border or a background) or its content is centred. Never left-aligned in an invisible cell.
+
+**Fix:** every recipient tile carries the soft 1 px edge; the chosen one keeps the blue fill and the stronger line. `check-shapes.cjs` now asserts the rule on every grid in the runtime (26 checks) and fails on the pre-fix tiles. T11 36 and large-text 154 unchanged.
+
 **Not covered:** `v2121.html` and `v21-options.html` are directly authored galleries and keep their own radii until re-captured; physical devices; participants.
 
 ## 7. T08 identity study — 5 October 2026
