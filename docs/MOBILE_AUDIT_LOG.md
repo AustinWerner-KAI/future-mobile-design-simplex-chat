@@ -4,6 +4,22 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 7. T08 identity study — 5 October 2026
+
+Target: `studies/identity.html` and `docs/IDENTITY_MODEL.md`, a static design study for profiles, hidden profiles and incognito. Measured in headless Chromium at 390 × 844, 320 × 700, 1440 × 900 and 200% root text; judged against the framework and the identity rule from E1. Self-audit before showing the owner.
+
+**Passed:** every target 44 px or more; no text under 12 px; no blue words; no clipped phone body or sideways overflow at any size, including 200% text.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| G1 | Integrity | The "Switched to Work" line named Maya, a contact of the other profile. A profile switch must not leak another profile's contacts. | Reworded: "Austin's drafts and search are kept for when you switch back." |
+| G2 | Clarity | The acceptance line carried three sentences, including the verification warning that frame 8 states in full. | Cut to two: who accepted and what they see. Verification stays on the connection page. |
+| G3 | Consistency | The New connection close button sat at the top left; the runtime dialog puts it at the right. | Moved to the right. |
+
+**Open for the owner:** the home subtitle "Austin · your connections" names the profile on the home, an exception to E1 argued in the model (it says whose world, not who sees you). Abandon if T05 participants read it as a contact.
+
+**Not covered:** screen readers, native text scaling, physical devices, participants. Whether an incognito name can change later, or be detected, is unverified and is a maintainer question.
+
 ## 6. Information architecture — 5 October 2026
 
 Structural audit of the V2.1.2.1 runtime after T11 and T19: site map, navigation model, content hierarchy, flows, naming, reuse, growth and URLs. Full document: [INFORMATION_ARCHITECTURE](INFORMATION_ARCHITECTURE.md). Evidence level: code inspection and browser simulation.
