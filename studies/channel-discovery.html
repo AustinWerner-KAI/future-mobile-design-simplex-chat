@@ -52,6 +52,10 @@ figcaption span{font-size:.8125rem;color:var(--muted)}
 .switch span{flex:1;text-align:center;min-height:44px;display:grid;place-items:center;padding:0 8px}
 .switch .on{background:var(--blue);font-weight:600}
 .switch .on::before,.tabs .on::before{content:"\2713\00a0"}
+.strip{display:flex;gap:10px;overflow:hidden;margin:4px 0 8px}
+.strip span{flex:none;width:72px;text-align:center;font-size:.75rem}
+.strip .av{margin:0 auto 4px}
+.beyond{margin-top:16px;padding-top:12px;border-top:1px solid var(--soft)}
 .search{border:1px solid var(--line);border-radius:14px;background:var(--canvas);padding:8px 12px;font-size:.95rem;margin:6px 0 10px}
 .group-h{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;font-weight:600;margin:12px 0 6px}
 .group-h span{font-weight:400;color:var(--muted);font-size:.75rem}
@@ -72,6 +76,7 @@ figcaption span{font-size:.8125rem;color:var(--muted)}
 .intent p{margin:0;font-size:.85rem}
 .n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1px solid var(--line);font-size:.75rem;margin-right:6px}
 footer{margin-top:40px}
+.journey{font:1.35rem/1.2 Georgia,serif;letter-spacing:-.02em;margin:36px 0 14px;font-weight:400}
 @media (max-width:640px){main{padding:24px 16px 48px}h1{font-size:2rem}}
 </style>
 </head>
@@ -79,13 +84,113 @@ footer{margin-top:40px}
 <main>
 <p class="eyebrow">From anatomy to interface · T19 study · design hypothesis</p>
 <h1>Channels arrive through people.</h1>
-<p class="lede">How someone finds, previews and joins a SimpleX channel without leaving the relationship or search they started in. Fictional channels and people. Static mockup; nothing is sent, joined or paid for.</p>
+<p class="lede">How someone goes from the home screen to a channel page: finds, previews, joins and reads a SimpleX channel without losing where they started. Fictional channels and people. Static mockup; nothing is sent, joined or paid for.</p>
 <p class="note">Read the model: <a href="../docs/CHANNEL_DISCOVERY_MODEL.md">CHANNEL_DISCOVERY_MODEL</a> · Feasibility: <a href="../docs/T12_FEASIBILITY.md">T12</a></p>
 <ul class="rules" aria-label="Octopus flow rules shown">
 <li>Coordinate</li><li>Act locally</li><li>Adapt the space</li><li>Retain context</li><li>Cross deliberately</li><li>Return coherently</li>
 </ul>
 
-<section class="flow" aria-label="Six states">
+<h2 class="journey">Journey: from the home screen to the channel page</h2>
+<section class="flow" aria-label="Main journey">
+<figure>
+<div class="phone" role="img" aria-label="Home screen at rest, with the public directory entry at the end of Recent activity">
+<div class="head"><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small><br></div><span class="round" style="margin-left:auto">＋</span></div>
+<div class="body" style="border-left:0">
+<div class="search" style="color:var(--muted)">Find someone or somewhere</div>
+<div class="group-h">Keep close <span>Edit favourites</span></div>
+<div class="strip"><span><span class="av person">M</span>Maya</span><span><span class="av group">F</span>Family</span><span><span class="av">CJ</span>Coast Journal</span><span><span class="av group" style="background:#f3efe4">HC</span>Harbour Café</span></div>
+<div class="group-h">Recent activity <span>All connections</span></div>
+<div class="row"><span class="av person">M</span><span><b>Maya</b><span class="meta">Individual · Shall we go on Saturday? · 1 unread</span></span></div>
+<div class="row"><span class="av group">F</span><span><b>Family</b><span class="meta">Group · private · Lunch on Sunday? · 2 unread</span></span></div>
+<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · A quieter route to the sea.</span></span></div>
+<div class="beyond">
+<div class="group-h" style="margin-top:0">Beyond your connections <span>public</span></div>
+<span class="btn">Find public channels and groups</span>
+<p class="note" style="margin-top:6px">Curated SimpleX Directory. Nothing is searched until you tap.</p>
+</div>
+</div>
+</div>
+<figcaption><strong>1 · From the home screen</strong><span>Coordinate. Your connections fill the screen. One door to the public directory sits after them, not above them, and not as a tab.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Directory results, Active, New and All, with a note that a row opens the preview">
+<div class="head"><span class="round">‹</span><div><h2>Public directory</h2><small>Public publications and groups · curated</small></div></div>
+<div class="ctx"><span>← Your connections</span><span>Place retained</span></div>
+<div class="body">
+<div class="search">coast</div>
+<div class="tabs"><span class="on">Active</span><span>New</span><span>All</span></div>
+<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · 1,240 subscribers · active today</span></span></div>
+<div class="row"><span class="av">TT</span><span><b>Tide Tables</b><span class="meta">Publication · public · 310 subscribers · active this week</span></span></div>
+<div class="row"><span class="av group">CW</span><span><b>Coastal Walkers</b><span class="meta">Group · public · 85 members · admin reviews new members</span></span></div>
+<p class="note" style="margin-top:10px">Tap a row to preview before joining, as in 2. Already subscribed rows say so instead of offering Join.</p>
+</div>
+<div class="dock"><p class="note">Directory loaded 2 min ago · 524 listings</p></div>
+</div>
+<figcaption><strong>2 · Browse the curated directory</strong><span>Act locally. The directory filters on your phone once loaded, as the website does. A row opens the preview; nothing joins from the list.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Preview opened from a directory row, with the identity choice before Join">
+<div class="head"><span class="round">‹</span><div><h2>Public directory</h2><small>Public publications and groups · curated</small></div></div>
+<div class="ctx"><span>← Your connections</span><span>Place retained</span></div>
+<div class="body">
+<div class="card"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · 1,240 subscribers · active today</span><br><span class="meta">A quieter route to the sea.</span></span></div>
+<div class="crossing">
+<h3>Before you join</h3>
+<ul>
+<li>Public. Anyone with the link can read it.</li>
+<li>The owner's relays carry the posts and can read them.</li>
+<li>Subscribers can't see each other.</li>
+</ul>
+<div class="idrow"><b>Join as</b><span class="switch"><span class="on">Austin</span><span>Incognito</span></span></div>
+<span class="btn primary">Join Coast Journal</span>
+<span class="btn">Not now · back to results</span>
+</div>
+<p class="note">Tide Tables and Coastal Walkers stay below. Your results are kept.</p>
+</div>
+</div>
+<figcaption><strong>3 · Preview before you cross</strong><span>Cross deliberately. The row unfolds in place. Three facts and one identity choice, then Join. The same panel opens from a link or a name.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="The channel page in reading mode, with reactions and a comment crossing">
+<div class="head"><span class="round">‹</span><div><h2>Coast Journal</h2><small>Publication · public · reading as Austin</small></div><span class="round" style="margin-left:auto">☆</span></div>
+<div class="ctx"><span>← Your connections</span><span>Reading place kept</span></div>
+<div class="body">
+<p class="note" style="margin:8px 0 0">Public publication · 1,240 readers · relays can read posts</p>
+<div class="card" style="display:block;margin:10px 0"><span class="meta">Coast Journal · today</span><b style="font-size:1rem;margin:4px 0">A quieter route to the sea.</b><p style="margin:0;font-size:.875rem">New field notes from the harbour. A fictional update about places, people and quieter routes.</p><div class="tabs" style="margin:8px 0 0"><span>24 reactions</span><span>Comment</span><span>Forward</span></div></div>
+<div class="card" style="display:block;margin:10px 0"><span class="meta">Coast Journal · Thursday</span><b style="font-size:1rem;margin:4px 0">Tides for the weekend.</b><p style="margin:0;font-size:.875rem">Low water at 09:40 on Saturday. A fictional note.</p><div class="tabs" style="margin:8px 0 0"><span>9 reactions</span><span>Comment</span><span>Forward</span></div></div>
+<div class="crossing" style="margin-top:14px">
+<h3>Before your first comment</h3>
+<p class="note" style="margin:0 0 6px">Comments are public. You'll appear as <b>Austin</b>. Readers can't see each other, but the owner and relays can see your comment.</p>
+<span class="btn">Comment as Austin</span>
+<span class="btn">Not now</span>
+</div>
+</div>
+<div class="dock"><p class="note">Reading mode · no private reply to the publisher · Leave channel is in ⋯</p></div>
+</div>
+<figcaption><strong>4 · The channel page</strong><span>Adapt the space, cross deliberately. Posts fill the screen; reacting is local. The first comment is a second crossing and names who you'll appear as. Forward hides the source from the recipient, as SimpleX does.</span></figcaption>
+</figure>
+
+<figure>
+<div class="phone" role="img" aria-label="Return to the home after joining Coast Journal">
+<div class="head"><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div></div>
+<div class="body" style="border-left:0">
+<div class="search" style="color:var(--muted)">Find someone or somewhere</div>
+<div class="group-h">Recent activity <span>All connections</span></div>
+<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · joined just now as Austin</span></span></div>
+<div class="row"><span class="av person">M</span><span><b>Maya</b><span class="meta">Individual · Shall we go on Saturday? · 1 unread</span></span></div>
+<div class="beyond"><div class="group-h" style="margin-top:0">Beyond your connections <span>public</span></div><span class="btn">Find public channels and groups</span><p class="note" style="margin-top:6px">Your last search, "coast", is kept.</p></div>
+</div>
+<div class="toast"><b>Coast Journal added to your connections</b><br><span class="note">as a publication · you're back where you started</span></div>
+</div>
+<figcaption><strong>5 · Return to where you started</strong><span>Return coherently. Back on the home, the channel now sits among your connections, and the directory keeps your last search.</span></figcaption>
+</figure>
+</section>
+
+<h2 class="journey">Other doors to the same preview</h2>
+<section class="flow" aria-label="Other entries">
 <figure>
 <div class="phone" role="img" aria-label="Maya's conversation with a shared channel card">
 <div class="head"><span class="round">‹</span><div><h2>Maya</h2><small>Individual · personal context</small></div></div>
@@ -98,7 +203,7 @@ footer{margin-top:40px}
 </div>
 <div class="dock"><p class="note">Maya · private conversation</p><div class="composer">Reply to Maya · private</div></div>
 </div>
-<figcaption><strong>1 · Someone you know shares it</strong><span>Coordinate. The card shows only what the link carries: name and description. Counts come after you tap Preview, and it says so.</span></figcaption>
+<figcaption><strong>6 · Someone you know shares it</strong><span>Coordinate. The card shows only what the link carries: name and description. Counts come after you tap Preview, and it says so.</span></figcaption>
 </figure>
 
 <figure>
@@ -121,7 +226,7 @@ footer{margin-top:40px}
 </div>
 <div class="dock"><p class="note">Maya · private conversation</p><div class="composer">Reply to Maya · private</div></div>
 </div>
-<figcaption><strong>2 · Preview where it was shared</strong><span>Act locally, cross deliberately. Three facts and one identity choice, marked with a check, before Join. Every path (link, name, directory) opens this same panel. Your reply to Maya stays put.</span></figcaption>
+<figcaption><strong>7 · Preview where it was shared</strong><span>The same panel as 3, unfolded beside Maya's message. Your reply to Maya stays put.</span></figcaption>
 </figure>
 
 <figure>
@@ -139,39 +244,7 @@ footer{margin-top:40px}
 <p class="note" style="margin-top:6px">Curated SimpleX Directory. Searched only when you tap.</p>
 </div>
 </div>
-<figcaption><strong>3 · You were told a name, or want a topic</strong><span>Coordinate. Your own world first. Looking up a public name and searching the directory each need a tap, because both leave your phone.</span></figcaption>
-</figure>
-
-<figure>
-<div class="phone" role="img" aria-label="Directory results, Active, New and All, with a note that a row opens the preview">
-<div class="head"><span class="round">‹</span><div><h2>Public directory</h2><small>Public publications and groups · curated</small></div></div>
-<div class="ctx"><span>← Search "coast"</span><span>Your search is kept</span></div>
-<div class="body">
-<div class="tabs"><span class="on">Active</span><span>New</span><span>All</span></div>
-<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · 1,240 subscribers · active today</span></span></div>
-<div class="row"><span class="av">TT</span><span><b>Tide Tables</b><span class="meta">Publication · public · 310 subscribers · active this week</span></span></div>
-<div class="row"><span class="av group">CW</span><span><b>Coastal Walkers</b><span class="meta">Group · public · 85 members · admin reviews new members</span></span></div>
-<p class="note" style="margin-top:10px">Tap a row to preview before joining, as in 2. Already subscribed rows say so instead of offering Join.</p>
-</div>
-<div class="dock"><p class="note">Directory loaded 2 min ago · 524 listings</p></div>
-</div>
-<figcaption><strong>4 · Browse the curated directory</strong><span>Retain context. Your query is kept. A row opens the same preview as frame 2; nothing joins from the list.</span></figcaption>
-</figure>
-
-<figure>
-<div class="phone" role="img" aria-label="Return to search after joining Coast Journal">
-<div class="head"><div><h2>Close at hand.</h2><small>2.1.2.1 · your connections</small></div></div>
-<div class="body" style="border-left:0">
-<div class="search">coast</div>
-<div class="group-h">Your connections <span>on this phone</span></div>
-<div class="row"><span class="av">CJ</span><span><b>Coast Journal</b><span class="meta">Publication · public · joined just now as Austin</span></span></div>
-<div class="group-h">Not found what you need?</div>
-<span class="btn">Search public channels and groups</span>
-<p class="note" style="margin-top:6px">Your directory results are kept.</p>
-</div>
-<div class="toast"><b>Coast Journal added to your connections</b><br><span class="note">as a publication · you're back in your search</span></div>
-</div>
-<figcaption><strong>5 · Return to where you started</strong><span>Return coherently. You come back to the search you left, with the query kept, and the channel now sits among your connections.</span></figcaption>
+<figcaption><strong>8 · You were told a name</strong><span>Coordinate. Your own world first. Looking up a public name and searching the directory each need a tap, because both leave your phone.</span></figcaption>
 </figure>
 
 <figure>
@@ -187,7 +260,7 @@ footer{margin-top:40px}
 <div class="pending"><b>Directory unavailable</b>Couldn't reach the directory. Your search is kept; try again when you're online.</div>
 </div>
 </div>
-<figcaption><strong>6 · When it doesn't go through</strong><span>Each outcome is a plain line in the place you were, with the query kept and nothing to retry by accident.</span></figcaption>
+<figcaption><strong>9 · When it doesn't go through</strong><span>Each outcome is a plain line in the place you were, with the query kept and nothing to retry by accident.</span></figcaption>
 </figure>
 </section>
 

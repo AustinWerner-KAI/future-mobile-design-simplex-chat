@@ -19,15 +19,30 @@ Ranked by fit with our thesis that human relationships organise the interface. T
 | 2 | **I've been told a name** | "Follow #coastjournal" | The home search box: typing `#` offers "Look up #coastjournal". The lookup leaves the phone, so it happens on tap, not while typing |
 | 3 | **I saw a post and want the source** | A post forwarded into a chat | Forwarding hides the source, so the sharer has to choose to attach the channel. Offer "Share channel" next to "Forward post" |
 | 4 | **I'm looking for a topic** | "Something about tides and walks" | Home search, then an explicit step: "Search public channels and groups" |
+| 4b | **I want to browse, from the home** | Opens the app with nothing in mind | The home screen at rest: after Recent activity, a section "Beyond your connections" with one button, "Find public channels and groups". Below people, never above, never a tab. Owner request, 5 October 2026 |
 | 5 | **I found it on the web** | The SimpleX website directory or a link on a site | The link opens the app at the same preview as 1 to 4 |
 
 **What this means:** discovery is mostly something that happens *inside relationships and search*, not a separate "Explore" destination. A browse feed earns its place only if T05 shows people want to browse.
+
+## The whole journey, home to channel page
+
+Scoped on the owner's request (5 October 2026). Frames 1 to 5 of the [study](../studies/channel-discovery.html) follow one path end to end:
+
+| Step | Screen | What holds |
+|---|---|---|
+| 1 | Home at rest | Your connections fill the screen. One door, "Find public channels and groups", sits after Recent activity. Not a tab, not above people. Nothing is fetched until it's tapped. |
+| 2 | Public directory | A temporary task, not a destination: the return route says "← Your connections". The listing loads once, then filters on the phone as the website does. Active, New, All. Rows name type and audience: "Publication · public · 1,240 subscribers". |
+| 3 | Preview | The row unfolds in place; the other results stay below. Three facts, one identity control, then Join. The same panel opens from a shared link or a `#name`. |
+| 4 | Channel page | Reading mode. Posts fill the screen. Reacting is local. The first comment is a second crossing that names who you'll appear as. Forward hides the source, as SimpleX does. No private reply to the publisher. Leave channel is one step from the header. |
+| 5 | Return | Back to the home. The channel sits among your connections, marked "joined just now as Austin". The directory keeps your last search. |
+
+Other doors (frames 6 to 9) all open the same preview as step 3: a link from a person, a `#name`, a forwarded post, a web link.
 
 ## The six flow rules applied to channels
 
 | Rule | Channel behaviour |
 |---|---|
-| **Coordinate** | Discovery starts where the person is: a conversation, or home search. Your own connections always come first in search. Looking up a `#name` and searching the public directory each happen only when tapped, because both leave the phone. |
+| **Coordinate** | Discovery starts where the person is: a conversation, home search, or the home at rest (one door after Recent activity). Your own connections always come first in search. Looking up a `#name` and searching the public directory each happen only when tapped, because both leave the phone. |
 | **Act locally** | A shared channel opens as a preview *beside the message that carried it*, not on a new screen. The person decides there and stays in the conversation. The card shows only what the link carries (name, description). Subscriber counts and activity need a relay, so they appear after "Preview channel", and the card says so. |
 | **Adapt the space** | Subscribed channels stay compact in the home (one row, latest post), because people come first. A channel unfolds into reading mode when opened. Channels can be favourited, but they aren't promoted above people. |
 | **Retain context** | After previewing or joining, the person returns to the chat or search they came from, with drafts and scroll position intact. Each channel keeps its own reading position. |
