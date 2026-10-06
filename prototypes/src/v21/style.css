@@ -30,5 +30,7 @@ button,strong,h2,h3,small{overflow-wrap:break-word}.round{width:clamp(44px,2.2em
 
 /* T08: profiles and incognito. The self mark is the only filled circle on the home. */
 .round.mark{background:#dce9f3;border-width:2px;font-size:1rem;font-weight:600}.avatar.me{background:#dce9f3;border-width:2px}dialog.sheet{width:420px;margin-top:auto;margin-bottom:0;border-radius:16px 16px 0 0;max-height:70dvh}.prow{width:100%;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;text-align:left;padding:8px 0;min-height:56px;border-bottom:1px solid #c7cbc3;border-radius:0}.prow .avatar{width:clamp(44px,2.75em,56px);height:clamp(44px,2.75em,56px)}.prow .copy{flex:1 1 8em;min-width:0}.prow .badge{margin-left:auto}.prow strong{display:block;font-size:1rem;font-weight:550}.prow small{display:block;font-size:0.75rem;color:var(--muted)}.prow[aria-pressed=true] .badge{background:var(--blue);font-weight:600}.prow[aria-pressed=true] .badge::before{content:'\2713\00a0'}
+/* W1 (6 October 2026): the full-screen phone route must not stretch across a laptop window. Above 600px the app keeps phone width, centred, on the page material. */
+@media(min-width:600px){body.mobile{background:#f1f5f8}body.mobile .exhibit{max-width:none}body.mobile .app{width:min(430px,100%);margin:0 auto;border-left:1px solid #c7cbc3;border-right:1px solid #c7cbc3}}
 
 .avatar:has(.type-mark) .identity-mark{transform:translate(-.2em,-.2em)}.avatar .type-mark{right:-8px;bottom:-7px;width:20px;height:20px}.avatar .type-mark svg{width:15px;height:15px}
