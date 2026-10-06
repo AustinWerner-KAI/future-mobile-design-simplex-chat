@@ -30,7 +30,7 @@ T14–T18 mark implemented prototype fixes, checked in [V2.1.2.1](../v2121.html)
 
 ## Audits and the rules they produced
 
-All in the [running mobile audit log](MOBILE_AUDIT_LOG.md), newest first: §14 one relationship, distinct channels (issue #6, C1–C5), §13 tools at the point of action (issue #3, T1–T5), §12 photograph you can discuss (issue #4, P1–P5), §11 website homepage (HP1–HP11), §10 full-screen route on a laptop (W1), §9 T08 runtime (H1–H3, J1–J6), §8 runtime shape scale and anchored tiles, §7 identity study (G1–G4, S1–S6), §6 information architecture (IA1–IA6), §5 T19 runtime (R1–R3), §4 discovery study (C1–C10, D1–D6, E1–E6), §3 flow and colour (F1–F5), §1 whole candidate (M1–M5), §2 T11 (A1–A4). Fixed items carry a check that fails on the pre-fix build. Still open: IA1–IA4, IA6, D3, D6, E6.
+All in the [running mobile audit log](MOBILE_AUDIT_LOG.md), newest first: §15 a home that feels continuous (issue #2, K1–K5), §14 one relationship, distinct channels (issue #6, C1–C5), §13 tools at the point of action (issue #3, T1–T5), §12 photograph you can discuss (issue #4, P1–P5), §11 website homepage (HP1–HP11), §10 full-screen route on a laptop (W1), §9 T08 runtime (H1–H3, J1–J6), §8 runtime shape scale and anchored tiles, §7 identity study (G1–G4, S1–S6), §6 information architecture (IA1–IA6), §5 T19 runtime (R1–R3), §4 discovery study (C1–C10, D1–D6, E1–E6), §3 flow and colour (F1–F5), §1 whole candidate (M1–M5), §2 T11 (A1–A4). Fixed items carry a check that fails on the pre-fix build. Still open: IA1–IA4, IA6, D3, D6, E6.
 
 ## Next, in priority order
 
