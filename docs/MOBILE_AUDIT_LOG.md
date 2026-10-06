@@ -41,6 +41,11 @@ HP1–HP5 and HP7–HP10 fixed in `index.html`; HP6 fixed in section 05's text a
 
 **Re-checked** at 320, 390, 768 and 1440 wide and with 200% root text at 390: no horizontal overflow; hero still loads; the primary action is in the first screen at 390 × 844 (bottom 686 px) and 1440 × 900; every local link, image and anchor resolves; no page errors. **Not covered:** the same list as above.
 
+### HP6 and HP11 fixed (same day, owner: "keep colour consistent with app design")
+
+- **HP6:** the website now uses the app's palette. White canvas; subtle blue (`#e7eff5`) for the banner and tinted sections; neutral ink (`#252b24`) for every word, links included; muted `#555d63`; `#c7cbc3` rules; clay (`#8d3e2b`) for primary actions and the focus ring. Historical boards and earlier study previews keep their original colours as history. Contrast: ink on blue 12.5:1, muted on white 6.7:1 and on blue 5.8:1, button text on clay 6.9:1, clay focus ring on white 7.4:1. Typefaces are unchanged.
+- **HP11:** in `prototypes/src/v21/style.css` the monogram of a badged avatar moves up and left by 0.2 em and the badge sits 3 px further out at 20 px, so the badge never covers a letter. New `scripts/check-badge-clear.cjs` measures the letters against the badge for every badged avatar on the home at 390 and 320 wide with 16, 24 and 32 px text (36 checks); it fails on the pre-fix build ("F", "CJ", "HC", "BC" and "S" covered). Shapes 26, large text 154, identity 35, v21 audit 23, T19 58, T11 36, v21 25, fixes 14 and refinement 39 all pass unchanged. The recipient tiles keep their own smaller badge.
+
 ## 9. T08 in the runtime — 5 October 2026
 
 Self-audit of the T08 build in `v21.html?mobile=1&version=2.1.2.1` before opening the PR. Method: `scripts/check-identity.cjs` (29 assertions), the full suite in a scratch copy, and captures of the eight journey screens at 390 × 844. Evidence level: browser simulation.
