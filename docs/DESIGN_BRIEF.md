@@ -110,5 +110,6 @@ These came out of the audits and now have checks behind them. [Design language](
 - One shape scale: circle, pill, 12 px, 16 px, 6 px publication mark, 5 px type badge. Nothing else.
 - Words stay whole at large text; every size in rem; round controls 44–56 px.
 - A tile in a multi-column grid shows its edge or centres its content.
+- A phone layout never grows past 430 px. A wider window gets the exhibit or a centred phone, never a stretched one. Every route is measured at 390 and 1440 before it ships (6 October 2026, W1).
 - Measure first, fix the shared stylesheet, add an assertion that fails on the pre-fix build. One running audit record: [MOBILE_AUDIT_LOG](MOBILE_AUDIT_LOG.md).
 - Research before polish: [T05](T05_PROTOCOL.md) is ready and comes before further visual work.
