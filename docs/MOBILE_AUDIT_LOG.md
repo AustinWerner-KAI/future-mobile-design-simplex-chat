@@ -4,6 +4,43 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 11. Website homepage — 6 October 2026
+
+Audit of `index.html` as published, requested by the owner. Method: the Kings of Website Design framework. Evidence level: agent-operated headless Chromium at 390 × 844 and 1440 × 900, computed checks and source reading. Findings first; the fixes the owner then asked for are recorded below.
+
+| # | Priority | Area | Finding | Suggested fix |
+|---|---|---|---|---|
+| HP1 | P1 | Latest edit | The hero's primary action is "Explore the current V2 designs ↓". V2 is the earlier baseline. V2.1.2.2 appears only in the top banner; no section in the page body shows or links it, and section 07 leads with V2. | Make V2.1.2.2 the hero's primary action and give it a body section with a still of the rail home. Relabel V2 as the earlier baseline. |
+| HP2 | P1 | Navigation | Ten header links in three groups. At 390 the header wraps to four rows (about 200 px) before the title; at 1440 "Latest V2.1 candidates" falls onto its own row. "OCTOPUS / 2028" links to `#`. | One row: Latest edit, The idea, The journey, Try it, Contribute, GitHub. Move the rest to the journey section. |
+| HP3 | P1 | Version names | "Latest edit V2.1.2.2", "Latest V2.1 candidates", "current V2 designs", "Five V2 designs", "Nine connected designs" and "2028 reset" all compete. Two things are called latest and one is called current. | One "latest" only. Every other link names its version and date or is labelled history. |
+| HP4 | P2 | Hero | No image of the design above the fold. At 1440 the left column has about 300 px of empty space above the title. At 390 the primary action is below the first screen. | Put the V2.1.2.2 home still in the hero; bring the action into the first screen on mobile. |
+| HP5 | P2 | Octopus theory | The page explains the anatomy mapping twice (section "Start here" and section 04) and the four movements, but never states the flow architecture (coordination, local action, adaptable space, retained context, deliberate crossing, coherent return) or that human relationships organise the interface. | Replace the duplicate with one section showing the six parts as concrete V2.1.2.2 interactions. |
+| HP6 | P2 | Palette | The page uses warm paper, petrol-green ink and sage, and section 05 names "Warm white / Petrol ink / Soft sage" as the design language. The 4 October direction is a white canvas, subtle blue materials, neutral lettering, oat email and clay actions. | Update section 05 to the current system. Decide separately whether the website itself moves to it (needs a mockup). |
+| HP7 | P2 | Critique | Section 08 says "The home still resembles a stack of rounded rows". This described the earlier home; V2.1.2.2 is the rail candidate. | Rewrite against V2.1.2.2's open items (IA1–IA4, IA6, profile edit screen, no participant testing). |
+| HP8 | P3 | Start here | "Start here / From anatomy to interface" in the anatomy section competes with the banner. | Remove the "Start here" label. |
+| HP9 | P3 | Targets | Header and banner links are 20–21 px tall, under the 24 px WCAG 2.2 minimum unless spacing covers it. | Pad header links to 44 px. |
+| HP10 | P3 | Headings | Iteration titles are h2 under the h2 "See the decisions between the designs". | Make them h3. |
+| HP11 | P2 | App (not the website) | Seen while capturing the hero still: on the V2.1.2.2 home, the type badge covers the monogram on square tiles ("C.J" clipped, "HC" covered) in both the rail and the recent list. | Not fixed here. Belongs in `prototypes/src/v21/`, with a check. |
+
+**Passed:** no horizontal overflow at 390 or 1440; body text 11.0:1 and muted text 5.7:1 on the paper colour; no text under 12 px; every image has alt text; every local link and image path in the page exists in the repo; reduced motion turns off smooth scrolling; qualifications sit beside the claims they qualify (biology sources, AI provenance, independence from SimpleX).
+
+**Not covered:** 320 px and enlarged text, keyboard walk-through, screen readers, physical devices, participants, external link status, lazy-loaded images below the fold in a real scroll.
+
+### Fixes on branch `site/homepage-fixes` (same day, owner said "fix")
+
+Numbered §11 with HP ids because open PR #19 also adds a §10 with W ids. This replaces open PRs #7 and #18 (owner decision); #18's em dash removal is carried over, so the page title and banner use a colon.
+
+HP1–HP5 and HP7–HP10 fixed in `index.html`; HP6 fixed in section 05's text and swatches only. The website's own warm-paper palette is unchanged; moving it to the app palette is a separate decision that needs a mockup. HP11 is untouched.
+
+- **HP1, HP4:** the hero's primary action opens V2.1.2.2. A still of the V2.1.2.2 home (`studies/v2122-captures/home.svg`, captured 6 October 2026 at 390 × 844 and stored as WebP inside SVG because the publishing connector cannot carry binary files, labelled as a screenshot of a browser simulation) sits beside the title. A new section, 00 / Latest edit, states what V2.1.2.2 adds, its evidence limits and the earlier versions as history. Section 07 now points to the latest edit first and labels V2 as the earlier baseline.
+- **HP2, HP3:** six header links in one row on desktop (Latest edit, The idea, The journey, Try it, Contribute, GitHub); the brand is hidden under 760 px and the banner's second line is hidden there too. "Latest" now means V2.1.2.2 only. The removed links (V2.1 candidates, nine designs, 2028 reset, V2, all concepts) are in the latest-edit section's history line.
+- **HP5, HP8:** the anatomy board's three duplicate cards are replaced by the six flow rules, each tied to a V2.1.2.2 behaviour from the version record, with the protocol and biology qualification beside them. "Start here" is now "The opening board".
+- **HP7:** the critique lists V2.1.2.2's open items from its record.
+- **HP9:** header links and the hero and latest-section text links are 44 px tall. Inline links in prose are left at text height (WCAG 2.5.8 inline exception).
+- **HP10:** the nine iteration titles are h3, styled as before.
+
+**Re-checked** at 320, 390, 768 and 1440 wide and with 200% root text at 390: no horizontal overflow; hero still loads; the primary action is in the first screen at 390 × 844 (bottom 686 px) and 1440 × 900; every local link, image and anchor resolves; no page errors. **Not covered:** the same list as above.
+
 ## 9. T08 in the runtime — 5 October 2026
 
 Self-audit of the T08 build in `v21.html?mobile=1&version=2.1.2.1` before opening the PR. Method: `scripts/check-identity.cjs` (29 assertions), the full suite in a scratch copy, and captures of the eight journey screens at 390 × 844. Evidence level: browser simulation.
