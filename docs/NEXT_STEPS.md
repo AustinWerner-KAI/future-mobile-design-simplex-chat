@@ -34,16 +34,37 @@ All in the [running mobile audit log](MOBILE_AUDIT_LOG.md), newest first: §16 t
 
 ## Next, in priority order
 
-- [ ] **T05 — Real-phone comparison:** run the same tasks across the three homes with consenting participants. Check finding a relationship, audience comprehension, keyboards, enlarged text, interruptions and return. Record observations and limitations before choosing a layout; agent checks do not complete this item. **Ready to run (5 October 2026):** [protocol](T05_PROTOCOL.md) with eight hypotheses and six tasks, a [facilitator page](../studies/t05-session.html) that exports one JSON per session, and an empty [session record](T05_SESSIONS.md). Needs 6 to 9 people and their phones.
-- [ ] **T20 — Maintainer answers:** five questions that decide open design points (link prefetch, link contents, read-marking, cross-profile forwarding, directory data source), written to post as-is: [MAINTAINER_QUESTIONS](MAINTAINER_QUESTIONS.md). Complete when answers are recorded in SOURCES and the affected docs are updated.
+- [ ] **T05 — Real-phone comparison:** run the same tasks across the three homes with consenting participants. Check finding a relationship, audience comprehension, keyboards, enlarged text, interruptions and return. Record observations and limitations before choosing a layout; agent checks do not complete this item. **Ready to run (5 October 2026):** [protocol](T05_PROTOCOL.md) with eight hypotheses and six tasks, a [facilitator page](../studies/t05-session.html) that exports one JSON per session, and an empty [session record](T05_SESSIONS.md). Needs 6 to 9 people and their phones. **Extended 6 October 2026:** add one measure, the home at 120 conversations against a plain list on the same task, so that execution is tested rather than asserted ([whitepaper section 10.2, step 2](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#102-sequence-of-studies)). T05 runs before any further visual work, including T22.
+- [ ] **T20 — Maintainer answers:** five questions that decide open design points (link prefetch, link contents, read-marking, cross-profile forwarding, directory data source), written to post as-is: [MAINTAINER_QUESTIONS](MAINTAINER_QUESTIONS.md). **Extended 6 October 2026:** post them together with the two questions from the whitepaper ([section 10.2, step 1](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#102-sequence-of-studies)): which interface model SimpleX would adopt, and which core work it would consider. Complete when answers are recorded in SOURCES and the affected docs are updated.
+- [ ] **T21 — Three gates before Study A:** decide whether a shared detail reveals its source, where payments live in an interface if anywhere, and whether interface state persists on the device ([whitepaper section 10.4](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#104-decisions-this-paper-does-not-make)). Record each decision in DECISIONS.md with its reason. Blocks T22.
+- [ ] **T22 — Study A, a conversation renders its own interface:** a business and, in a second condition, a model reply through the same frame. Sender mark, client-owned boundary, typed actions, review before anything leaves, receipt, fold back with the draft intact. Checks that fail on the build without the frame. Cite [whitepaper section 9](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#9-a-framework-the-frame) in the PR. Blocked by T05 and T21.
+- [ ] **T23 — Studies B, C and D, trust and access:** spoofing (an interface imitates the client's review step), trust without a store (first-seen against accepted by three contacts), and accessibility (screen reader, 200% text, status announced from a separate element). [Whitepaper section 10.2, steps 4 to 6](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#102-sequence-of-studies). Blocked by T22.
+- [ ] **T24 — Multi-chat core specification:** turn the cost table in [Chat scrolling](RESEARCH_NOTES/CHAT_SCROLLING.md) and [whitepaper section 7.4](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#74-what-each-behaviour-costs) into a specification the maintainers could act on. A document, not a prototype version. Send with the T20 answers in hand.
+- [ ] **T25 — Second real-phone round:** add one interface task to the [T05 protocol](T05_PROTOCOL.md) and run it again with 6 to 9 participants. The frame is named as a version (V2.2) only after this round. Blocked by T23.
 - [ ] **T06 — Connections between entities:** design explicit, user-controlled links between people, providers and places. Distinguish personal organisation from an actual shared affiliation. Do not infer membership from correspondence. Show cancellation and inspectable relationship evidence.
 - [ ] **T07 — Complete group lifecycle:** joining/leaving, member/observer roles and permission changes. Show that observers cannot send and that membership differs from agreement to a plan.
 - [ ] **T09 — Complete attachment lifecycle:** select/replace image, caption, cancel, denied permission, failure and safe retry. Distinguish preparation, queue, server acceptance and delivery.
 - [ ] **T10 — Recovery after closing/reloading:** define retention choice, location, lifetime and clearing of sensitive drafts. No storage is currently implemented. Specify recovery before adding persistence.
 
+## Roadmap to 2028
+
+Added 6 October 2026 from [the whitepaper, section 10](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#10-implications-for-the-simplex-chat-ui). Dates are the study's own estimates, not commitments and not a SimpleX roadmap. Each step depends on the one above it; if T05 slips for want of participants, everything below it slips with it.
+
+| When | Step | Tasks | What it tests |
+| --- | --- | --- | --- |
+| October 2026 | Seven questions to the maintainers, three gates decided | T20, T21 | Which interface model and which core work SimpleX would consider |
+| November to December 2026 | Real phones, real people | T05 | Finding a relationship, audience comprehension, the home at scale against a plain list |
+| Q1 2027 | Study A: the frame | T22 | An interface that proposes, from a business and from a model, through one client frame |
+| Q2 2027 | Studies B, C, D: trust and access | T23 | Spoofing, trust without a store, screen reader and large text |
+| Q2 2027 | Multi-chat core specification | T24 | What several live chats would cost the core, written for the maintainers |
+| H2 2027 | Second real-phone round, then V2.2 | T25 | One interface task on real phones; the frame is named a version only after this |
+| 2028 | Measure against what ships | open | The study meets whatever SimpleX releases; a V3 only if the evidence earns it |
+
+The six flow rules, the Chalk palette and the rule that an interface only proposes while the person sends do not change along the way.
+
 ## How to tick off work
 
-Keep each task ID stable. For completion, link the editable change, what was tested, the evidence record and remaining limitations. Implemented simulations can complete a prototype task; they cannot complete real-device, human-research or protocol-validation tasks. Reopen a task if later evidence invalidates it. No contributor owners or delivery dates are assigned yet.
+Keep each task ID stable. For completion, link the editable change, what was tested, the evidence record and remaining limitations. Implemented simulations can complete a prototype task; they cannot complete real-device, human-research or protocol-validation tasks. Reopen a task if later evidence invalidates it. No contributor owners are assigned; the roadmap dates above are estimates, not deadlines.
 
 [Run the community test and session checklist](../studies/community-journey.html) · [Propose a design](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/issues/new?template=design-proposal.yml) · [Contribution guide](../CONTRIBUTING.md).
 
