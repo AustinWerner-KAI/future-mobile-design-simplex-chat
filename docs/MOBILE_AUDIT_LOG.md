@@ -4,6 +4,20 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 14. One relationship, distinct channels (issue #6) — 6 October 2026
+
+Built in the V2.1 runtime on the owner's go-ahead, on Harbour Café's email tab. Method: `scripts/check-email-channels.cjs` (31 checks) at 390 × 844, then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.
+
+| # | Area | Decision | How it is held |
+|---|---|---|---|
+| C1 | Thread | The email states its thread ("2 messages · latest shown"); earlier messages open in place, each with its sender and day. | Toggle state and sender lines asserted. |
+| C2 | Duplicate identities | An earlier message came from sam@harbour.example, not bookings@example.com. It is flagged as a different address and "not verified as Harbour Café". Nothing is merged or inferred. | Flag text asserted. |
+| C3 | Attachment scope | menu.pdf is named on the email and "stays with this email". Bringing a detail to a chat now says attachments are excluded. A forward leaves it out unless you choose it, and the review says so either way. | Default unchecked; review wording asserted both ways. |
+| C4 | Forwarding | Forward by email is its own reviewed crossing: address, then a review naming the address, "by ordinary email, outside SimpleX", what is included and what is not. Change keeps the choices; Cancel sends nothing. The email reply draft is untouched. | Each step asserted. |
+| C5 | Failed delivery | A forward is queued, then accepted by your server, delivery unconfirmed. An address at a .invalid domain then bounces: "Nothing was delivered", with Edit address and Remove. The corrected forward is accepted once. | States and their order asserted. |
+
+**Limits:** No mailbox, transport or delivery. Real bounces can arrive hours later and in many forms; SPF, DKIM and other sender checks are out of scope, so "not verified" is the honest ceiling. Subject editing, reply-all and inline quoting are not built.
+
 ## 13. Tools at the point of action (issue #3) — 6 October 2026
 
 Built in the V2.1 runtime on the owner's go-ahead: Write, then Photo, preview and back, keeping the draft. Method: `scripts/check-photo-tools.cjs` (30 checks) at 390 × 844, then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.
