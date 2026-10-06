@@ -4,6 +4,8 @@
 
 **[V2.1.2.2 — what is in the latest edit, its evidence and limits →](V2_1_2_2.md)** · [Running mobile audit](MOBILE_AUDIT_LOG.md)
 
+**[Research notes: programmable interfaces, the frame and chat scrolling. Read before any change →](RESEARCH_NOTES/README.md)**
+
 **[Next iteration: three priorities and how to contribute →](NEXT_STEPS.md)**
 
 
@@ -16,6 +18,7 @@ Ready for participants. Six tasks, 15–20 minutes, no coding needed. Human resu
 
 ## Understand and contribute
 
+- [Research notes](RESEARCH_NOTES/README.md), starting with the whitepaper [Interfaces That Arrive](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md)
 - [Design journey and iterations](ITERATIONS.md)
 - [Shared design brief](DESIGN_BRIEF.md)
 - [Current uploads, previews and editable sources](CURRENT_UPLOADS.md)
