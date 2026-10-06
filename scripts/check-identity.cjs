@@ -46,7 +46,8 @@ ck(await p.locator('#incognito').isDisabled()&&(await txt('#identity')).startsWi
 await p.click('[data-action=accept-invite]');await p.waitForTimeout(50);
 ck(await p.locator('#invite[open]').count()===0,'Dialog closes on acceptance');
 ck(await p.evaluate(()=>document.activeElement?.dataset.open==='sam'),'New contact row focused');
-ck(await p.evaluate(()=>document.querySelector('.rows [data-open=sam]').getBoundingClientRect().top<400),'New contact row on screen');
+// Issue #2 (6 October 2026): recent activity gained a filter and a Today heading, so the row sits lower; the test is now that it is fully on screen in the upper three quarters, not an absolute 400 px.
+ck(await p.evaluate(()=>document.querySelector('.rows [data-open=sam]').getBoundingClientRect().bottom<=innerHeight*.75),'New contact row on screen');
 ck((await txt('.feedback')).includes('as River Finch'),'Feedback names the identity once');
 ck(!(await txt('[data-open=sam]')).includes('River Finch'),'The row carries no identity');
 await p.click('[data-open=sam]');
