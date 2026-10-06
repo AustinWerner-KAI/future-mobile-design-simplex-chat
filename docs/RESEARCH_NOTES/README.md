@@ -12,6 +12,7 @@ Every design or code change in this repository starts here.
 2. **Cite it.** Name the note and section in the pull request description and in the `docs/MOBILE_AUDIT_LOG.md` entry, for example `RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md §9.1 F5`.
 3. **If a change goes against a note,** either update the note in the same pull request or say why the note does not apply.
 4. **If new evidence contradicts a note,** update the note and record the change in the audit log. The notes are working research, not fixed rules.
+5. **Pass the octopus check.** Name the one or two flow rules the change serves, what comes from SimpleX's foundations and what from the analogy, the rule's test and the failing check, the note and section, and what would make us drop it. The block is in the pull request template; copy it into the audit log entry. A change that serves no flow rule does not ship.
 
 ## The notes
 
