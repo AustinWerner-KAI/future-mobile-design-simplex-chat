@@ -4,6 +4,22 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 15. A home that feels continuous (issue #2) — 6 October 2026
+
+Built in the V2.1 runtime (rail home, 2.1.2.2) on the owner's go-ahead. Method: `scripts/check-continuous-home.cjs` (36 checks) at 390 × 844 with seven and with 120 fictional conversations (`?scale=120`), then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.
+
+| # | Area | Decision | How it is held |
+|---|---|---|---|
+| K1 | 100+ conversations | Recent activity is grouped Today, This week, Earlier, newest first, and shows twenty at a time. Show more says how many are left and moves focus to the first new row. | Counts, order, headings and focus asserted. |
+| K2 | Unread | All and Unread sit beside the heading. Unread lists only conversations with new messages, with the count on the button. | Filter state and rows asserted. |
+| K3 | Finding and returning | Search stays at the top and finds Maya among 120. Leaving a conversation keeps how many are shown, the scroll position and the draft on its row. | Asserted after a round trip. |
+| K4 | Names | Names are never shortened; the row grows instead. | No clipped name at 320 wide, 16 px, and 390 wide, 32 px. |
+| K5 | Motion | Opening slides the conversation in from the right; closing slides home back from the left. 200 ms, transform and opacity only, clipped so nothing scrolls sideways. Focus moves at once. With reduced motion there is no animation. | Animation name, duration, properties, no replay on typing, and none under reduced motion, asserted. |
+
+`check-identity.cjs` changed one threshold: the accepted contact row must now sit fully on screen in the upper three quarters, not above 400 px, because the filter and the Today heading push it about 50 px lower.
+
+**Limits:** 120 synthetic conversations are not a real address book; the order is fixed and nothing arrives while you read. Grouping by day uses the sample's time labels. Which home people prefer still needs T05 with participants.
+
 ## 14. One relationship, distinct channels (issue #6) — 6 October 2026
 
 Built in the V2.1 runtime on the owner's go-ahead, on Harbour Café's email tab. Method: `scripts/check-email-channels.cjs` (31 checks) at 390 × 844, then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.
