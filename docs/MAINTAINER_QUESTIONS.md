@@ -1,6 +1,6 @@
 # Questions for SimpleX maintainers
 
-5 October 2026. Five design decisions in this study rest on facts about the SimpleX apps and protocol that public docs don't settle. Each question says what we assumed, why it matters to the design, and what changes with each answer. Answers go into [SOURCES](SOURCES.md) with the reply linked, and the affected docs are updated the same day.
+5 October 2026, extended 6 October 2026 with questions 6 and 7. Seven design decisions in this study rest on facts about the SimpleX apps and protocol that public docs don't settle. Each question says what we assumed, why it matters to the design, and what changes with each answer. Answers go into [SOURCES](SOURCES.md) with the reply linked, and the affected docs are updated the same day.
 
 This is an independent design study, not a feature request. We're asking so the prototype doesn't claim behaviour the apps don't have.
 
@@ -44,7 +44,25 @@ This is an independent design study, not a feature request. We're asking so the 
 - **What changes:** (a) or (b) keep the design; (c) removes local filtering and the Active/New/All views.
 - Refs: [T12 channel search scope](T12_FEASIBILITY.md#channel-search-scope-owner-request-5-october-2026).
 
+## 6. Which interface model, if any, would SimpleX consider for interfaces sent inside a conversation?
+
+- **Context:** the field has settled on two tiers. A declarative catalog (components described as data, rendered by the client, nothing executable crosses the wire) and a sealed bundle sent as a message with no network access (the webxdc shape). A third, model-written code, has no one to vouch for it. See [the whitepaper, section 5](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#5-the-protocol-landscape).
+- **Why it matters:** the study's next design study (T22) draws the client frame around such an interface: sender mark, typed actions, review before anything leaves, receipt, fold back. The frame is the same for both tiers, but what sits inside it is not, and a catalog needs the client to own the component set.
+- **If catalog:** the study designs the component set and the frame. Model-written interfaces become acceptable, because nothing executable crosses.
+- **If bundle:** the study designs the frame and the acceptance moment (first seen, accepted by contacts). The catalog work is dropped.
+- **If a mix, or neither yet:** the study keeps the frame and marks the inside as open.
+- Refs: [whitepaper section 9](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#9-a-framework-the-frame), [T22 in NEXT_STEPS](NEXT_STEPS.md).
+
+## 7. Which core work, if any, would you consider so that more than one chat can be live at once?
+
+- **Context:** at commit `479548ee` the apps hold one open chat's messages in memory, keep one draft, and index messages per chat. Grids, filters, favourites and a long list of previews are cheap on today's core. A conversation unfolding inside the list, a merged timeline across chats, or drafts kept for many chats each need core work. The cost table is in [Chat scrolling](RESEARCH_NOTES/CHAT_SCROLLING.md) and [whitepaper section 7.4](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#74-what-each-behaviour-costs).
+- **Why it matters:** the study has already retired the unfolding-in-the-list gesture as its default because of this. Before writing a specification for the maintainers (T24), we want to know which direction, if any, is worth specifying.
+- **Options we see:** (a) several live chat buffers with event routing, so a conversation can unfold where it sits; (b) a merged, paged timeline across chats with one clock and per-item read state; (c) neither; the single open chat stays the design constraint.
+- **What changes:** (a) reopens the unfolding gesture as a design option; (b) opens a continuous feed as an option; (c) the study keeps interfaces inside the open chat as the only direction and T24 is dropped.
+- Refs: [whitepaper section 10.3](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#103-what-to-stop-claiming).
+
 ## Smaller points, if time allows
 
 - Can a subscriber react to a channel post without the owner learning who reacted? The channel page shows reactions as local and private; if reactions are visible to the owner, the comment-style crossing applies to them too.
+- When a detail is shared from one chat into another, should the receiving side see where it came from? The study's crossing shows the source; SimpleX forwarding hides it by design. This is the first of three gates before T22 and we would rather decide it with you than guess.
 - Is there a "request to join" state for groups with admission review that the app surfaces to the requester? Our directory shows "Request sent · an admin reviews new members".
