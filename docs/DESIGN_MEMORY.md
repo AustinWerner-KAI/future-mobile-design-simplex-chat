@@ -1,8 +1,8 @@
 # Design memory: a different evolutionary path
 
-> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.3: photos, email and a home at scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_3.md). Start here.** [See the whole story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/showcase.html) · [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3). Published 6 October 2026: photo pins and photo tools, email threads and forwarding, a home for 100+ conversations with one opening motion, and the homepage audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-> Current reference, 5 October 2026: [V2.1.2.2 record](V2_1_2_2.md) · [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
+> Current reference, 6 October 2026: [V2.1.2.3 record](V2_1_2_3.md) · [the whole story](../showcase.html) · [shared design brief](DESIGN_BRIEF.md) · [evolution rationale](EVOLUTION_FROM_ANATOMY.md) · [visual progression](../studies/concept-progression.html). Dated audits and earlier palette proposals below remain iteration evidence.
 
 Project: **From anatomy to interface**. Maintainer direction recorded 4 October 2026.
 
@@ -101,3 +101,16 @@ The rail candidate grew in one day from the manual-test refinement into [V2.1.2.
 - **Audit first, then fix, then assert.** Every fault found on 5 October 2026 was measured, fixed in the shared stylesheet or runtime, and given a check that fails on the pre-fix build. The [audit log](MOBILE_AUDIT_LOG.md) is the one running record. A fault the owner sees twice becomes a rule.
 
 Evidence remains browser simulation. T05 decides whether any of it works in a hand.
+
+## V2.1.2.3 — photos, email and a home at scale — 6 October 2026
+
+Four issues from the tracker were built into the rail candidate, and the whole story was told in one place. What must survive from it:
+
+- **Tools sit where you act.** The camera sits beside the reply; a pin sits on the photo; forwarding sits inside the email. The written draft survives every step.
+- **Channels stay distinct inside one relationship.** Chat and email never blur. A different sender address is flagged as not verified, never merged. Anything leaving SimpleX says so before it goes.
+- **Honest states.** Queued, accepted by a server and delivered are different words. A failure says what did not happen and offers a next step.
+- **A long list keeps your place.** Group by time, show twenty at a time, filter to unread, never shorten a name, and return to the same rows and scroll position.
+- **One motion.** A 200 ms slide between home and a conversation, transform and opacity only, none with reduced motion.
+- **Tell the whole story.** [The showcase](../showcase.html) shows every chapter, with live phones for the latest edit. Keep it current when a new edit ships.
+
+[Record](V2_1_2_3.md) · [audit log §10–15](MOBILE_AUDIT_LOG.md).

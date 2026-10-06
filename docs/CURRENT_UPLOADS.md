@@ -1,8 +1,8 @@
 # Current uploads and source map
 
-> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.3: photos, email and a home at scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_3.md). Start here.** [See the whole story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/showcase.html) · [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3). Published 6 October 2026: photo pins and photo tools, email threads and forwarding, a home for 100+ conversations with one opening motion, and the homepage audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-**[V2.1.2.2 · identity, discovery and the shape scale](V2_1_2_2.md)** · [Play it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2). The [V2.1.2.1 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) shows the 4 October 2026 state in 14 captures. V2 is the earlier reference baseline.
+**[V2.1.2.3 · photos, email and a home at scale](V2_1_2_3.md)** · [See the whole story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/showcase.html) · [Play it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3). The [V2.1.2.1 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) shows the 4 October 2026 state in 14 captures. V2 is the earlier reference baseline.
 
 **[Next iteration: three priorities and how to contribute →](NEXT_STEPS.md)**
 
@@ -30,7 +30,7 @@ Updated 5 October 2026. This index is the repository’s current reference. “C
 
 | Upload | Status / purpose | Editable source |
 |---|---|---|
-| [V2.1.2.2 — START HERE](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) | **Latest edit: the interactive rail candidate with profiles, discovery, email handoff and the shape scale** ([record](V2_1_2_2.md)) | `prototypes/src/v21/` → `v21.html`; checks under `scripts/check-*.cjs` |
+| [V2.1.2.3 — START HERE](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3) | **Latest edit: the interactive rail candidate with profiles, discovery, email handoff, the shape scale, photo pins and tools, email channels and a home at scale** ([record](V2_1_2_3.md), [whole story](../showcase.html)) | `prototypes/src/v21/` → `v21.html`; checks under `scripts/check-*.cjs` |
 | [V2.1.2.1 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) | 14 captured states of the candidate on 4 October 2026, kept as that state | `v2121.html`; `scripts/capture-v2121-interface.cjs` |
 | [V2 — earlier baseline](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html) | Earlier reference: five foundation designs | `v2.html`; shared V2 and menu sources listed below |
 | [Inline mobile experience](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/unfold.html?mobile=1) | Supporting behavioural experiment: private, public-channel and email menu, local tools, explicit sharing | `prototypes/src/unfold.html` |
@@ -43,7 +43,7 @@ Updated 5 October 2026. This index is the repository’s current reference. “C
 
 ## All five refreshed V2 foundations
 
-V2 records the earlier five-design reference. Start new reviews at [V2.1.2.2](V2_1_2_2.md). Inline evolution remains a supporting experiment. All five use white, subtle blue surfaces and neutral lettering. [Open the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html).
+V2 records the earlier five-design reference. Start new reviews at [V2.1.2.3](V2_1_2_3.md). Inline evolution remains a supporting experiment. All five use white, subtle blue surfaces and neutral lettering. [Open the V2 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2.html).
 
 | Study | Current rendered preview | Editable source |
 |---|---|---|
@@ -105,6 +105,10 @@ For local browsing run `python3 -m http.server 8000`. No app install or framewor
 
 “Complete interface” means the implemented V2.1.2.1 candidate shown in 14 captured states. It does not mean a complete messaging app or exhaustive state coverage. Attachments, durable draft recovery, broader group lifecycle, real transport integration and physical-device/participant validation remain open in the task tracker. [Open tasks](NEXT_STEPS.md).
 
+## V2.1.2.3 — 6 October 2026
+
+The latest edit is the interactive runtime, [v21.html?mobile=1&version=2.1.2.3](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3), built from `prototypes/src/v21/`. [Record](V2_1_2_3.md). The whole story is [showcase.html](../showcase.html), authored directly; its live phones load the runtime with `tab` and `scale` parameters. `version=2.1.2.1` and `version=2.1.2.2` are aliases.
+
 ## V2.1.2.2 — 5 October 2026
 
-The latest edit is the interactive runtime, [v21.html?mobile=1&version=2.1.2.2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2), built from `prototypes/src/v21/`. [Record](V2_1_2_2.md). Supporting uploads: [identity study](../studies/identity.html), [channel discovery study](../studies/channel-discovery.html), [T05 facilitator page](../studies/t05-session.html). The V2.1.2.1 gallery and `studies/v2121-captures/` remain the 4 October 2026 state. T08, T11 and T19 journey captures are held by the owner and are not in the repository.
+The V2.1.2.2 state was the interactive runtime, [v21.html?mobile=1&version=2.1.2.2](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2), built from `prototypes/src/v21/`. [Record](V2_1_2_2.md). Supporting uploads: [identity study](../studies/identity.html), [channel discovery study](../studies/channel-discovery.html), [T05 facilitator page](../studies/t05-session.html). The V2.1.2.1 gallery and `studies/v2121-captures/` remain the 4 October 2026 state. T08, T11 and T19 journey captures are held by the owner and are not in the repository.
