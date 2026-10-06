@@ -4,6 +4,20 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 10. The full-screen route on a laptop — 6 October 2026
+
+Owner opened `v21.html?mobile=1&version=2.1.2.2#directory` on a laptop and asked whether the space was correct. It was not. Method: measured `.app` in headless Chromium at 1440 × 1000 and 390 × 844; `scripts/check-v21.cjs` now carries the assertion. Evidence level: browser simulation.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| W1 | Adaptable space | `body.mobile .app` was `width:100%` with no cap, so the phone layout stretched to the window: a directory row 1,700 px wide with the avatar at one end and the text at the other, and the Open pill running the full width. This is the stretched phone layout the brief rules out. | Above 600 px the app keeps phone width (430 px), sits centred on the page material with a hairline each side, and `.exhibit` loses its 1,100 px cap so the centre is the window's centre. Below 600 px nothing changes: at 390 the app still fills the screen. |
+
+**Check:** "Full-screen route keeps phone width on a laptop window (W1)" fails on the pre-fix build (1,440 px) and passes after (430 px); "Full-screen route still fills a phone" holds at 390. v21 suite: 28 checks.
+
+**Rule (second sighting of a layout that only works at one width, after R1):** every route in the runtime is measured at 390 and at 1440 before it ships. A phone layout never grows past 430 px; a wider window gets the exhibit or a centred phone, never a stretched one.
+
+**Not covered:** the exhibit view beside the story is unchanged; a real tablet, where 600 to 1,024 px might deserve a recomposed two-column layout rather than a centred phone, remains an open design question for T05.
+
 ## 9. T08 in the runtime — 5 October 2026
 
 Self-audit of the T08 build in `v21.html?mobile=1&version=2.1.2.1` before opening the PR. Method: `scripts/check-identity.cjs` (29 assertions), the full suite in a scratch copy, and captures of the eight journey screens at 390 × 844. Evidence level: browser simulation.
