@@ -4,6 +4,22 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 12. A photograph you can discuss (issue #4) — 6 October 2026
+
+Built in the V2.1 runtime on the owner's go-ahead. Alex's message "The sketches are ready." now carries two sketches: a landscape front elevation and a portrait doorway. Each takes replies anchored to a point. Method: `scripts/check-photo-anchors.cjs` (29 checks) at 390 × 844, then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.
+
+| # | Area | Decision | How it is held |
+|---|---|---|---|
+| P1 | Coordinates | A point is stored as a fraction of the image's own width and height. The frame always takes the image's aspect ratio (`aspect-ratio` from the image), so there are no letterbox margins to miscount. | Canvas equals image bounds for both sketches (1.50 and 0.67); a tapped point at 33 %, 63 % is stored there. |
+| P2 | Zoom | "Zoom to 200%" doubles the sketch inside its own frame, which scrolls; the page does not. Pins are placed in percentages, so they stay on their details. | Anchors measured at the same fractions after zoom; no page overflow. |
+| P3 | Non-pointer path | "Reply to a detail" opens a composer in place with named details (Roof, Door, Handle and so on). The marker is a button; arrow keys move it in 2 % steps. | Keyboard path tested end to end on the portrait sketch. |
+| P4 | Text alternative | Every anchor is also an entry in an ordered list under the sketch: number, region in words ("lower centre"), the reply and who wrote it. List entry and pin jump to each other. Pins are named "Detail 2, your reply, lower centre: …". | Names asserted; all controls 44 px or more. |
+| P5 | Ownership | Your replies can be edited or removed; Alex's cannot. Cancel anchors nothing. Anchors survive leaving and returning and are part of each profile's state. | Edit, remove, cancel and return asserted. |
+
+**Limits:** Simulated locally; nothing is sent. Sketches are drawn in SVG, not photographs; pinch-zoom, real photographs with EXIF rotation, VoiceOver and TalkBack, and participants are not covered. Anchors from several people on one small detail can crowd; clustering is open.
+
+**Suite after the change:** photo anchors 29, v21 28, badge 36, shapes 26, large text 154, identity 35, v21 audit 23, T19 58, T11 36, fixes 14, refinement 39, community 18, community UX 13, studies 70. All pass.
+
 ## 11. Website homepage — 6 October 2026
 
 Audit of `index.html` as published, requested by the owner. Method: the Kings of Website Design framework. Evidence level: agent-operated headless Chromium at 390 × 844 and 1440 × 900, computed checks and source reading. Findings first; the fixes the owner then asked for are recorded below.
