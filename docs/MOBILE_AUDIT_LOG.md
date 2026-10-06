@@ -4,6 +4,20 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 13. Tools at the point of action (issue #3) — 6 October 2026
+
+Built in the V2.1 runtime on the owner's go-ahead: Write, then Photo, preview and back, keeping the draft. Method: `scripts/check-photo-tools.cjs` (30 checks) at 390 × 844, then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.
+
+| # | Area | Decision | How it is held |
+|---|---|---|---|
+| T1 | Origin and reach | A photo button sits in the dock beside the reply, in the lower quarter of the screen. The tray unfolds from it, above the composer, and never takes more than 45 % of the screen. | Position, size and tray height asserted. |
+| T2 | Draft kept | The written reply is untouched while choosing, previewing, sending, cancelling, and leaving and returning. A prepared photo and its caption also survive leaving and returning. | Draft compared at every step. |
+| T3 | Labelled alternatives | Every step is a labelled button: three samples, Choose from files, Replace, Remove, Send photo, Retry. Escape closes an empty tray and focus returns to the photo button. | Focus asserted after each step; all controls 44 px. |
+| T4 | States (T09) | Preview says "not sent". Sending shows Queued, then "accepted by server in simulation · delivery unconfirmed". One sample fails once: "Not sent", with Retry and Remove; Retry sends once, without a duplicate. An unreadable file is refused and cannot be sent. Files stay in the page. | Each state asserted. |
+| T5 | Channels | Photo button in private chats, groups and provider staff chat; not on a provider's email tab. | Asserted on Harbour Café. |
+
+**Limits:** No camera, upload or delivery. On-screen keyboard behaviour, one-handed reach in millimetres, denied camera permission and VoiceOver and TalkBack need a real phone (T05, T09).
+
 ## 12. A photograph you can discuss (issue #4) — 6 October 2026
 
 Built in the V2.1 runtime on the owner's go-ahead. Alex's message "The sketches are ready." now carries two sketches: a landscape front elevation and a portrait doorway. Each takes replies anchored to a point. Method: `scripts/check-photo-anchors.cjs` (29 checks) at 390 × 844, then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.
