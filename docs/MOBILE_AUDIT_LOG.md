@@ -4,6 +4,20 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 16. The whole story and V2.1.2.3 — 6 October 2026
+
+The owner asked for the complete story to be told and showcased. Today's work (§10–15) is named V2.1.2.3, the new latest edit; `version=2.1.2.1` and `version=2.1.2.2` links are aliases. Method: `scripts/check-showcase.cjs` (59 checks) at 1440, 390 and 320 wide, plus the full suite. Evidence level: browser simulation.
+
+| # | Area | Decision | How it is held |
+|---|---|---|---|
+| S1 | One story | `showcase.html` walks ten chapters from the nine boards to V2.1.2.3, using images already in the repository for the history and seven live phones for V2.1.2.2 and V2.1.2.3. Each live phone says what to try and links to full screen. | Each phone asserted to open on its own state. |
+| S2 | Deep links | A `tab` parameter opens a conversation on one of its own tabs (`&tab=email#harbour`); a tab the conversation does not have is ignored. | Valid and invalid tabs asserted. |
+| S3 | One latest everywhere | The latest-edit banner names V2.1.2.3 and links the story on every document and page that carried the old one, including five study pages still pointing at V2.1.2.1. The homepage hero and latest section lead to V2.1.2.3 and the story. | Banners on six pages and the homepage asserted. |
+| S4 | Honesty | The page states that no participant has used the prototype, that the boards are AI-generated, and the evidence limits. No private correspondence. No em dashes. | Asserted. |
+| S5 | Layout | No overflow at 320 wide; targets 44 px; text 12 px or more outside the live phones. | Asserted at three widths. |
+
+**Limits:** live phones are the runtime scaled to 80% (72% on a phone), so text inside them is smaller than in the app; each links to full screen. Each live phone keeps its own state and adds to the browser's history when used. The V2.1.2.2 and later chapters have no static captures because the publishing route cannot carry images.
+
 ## 15. A home that feels continuous (issue #2) — 6 October 2026
 
 Built in the V2.1 runtime (rail home, 2.1.2.2) on the owner's go-ahead. Method: `scripts/check-continuous-home.cjs` (36 checks) at 390 × 844 with seven and with 120 fictional conversations (`?scale=120`), then 320 wide and 32 px text, plus the full suite. Evidence level: browser simulation.

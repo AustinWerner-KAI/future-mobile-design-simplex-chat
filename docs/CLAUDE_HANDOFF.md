@@ -5,7 +5,7 @@ Prepared for Austin on **5 October 2026, Asia/Dubai**; updated the same day afte
 ## Start here
 
 - Repository: https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat
-- Latest edit: [V2.1.2.2 — identity, discovery and the shape scale](V2_1_2_2.md), the interactive runtime: [open it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2).
+- Latest edit (6 October 2026): [V2.1.2.3 — photos, email and a home at scale](V2_1_2_3.md), the interactive runtime: [open it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3). The whole story: [showcase.html](../showcase.html).
 - [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html): the 4 October 2026 state, 14 captures, kept as history.
 - [Running mobile audit](MOBILE_AUDIT_LOG.md): nine dated sections, every finding with its fix and evidence.
 - [Community journey and focused test](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/community-journey.html).
@@ -42,7 +42,7 @@ Do not reproduce private correspondence or unrelated political opinions. The pro
 
 ## Current design and version status
 
-V2.1.2.2 is the latest edit and leads README, documentation and review entry points; its record is [V2_1_2_2](V2_1_2_2.md). V2.1.2.1 is the 4 October 2026 gallery state of the same candidate. **V2 is the earlier reference baseline**. Older audits retain their original scope; do not rewrite them as tests of the latest version.
+V2.1.2.3 is the latest edit (6 October 2026) and leads README, documentation and review entry points; its record is [V2_1_2_3](V2_1_2_3.md) and the whole story is told in [showcase.html](../showcase.html). V2.1.2.2 ([record](V2_1_2_2.md)) is its 5 October 2026 state. V2.1.2.1 is the 4 October 2026 gallery state of the same candidate. **V2 is the earlier reference baseline**. Older audits retain their original scope; do not rewrite them as tests of the latest version.
 
 Home candidates share a runtime:
 
@@ -51,6 +51,7 @@ Home candidates share a runtime:
 - 2.1.3: editable, overlapping personal collections; collections do not change permissions.
 - 2.1.2.1: refined compact strip plus the small-community scenario (gallery state, 4 October 2026).
 - 2.1.2.2: the same candidate with T11 email handoff, T19 discovery, IA5, large text in rem, the shape scale and T08 profiles (5 October 2026). `version=2.1.2.1` is an alias of this build.
+- 2.1.2.3: the same candidate plus photo pins (#4), photo tools (#3), email channels (#6), a home at scale with one motion (#2), the badge fix and W1 (6 October 2026). `version=2.1.2.1` and `version=2.1.2.2` are aliases of this build.
 
 The latest gallery contains 14 captured states of the implemented candidate, not a complete messaging application or exhaustive state coverage. Individuals, groups, publications and providers have different identity shapes/badges plus explicit labels. Icons are monograms/type marks, **not real QR codes**. A unique persistent QR avatar could reveal/correlate contact data; that suggestion was not implemented. The invitation uses a clearly labelled invalid demo QR.
 

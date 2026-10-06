@@ -1,8 +1,8 @@
 # From anatomy to interface
 
-> **Latest edit — [V2.1.2.2: identity, discovery and the shape scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_2.md). Start here.** [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2) · [V2.1.2.1 mockup gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) (14 states, 4 October 2026). Published 5 October 2026: profiles and incognito, public channel discovery, email handoff to a chosen chat, one shape scale and a running mobile audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
+> **Latest edit — [V2.1.2.3: photos, email and a home at scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_3.md). Start here.** [See the whole story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/showcase.html) · [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3). Published 6 October 2026: photo pins and photo tools, email threads and forwarding, a home for 100+ conversations with one opening motion, and the homepage audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
 
-**[V2.1.2.2 · identity, discovery and the shape scale](docs/V2_1_2_2.md)** · [Play it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.2). Home, conversations, groups, publications, providers, email, security, invitations, profiles and public discovery, with one shape scale and 35 + 58 + 36 + 154 + 26 checks behind the new work. The [V2.1.2.1 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) shows the 4 October 2026 state in 14 captures. V2 is the earlier reference baseline.
+**[V2.1.2.3 · photos, email and a home at scale](docs/V2_1_2_3.md)** · [See the whole story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/showcase.html) · [Play it](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3). Home, conversations, groups, publications, providers, email, security, invitations, profiles and public discovery; photos you can pin replies to, photo tools beside the reply, email threads and forwarding, and a home that scales past 100 conversations, with 36 + 31 + 30 + 29 + 36 checks behind the 6 October work. The [V2.1.2.1 gallery](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) shows the 4 October 2026 state in 14 captures. V2 is the earlier reference baseline.
 
 **The future of mobile design for [simplex.chat](https://simplex.chat/).**
 
@@ -191,6 +191,10 @@ Start with the [design brief](docs/DESIGN_BRIEF.md): purpose, audience hypothese
 ## V2.1.2.1 — manual-test refinement
 
 [View the mockup](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v2121.html) · [Detailed manual report](docs/COMMUNITY_MANUAL_TEST.md) · [Fix checks](docs/community-ux-fixes-check.json). Five findings addressed; original live-browser captures preserved. No continuous video was recorded.
+
+## V2.1.2.3 — photos, email and a home at scale
+
+[See the whole story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/showcase.html) · [Open the runtime](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3) · [Record](docs/V2_1_2_3.md) · [Running mobile audit](docs/MOBILE_AUDIT_LOG.md) · [Task tracker](docs/NEXT_STEPS.md). Built 6 October 2026 from the issue tracker: a home for 100+ conversations with one opening and closing motion (#2), one relationship with distinct chat and email channels (#6), photo tools at the point of action (#3) and photos you can pin replies to (#4); plus a homepage audit, the badge fix and phone width on a laptop. The showcase tells the whole story with live phones. Browser simulation; no participant has used it yet.
 
 ## V2.1.2.2 — identity, discovery and the shape scale
 
