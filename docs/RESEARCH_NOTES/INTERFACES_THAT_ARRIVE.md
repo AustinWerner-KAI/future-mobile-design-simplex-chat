@@ -303,7 +303,7 @@ The frame is not a review process. It cannot tell a good interface from a harmfu
 
 ## 10. Implications for the SimpleX chat UI
 
-The study should stop designing fixed tools and start designing the frame they arrive in. Its next step is one study, "a conversation renders its own interface", before any further visual work.
+The study should stop designing fixed tools and start designing the frame they arrive in. Its next design study is "a conversation renders its own interface". It comes after the real-phone comparison (T05), because the study's working rule is research before polish: nothing in the prototype has yet been tested with a person, and the frame should not be the first thing that is.
 
 ### 10.1 What changes
 
@@ -317,12 +317,14 @@ The study should stop designing fixed tools and start designing the frame they a
 
 ### 10.2 Sequence of studies
 
-1. **Ask two questions of the SimpleX maintainers.** Which interface model, if any, SimpleX would adopt (catalog, bundle, model-written, or a mix), and which core work it would consider (several live chats, or a merged timeline). The Discord reference concerns buttons, menus and slash commands, the catalog tier, which is a clue rather than an answer.
-2. **Study A: a conversation renders its own interface.** A business replies to a booking question with an interface. Show the sender mark, the client-owned boundary, typed actions, a review before anything leaves, a receipt, and the fold back to the conversation with the draft intact. Measure it with checks that fail on the version without the frame.
-3. **Study B: spoofing.** An interface tries to look like the client's own review step. Test whether people tell them apart with the frame and without it.
-4. **Study C: trust without a store.** Compare a first-seen interface with one already accepted by three contacts. Ask what people believe each one can do.
-5. **Study D: accessibility.** Run studies A to C with a screen reader and at 200% text size. Announce state from a separate status element.
-6. **Fold into T05.** Add one interface task to the real-phone study, with six to nine participants, reporting counts rather than percentages.
+1. **Ask the SimpleX maintainers seven questions at once.** The five already written for T20, plus two from this paper: which interface model, if any, SimpleX would adopt (catalog, bundle, model-written, or a mix), and which core work it would consider (several live chats, or a merged timeline). The Discord reference concerns buttons, menus and slash commands, the catalog tier, which is a clue rather than an answer. Settle the three open decisions in section 10.4 at the same time, since Study A depends on them.
+2. **Run the real-phone comparison (T05) first.** Six to nine participants and their own phones, reporting counts rather than percentages. Add one measure to the existing protocol: the home at 120 conversations against a plain list, same task, so that "execution over novelty" is tested rather than asserted.
+3. **Study A: a conversation renders its own interface.** A business replies to a booking question with an interface, and in a second condition a model does. Both arrive through the same frame. Show the sender mark, the client-owned boundary, typed actions, a review before anything leaves, a receipt, and the fold back to the conversation with the draft intact. Measure it with checks that fail on the version without the frame.
+4. **Study B: spoofing.** An interface tries to look like the client's own review step. Test whether people tell them apart with the frame and without it.
+5. **Study C: trust without a store.** Compare a first-seen interface with one already accepted by three contacts. Ask what people believe each one can do.
+6. **Study D: accessibility.** Run studies A to C with a screen reader and at 200% text size. Announce state from a separate status element.
+7. **Write the core specification.** Turn the cost table in section 7.4 into a specification the maintainers could act on, and send it with the answers to step 1 in hand. It is a document, not a version of the prototype.
+8. **Second real-phone round.** Add one interface task to the T05 protocol and run it again with the same participant count. Only after this round is the frame named as a version.
 
 ### 10.3 What to stop claiming
 
