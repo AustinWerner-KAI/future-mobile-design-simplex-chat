@@ -46,6 +46,20 @@ HP1–HP5 and HP7–HP10 fixed in `index.html`; HP6 fixed in section 05's text a
 - **HP6:** the website now uses the app's palette. White canvas; subtle blue (`#e7eff5`) for the banner and tinted sections; neutral ink (`#252b24`) for every word, links included; muted `#555d63`; `#c7cbc3` rules; clay (`#8d3e2b`) for primary actions and the focus ring. Historical boards and earlier study previews keep their original colours as history. Contrast: ink on blue 12.5:1, muted on white 6.7:1 and on blue 5.8:1, button text on clay 6.9:1, clay focus ring on white 7.4:1. Typefaces are unchanged.
 - **HP11:** in `prototypes/src/v21/style.css` the monogram of a badged avatar moves up and left by 0.2 em and the badge sits 3 px further out at 20 px, so the badge never covers a letter. New `scripts/check-badge-clear.cjs` measures the letters against the badge for every badged avatar on the home at 390 and 320 wide with 16, 24 and 32 px text (36 checks); it fails on the pre-fix build ("F", "CJ", "HC", "BC" and "S" covered). Shapes 26, large text 154, identity 35, v21 audit 23, T19 58, T11 36, v21 25, fixes 14 and refinement 39 all pass unchanged. The recipient tiles keep their own smaller badge.
 
+## 10. The full-screen route on a laptop — 6 October 2026
+
+Owner opened `v21.html?mobile=1&version=2.1.2.2#directory` on a laptop and asked whether the space was correct. It was not. Method: measured `.app` in headless Chromium at 1440 × 1000 and 390 × 844; `scripts/check-v21.cjs` now carries the assertion. Evidence level: browser simulation.
+
+| # | Area | Finding | Outcome |
+|---|---|---|---|
+| W1 | Adaptable space | `body.mobile .app` was `width:100%` with no cap, so the phone layout stretched to the window: a directory row 1,700 px wide with the avatar at one end and the text at the other, and the Open pill running the full width. This is the stretched phone layout the brief rules out. | Above 600 px the app keeps phone width (430 px), sits centred on the page material with a hairline each side, and `.exhibit` loses its 1,100 px cap so the centre is the window's centre. Below 600 px nothing changes: at 390 the app still fills the screen. |
+
+**Check:** "Full-screen route keeps phone width on a laptop window (W1)" fails on the pre-fix build (1,440 px) and passes after (430 px); "Full-screen route still fills a phone" holds at 390. v21 suite: 28 checks.
+
+**Rule (second sighting of a layout that only works at one width, after R1):** every route in the runtime is measured at 390 and at 1440 before it ships. A phone layout never grows past 430 px; a wider window gets the exhibit or a centred phone, never a stretched one.
+
+**Not covered:** the exhibit view beside the story is unchanged; a real tablet, where 600 to 1,024 px might deserve a recomposed two-column layout rather than a centred phone, remains an open design question for T05.
+
 ## 9. T08 in the runtime — 5 October 2026
 
 Self-audit of the T08 build in `v21.html?mobile=1&version=2.1.2.1` before opening the PR. Method: `scripts/check-identity.cjs` (29 assertions), the full suite in a scratch copy, and captures of the eight journey screens at 390 × 844. Evidence level: browser simulation.
