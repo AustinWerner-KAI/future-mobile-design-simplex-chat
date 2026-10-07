@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Collection lab: people stay where you put them</title>
+<style>
+:root{--ink:#252b24;--muted:#555d63;--blue:#e7eff5;--line:#7d8271;--soft:#c7cbc3;--clay:#8d3e2b;--oat:#eee3d2;--white:#fff;--canvas:#f1f5f8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font:1rem/1.5 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:4px}
+:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+main{max-width:1300px;margin:0 auto;padding:40px 24px 64px}
+.eyebrow{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font:2.5rem/1.08 Georgia,serif;letter-spacing:-.03em;margin:10px 0 14px}
+h2{font:1.5rem/1.2 Georgia,serif;margin:0 0 8px}
+.lede{max-width:780px;margin:0 0 8px}
+.note{font-size:.8125rem;color:var(--muted)}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:1000px;margin:20px 0 0}
+.rules div{background:var(--white);border:1px solid var(--soft);border-radius:12px;padding:12px 14px;font-size:.875rem}
+.rules b{display:block;font-size:.9375rem}
+.check{max-width:1000px;margin:20px 0 28px;padding:16px 18px;background:var(--white);border:1px solid var(--soft);border-radius:12px}
+.check dl{display:grid;grid-template-columns:minmax(9rem,max-content) 1fr;gap:6px 16px;margin:8px 0 0;font-size:.875rem}
+.check dt{font-weight:600}.check dd{margin:0;min-width:0;overflow-wrap:anywhere}
+@media(max-width:560px){.check dl{grid-template-columns:1fr}.check dd{margin-bottom:6px}}
+.lab-controls{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.lab-controls button,.pill{min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:var(--white);color:var(--ink);font:inherit;font-size:.875rem;cursor:pointer}
+.lab-controls button[aria-pressed=true]{background:var(--blue);font-weight:600}
+.pill:disabled{opacity:.5;cursor:default}
+.phones{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;margin-top:18px}
+figure{margin:0;flex:0 1 390px;min-width:0;max-width:100%}
+figcaption{margin-top:12px;max-width:390px}
+figcaption strong{display:block}
+.phone{position:relative;width:min(390px,100%);height:760px;background:var(--white);border:1px solid var(--line);border-radius:30px;overflow:hidden;display:flex;flex-direction:column}
+.phone-scroll{flex:1;overflow-y:auto;overflow-x:hidden;padding:0 16px 16px}
+.bar{display:flex;align-items:center;gap:10px;padding:14px 16px 10px;border-bottom:1px solid var(--blue)}
+.bar h3{margin:0;font-size:1.25rem}
+.bar small{display:block;color:var(--muted);font-size:.75rem}
+.bar .grow{flex:1;min-width:0}
+.round{flex:0 0 auto;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--white);font:inherit;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+.section-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.section-head h4{margin:0;font-size:.875rem}
+/* View choice: the person's, remembered for this session */
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.seg button{min-height:44px;min-width:44px;padding:0 14px;border:0;background:var(--white);font:inherit;font-size:.8125rem;color:var(--ink);cursor:pointer}
+.seg button+button{border-inline-start:1px solid var(--line)}
+.seg button[aria-pressed=true]{background:var(--blue);font-weight:600}
+.suggest{margin:8px 0;padding:10px 12px;border:1px solid var(--soft);border-radius:12px;background:var(--blue);font-size:.875rem}
+.suggest p{margin:0 0 8px}
+.suggest div{display:flex;flex-wrap:wrap;gap:8px}
+/* The collection: one component, two forms the person chooses between */
+.collection{list-style:none;margin:0;padding:0}
+.collection.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(5.25em,calc(50% - 4px)),1fr));gap:4px}
+.collection.list{display:flex;flex-direction:column}
+.item{min-height:44px;width:100%;border:0;border-radius:12px;background:none;font:inherit;color:var(--ink);cursor:pointer;display:flex;align-items:center}
+.item:hover{background:var(--blue)}
+.grid .item{flex-direction:column;justify-content:flex-start;gap:6px;padding:8px 2px;text-align:center}
+.list .item{gap:12px;padding:8px 4px;text-align:start;border-radius:0;border-top:1px solid var(--blue)}
+.item strong{font-size:.8125rem;font-weight:600;overflow-wrap:break-word;max-width:100%}
+.list .item strong{font-size:.9375rem}
+.item small{display:block;font-size:.75rem;color:var(--muted)}
+.list .item .txt{min-width:0}
+.av{flex:0 0 auto;width:3em;height:3em;max-width:56px;max-height:56px;display:grid;place-items:center;background:var(--blue);border:1px solid var(--line);font-weight:600;font-size:min(1rem,18px)}
+.av.person-shape{border-radius:50%}.av.group{border-radius:12px}.av.publication{border-radius:6px}.av.provider{border-radius:12px;background:var(--oat)}
+.av.all{border-radius:12px;background:var(--white);font-size:.875rem}
+.empty{margin:8px 0;padding:14px;border:1px dashed var(--soft);border-radius:12px;font-size:.875rem;color:var(--muted)}
+/* Recent activity: one stop per row */
+.rows{list-style:none;margin:0;padding:0}
+.row{width:100%;min-height:44px;display:flex;gap:12px;align-items:center;padding:12px 4px;border:0;border-top:1px solid var(--blue);background:none;font:inherit;color:var(--ink);text-align:start;cursor:pointer}
+.row:hover{background:var(--blue)}
+.row .txt{flex:1;min-width:0}.row strong{display:block;font-size:.9375rem}.row span.prev{display:block;font-size:.8125rem;color:var(--muted)}
+.row .unread{font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--blue);border:1px solid var(--line)}
+/* Conversation */
+.convo-body{padding:16px 0}
+.msgs{list-style:none;margin:0;padding:0}
+.msg{max-width:85%;padding:10px 12px;border-radius:12px;background:var(--blue);margin:0 0 10px}
+.msg p{margin:0}
+.msg.out{margin-inline-start:auto;background:var(--white);border:1px solid var(--soft)}
+.meta{display:block;font-size:.75rem;color:var(--muted)}
+.composer{display:flex;gap:8px;align-items:flex-end;padding:10px 12px 14px;border-top:1px solid var(--soft)}
+.composer label{flex:1;font-size:.75rem;color:var(--muted)}
+.composer textarea{display:block;width:100%;min-height:44px;margin-top:2px;padding:10px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:1rem;resize:none;background:var(--blue);color:var(--ink)}
+/* Album: several photos as one moment */
+.msg.album-msg{padding:6px;background:var(--blue)}
+.album{display:block;width:100%;padding:0;border:0;background:none;font:inherit;color:var(--ink);text-align:start;cursor:pointer;border-radius:12px}
+.album .tiles{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.album .tile{aspect-ratio:1;border-radius:6px;display:flex;align-items:flex-end;padding:6px;font-size:.75rem;color:var(--ink)}
+.album .tile span{background:var(--white);border-radius:5px;padding:1px 6px}
+.album .meta{padding:4px 6px 2px}
+.ph0{background:linear-gradient(160deg,#e7eff5,#c7cbc3)}.ph1{background:linear-gradient(200deg,#eee3d2,#c7cbc3)}.ph2{background:linear-gradient(120deg,#e7eff5,#eee3d2)}.ph3{background:linear-gradient(180deg,#eee3d2,#7d8271)}
+.viewer{position:absolute;inset:0;z-index:2;background:var(--white);display:flex;flex-direction:column}
+.viewer .phone-scroll{display:flex;flex-direction:column;justify-content:center;padding-top:16px}
+.viewer .slide{width:100%}
+.photo{aspect-ratio:4/5;width:100%;border-radius:12px;display:flex;align-items:flex-end;padding:12px}
+.photo span{background:var(--white);border-radius:5px;padding:2px 8px;font-size:.875rem}
+.tile.receiving,.photo.receiving{background:var(--canvas);border:1px dashed var(--line);align-items:center;justify-content:center;text-align:center}
+.photo.receiving span{background:none;color:var(--muted)}
+.sticky-note{margin:0 0 10px;font-size:.75rem;color:var(--muted)}
+.closed{margin:16px;padding:16px;border:1px dashed var(--soft);border-radius:12px;font-size:.875rem}
+.closed p{margin:0 0 10px}
+/* The carousel component: for sets that follow a line (photos, times that overflow) */
+.carousel{position:relative}
+.track{display:flex;gap:10px;margin:0;padding:4px 2px 10px;list-style:none;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scroll-padding-inline:2px}
+.slide{flex:0 0 auto;scroll-snap-align:start}
+.carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.carousel-controls .pos{font-size:.8125rem;color:var(--muted);text-align:center}
+.carousel-controls button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--white);font:inherit;font-size:1.1rem;color:var(--ink);cursor:pointer}
+.carousel-controls button:disabled{opacity:.45;cursor:default}
+@media(prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}
+/* An interface that arrives, inside the client frame */
+.frame{margin:4px 0 12px;border:1px dashed var(--line);border-radius:12px;background:var(--white)}
+.frame-head{display:flex;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px dashed var(--soft);font-size:.8125rem}
+.frame-head .mark{flex:0 0 auto;width:32px;height:32px;border-radius:6px;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center;font-size:.75rem;font-weight:700}
+.frame-head .who{flex:1;min-width:0}
+.frame-head .who b{display:block;font-size:.8125rem}
+.frame-head .who span{font-size:.75rem;color:var(--muted)}
+.frame-body{padding:10px}
+.frame-body p{margin:0 0 6px;font-size:.875rem}
+.frame-body .count{font-size:.75rem;color:var(--muted)}
+.slots{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(6.5em,1fr));gap:8px}
+.slots .slot{width:100%;max-width:none;height:100%}
+.slot{min-width:6.5em;max-width:12em;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:var(--white);font:inherit;color:var(--ink);text-align:start;cursor:pointer;display:flex;flex-direction:column;gap:2px}
+.slot b{font-size:1rem}.slot span{font-size:.75rem;color:var(--muted)}
+.slot[aria-pressed=true]{background:var(--blue);border:2px solid var(--ink)}
+.slot[aria-disabled=true]{border-style:dashed;cursor:not-allowed;background:var(--canvas)}
+.slot[aria-disabled=true] b{text-decoration:line-through}
+.frame-actions{display:flex;flex-wrap:wrap;gap:8px;padding:0 10px 10px}
+.primary{background:var(--clay)!important;color:#fff7ed!important;border-color:var(--clay)!important}
+.review{margin:8px 0 12px;padding:10px 12px;border-inline-start:3px solid var(--clay);background:var(--white);border-radius:0 12px 12px 0;box-shadow:inset 0 0 0 1px var(--soft)}
+.review h5{margin:0 0 4px;font-size:.875rem}
+.review p{margin:0 0 8px;font-size:.875rem}
+.review .actions{display:flex;flex-wrap:wrap;gap:8px}
+.receipt{font-size:.75rem;color:var(--muted);margin:2px 0 10px;text-align:end}
+.offline{margin:0;padding:6px 16px;font-size:.75rem;background:var(--oat);border-bottom:1px solid var(--soft)}
+.results{margin:40px 0 0;max-width:1000px}
+.results table{width:100%;border-collapse:collapse;background:var(--white);font-size:.875rem;table-layout:fixed}.results col.id{width:4em}.results td,.results th{overflow-wrap:break-word}
+.results th,.results td{border-top:1px solid var(--soft);padding:8px 10px;text-align:left;vertical-align:top}
+.results th{font-weight:600}
+@media(max-width:560px){.results thead{display:none}.results tr{display:block;border-top:1px solid var(--soft);padding:6px 0}.results td{display:block;border:0;padding:2px 10px}.results td:first-child{font-weight:600}.results td:nth-child(4)::before{content:'Evidence: '}.results td:nth-child(5)::before{content:'Lab: '}}
+.limits{max-width:880px;margin-top:22px}
+@media(max-width:860px){.rules{grid-template-columns:1fr}}
+@media(max-width:480px){main{padding:24px 16px 48px}h1{font-size:2rem}.phone{border-radius:16px}}
+/* English text inside a mirrored layout: keep punctuation at the logical end, as real right-to-left content would */
+:where(.phone[dir=rtl]) :where(h3,h4,h5,p,span,b,strong,small){unicode-bidi:plaintext;text-align:right}
+:where(.phone[dir=rtl]) :where(.grid .item,.pos) :where(*),:where(.phone[dir=rtl]) :where(.pos){text-align:center}
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">Study · grids, lists and carousels · lab 1, rebuilt · 7 October 2026</p>
+<h1>People stay where you put them.</h1>
+<p class="lede">The first lab built a carousel well but never asked when a carousel is right. Public SimpleX issues and published research answered: people want a fixed place, their own order, and a way to move through items that works with a screen reader. This lab is rebuilt on those findings.</p>
+<p class="note">Independent design study, not affiliated with SimpleX. Browser simulation; fictional people, photos and messages; nothing is sent. Evidence: public SimpleX issues and published studies, listed with each check below. No participant has used this yet.</p>
+
+<div class="rules">
+<div><b>Stable by default</b>Adding someone never moves anyone else. The order is yours, the same in every form.</div>
+<div><b>Adaptable by choice</b>You pick grid or list. Large text suggests a list once; you can say no.</div>
+<div><b>Carousels follow a line</b>Photos in an album and times that overflow. Never the people you keep close.</div>
+</div>
+
+<section class="check" aria-labelledby="check-title">
+<h2 id="check-title">Octopus check</h2>
+<dl>
+<dt>Flow rules served</dt><dd><b>Adapt the working space</b> (the collection takes the form the space, the text size and the person need) and <b>Retain useful state</b> (your order, your place and your focus survive every change).</dd>
+<dt>From SimpleX</dt><dd>Lists exist since 6.3 and favourites are previews already in memory, so grid and list are cheap. An album is one chat. The frame stays client-owned, so the client, not the sender, decides how options are shown (F14).</dd>
+<dt>From the analogy</dt><dd>An arm reshapes to fit the space it reaches into but stays the same arm: the collection changes shape, never its order. Nothing literal.</dd>
+<dt>The test</dt><dd>Does the collection change form when space or text size changes, without losing place or selection? <code>scripts/check-collection-lab.cjs</code> runs H0 to H14 here and fails on the first carousel lab.</dd>
+<dt>Research</dt><dd><code>RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md</code> §1 and §9.1 (F2, F5, F6, F8, F14); <code>CHAT_SCROLLING.md</code> (grids and lists only rearrange previews in memory).</dd>
+<dt>What would drop it</dt><dd>In T05, people find someone more slowly in their chosen form than in today's rail, ignore the choice, or a screen reader user cannot open and leave the album.</dd>
+</dl>
+</section>
+
+<div class="lab-controls" role="group" aria-label="Test conditions">
+<button type="button" data-lab="large" aria-pressed="false">Large text (200%)</button>
+<button type="button" data-lab="rtl" aria-pressed="false">Right to left</button>
+<button type="button" data-lab="add">Add a favourite</button>
+<button type="button" data-lab="profile" aria-pressed="false">Switch to Work profile</button>
+<button type="button" data-lab="none" aria-pressed="false">No favourites</button>
+<button type="button" data-lab="many" aria-pressed="false">500 favourites</button>
+<button type="button" data-lab="slots" aria-pressed="false">12 time slots</button>
+<button type="button" data-lab="taken" aria-pressed="false">12:30 taken</button>
+<button type="button" data-lab="offline" aria-pressed="false">Offline</button>
+<button type="button" data-lab="arriving" aria-pressed="false">Photos still arriving</button>
+</div>
+<p class="note">Reduced motion follows your device setting.</p>
+<p class="note" role="status" id="lab-status" style="min-height:2.6em;margin:0"></p>
+
+<div class="phones">
+<figure>
+<div class="phone" id="home-phone"></div>
+<figcaption><strong>Home: the people you keep close</strong><span class="note">Grid or list is your choice. Add a favourite: nobody else moves. Use the arrow keys inside, or open someone and go back.</span></figcaption>
+</figure>
+<figure>
+<div class="phone" id="album-phone"></div>
+<figcaption><strong>A conversation: four photos as one moment</strong><span class="note">The one carousel with user evidence. Open the album, move through it, and go back to the same message.</span></figcaption>
+</figure>
+<figure>
+<div class="phone" id="convo-phone"></div>
+<figcaption><strong>An interface that arrives: the client picks the form</strong><span class="note">Harbour Café sends times as data. If they fit in three rows, all are shown. If not, a carousel with a count and Show all.</span></figcaption>
+</figure>
+</div>
+
+<section class="results" aria-labelledby="results-title">
+<h2 id="results-title">The hard cases</h2>
+<p class="note">Measured by <code>scripts/check-collection-lab.cjs</code> in headless Chromium.</p>
+<table>
+<colgroup><col class="id"><col style="width:22%"><col><col style="width:24%"><col style="width:12%"></colgroup>
+<thead><tr><th scope="col">#</th><th scope="col">Hard case</th><th scope="col">Pass mark</th><th scope="col">Evidence</th><th scope="col">Lab</th></tr></thead>
+<tbody id="results-body"></tbody>
+</table>
+</section>
+
+<section class="limits" aria-labelledby="limits-title">
+<h2 id="limits-title">Limits</h2>
+<p class="note">Touch is synthesised in a browser, not tested on a phone in a hand. Screen reader structure is checked from the markup, not with VoiceOver or TalkBack. The evidence is a handful of public issues and studies of other software; it is a signal, not a measure. T05 with SimpleX users comes next.</p>
+</section>
+</main>
+
+<script>
+(()=>{'use strict';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const reduce=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+const lab={large:false,rtl:false,profile:false,none:false,many:false,slots:false,taken:false,offline:false,arriving:false,added:0};
+const labSay=t=>{document.getElementById('lab-status').textContent=t};
+
+/* ---------- The carousel component, for sets that follow a line ---------- */
+function carousel({id,label,items,render,unit,slideClass=''}){
+  const n=items.length;
+  return `<section class="carousel" id="${id}" role="region" aria-roledescription="carousel" aria-label="${esc(label)}">
+<ul class="track" role="list">${items.map((it,i)=>`<li class="slide ${slideClass}" role="group" aria-roledescription="slide" aria-label="${i+1} of ${n}">${render(it,i)}</li>`).join('')}</ul>
+<div class="carousel-controls"><button type="button" data-car="prev" aria-label="Previous ${esc(unit)}">‹</button><span class="pos" aria-hidden="true"></span><button type="button" data-car="next" aria-label="Next ${esc(unit)}">›</button></div>
+<p class="sr-only" role="status" aria-live="polite"></p></section>`;
+}
+function wire(root,{focusIndex=0,onChange}={}){
+  const track=root.querySelector('.track'),items=[...track.querySelectorAll('.slide > *:first-child')],prev=root.querySelector('[data-car=prev]'),next=root.querySelector('[data-car=next]'),pos=root.querySelector('.pos'),status=root.querySelector('[role=status]');
+  const rtl=getComputedStyle(root).direction==='rtl';
+  let current=Math.max(0,Math.min(focusIndex,items.length-1));
+  items.forEach((b,i)=>{if(!b.matches('button'))b.setAttribute('tabindex','-1');b.tabIndex=i===current?0:-1});
+  const visible=()=>{const r=track.getBoundingClientRect();const v=items.map((b,i)=>{const s=b.parentElement.getBoundingClientRect();return {i,full:s.left>=r.left-1&&s.right<=r.right+1}}).filter(x=>x.full).map(x=>x.i);return v.length?[v[0],v[v.length-1]]:[current,current]};
+  const label=(a,b)=>a===b?`${a+1} of ${items.length}`:`${a+1} to ${b+1} of ${items.length}`;
+  const update=()=>{const [a,b]=visible();pos.textContent=label(a,b);const max=track.scrollWidth-track.clientWidth;const at=Math.abs(track.scrollLeft);prev.disabled=at<=1;next.disabled=at>=max-1;onChange&&onChange(a)};
+  let raf=0;track.addEventListener('scroll',()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(update)},{passive:true});
+  const go=(i,announce)=>{i=Math.max(0,Math.min(items.length-1,i));const from=current;items[current].tabIndex=-1;current=i;items[i].tabIndex=0;items[i].focus({preventScroll:true});items[i].parentElement.scrollIntoView({inline:'nearest',block:'nearest',behavior:reduce()||Math.abs(i-from)>3?'auto':'smooth'});if(announce)status.textContent=`${i+1} of ${items.length}`};
+  const page=dir=>{const [a,b]=visible();const span=Math.max(1,b-a+1);const target=dir>0?Math.min(items.length-1,b+1):Math.max(0,a-span);const slide=items[target].parentElement;const r=track.getBoundingClientRect(),s=slide.getBoundingClientRect();const delta=rtl?(s.right-r.right):(s.left-r.left);track.scrollBy({left:delta,behavior:reduce()?'auto':'smooth'});items[current].tabIndex=-1;current=target;items[target].tabIndex=0;status.textContent=`Showing ${label(target,Math.min(items.length-1,target+span-1))}`;setTimeout(update,reduce()?0:350)};
+  prev.addEventListener('click',()=>page(-1));next.addEventListener('click',()=>page(1));
+  track.addEventListener('keydown',e=>{const k=e.key;const fwd=rtl?'ArrowLeft':'ArrowRight',back=rtl?'ArrowRight':'ArrowLeft';if(k===fwd){e.preventDefault();go(current+1,true)}else if(k===back){e.preventDefault();go(current-1,true)}else if(k==='Home'){e.preventDefault();go(0,true)}else if(k==='End'){e.preventDefault();go(items.length-1,true)}});
+  items.forEach((b,i)=>b.addEventListener('focus',()=>{if(current!==i){items[current].tabIndex=-1;current=i;b.tabIndex=0}}));
+  if(current){items[current].parentElement.scrollIntoView({inline:'start',block:'nearest',behavior:'instant'})}
+  update();
+  return {focus:i=>go(i,false)};
+}
+
+/* ---------- Home: the collection ---------- */
+const personal=[['Maya','Person','person-shape','M'],['Family','Group','group','F'],['Coast Journal','Publication','publication','CJ'],['Harbour Café','Provider','provider','HC'],['Alex','Person','person-shape','A'],['Book club','Group','group','BC'],['Priya Ramaswamy-Okonkwo','Person','person-shape','PR'],['Studio','Provider','provider','S']];
+const extra=[['Noor','Person','person-shape','N'],['Theo','Person','person-shape','T'],['Ines','Person','person-shape','I'],['Running club','Group','group','RC'],['Kofi','Person','person-shape','K']];
+const work=[['Dana','Person','person-shape','D'],['Ops team','Group','group','OT'],['Supplier desk','Provider','provider','SD']];
+const CAP=12; /* the first 12 stay in place; from the 13th, an "All" tile follows them, so nobody already shown moves or disappears */
+const home={form:'grid',current:0,open:null,all:false,suggested:false,answered:false,returnTo:null};
+const people=()=>{if(lab.none)return [];if(lab.profile)return work;let out=personal.concat(extra.slice(0,lab.added));if(lab.many){const first=['Lena','Ravi','Ada','Jonas','Mei','Omar','Sol','Yara','Bea','Tomas'];for(let i=out.length;i<500;i++){const f=first[i%first.length];out.push([f+' '+(i+1),'Person','person-shape',f[0]])}}return out};
+const key=p=>p[0];
+function itemHTML(p,i,cur){return `<li data-key="${esc(key(p))}"><button type="button" class="item" data-open="${i}" tabindex="${i===cur?0:-1}" aria-label="${esc(p[0])}, ${esc(p[1].toLowerCase())}"><span class="av ${p[2]}" aria-hidden="true">${esc(p[3])}</span><span class="txt"><strong>${esc(p[0])}</strong><small>${esc(p[1])}</small></span></button></li>`}
+function collectionHTML(ps,{all}){
+  const shown=all||ps.length<=CAP?ps:ps.slice(0,CAP);
+  const cur=Math.min(home.current,shown.length-(all||ps.length<=CAP?1:0));
+  let html=shown.map((p,i)=>itemHTML(p,i,cur)).join('');
+  if(!all&&ps.length>CAP)html+=`<li data-key="__all"><button type="button" class="item" data-all tabindex="${cur===shown.length?0:-1}" aria-label="All ${ps.length} people you keep close"><span class="av all" aria-hidden="true">${ps.length}</span><span class="txt"><strong>All ${ps.length}</strong><small>Show everyone</small></span></button></li>`;
+  return `<ul class="collection ${home.form}" role="list" aria-labelledby="keep">${html}</ul>`;
+}
+/* Glide each item from its old place to its new one (300 ms or less), so people can follow where things went */
+function measure(el){const m=new Map();el.querySelectorAll('.collection > li').forEach(li=>m.set(li.dataset.key,li.getBoundingClientRect()));return m}
+function glide(el,before){if(reduce()||!before)return;el.querySelectorAll('.collection > li').forEach(li=>{const a=before.get(li.dataset.key);if(!a)return;const b=li.getBoundingClientRect();const dx=a.left-b.left,dy=a.top-b.top;if(Math.abs(dx)+Math.abs(dy)<1)return;li.animate([{transform:`translate(${dx}px,${dy}px)`},{transform:'none'}],{duration:240,easing:'cubic-bezier(.2,.8,.2,1)'})})}
+function rowsHTML(){const rows=lab.profile?[['Dana','Can you check the rota?',1,'person-shape','D'],['Ops team','Deploy at four.',0,'group','OT'],['Supplier desk','Invoice attached.',0,'provider','SD']]:[['Maya','Shall we go on Saturday?',1,'person-shape','M'],['Family','Lunch on Sunday?',0,'group','F'],['Harbour Café','Your table is available.',2,'provider','HC'],['Alex','The sketches are ready.',0,'person-shape','A'],['Book club','Chapter six this week.',0,'group','BC']];
+  return `<ul class="rows" role="list">${rows.map(([n,m,u,shape,ini])=>`<li><button type="button" class="row" data-row="${esc(n)}"><span class="av ${shape}" aria-hidden="true">${esc(ini)}</span><span class="txt"><strong>${esc(n)}</strong><span class="prev">${esc(m)}</span></span>${u?`<span class="unread">${u} unread</span>`:''}</button></li>`).join('')}</ul>`}
+function renderHome(opts={}){
+  const el=document.getElementById('home-phone');const before=opts.glide?measure(el):null;const scroller=el.querySelector('.phone-scroll');const st=scroller?scroller.scrollTop:0;
+  const ps=people();
+  if(home.open!=null){const p=home.open;el.innerHTML=`<div class="bar"><button type="button" class="round" data-home="back" aria-label="Back to your connections">‹</button><div class="grow"><h3>${esc(p)}</h3><small>Conversation</small></div></div><div class="phone-scroll"><div class="convo-body"><p class="msg">A fictional conversation with ${esc(p)}.</p></div></div>`;el.querySelector('[data-home=back]').focus();return}
+  if(home.all){el.innerHTML=`<div class="bar"><button type="button" class="round" data-home="back-all" aria-label="Back to your connections">‹</button><div class="grow"><h3 id="keep">Keep close</h3><small>All ${ps.length}, in your order</small></div></div><div class="phone-scroll">${collectionHTML(ps,{all:true})}</div>`;wireCollection(el);el.querySelector('[data-home=back-all]').focus();return}
+  const viewSeg=`<div class="seg" role="group" aria-label="Show Keep close as"><button type="button" data-form="grid" aria-pressed="${home.form==='grid'}">Grid</button><button type="button" data-form="list" aria-pressed="${home.form==='list'}">List</button></div>`;
+  const suggest=home.suggested&&!home.answered?`<div class="suggest"><p>Text is large. Show Keep close as a list, so names stay whole?</p><div><button type="button" class="pill" data-h="to-list">Show as list</button><button type="button" class="pill" data-h="keep-grid">Keep grid</button></div></div>`:'';
+  const body=ps.length?collectionHTML(ps,{all:false}):`<p class="empty">No one kept close yet. In any chat, choose Keep close and they appear here, in the order you add them.</p>`;
+  el.innerHTML=`<div class="bar"><div class="grow"><h3>Close at hand.</h3><small>Your connections</small></div></div><div class="phone-scroll"><div class="section-head"><h4 id="keep">Keep close <span class="note">· ${ps.length} ${ps.length===1?'person':'people'}</span></h4>${ps.length?viewSeg:''}</div>${suggest}${body}<div class="section-head"><h4>Recent activity</h4></div>${rowsHTML()}</div>`;
+  el.querySelector('.phone-scroll').scrollTop=st;
+  wireCollection(el);glide(el,before);
+  if(opts.focusItem){const b=el.querySelectorAll('.collection .item')[home.current];b&&b.focus()}
+  if(opts.focusSel){const f=el.querySelector(opts.focusSel);f&&f.focus()}
+}
+/* Arrow keys move through the collection in reading order; one Tab stop for the whole collection */
+function wireCollection(el){const list=el.querySelector('.collection');if(!list)return;const items=[...list.querySelectorAll('.item')];
+  items.forEach((b,i)=>b.addEventListener('focus',()=>{items.forEach(x=>x.tabIndex=-1);b.tabIndex=0;if(!b.hasAttribute('data-all'))home.current=i}));
+  list.addEventListener('keydown',e=>{const i=items.indexOf(document.activeElement);if(i<0)return;const rtl=getComputedStyle(list).direction==='rtl';const top=items.map(b=>Math.round(b.getBoundingClientRect().top));const cols=Math.max(1,top.filter(t=>t===top[0]).length);
+    const map={ArrowRight:rtl?-1:1,ArrowLeft:rtl?1:-1,ArrowDown:home.form==='list'?1:cols,ArrowUp:home.form==='list'?-1:-cols};let j=null;
+    if(e.key in map)j=i+map[e.key];else if(e.key==='Home')j=0;else if(e.key==='End')j=items.length-1;if(j==null)return;e.preventDefault();j=Math.max(0,Math.min(items.length-1,j));items[j].focus()});
+}
+document.getElementById('home-phone').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const el=document.getElementById('home-phone');
+  if(b.dataset.form){if(home.form===b.dataset.form)return;home.form=b.dataset.form;home.answered=true;renderHome({glide:true,focusSel:`[data-form=${home.form}]`});labSay(`Keep close shown as a ${home.form}. Same people, same order.`);return}
+  if(b.dataset.h==='to-list'){home.form='list';home.answered=true;renderHome({glide:true,focusItem:true});labSay('Keep close shown as a list. Same people, same order.');return}
+  if(b.dataset.h==='keep-grid'){home.answered=true;renderHome({focusItem:true});return}
+  if(b.dataset.all!=null){home.all=true;home.returnTo='all';renderHome();return}
+  if(b.dataset.open!=null){const ps=people();home.current=+b.dataset.open;home.returnTo=home.all?'all-item':'item';home.open=ps[+b.dataset.open][0];renderHome();return}
+  if(b.dataset.row){home.returnTo='row:'+b.dataset.row;home.open=b.dataset.row;renderHome();return}
+  if(b.dataset.home==='back'){home.open=null;const r=home.returnTo;renderHome(r&&r.startsWith('row:')?{focusSel:`[data-row="${r.slice(4)}"]`}:{focusItem:true});return}
+  if(b.dataset.home==='back-all'){home.all=false;renderHome({focusSel:'[data-all]'});return}
+});
+
+/* ---------- Shared conversation pieces ---------- */
+/* Your own reply: sent in simulation, or queued when offline. Never called delivered. */
+const receiptFor=q=>q?'Queued on this phone · not sent yet. It sends when you are online.':'Sent in simulation · accepted by server, delivery unconfirmed';
+/* A conversation belongs to one profile. While another profile is active it is closed, not shown. */
+const closedHTML=(who)=>`<div class="bar"><div class="grow"><h3>Conversation closed</h3><small>Personal profile</small></div></div><div class="closed"><p>The conversation with ${esc(who)} belongs to your Personal profile. It stays closed while Work is active, and your draft stays with Personal.</p><button type="button" class="pill" data-lab-go="profile">Switch back to Personal</button></div>`;
+/* Back from a conversation returns to where it lives: its row in Recent activity on the home */
+function backToRow(name){const row=document.querySelector(`#home-phone [data-row="${name}"]`);labSay(`Back to your connections. ${name} is in Recent activity.`);if(row){row.scrollIntoView({block:'nearest',behavior:'instant'});row.focus({preventScroll:true})}}
+
+/* ---------- Album: several photos as one moment, one stop in the conversation ---------- */
+const photos=[['Harbour at dawn','ph0'],['Boats in a row','ph1'],['Café terrace','ph2'],['Sunset over the wall','ph3']];
+const album={open:false,index:0,sent:[],draft:'Love the boats'};
+const receiving=i=>lab.arriving&&i>=2;
+function renderAlbum(opts={}){
+  const el=document.getElementById('album-phone');
+  const d=el.querySelector('#maya-reply');if(d)album.draft=d.value;
+  if(lab.profile){el.innerHTML=closedHTML('Maya');return}
+  const got=photos.filter((p,i)=>!receiving(i)).length;
+  const albumLabel=`Album from Maya, 4 photos${got<4?`, ${4-got} still receiving`:''}: ${photos.map((p,i)=>receiving(i)?'still receiving':p[0]).join(', ')}. 10:42. Open album`;
+  const mine=album.sent.map(t=>`<li class="msg out"><p><span class="sr-only">You: </span>${esc(t.text)}<span class="meta">${receiptFor(t.queued&&lab.offline)}</span></p></li>`).join('');
+  const msgs=`<ul class="msgs" role="list">
+<li class="msg out"><p><span class="sr-only">You: </span>Did you get photos from the harbour?<span class="meta">10:40 · seen</span></p></li>
+<li class="msg album-msg"><button type="button" class="album" data-album aria-label="${esc(albumLabel)}"><span class="tiles" aria-hidden="true">${photos.map((p,i)=>receiving(i)?`<span class="tile receiving" data-ph="${i}"><span>${i+1} · receiving</span></span>`:`<span class="tile ${p[1]}" data-ph="${i}"><span>${i+1}</span></span>`).join('')}</span><span class="meta" aria-hidden="true">Maya · 4 photos${got<4?` · ${got} of 4 received`:''} · 10:42</span></button></li>
+<li class="msg"><p><span class="sr-only">Maya: </span>The third one is my favourite.<span class="meta">10:43</span></p></li>${mine}</ul>`;
+  const viewer=album.open?`<div class="viewer" role="dialog" aria-modal="true" aria-label="Album from Maya"><div class="bar"><button type="button" class="round" data-v="close" aria-label="Back to the conversation with Maya">‹</button><div class="grow"><h3>Maya's album</h3><small>4 photos · shared 10:42</small></div></div><div class="phone-scroll">${carousel({id:'album-car',label:'Photos from Maya',unit:'photo',items:photos,slideClass:'photo-slide',render:(p,i)=>receiving(i)?`<div class="photo receiving" role="img" aria-label="Photo ${i+1} of 4: still receiving"><span>Still receiving. It appears here when it arrives.</span></div>`:`<div class="photo ${p[1]}" role="img" aria-label="Photo ${i+1} of 4: ${esc(p[0])}"><span>${esc(p[0])}</span></div>`})}</div></div>`:'';
+  el.innerHTML=`<div class="bar" data-behind><button type="button" class="round" data-back="Maya" aria-label="Back to your connections">‹</button><div class="grow"><h3>Maya</h3><small>Person · private conversation</small></div></div>${lab.offline?'<p class="offline" data-behind>Offline · messages wait on this phone</p>':''}<div class="phone-scroll" data-behind><div class="convo-body">${msgs}</div></div><div class="composer" data-behind><label>Reply to Maya · private<textarea id="maya-reply" rows="1">${esc(album.draft)}</textarea></label><button type="button" class="round primary" data-send="maya" aria-label="Send reply to Maya">↑</button></div>${viewer}`;
+  /* While the album is open, everything behind it is inert: focus cannot slip behind the dialog */
+  el.querySelectorAll('[data-behind]').forEach(n=>n.inert=album.open);
+  if(album.open){el.querySelectorAll('#album-car .slide').forEach(s=>s.style.width='100%');const api=wire(el.querySelector('#album-car'),{focusIndex:album.index,onChange:a=>{album.index=a}});el.querySelector('#album-car [role=status]').textContent=`${album.index+1} of 4`;api.focus(album.index)}
+  if(opts.focusAlbum)el.querySelector('[data-album]').focus();
+  if(opts.focusSel){const f=el.querySelector(opts.focusSel);f&&f.focus()}
+}
+const closeAlbum=()=>{album.open=false;renderAlbum({focusAlbum:true})};
+document.getElementById('album-phone').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.album!=null){const t=e.target.closest('[data-ph]');album.index=t?+t.dataset.ph:0;album.open=true;renderAlbum();return}
+  if(b.dataset.v==='close'){closeAlbum();return}
+  if(b.dataset.back){backToRow(b.dataset.back);return}
+  if(b.dataset.send==='maya'){const t=document.getElementById('maya-reply').value.trim();if(!t){labSay('Nothing to send: the reply to Maya is empty.');return}album.sent.push({text:t,queued:lab.offline});document.getElementById('maya-reply').value='';renderAlbum({focusSel:'#maya-reply'});{const sc=document.querySelector('#album-phone .phone-scroll');sc.scrollTop=sc.scrollHeight}labSay(lab.offline?'Your reply to Maya is queued on this phone. Not sent yet.':'Your reply to Maya was sent in simulation. Accepted by server, delivery unconfirmed.');return}
+  if(b.dataset.labGo){document.querySelector(`[data-lab=${b.dataset.labGo}]`).click()}});
+document.addEventListener('keydown',e=>{if(!album.open)return;if(e.key==='Escape'){e.preventDefault();closeAlbum();return}
+  /* The album is the whole screen while open: Tab cycles inside it */
+  if(e.key==='Tab'){const v=document.querySelector('#album-phone .viewer');const f=[...v.querySelectorAll('button:not(:disabled),[tabindex="0"]')];if(!f.length)return;const i=f.indexOf(document.activeElement);
+    if(e.shiftKey&&(i<=0)){e.preventDefault();f[f.length-1].focus()}else if(!e.shiftKey&&(i===f.length-1||i<0)){e.preventDefault();f[0].focus()}}});
+
+/* ---------- An interface that arrives: Harbour Café sends times as data; the client picks the form ---------- */
+const baseSlots=[['12:00','6 seats'],['12:30','6 seats · window'],['13:00','4 seats'],['13:30','6 seats · terrace'],['14:00','6 seats']];
+const moreSlots=[['14:30','6 seats'],['15:00','6 seats'],['18:00','6 seats · window'],['18:30','4 seats'],['19:00','6 seats'],['19:30','6 seats · terrace'],['20:00','6 seats']];
+const convo={chosen:null,review:false,sent:null,queued:false,showAll:false,draft:'Thanks, see you then',mine:[]};
+const slots=()=>lab.slots?baseSlots.concat(moreSlots):baseSlots;
+const isTaken=s=>lab.taken&&s[0]==='12:30';
+function slotHTML(s,i){const t=isTaken(s);return `<button type="button" class="slot" data-slot="${i}" aria-pressed="${convo.chosen===i}" ${t?'aria-disabled="true"':''}><b>${s[0]}</b><span>${t?'Taken since sent':esc(s[1])}</span></button>`}
+function renderConvo(focusSel){
+  const el=document.getElementById('convo-phone');
+  const draftEl=el.querySelector('#reply');if(draftEl)convo.draft=draftEl.value;
+  if(lab.profile){el.innerHTML=closedHTML('Harbour Café');return}
+  const ss=slots();
+  const sentMsg=convo.sent?`<li class="msg out"><p><span class="sr-only">You: </span>Saturday at ${esc(convo.sent)} for six, please.<span class="meta">Chosen in Harbour Café's interface</span></p></li>`:'';
+  const receipt=convo.sent?`<p class="receipt">${receiptFor(convo.queued)}</p>`:'';
+  const mine=convo.mine.map(t=>`<li class="msg out"><p><span class="sr-only">You: </span>${esc(t.text)}<span class="meta">${receiptFor(t.queued&&lab.offline)}</span></p></li>`).join('');
+  const frame=convo.sent?'':`<div class="frame" role="group" aria-label="Interface from Harbour Café"><div class="frame-head"><span class="mark" aria-hidden="true">HC</span><span class="who"><b>Harbour Café · interface</b><span>Can suggest a reply. Cannot send or go online.</span></span></div><div class="frame-body"><p>Choose a time for Saturday.</p><div id="slot-box"></div></div><div class="frame-actions"><button type="button" class="pill" data-c="suggest" ${convo.chosen==null?'disabled':''}>Suggest reply</button></div></div>
+${convo.review?`<section class="review" aria-labelledby="rv"><h5 id="rv">Review before sending</h5><p>To Harbour Café · private conversation · as Austin, Personal profile</p><p><b>“Saturday at ${esc(ss[convo.chosen][0])} for six, please.”</b></p><p class="note">Your own draft is not included.${lab.offline?' You are offline: this will wait on your phone until you are online.':''}</p><div class="actions"><button type="button" class="pill primary" data-c="send">${lab.offline?'Queue to send':'Send · simulation'}</button><button type="button" class="pill" data-c="change">Change</button><button type="button" class="pill" data-c="cancel">Cancel · send nothing</button></div></section>`:''}`;
+  el.innerHTML=`<div class="bar"><button type="button" class="round" data-back="Harbour Café" aria-label="Back to your connections">‹</button><div class="grow"><h3>Harbour Café</h3><small>Provider · chat with staff</small></div></div>${lab.offline?'<p class="offline">Offline · messages wait on this phone</p>':''}<div class="phone-scroll"><div class="convo-body"><ul class="msgs" role="list"><li class="msg out"><p><span class="sr-only">You: </span>Do you have a table for six on Saturday?<span class="meta">09:12 · seen</span></p></li><li class="msg"><p><span class="sr-only">Harbour Café: </span>We do. Pick a time below.<span class="meta">09:14</span></p></li>${sentMsg}</ul>${receipt}<ul class="msgs" role="list">${mine}</ul>${frame}</div></div><div class="composer"><label>Reply to Harbour Café · private<textarea id="reply" rows="1">${esc(convo.draft)}</textarea></label><button type="button" class="round primary" data-send="cafe" aria-label="Send reply to Harbour Café">↑</button></div><p class="sr-only" role="status" id="convo-status"></p>`;
+  const box=el.querySelector('#slot-box');
+  if(box){
+    /* The client measures: if every time fits in three rows, show them all; otherwise a carousel with a count and Show all */
+    box.innerHTML=`<p class="count" id="slot-count">${ss.length} times · all shown</p><ul class="slots" role="list" aria-labelledby="slot-count">${ss.map((s,i)=>`<li>${slotHTML(s,i)}</li>`).join('')}</ul>`;
+    const tops=new Set([...box.querySelectorAll('.slots > li')].map(li=>Math.round(li.getBoundingClientRect().top)));
+    if(tops.size>3&&!convo.showAll){box.innerHTML=`<p class="count">${ss.length} times · more than fit</p>${carousel({id:'slot-car',label:'Table times',unit:'times',items:ss,render:slotHTML})}<button type="button" class="pill" data-c="all" style="margin-top:8px">Show all ${ss.length} times</button>`;wire(box.querySelector('#slot-car'),{focusIndex:convo.chosen??0})}
+    else if(convo.showAll&&tops.size>3){box.querySelector('#slot-count').textContent=`${ss.length} times · all shown`}
+  }
+  if(focusSel){const f=el.querySelector(focusSel);f&&f.focus({preventScroll:true})}
+}
+const say=t=>{const s=document.getElementById('convo-status');if(s)s.textContent=t};
+document.getElementById('convo-phone').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.back){backToRow(b.dataset.back);return}
+  if(b.dataset.labGo){document.querySelector(`[data-lab=${b.dataset.labGo}]`).click();return}
+  if(b.dataset.send==='cafe'){const t=document.getElementById('reply').value.trim();if(!t){say('Nothing to send: your reply is empty.');return}convo.mine.push({text:t,queued:lab.offline});document.getElementById('reply').value='';renderConvo('#reply');{const sc=document.querySelector('#convo-phone .phone-scroll');sc.scrollTop=sc.scrollHeight}say(lab.offline?'Your reply is queued on this phone. Not sent yet.':'Your reply was sent in simulation. Accepted by server, delivery unconfirmed.');return}
+  if(b.dataset.slot!=null){const s=slots()[+b.dataset.slot];if(isTaken(s)){say(`${s[0]} was taken after Harbour Café sent this. Choose another time.`);return}convo.chosen=+b.dataset.slot;renderConvo(`[data-slot="${b.dataset.slot}"]`);return}
+  const c=b.dataset.c;if(!c)return;
+  if(c==='all'){convo.showAll=true;renderConvo(`[data-slot="${convo.chosen??0}"]`);say(`Showing all ${slots().length} times.`);return}
+  if(c==='suggest'){convo.review=true;renderConvo('[data-c=send]');say('Review before sending. Nothing has been sent.');return}
+  if(c==='change'){convo.review=false;renderConvo(`[data-slot="${convo.chosen}"]`);return}
+  if(c==='cancel'){convo.review=false;convo.chosen=null;renderConvo('[data-slot="0"]');say('Cancelled. Nothing was sent.');return}
+  if(c==='send'){convo.sent=slots()[convo.chosen][0];convo.queued=lab.offline;convo.review=false;renderConvo('#reply');say(lab.offline?'Queued on this phone. Not sent yet. Your draft is unchanged.':'Sent in simulation. Accepted by server, delivery unconfirmed. Your draft is unchanged.');return}
+});
+
+/* ---------- Lab conditions ---------- */
+document.querySelectorAll('[data-lab]').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.lab;const el=document.getElementById('home-phone');const before=measure(el);
+  if(k==='add'){if(lab.profile||lab.none||lab.many){labSay('Adding works on the Personal profile with favourites shown.');return}if(lab.added>=extra.length){labSay('No more fictional people to add.');return}lab.added++;const p=extra[lab.added-1][0];renderHome({glide:true});labSay(`${p} added at the end. Nobody else moved.`);return}
+  lab[k]=!lab[k];b.setAttribute('aria-pressed',lab[k]);
+  document.documentElement.style.fontSize=lab.large?'200%':'';document.querySelectorAll('.phone').forEach(p=>p.dir=lab.rtl?'rtl':'ltr');
+  if(k==='large'&&lab.large&&home.form==='grid'&&!home.answered)home.suggested=true;
+  if(k==='profile'||k==='none'||k==='many'){home.current=0;home.all=false;home.open=null}
+  if(k==='taken'&&lab.taken&&convo.chosen!=null&&isTaken(slots()[convo.chosen])){convo.chosen=null;convo.review=false}
+  if(k==='slots'){convo.showAll=false;if(convo.chosen!=null&&convo.chosen>=slots().length)convo.chosen=null}
+  if(k==='offline'&&!lab.offline){convo.queued=false;convo.mine.forEach(m=>m.queued=false);album.sent.forEach(m=>m.queued=false)}
+  if(k==='profile'){album.open=false}
+  renderHome({glide:k==='large'||k==='rtl'?false:false});renderAlbum();renderConvo();
+  if(k==='profile')labSay(lab.profile?'Switched to Work. Keep close shows Work’s 3 people; Personal favourites stay with Personal.':'Switched to Personal. Keep close shows Personal’s people.');
+  if(k==='taken'&&lab.taken)labSay('12:30 was taken after Harbour Café sent the times.');
+  if(k==='arriving')labSay(lab.arriving?'Photos 3 and 4 are still arriving from Maya. They show as receiving, never as broken.':'All four photos have arrived.');
+  if(k==='offline')labSay(lab.offline?'Offline. Anything you send waits on this phone.':'Online again.'+(convo.sent?' The queued reply was sent in simulation.':''));
+}));
+
+/* ---------- Results, filled from the last check run ---------- */
+const results=[
+["H0","One stop per item","Each favourite, chat row and message is one screen reader stop with a full name; every button is labelled","SimpleX #7051, #7274; App Store review: about 10 swipes per message","Pass"],
+["H1","Swipe inside a vertical page","A sideways swipe moves the times; a vertical one moves the page","Carousel lab H1","Pass"],
+["H2","Snap","Album and overflowing times land on an item","Carousel lab H2","Pass"],
+["H3","Large text","Names whole at 200% in grid and list","Kings of Mobile Design rule","Pass"],
+["H4","Keyboard","One Tab stop per collection; arrows, Home and End; position announced","WAI carousel pattern","Pass"],
+["H5","Buttons as well as swipe","Previous and next, 44 px, off at the ends","Accessible carousel guidance","Pass"],
+["H6","Reduced motion","Album moves at once; form change does not glide","Apple HIG","Pass"],
+["H8","Scale","500 favourites: the first 12 in place, then All 500; All reaches the last","Carousel lab H8","Pass"],
+["H9","Return","Back returns focus to the person, row, All tile or album you left","Flow rule: return coherently","Pass"],
+["H10","Right to left","Arrows and layout mirror; punctuation stays at the end","Carousel lab H10","Pass"],
+["H11","Form change","Grid and list keep the same order and the same current person; glide 300 ms or less","Scarr et al. 2013; Findlater and McGrenere 2004","Pass"],
+["H12","Stable and nothing hidden","Adding someone moves nobody; times that fit are all shown with a count; overflow says so and offers Show all","SimpleX #3724; Baymard","Pass"],
+["H13","States","No favourites; a time taken since sent; offline sends are queued, not called sent","Kings of Mobile Design states rule","Pass"],
+["H14","Profiles","Work and Personal favourites never mix; the switch names the profile","Profiles are isolation boundaries","Pass"],
+["A","Audit, 7 October","The 13th favourite moves nobody; focus stays inside the album; no dead buttons; each entity keeps its shape in rows; Personal chats close in Work; photos still arriving say so; solid labels on photos; times re-measured after a resize","Kings of Mobile Design audit of this lab","Pass"],
+["F","The frame","Sender mark, review of exact text, cancel sends nothing, draft untouched","Interfaces That Arrive §9.1","Pass"]];
+document.getElementById('results-body').innerHTML=results.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td class="note">${r[3]}</td><td>${r[4]}</td></tr>`).join('');
+
+renderHome();renderAlbum();renderConvo();
+/* Rotation or a resized window: the client measures again, so times that now fit are shown in full */
+let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>renderConvo(),150)});
+})();
+</script>
+</body>
+</html>
