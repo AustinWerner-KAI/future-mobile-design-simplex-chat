@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Carousel lab: a carousel that holds its place</title>
+<style>
+:root{--ink:#252b24;--muted:#555d63;--blue:#e7eff5;--line:#7d8271;--soft:#c7cbc3;--clay:#8d3e2b;--oat:#eee3d2;--white:#fff;--canvas:#f1f5f8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--canvas);color:var(--ink);font:1rem/1.5 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:4px}
+:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+main{max-width:1240px;margin:0 auto;padding:40px 24px 64px}
+.eyebrow{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font:2.5rem/1.08 Georgia,serif;letter-spacing:-.03em;margin:10px 0 14px}
+h2{font:1.5rem/1.2 Georgia,serif;margin:0 0 8px}
+.lede{max-width:760px;margin:0 0 8px}
+.note{font-size:.8125rem;color:var(--muted)}
+.check{max-width:880px;margin:22px 0 28px;padding:16px 18px;background:var(--white);border:1px solid var(--soft);border-radius:12px}
+.check dl{display:grid;grid-template-columns:minmax(9rem,max-content) 1fr;gap:6px 16px;margin:8px 0 0;font-size:.875rem}
+.check dt{font-weight:600}.check dd{margin:0}
+.lab-controls{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.lab-controls button,.pill{min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:var(--white);color:var(--ink);font:inherit;font-size:.875rem;cursor:pointer}
+.lab-controls button[aria-pressed=true]{background:var(--blue);font-weight:600}
+.phones{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+figure{margin:0;flex:0 1 390px;min-width:0;max-width:100%}
+figcaption{margin-top:12px;max-width:390px}
+figcaption strong{display:block}
+.phone{width:min(390px,100%);height:760px;background:var(--white);border:1px solid var(--line);border-radius:30px;overflow:hidden;display:flex;flex-direction:column}
+.phone-scroll{flex:1;overflow-y:auto;overflow-x:hidden;padding:0 16px 16px}
+.bar{display:flex;align-items:center;gap:10px;padding:14px 16px 10px;border-bottom:1px solid var(--blue)}
+.bar h3{margin:0;font-size:1.25rem}
+.bar small{display:block;color:var(--muted);font-size:.75rem}
+.round{flex:0 0 auto;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--white);font:inherit;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:14px 0 4px}
+.section-head h4{margin:0;font-size:.875rem}
+/* The carousel component */
+.carousel{position:relative}
+.track{display:flex;gap:10px;margin:0;padding:4px 2px 10px;list-style:none;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scroll-padding-inline:2px}
+.slide{flex:0 0 auto;scroll-snap-align:start;scroll-snap-stop:normal}
+#home-car .slide{width:max(5.75em,calc((100% - 30px) / 3.4))}#home-car .person{width:100%}
+.carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.carousel-controls .pos{font-size:.75rem;color:var(--muted);text-align:center}
+.carousel-controls button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--white);font:inherit;font-size:1.1rem;color:var(--ink);cursor:pointer}
+.carousel-controls button:disabled{opacity:.45;cursor:default}
+@media(prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}
+/* People on the home */
+.person{width:6.25em;min-height:44px;display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;border:0;border-radius:12px;background:none;font:inherit;color:var(--ink);text-align:center;cursor:pointer}
+.person:hover{background:var(--blue)}
+.person strong{font-size:.8125rem;font-weight:600;overflow-wrap:break-word;max-width:100%}
+.person small{font-size:.75rem;color:var(--muted)}
+.av{position:relative;width:3em;height:3em;max-width:56px;max-height:56px;display:grid;place-items:center;background:var(--blue);border:1px solid var(--line);font-weight:600;font-size:1rem}
+.av.person-shape{border-radius:50%}.av.group{border-radius:12px}.av.publication{border-radius:6px}.av.provider{border-radius:12px;background:var(--oat)}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--blue)}
+.rows .av{flex:0 0 auto}
+.rows strong{display:block;font-size:.9375rem}.rows span{font-size:.8125rem;color:var(--muted)}
+.convo-body{padding:16px}
+.msg{max-width:85%;padding:10px 12px;border-radius:12px;background:var(--blue);margin:0 0 10px}
+.msg.out{margin-inline-start:auto;background:var(--white);border:1px solid var(--soft)}
+.composer{display:flex;gap:8px;align-items:flex-end;padding:10px 12px 14px;border-top:1px solid var(--soft)}
+.composer label{flex:1;font-size:.75rem;color:var(--muted)}
+.composer textarea{display:block;width:100%;min-height:44px;margin-top:2px;padding:10px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:1rem;resize:none;background:var(--blue);color:var(--ink)}
+/* An interface that arrives, inside the client frame */
+.frame{margin:4px 0 12px;border:1px dashed var(--line);border-radius:12px;background:var(--white)}
+.frame-head{display:flex;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px dashed var(--soft);font-size:.8125rem}
+.frame-head .mark{width:32px;height:32px;border-radius:6px;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center;font-size:.75rem;font-weight:700}
+.frame-head .who{flex:1}
+.frame-head .who b{display:block;font-size:.8125rem}
+.frame-head .who span{font-size:.75rem;color:var(--muted)}
+.frame-about{margin:0;padding:8px 10px;font-size:.8125rem;background:var(--blue)}
+.frame-about ul{margin:4px 0 0;padding-inline-start:18px}
+.frame-body{padding:10px}
+.frame-body p{margin:0 0 6px;font-size:.875rem}
+.slot{width:auto;min-width:7em;max-width:12em;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--white);font:inherit;color:var(--ink);text-align:start;cursor:pointer;display:flex;flex-direction:column;gap:2px}
+.slot b{font-size:1rem}.slot span{font-size:.75rem;color:var(--muted)}
+.slot[aria-pressed=true]{background:var(--blue);border:2px solid var(--ink)}
+.frame-actions{display:flex;flex-wrap:wrap;gap:8px;padding:0 10px 10px}
+.primary{background:var(--clay)!important;color:#fff7ed!important;border-color:var(--clay)!important}
+.review{margin:8px 0 12px;padding:10px 12px;border-left:3px solid var(--clay);background:var(--white);border-radius:0 12px 12px 0;box-shadow:inset 0 0 0 1px var(--soft)}
+.review h5{margin:0 0 4px;font-size:.875rem}
+.review p{margin:0 0 8px;font-size:.875rem}
+.review .actions{display:flex;flex-wrap:wrap;gap:8px}
+.receipt{font-size:.75rem;color:var(--muted);margin:2px 0 10px;text-align:end}
+.results{margin:40px 0 0;max-width:980px}
+.results table{width:100%;border-collapse:collapse;background:var(--white);font-size:.875rem;table-layout:fixed}.results col.id{width:3em}.results td,.results th{overflow-wrap:break-word}
+@media(max-width:560px){.results thead{display:none}.results tr{display:block;border-top:1px solid var(--soft);padding:6px 0}.results td{display:block;border:0;padding:2px 10px}.results td:first-child{font-weight:600}.results td:nth-child(4)::before{content:'Lab: '}.results td:nth-child(5)::before{content:'Today: '}}
+.results th,.results td{border-top:1px solid var(--soft);padding:8px 10px;text-align:left;vertical-align:top}
+.results th{font-weight:600}
+.limits{max-width:880px;margin-top:22px}
+@media(max-width:480px){main{padding:24px 16px 48px}h1{font-size:2rem}.phone{border-radius:16px}}
+/* English text inside a mirrored layout: keep punctuation at the logical end, as real right-to-left content would */
+:where(.phone[dir=rtl]) :where(h1,h2,h3,p,span,b,strong,small,figcaption){unicode-bidi:plaintext;text-align:right}
+:where(.phone[dir=rtl]) :where(.person,.pos) :where(*),:where(.phone[dir=rtl]) :where(.pos){text-align:center}
+</style>
+</head>
+<body>
+<main>
+<p class="note" style="padding:10px 14px;background:var(--white);border:1px solid var(--clay);border-radius:12px;max-width:880px">First version, kept for the record. It proved a carousel can be built well but never asked when a carousel is right. Rebuilt the same day after a user research pass: <a href="collection-lab.html">the collection lab</a>.</p>
+<p class="eyebrow">Study · grids, lists and carousels · 1 of 3 · 7 October 2026</p>
+<h1>A carousel that holds its place.</h1>
+<p class="lede">People still want grids, carousels and lists. They are not new, so what matters is how well they work. This lab builds one carousel and uses it twice: for the people you keep close, and inside an interface a business sends into a conversation. Every hard case has a check.</p>
+<p class="note">Independent design study, not affiliated with SimpleX. Browser simulation; fictional people and messages; nothing is sent. Research: <a href="https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md">Interfaces That Arrive</a> §1, §8.2, §9.1 and §10.1.</p>
+
+<section class="check" aria-labelledby="check-title">
+<h2 id="check-title">Octopus check</h2>
+<dl>
+<dt>Flow rules served</dt><dd><b>Coordinate</b> (find someone and come back to the same place) and <b>Act locally</b> (choose from options inside the reply that offered them).</dd>
+<dt>From SimpleX</dt><dd>Favourites already exist, and a strip of them only rearranges chat previews that are already in memory. A component the app owns can render any interface a contact sends, with no reviewer needed (F14).</dd>
+<dt>From the analogy</dt><dd>Arms act on their own but stay attached to one centre: each card acts locally, and the strip always returns to a stable order. Nothing literal.</dd>
+<dt>The test</dt><dd>Can someone find an entity and return to where they were? Can someone act without rebuilding the context? <code>scripts/check-carousel-lab.cjs</code> runs H1 to H10 here and fails on today's rail.</dd>
+<dt>What would drop it</dt><dd>In T05, people find someone more slowly in the carousel than in a grid, or screen reader users cannot reach every item.</dd>
+</dl>
+</section>
+
+<div class="lab-controls" role="group" aria-label="Test conditions">
+<button type="button" data-lab="large" aria-pressed="false">Large text (200%)</button>
+<button type="button" data-lab="rtl" aria-pressed="false">Right to left</button>
+<button type="button" data-lab="many" aria-pressed="false">500 favourites</button>
+</div>
+<p class="note">Reduced motion follows your device setting.</p>
+
+<div class="phones">
+<figure>
+<div class="phone" id="home-phone"></div>
+<figcaption><strong>On the home: the people you keep close</strong><span class="note">Try: swipe, use the arrows, or Tab into the strip and use the arrow keys. Open someone and go back: you return to the same person and place.</span></figcaption>
+</figure>
+<figure>
+<div class="phone" id="convo-phone"></div>
+<figcaption><strong>Inside a conversation: an interface that arrives</strong><span class="note">Try: choose a time and suggest a reply. Harbour Café's interface can only propose. You review and send, and your own draft is never touched.</span></figcaption>
+</figure>
+</div>
+
+<section class="results" aria-labelledby="results-title">
+<h2 id="results-title">The hard cases</h2>
+<p class="note">Measured by <code>scripts/check-carousel-lab.cjs</code> in headless Chromium. "Today" is the favourites rail in V2.1.2.3.</p>
+<table>
+<colgroup><col class="id"><col><col><col><col></colgroup>
+<thead><tr><th scope="col">#</th><th scope="col">Hard case</th><th scope="col">Pass mark</th><th scope="col">Lab</th><th scope="col">Today</th></tr></thead>
+<tbody id="results-body"></tbody>
+</table>
+</section>
+
+<section class="limits" aria-labelledby="limits-title">
+<h2 id="limits-title">Limits</h2>
+<p class="note">Touch is synthesised in a browser, not tested on a phone in a hand. Screen reader behaviour is checked from the markup, not with VoiceOver or TalkBack. Nobody has used this yet: T05 comes first. Grids and lists follow in labs 2 and 3.</p>
+</section>
+</main>
+
+<script>
+(()=>{'use strict';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const reduce=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+const lab={large:false,rtl:false,many:false};
+
+/* One carousel component. Owned by the client: the same code renders the home strip and any interface that arrives.
+   Roving tab stop, arrow keys, Home and End, visible previous and next, position announced from a separate status element (WCAG 4.1.3). */
+function carousel({id,label,items,render,unit}){
+  const n=items.length;
+  return `<section class="carousel" id="${id}" role="region" aria-roledescription="carousel" aria-label="${esc(label)}">
+<ul class="track" role="list">${items.map((it,i)=>`<li class="slide" role="group" aria-roledescription="slide" aria-label="${i+1} of ${n}">${render(it,i)}</li>`).join('')}</ul>
+<div class="carousel-controls"><button type="button" data-car="prev" aria-label="Previous ${esc(unit)}">‹</button><span class="pos" aria-hidden="true"></span><button type="button" data-car="next" aria-label="Next ${esc(unit)}">›</button></div>
+<p class="sr-only" role="status" aria-live="polite"></p></section>`;
+}
+function wire(root,{focusIndex=0,scroll=0,onScroll}={}){
+  const track=root.querySelector('.track'),items=[...track.querySelectorAll('.slide > button')],prev=root.querySelector('[data-car=prev]'),next=root.querySelector('[data-car=next]'),pos=root.querySelector('.pos'),status=root.querySelector('[role=status]');
+  const rtl=getComputedStyle(root).direction==='rtl';
+  let current=Math.min(focusIndex,items.length-1);
+  items.forEach((b,i)=>b.tabIndex=i===current?0:-1);
+  const visible=()=>{const r=track.getBoundingClientRect();const v=items.map((b,i)=>{const s=b.parentElement.getBoundingClientRect();return {i,full:s.left>=r.left-1&&s.right<=r.right+1}}).filter(x=>x.full).map(x=>x.i);return v.length?[v[0],v[v.length-1]]:[0,0]};
+  const update=()=>{const [a,b]=visible();pos.textContent=`${a+1} to ${b+1} of ${items.length}`;const max=track.scrollWidth-track.clientWidth;const at=Math.abs(track.scrollLeft);prev.disabled=at<=1;next.disabled=at>=max-1;onScroll&&onScroll(track.scrollLeft,current)};
+  let raf=0;track.addEventListener('scroll',()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(update)},{passive:true});
+  const go=(i,announce)=>{i=Math.max(0,Math.min(items.length-1,i));const prevIdx=current;items[current].tabIndex=-1;current=i;items[i].tabIndex=0;items[i].focus({preventScroll:true});items[i].parentElement.scrollIntoView({inline:'nearest',block:'nearest',behavior:reduce()||Math.abs(i-prevIdx)>3?'auto':'smooth'});if(announce)status.textContent=`${i+1} of ${items.length}`;onScroll&&onScroll(track.scrollLeft,current)};
+  const page=dir=>{const [a,b]=visible();const span=Math.max(1,b-a+1);const target=dir>0?Math.min(items.length-1,b+1):Math.max(0,a-span);const slide=items[target].parentElement;const r=track.getBoundingClientRect(),s=slide.getBoundingClientRect();const delta=rtl?(s.right-r.right):(s.left-r.left);track.scrollBy({left:delta,behavior:reduce()?'auto':'smooth'});items[current].tabIndex=-1;current=target;items[target].tabIndex=0;const [na,nb]=dir>0?[target,Math.min(items.length-1,target+span-1)]:[target,Math.min(items.length-1,target+span-1)];status.textContent=`Showing ${na+1} to ${nb+1} of ${items.length}`;setTimeout(update,reduce()?0:350)};
+  prev.addEventListener('click',()=>page(-1));next.addEventListener('click',()=>page(1));
+  track.addEventListener('keydown',e=>{const k=e.key;const fwd=rtl?'ArrowLeft':'ArrowRight',back=rtl?'ArrowRight':'ArrowLeft';if(k===fwd){e.preventDefault();go(current+1,true)}else if(k===back){e.preventDefault();go(current-1,true)}else if(k==='Home'){e.preventDefault();go(0,true)}else if(k==='End'){e.preventDefault();go(items.length-1,true)}});
+  items.forEach((b,i)=>b.addEventListener('focus',()=>{if(current!==i){items[current].tabIndex=-1;current=i;b.tabIndex=0}}));
+  if(scroll)track.scrollLeft=scroll;
+  update();
+  return {focus:i=>go(i,false),get current(){return current}};
+}
+
+/* Home phone */
+const base=[['Maya','Individual','person-shape','M'],['Family','Group','group','F'],['Coast Journal','Publication','publication','CJ'],['Harbour Café','Provider','provider','HC'],['Alex','Individual','person-shape','A'],['Book club','Group','group','BC'],['Priya Ramaswamy-Okonkwo','Individual','person-shape','PR'],['Studio','Provider','provider','S']];
+const home={open:null,scroll:0,focus:0};
+const people=()=>{if(!lab.many)return base;const out=base.slice();const first=['Noor','Theo','Ines','Kofi','Lena','Ravi','Ada','Jonas','Mei','Omar'];for(let i=out.length;i<500;i++){const f=first[i%first.length];out.push([f+' '+(i+1),'Individual','person-shape',f[0]])}return out};
+function renderHome(focus){
+  const el=document.getElementById('home-phone');
+  if(home.open!=null){const p=people()[home.open];el.innerHTML=`<div class="bar"><button class="round" data-home="back" aria-label="Back to your connections">‹</button><div><h3>${esc(p[0])}</h3><small>${esc(p[1])} · conversation</small></div></div><div class="phone-scroll"><div class="convo-body"><p class="msg">A fictional conversation with ${esc(p[0])}.</p></div></div>`;el.querySelector('[data-home=back]').focus();return}
+  const ps=people();
+  el.innerHTML=`<div class="bar"><div><h3>Close at hand.</h3><small>Lab · your connections</small></div></div><div class="phone-scroll"><div class="section-head"><h4 id="keep">Keep close</h4><span class="note">${ps.length} favourites</span></div>${carousel({id:'home-car',label:'Keep close',unit:'favourites',items:ps,render:(p,i)=>`<button type="button" class="person" data-open="${i}" aria-label="${esc(p[0])}, ${esc(p[1])}"><span class="av ${p[2]}" aria-hidden="true">${esc(p[3])}</span><strong>${esc(p[0])}</strong><small>${esc(p[1])}</small></button>`})}<div class="section-head"><h4>Recent activity</h4></div><ul class="rows">${['Maya · Shall we go on Saturday?','Family · Lunch on Sunday?','Harbour Café · Your table is available.','Alex · The sketches are ready.','Book club · Chapter six this week.','Studio · The samples arrived.'].map(t=>{const [n,m]=t.split(' · ');return `<li><span class="av person-shape" aria-hidden="true">${n[0]}</span><div><strong>${n}</strong><span>${m}</span></div></li>`}).join('')}</ul></div>`;
+  const api=wire(el.querySelector('#home-car'),{focusIndex:home.focus,scroll:home.scroll,onScroll:(s,c)=>{home.scroll=s;home.focus=c}});
+  el.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>{home.scroll=el.querySelector('.track').scrollLeft;home.focus=+b.dataset.open;home.open=+b.dataset.open;renderHome()}));
+  if(focus)api.focus(home.focus);
+}
+document.getElementById('home-phone').addEventListener('click',e=>{if(e.target.closest('[data-home=back]')){home.open=null;renderHome(true)}});
+
+/* Conversation phone: Harbour Café sends an interface. The interface proposes; only the person sends, through the client's review. */
+const slots=[['12:00','Saturday · 6 seats'],['12:30','Saturday · 6 seats · window table'],['13:00','Saturday · 4 seats'],['13:30','Saturday · 6 seats · terrace, if dry'],['14:00','Saturday · 6 seats']];
+const convo={chosen:null,about:false,review:false,sent:null,draft:'Thanks, see you then'};
+function renderConvo(focusSel){
+  const el=document.getElementById('convo-phone');
+  const draftVal=el.querySelector('#reply')?el.querySelector('#reply').value:convo.draft;convo.draft=draftVal;
+  const scroll=el.querySelector('#slot-car .track')?.scrollLeft||0;
+  const frame=convo.sent?`<p class="msg out">Saturday at ${esc(convo.sent)} for six, please.<br><span class="note">Chosen in Harbour Café's interface</span></p><p class="receipt">Sent in simulation · accepted by server, delivery unconfirmed</p>`
+  :`<div class="frame" role="group" aria-label="Interface from Harbour Café"><div class="frame-head"><span class="mark" aria-hidden="true">HC</span><span class="who"><b>Harbour Café · interface</b><span>Can suggest a reply. Cannot send or go online.</span></span><button type="button" class="pill" data-c="about" aria-expanded="${convo.about}">About</button></div>${convo.about?`<div class="frame-about">Sent by Harbour Café in this conversation.<ul><li>It can show options and suggest a reply.</li><li>It cannot send anything, use the internet, or change this conversation.</li><li>Your draft below stays yours.</li></ul></div>`:''}<div class="frame-body"><p>Choose a time for Saturday.</p>${carousel({id:'slot-car',label:'Table times',unit:'times',items:slots,render:(s,i)=>`<button type="button" class="slot" data-slot="${i}" aria-pressed="${convo.chosen===i}"><b>${s[0]}</b><span>${esc(s[1])}</span></button>`})}</div><div class="frame-actions"><button type="button" class="pill" data-c="suggest" ${convo.chosen==null?'disabled':''}>Suggest reply</button></div></div>
+${convo.review?`<section class="review" aria-labelledby="rv"><h5 id="rv">Review before sending</h5><p>To Harbour Café · private conversation · as Austin</p><p><b>“Saturday at ${esc(slots[convo.chosen][0])} for six, please.”</b></p><p class="note">Your own draft is not included.</p><div class="actions"><button type="button" class="pill primary" data-c="send">Send · simulation</button><button type="button" class="pill" data-c="change">Change</button><button type="button" class="pill" data-c="cancel">Cancel · send nothing</button></div></section>`:''}`;
+  el.innerHTML=`<div class="bar"><button class="round" aria-label="Back to your connections">‹</button><div><h3>Harbour Café</h3><small>Provider · chat with staff</small></div></div><div class="phone-scroll"><div class="convo-body"><p class="msg out">Do you have a table for six on Saturday?</p><p class="msg">We do. Pick a time below.</p>${frame}</div></div><div class="composer"><label>Reply to Harbour Café · private<textarea id="reply" rows="1">${esc(convo.draft)}</textarea></label><button class="round primary" aria-label="Send reply">↑</button></div><p class="sr-only" role="status" id="convo-status"></p>`;
+  const car=el.querySelector('#slot-car');if(car)wire(car,{focusIndex:convo.chosen??0,scroll});
+  if(focusSel){const f=el.querySelector(focusSel);f&&f.focus({preventScroll:true})}
+}
+const say=t=>{const s=document.getElementById('convo-status');if(s)s.textContent=t};
+document.getElementById('convo-phone').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.slot!=null){convo.chosen=+b.dataset.slot;renderConvo(`[data-slot="${b.dataset.slot}"]`);return}
+  const c=b.dataset.c;if(!c)return;
+  if(c==='about'){convo.about=!convo.about;renderConvo('[data-c=about]');return}
+  if(c==='suggest'){convo.review=true;renderConvo('[data-c=send]');say('Review before sending. Nothing has been sent.');return}
+  if(c==='change'){convo.review=false;renderConvo(`[data-slot="${convo.chosen}"]`);return}
+  if(c==='cancel'){convo.review=false;convo.chosen=null;renderConvo('[data-slot="0"]');say('Cancelled. Nothing was sent.');return}
+  if(c==='send'){convo.sent=slots[convo.chosen][0];convo.review=false;renderConvo('#reply');say('Sent in simulation. Accepted by server, delivery unconfirmed. Your draft is unchanged.');return}
+});
+
+/* Lab conditions */
+document.querySelectorAll('[data-lab]').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.lab;lab[k]=!lab[k];b.setAttribute('aria-pressed',lab[k]);
+  document.documentElement.style.fontSize=lab.large?'200%':'';document.querySelectorAll('.phone').forEach(p=>p.dir=lab.rtl?'rtl':'ltr');
+  if(k==='many'){home.scroll=0;home.focus=0}if(k==='rtl'){home.scroll=0}renderHome();renderConvo()}));
+
+/* Results, filled from the last check run */
+const results=[["H1","Sideways swipe inside a vertical page","A mostly vertical swipe scrolls the page; a mostly sideways one scrolls the carousel","Pass","Pass"],["H2","Snap and peek","Lands on an item; the next one shows at 320 and 390 wide","Pass","Fail: stops between items"],["H3","Large text","Names whole at 200%, no word broken","Pass","Pass"],["H4","Keyboard and screen reader","Arrow keys, Home and End; each item says “3 of 8”; one Tab stop","Pass","Fail: no arrow keys, no position, six Tab stops"],["H5","Buttons as well as swipe","Previous and next, 44 px, off at the ends","Pass","Fail: never off"],["H6","Reduced motion","Moves at once when reduced motion is on","Pass","Pass"],["H7","Mixed sizes","Cards of different widths still land on an item","Pass","Not built"],["H8","Scale","500 items render fast; End reaches the last","Pass","Not built"],["H9","Return","Back returns to the same person and place","Pass","Half: place kept, focus lost"],["H10","Right to left and long names","Next moves forward in either direction; long names wrap","Pass","Fail: next does not move"]];
+document.getElementById('results-body').innerHTML=results.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join('');
+
+renderHome();renderConvo();
+})();
+</script>
+</body>
+</html>
