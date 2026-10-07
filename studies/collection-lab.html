@@ -85,16 +85,21 @@ figcaption strong{display:block}
 .msg.album-msg{padding:6px;background:var(--blue)}
 .album{display:block;width:100%;padding:0;border:0;background:none;font:inherit;color:var(--ink);text-align:start;cursor:pointer;border-radius:12px}
 .album .tiles{display:grid;grid-template-columns:1fr 1fr;gap:4px}
-.album .tile{aspect-ratio:1;border-radius:6px;display:flex;align-items:flex-end;padding:6px;font-size:.75rem;color:var(--ink)}
+.album .tile{position:relative;aspect-ratio:1;border-radius:6px;overflow:hidden;display:flex;align-items:flex-end;padding:6px;font-size:.75rem;color:var(--ink);background:var(--soft)}
+.album .tile img{position:absolute;inset:0;width:100%;height:100%}
+.album .tile img{object-fit:cover}
+.album .tile span,.photo span{position:relative}
 .album .tile span{background:var(--white);border-radius:5px;padding:1px 6px}
 .album .meta{padding:4px 6px 2px}
-.ph0{background:linear-gradient(160deg,#e7eff5,#c7cbc3)}.ph1{background:linear-gradient(200deg,#eee3d2,#c7cbc3)}.ph2{background:linear-gradient(120deg,#e7eff5,#eee3d2)}.ph3{background:linear-gradient(180deg,#eee3d2,#7d8271)}
 .viewer{position:absolute;inset:0;z-index:2;background:var(--white);display:flex;flex-direction:column}
 .viewer .phone-scroll{display:flex;flex-direction:column;justify-content:center;padding-top:16px}
 .viewer .slide{width:100%}
-.photo{aspect-ratio:4/5;width:100%;border-radius:12px;display:flex;align-items:flex-end;padding:12px}
+.photo{aspect-ratio:4/5;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.photo img{object-fit:contain;display:block;max-width:100%;max-height:calc(100% - 44px);width:auto;height:auto;border-radius:12px}
+.photo span{align-self:flex-start}
 .photo span{background:var(--white);border-radius:5px;padding:2px 8px;font-size:.875rem}
-.tile.receiving,.photo.receiving{background:var(--canvas);border:1px dashed var(--line);align-items:center;justify-content:center;text-align:center}
+.tile.receiving,.photo.receiving{background:var(--canvas);border:1px dashed var(--line);border-radius:12px;align-items:center;justify-content:center;text-align:center;padding:12px}
+.photo.receiving span{align-self:center}
 .photo.receiving span{background:none;color:var(--muted)}
 .sticky-note{margin:0 0 10px;font-size:.75rem;color:var(--muted)}
 .closed{margin:16px;padding:16px;border:1px dashed var(--soft);border-radius:12px;font-size:.875rem}
@@ -151,7 +156,7 @@ figcaption strong{display:block}
 <p class="eyebrow">Study · grids, lists and carousels · lab 1, rebuilt · 7 October 2026</p>
 <h1>People stay where you put them.</h1>
 <p class="lede">The first lab built a carousel well but never asked when a carousel is right. Public SimpleX issues and published research answered: people want a fixed place, their own order, and a way to move through items that works with a screen reader. This lab is rebuilt on those findings.</p>
-<p class="note">Independent design study, not affiliated with SimpleX. Browser simulation; fictional people, photos and messages; nothing is sent. Evidence: public SimpleX issues and published studies, listed with each check below. No participant has used this yet.</p>
+<p class="note">Independent design study, not affiliated with SimpleX. Browser simulation; fictional people and messages, real licensed photos; nothing is sent. Evidence: public SimpleX issues and published studies, listed with each check below. No participant has used this yet.</p>
 
 <div class="rules">
 <div><b>Stable by default</b>Adding someone never moves anyone else. The order is yours, the same in every form.</div>
@@ -214,6 +219,7 @@ figcaption strong{display:block}
 <section class="limits" aria-labelledby="limits-title">
 <h2 id="limits-title">Limits</h2>
 <p class="note">Touch is synthesised in a browser, not tested on a phone in a hand. Screen reader structure is checked from the markup, not with VoiceOver or TalkBack. The evidence is a handful of public issues and studies of other software; it is a signal, not a measure. T05 with SimpleX users comes next.</p>
+<p class="note">Album photos: <a href="https://unsplash.com/photos/fcSEoJKPWcY">Kirt Morris</a>, <a href="https://unsplash.com/photos/CsCNyoMcN_I">Ruben Aster</a>, <a href="https://unsplash.com/photos/iQ7ZkmXq1M8">Richard Stachmann</a> and <a href="https://unsplash.com/photos/EoQxzRwKW3k">Ingrid Martinussen</a> on Unsplash, under the Unsplash License. Cropped so no face, name or sign shows; the captions are ours. Everything else is fictional.</p>
 </section>
 </main>
 
@@ -313,7 +319,9 @@ const closedHTML=(who)=>`<div class="bar"><div class="grow"><h3>Conversation clo
 function backToRow(name){const row=document.querySelector(`#home-phone [data-row="${name}"]`);labSay(`Back to your connections. ${name} is in Recent activity.`);if(row){row.scrollIntoView({block:'nearest',behavior:'instant'});row.focus({preventScroll:true})}}
 
 /* ---------- Album: several photos as one moment, one stop in the conversation ---------- */
-const photos=[['Harbour at dawn','ph0'],['Boats in a row','ph1'],['Café terrace','ph2'],['Sunset over the wall','ph3']];
+/* Real photos under the Unsplash License, cropped so no face, name or sign shows; stored in this repository */
+const photos=[['Harbour at dawn','dawn'],['Boats in a row','boats'],['Café terrace','terrace'],['A view of the harbour','harbour']];
+const src=p=>`collection-lab-photos/${p[1]}.webp`;
 const album={open:false,index:0,sent:[],draft:'Love the boats'};
 const receiving=i=>lab.arriving&&i>=2;
 function renderAlbum(opts={}){
@@ -325,9 +333,9 @@ function renderAlbum(opts={}){
   const mine=album.sent.map(t=>`<li class="msg out"><p><span class="sr-only">You: </span>${esc(t.text)}<span class="meta">${receiptFor(t.queued&&lab.offline)}</span></p></li>`).join('');
   const msgs=`<ul class="msgs" role="list">
 <li class="msg out"><p><span class="sr-only">You: </span>Did you get photos from the harbour?<span class="meta">10:40 · seen</span></p></li>
-<li class="msg album-msg"><button type="button" class="album" data-album aria-label="${esc(albumLabel)}"><span class="tiles" aria-hidden="true">${photos.map((p,i)=>receiving(i)?`<span class="tile receiving" data-ph="${i}"><span>${i+1} · receiving</span></span>`:`<span class="tile ${p[1]}" data-ph="${i}"><span>${i+1}</span></span>`).join('')}</span><span class="meta" aria-hidden="true">Maya · 4 photos${got<4?` · ${got} of 4 received`:''} · 10:42</span></button></li>
+<li class="msg album-msg"><button type="button" class="album" data-album aria-label="${esc(albumLabel)}"><span class="tiles" aria-hidden="true">${photos.map((p,i)=>receiving(i)?`<span class="tile receiving" data-ph="${i}"><span>${i+1} · receiving</span></span>`:`<span class="tile" data-ph="${i}"><img src="${src(p)}" alt="" width="200" height="200" decoding="async"><span>${i+1}</span></span>`).join('')}</span><span class="meta" aria-hidden="true">Maya · 4 photos${got<4?` · ${got} of 4 received`:''} · 10:42</span></button></li>
 <li class="msg"><p><span class="sr-only">Maya: </span>The third one is my favourite.<span class="meta">10:43</span></p></li>${mine}</ul>`;
-  const viewer=album.open?`<div class="viewer" role="dialog" aria-modal="true" aria-label="Album from Maya"><div class="bar"><button type="button" class="round" data-v="close" aria-label="Back to the conversation with Maya">‹</button><div class="grow"><h3>Maya's album</h3><small>4 photos · shared 10:42</small></div></div><div class="phone-scroll">${carousel({id:'album-car',label:'Photos from Maya',unit:'photo',items:photos,slideClass:'photo-slide',render:(p,i)=>receiving(i)?`<div class="photo receiving" role="img" aria-label="Photo ${i+1} of 4: still receiving"><span>Still receiving. It appears here when it arrives.</span></div>`:`<div class="photo ${p[1]}" role="img" aria-label="Photo ${i+1} of 4: ${esc(p[0])}"><span>${esc(p[0])}</span></div>`})}</div></div>`:'';
+  const viewer=album.open?`<div class="viewer" role="dialog" aria-modal="true" aria-label="Album from Maya"><div class="bar"><button type="button" class="round" data-v="close" aria-label="Back to the conversation with Maya">‹</button><div class="grow"><h3>Maya's album</h3><small>4 photos · shared 10:42</small></div></div><div class="phone-scroll">${carousel({id:'album-car',label:'Photos from Maya',unit:'photo',items:photos,slideClass:'photo-slide',render:(p,i)=>receiving(i)?`<div class="photo receiving" role="img" aria-label="Photo ${i+1} of 4: still receiving"><span>Still receiving. It appears here when it arrives.</span></div>`:`<div class="photo" role="img" aria-label="Photo ${i+1} of 4: ${esc(p[0])}"><img src="${src(p)}" alt="" decoding="async"><span>${esc(p[0])}</span></div>`})}</div></div>`:'';
   el.innerHTML=`<div class="bar" data-behind><button type="button" class="round" data-back="Maya" aria-label="Back to your connections">‹</button><div class="grow"><h3>Maya</h3><small>Person · private conversation</small></div></div>${lab.offline?'<p class="offline" data-behind>Offline · messages wait on this phone</p>':''}<div class="phone-scroll" data-behind><div class="convo-body">${msgs}</div></div><div class="composer" data-behind><label>Reply to Maya · private<textarea id="maya-reply" rows="1">${esc(album.draft)}</textarea></label><button type="button" class="round primary" data-send="maya" aria-label="Send reply to Maya">↑</button></div>${viewer}`;
   /* While the album is open, everything behind it is inert: focus cannot slip behind the dialog */
   el.querySelectorAll('[data-behind]').forEach(n=>n.inert=album.open);
