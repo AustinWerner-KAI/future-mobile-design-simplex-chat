@@ -147,6 +147,14 @@ await ctx.close();}
 await tryck('A8','after a resize the client measures again: times that no longer fit become a carousel',async()=>{await p.addStyleTag({content:'html{font-size:200%!important}'});await p.setViewportSize({width:391,height:844});await p.waitForTimeout(400);return p.evaluate(()=>!!document.querySelector('#slot-car'))});
 await ctx.close();}
 
+// Photos: real, licensed, stored with the lab; nothing loads from another site
+{const {ctx,p}=await open();const ext=[];p.on('request',r=>{if(!r.url().startsWith('file:'))ext.push(r.url())});await p.reload();await p.waitForTimeout(400);
+await tryck('PH','the four album photos load from this repository and none is broken',()=>p.evaluate(()=>{const im=[...document.querySelectorAll('.album .tile img')];return im.length===4&&im.every(i=>i.complete&&i.naturalWidth>0&&!/^https?:/.test(i.getAttribute('src')))}));
+await tryck('PH','the album viewer shows each photo whole, with its caption on solid white',async()=>{await p.click('[data-album]');await p.waitForTimeout(300);return p.evaluate(()=>[...document.querySelectorAll('#album-car .photo')].every(d=>{const i=d.querySelector('img');return i&&getComputedStyle(i).objectFit==='contain'&&i.naturalWidth>0&&getComputedStyle(d.querySelector('span')).backgroundColor==='rgb(255, 255, 255)'}))});
+ck('PH',ext.length===0,`no requests to other sites${ext.length?' ('+ext.slice(0,2).join(', ')+')':''}`);
+await tryck('PH','the photographers are credited with links to the photos',()=>p.evaluate(()=>['Kirt Morris','Ruben Aster','Richard Stachmann','Ingrid Martinussen'].every(n=>[...document.querySelectorAll('a[href^="https://unsplash.com/photos/"]')].some(a=>a.textContent===n))));
+await ctx.close();}
+
 // P: the page itself
 for(const w of [320,390,1440]){const {ctx,p}=await open({w});const r=await p.evaluate(()=>({over:document.documentElement.scrollWidth-innerWidth,small:[...document.querySelectorAll('button')].filter(e=>{const x=e.getBoundingClientRect();return x.width&&Math.min(x.width,x.height)<44}).map(e=>(e.getAttribute('aria-label')||e.textContent).trim()).slice(0,5),tiny:[...document.querySelectorAll('body *')].filter(e=>[...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim())&&parseFloat(getComputedStyle(e).fontSize)<12&&!e.closest('.sr-only')).length,em:document.body.innerText.includes('—')}));
 ck('P',r.over<=0,`no sideways scroll at ${w} wide`);ck('P',!r.small.length,`targets 44 px at ${w} wide${r.small.length?' ('+r.small.join(', ')+')':''}`);ck('P',r.tiny===0,`text 12 px or more at ${w} wide`);if(w===390)ck('P',!r.em,'no em dashes');await ctx.close();}
