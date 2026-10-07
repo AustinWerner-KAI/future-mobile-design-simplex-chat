@@ -4,6 +4,37 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 17. Grids, lists and carousels: from a carousel lab to a collection lab — 7 October 2026
+
+Week 1 of the components plan. A first lab (`studies/carousel-lab.html`, 40 checks) proved a carousel can be built well, and failed today's favourites rail on 11 of 18. A rethink and a user research pass then asked when a carousel is right. Public SimpleX issues and published studies answered: people want a fixed place (#3724), their own order (#2602; Findlater and McGrenere 2004), stable layouts over reflowing ones (Scarr, Cockburn and Gutwin 2013), and lists that work with a screen reader (#7051, #7274, an App Store review). The lab was rebuilt as `studies/collection-lab.html` on three rules: stable by default, adaptable by choice, carousels only for sets that follow a line. Method: `scripts/check-collection-lab.cjs`, 64 checks at 320, 390 and 1440 wide, 200% text, right to left and reduced motion. The first lab fails 34 of the 54 original checks. The first lab is kept, marked as superseded.
+
+**Octopus check**
+
+- **Flow rules served:** Adapt the working space; Retain useful state.
+- **From SimpleX:** lists exist since 6.3 and favourites are previews already in memory, so grid and list are cheap (`RESEARCH_NOTES/CHAT_SCROLLING.md`). An album is one chat. The client, not the sender, decides how a sent interface's options are shown (`INTERFACES_THAT_ARRIVE.md §9.1 F14`).
+- **From the analogy:** an arm reshapes to fit the space it reaches into but stays the same arm: the collection changes form, never its order. Nothing literal.
+- **The test:** does the collection change form when space or text size changes, without losing place or selection? H11, H12 and A1 in `check-collection-lab.cjs` fail on the first lab.
+- **Research:** `INTERFACES_THAT_ARRIVE.md §1` (execution over novelty), `§9.1` F2, F5, F6, F8, F14; `CHAT_SCROLLING.md`.
+- **What would drop it:** in T05, people find someone more slowly in their chosen form than in today's rail, ignore the choice, or a screen reader user cannot open and leave the album.
+
+**Kings of Mobile Design audit of the collection lab**
+
+| # | Finding | Severity | Fix | Check |
+|---|---|---|---|---|
+| A1 | The 13th favourite replaced the 12th with an All tile, hiding Running club: the headline rule broke at its boundary | High | The first 12 always stay; All follows them | A1 |
+| A2 | Tab left the open album and reached Harbour Café's times; Escape then stopped working | High | Everything behind the album is inert; Tab cycles inside it; Escape works from anywhere | A2 |
+| A3 | Four dead buttons: Back and Send in both conversations did nothing | High | Back returns to the chat's row on the home; Send posts your reply with an honest receipt, or queues it offline | A3 |
+| A4 | Recent rows drew every entity as a person circle (shape scale, M14) | Medium | Each row uses its entity's shape | A4 |
+| A5 | In the Work profile, Personal conversations stayed open; the review said "as Austin" with no profile (M8, E1) | Medium | Personal chats close in Work and reopen with their drafts; the review names the profile | A5 |
+| A6 | No state for photos still arriving (M6) | Medium | Receiving tiles and slides that say so; the album's name counts them | A6 |
+| A7 | Photo labels sat on translucent white (legibility rule) | Low | Solid white | A7 |
+| A8 | The times were measured once; a rotation or resize left a stale form (M17) | Low | Measured again after a resize | A8 |
+| A9 | A reply you sent landed below the fold, so its receipt was out of sight (M11) | Low | The conversation scrolls to your reply | Seen in the render |
+
+Contrast: every text element in the three phones measured 4.5:1 or more against its solid background.
+
+**Limits:** browser simulation; touch synthesised; screen reader structure read from the markup, not VoiceOver or TalkBack. The evidence is a handful of public issues and studies of other software. No participant has used the lab; T05 comes next. The S1 community survey is drafted (`studies/collection-survey.md`) and not posted.
+
 ## 16. The whole story and V2.1.2.3 — 6 October 2026
 
 The owner asked for the complete story to be told and showcased. Today's work (§10–15) is named V2.1.2.3, the new latest edit; `version=2.1.2.1` and `version=2.1.2.2` links are aliases. Method: `scripts/check-showcase.cjs` (59 checks) at 1440, 390 and 320 wide, plus the full suite. Evidence level: browser simulation.
