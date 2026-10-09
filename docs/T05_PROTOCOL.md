@@ -67,3 +67,7 @@ After all tasks: "Which home would you want, and why?" verbatim.
 - A browser page is not the native app: no real keyboard behaviour on some phones, no native text scaling on iOS (page text size depends on browser settings), no push, no real relays. T-E tests the browser's text size, which is the closest available.
 - Fictional content and a four-item directory. People may behave differently with their own contacts and a real listing.
 - The facilitator knows the design. Read the scripts as written and do not explain the interface before or during a task.
+
+## Collection comparison supplement — 9 October 2026
+
+[Focused connected trial](../studies/collection-comparison.html) · [Protocol supplement and observation sheet](T05_COLLECTION_COMPARISON.md). Compares grid/list/rail with identical people and a find → unsent draft → third photo → return task. Use all six form orders across sessions; keep this form comparison separate from the original runtime/version comparison. No participant results exist. No recording starts automatically.

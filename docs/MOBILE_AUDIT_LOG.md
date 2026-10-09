@@ -4,6 +4,21 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 18. Connected collection comparison for T05 — 9 October 2026
+
+The collection lab demonstrated home, conversation and album separately. A new focused page connects those moments for neutral comparison of grid/list/rail. Same eight fictional people and order; no sending, tracking or recording. An unsent draft survives album dismissal, home return and trial pause. This is study preparation, not a new interface version or participant result. [Protocol supplement](T05_COLLECTION_COMPARISON.md) · [Trial](../studies/collection-comparison.html).
+
+**Octopus check**
+
+- **Flow rules served:** Retain useful state; Return coherently.
+- **From SimpleX:** home previews can be rearranged; the task opens one chat at a time. No multi-chat core claim.
+- **From the analogy:** a local extension retains its source, and withdrawing it restores the same context; no literal anatomy.
+- **The test:** draft, home/rail position and focus survive album/home/pause transitions. `check-collection-comparison.cjs` fails on the pre-change build because the connected trial does not exist there; it is not a claim that the original lab fails retention.
+- **Research:** `INTERFACES_THAT_ARRIVE.md` §9.1 F8/F11 and §10.2 step 2; `CHAT_SCROLLING.md` §6; audit §17.
+- **What would drop it:** participants lose their draft/place, find the stable forms slower than the rail, misunderstand the placeholders, or cannot open/leave the album with assistive input.
+
+**Verification:** 37 headless Chrome checks, 320/390/1440 CSS-pixel document fit, consent, exact draft, third photo, focus containment/restoration, home/rail scroll, pause/resume and no JavaScript errors. [Record](collection-comparison-check.json). No physical phone, screen reader or participant. Current interface stays V2.1.2.3; T05 remains open. The protocol states the test uses on-screen Back; browser Back is not modelled here. Real keyboard and background eviction remain untested.
+
 ## 17. Grids, lists and carousels: from a carousel lab to a collection lab — 7 October 2026
 
 Week 1 of the components plan. A first lab (`studies/carousel-lab.html`, 40 checks) proved a carousel can be built well, and failed today's favourites rail on 11 of 18. A rethink and a user research pass then asked when a carousel is right. Public SimpleX issues and published studies answered: people want a fixed place (#3724), their own order (#2602; Findlater and McGrenere 2004), stable layouts over reflowing ones (Scarr, Cockburn and Gutwin 2013), and lists that work with a screen reader (#7051, #7274, an App Store review). The lab was rebuilt as `studies/collection-lab.html` on three rules: stable by default, adaptable by choice, carousels only for sets that follow a line. Method: `scripts/check-collection-lab.cjs`, 64 checks at 320, 390 and 1440 wide, 200% text, right to left and reduced motion. The first lab fails 34 of the 54 original checks. The first lab is kept, marked as superseded.

@@ -75,3 +75,7 @@ Cite a primary source beside factual claims; distinguish observation, inference 
 ### V2.1.2.1 capture provenance
 
 The 14 PNGs in `studies/v2121-captures/` are browser captures of original project UI, not AI-generated mockup images. The [capture record](v2121-interface-check.json) supplies state identifiers, viewport and creation time; the [script](../scripts/capture-v2121-interface.cjs) defines the interactions. These captures are mutable previews, distinct from the original manual-test evidence retained with hashes. Original project code is MIT and original design material CC BY 4.0, subject to [licensing exclusions](../LICENSING.md).
+
+## T05 connected collection comparison — 9 October 2026
+
+[Task/observation supplement](T05_COLLECTION_COMPARISON.md), [editable page](../studies/collection-comparison.html), [check script](../scripts/check-collection-comparison.cjs), [37-check record](collection-comparison-check.json). Three PNGs under `studies/collection-comparison-captures/` are browser captures of this original project UI. Photo surfaces are explicitly labelled illustrated placeholders. Original project licensing applies. Evidence is browser simulation, not participant research or native validation; it extends the study preparation without replacing the original T05 protocol.
