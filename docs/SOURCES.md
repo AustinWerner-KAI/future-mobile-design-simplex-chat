@@ -85,3 +85,7 @@ The 14 PNGs in `studies/v2121-captures/` are browser captures of original projec
 ## Collection facilitator — 9 October 2026
 
 [Original facilitator page](../studies/collection-facilitator.html), [protocol supplement](T05_COLLECTION_COMPARISON.md), [check script](../scripts/check-collection-facilitator.cjs), [19-check record](collection-facilitator-check.json). Original project material; styling follows the existing T05 facilitator page. Checks use fictional P99 inputs and test order preservation, export gates, clearing and viewport fit. They are not recruited participant results or native accessibility validation. No recording, analytics or remote upload is implemented.
+
+## UI-free workspace contract — 9 October 2026
+
+[Original module](../prototypes/src/frame/booking-contract.mjs), [scope and rationale](WORKSPACE_CONTRACT.md), [Node checks](../scripts/check-booking-contract.mjs), [12 assertion groups](booking-contract-check.json). Fictional inputs; no real transport or security isolation. Evidence covers state transitions, not participant comprehension, renderer behaviour or native feasibility. Research rationale: `RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md` §9.1 and §10.2–10.4.

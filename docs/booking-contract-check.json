@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-09T18:47:35.294Z",
+  "method": "Node assertions against fictional UI-free study logic; no browser, person, transport or security isolation",
+  "checks": [
+    "Reject incomplete source context",
+    "Content has no commit, review or transport port",
+    "Choosing locally queues nothing and leaves the conversation intact",
+    "Reject unsupported times, party sizes and injected recipient/HTML fields",
+    "Commit requires a host-created review",
+    "Review binds exact text, recipient and identity; returned objects cannot rewrite it",
+    "Changed selection invalidates prior review",
+    "Cancel shares nothing and retains choices and latest draft",
+    "Fold restores reading and focus context and invalidates review",
+    "Double submission and re-review of the same request cannot duplicate the queue",
+    "Simulated failure retains selection; retry requires a fresh review and queues once",
+    "Instances isolate requests; caller changes do not rewrite the bound source"
+  ]
+}

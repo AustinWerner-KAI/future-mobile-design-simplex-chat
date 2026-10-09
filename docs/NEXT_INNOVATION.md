@@ -2,6 +2,8 @@
 
 9 October 2026. Proposed study brief, not an implemented feature, approved decision, participant finding or SimpleX roadmap. The current app candidate remains [V2.1.2.3](../v21.html?mobile=1&version=2.1.2.3). [Project tracker](NEXT_STEPS.md).
 
+**Engineering preparation:** [Executable workspace contract](WORKSPACE_CONTRACT.md) now models local choice, exact review, simulated request and return (12 assertion groups). It is not a visual candidate or completed frame integration. T05/T21/T22 remain open.
+
 ## The human problem to investigate
 
 A person arranging something with a friend or business may have to reconstruct the same context in a separate tool. Our proposal is that the relationship remains the home of the task. We have not measured the frequency or cost of this problem. T05 and a later comparison must establish whether the proposed workspace is useful.
@@ -58,7 +60,7 @@ Drop or simplify the workspace if it adds task effort, obscures the audience, su
 - **Flow rules:** Act locally; Return coherently.
 - **SimpleX foundation:** one open relationship and deliberate sending are the starting point; programmable interfaces are a proposed addition, not a verified capability.
 - **Analogy:** an extension operates beside its source and returns without losing that context; no literal anatomy or social-behaviour claim.
-- **Test planned:** local choices emit no outgoing payload; cancel emits none; reviewed commit emits one; closing restores the draft and focus. There is no implemented frame or passing frame regression test yet.
+- **Test planned:** local choices emit no outgoing payload; cancel emits none; reviewed commit emits one; closing restores the draft and focus. The UI-free contract now tests these intended transitions; there is no integrated frame, enforced security boundary or participant result yet.
 - **Research:** [Interfaces that arrive §9.1 F5/F7/F8/F9](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#91-principles), [§10.2 sequence](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#102-sequence-of-studies), [§10.4 gates](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#104-decisions-this-paper-does-not-make).
 - **Reverse the decision if:** participant evidence favours ordinary messages or shows confusion about preparation, sender authority or sending.
 

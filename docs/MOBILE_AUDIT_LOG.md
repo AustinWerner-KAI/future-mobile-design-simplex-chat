@@ -4,6 +4,12 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 22. Executable workspace contract, UI-free — 9 October 2026
+
+Built local study logic for Harbour Café: catalog choice, review bound to recipient/identity/text, revision invalidation, cancellation, simulated submission, duplicate suppression and failure/retry. Fold returns the latest source draft plus reading/focus values. [Scope](WORKSPACE_CONTRACT.md) · [12 assertion groups](booking-contract-check.json). No visual candidate, network, renderer, enforced sandbox or participant evidence. The host/content API convention is not a security boundary. T05/T21/T22 remain open; V2.1.2.3 stays current.
+
+**Octopus check:** Act locally; Return coherently. Named relationships and deliberate sending are requirements; no SimpleX protocol is implemented. The analogy contributes an extension tied to its source and latest context. Tests assert preparation/cancel queue nothing, current review queues once and folding retains source values; the pre-change build fails the import because this module is absent. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F5/F7/F8/F9 and §10.2–10.4. Revise if renderer isolation fails or people misunderstand local preparation, sending or booking status. Browser focus restoration remains unimplemented and requires integration checks.
+
 ## 21. Next innovation brief — 9 October 2026
 
 Prepared the next experiment around a conversation becoming a local workspace, with an ordinary-message alternative, explicit cancellation and return. [Brief](NEXT_INNOVATION.md). Six approaches are compared; recommended first scene is a fictional café request. Proposed T21 scope avoids forwarding, payments and durable storage, but does not close those decisions. No new UI version, participant result or maintainer answer is claimed. T05 remains first; T22 remains gated.
