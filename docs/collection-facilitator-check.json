@@ -1,8 +1,9 @@
 {
-  "date": "2026-10-09T18:36:48.115Z",
+  "date": "2026-10-09T18:39:07.740Z",
   "method": "Headless Chrome, fictional P99 test inputs; export is a test artifact, not a participant record",
   "checks": [
     "All four tasks across three forms",
+    "Every control has a unique ID",
     "Export requires trial and note consent",
     "Export requires anonymous ID, date and order",
     "Participant names are rejected in ID field",
