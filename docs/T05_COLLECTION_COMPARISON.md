@@ -37,7 +37,7 @@ Ask afterwards: “What stayed the same, and what changed?” Then ask which lay
 - Optional app interruption: survived / evicted / unclear:
 - Preference and explanation verbatim:
 
-If timings are collected, use a separately consented recording or facilitator stopwatch and record the method. Do not treat browser automation durations as participant performance. No session export or persistence is implemented on this supplementary page; keep consented notes separately. Do not publish identifiable raw notes.
+If timings are collected, use a separately consented recording or facilitator stopwatch and record the method. Do not treat browser automation durations as participant performance. The participant trial has no session export or persistence. Use the separate [collection facilitator page](../studies/collection-facilitator.html) on your device: it preserves notes while changing the assigned order and downloads anonymous JSON. Export before closing or reloading; notes otherwise disappear. Unobserved tasks stay explicitly unobserved. Save as `P1-collection.json`, separate from the original T05 version-task log. Do not publish identifiable raw notes.
 
 ## Subtle octopus tells, human purpose
 
@@ -59,3 +59,7 @@ Runtime browser checks are recorded in [collection-comparison-check.json](collec
 ## Agent browser walkthrough — 9 October 2026
 
 [Execution, two findings and fixes](COLLECTION_COMPARISON_REVIEW.md). Photo navigation now retains control focus; explicit fresh-trial reset replaces the reload-only instruction. [49-check record](collection-comparison-check.json). This does not complete participant testing.
+
+## Facilitator workflow — 9 October 2026
+
+Assign consecutive participants the six orders in sequence, repeating if needed. Record agreement to both the trial and anonymous notes; this does not authorise recording. Read the four scripts unchanged. Select each observed outcome and write actual wrong turns, hints, return state and preference. An incomplete record is permitted, but cannot be exported with no observed tasks. Review downloaded notes for identifying information before reuse. Clear only after saving, then start the next participant. [18 browser checks](collection-facilitator-check.json) use fictional P99 inputs, not participant evidence.

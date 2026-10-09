@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-09T18:36:48.115Z",
+  "method": "Headless Chrome, fictional P99 test inputs; export is a test artifact, not a participant record",
+  "checks": [
+    "All four tasks across three forms",
+    "Export requires trial and note consent",
+    "Export requires anonymous ID, date and order",
+    "Participant names are rejected in ID field",
+    "Empty record cannot masquerade as observed evidence",
+    "Cards follow assigned order",
+    "Reordering preserves notes",
+    "Outcomes stay with correct form; missing remains unobserved",
+    "Recording is not implied by consent",
+    "Export uses anonymous ID and separate supplement filename",
+    "Export contains assigned order and time",
+    "Cancel clearing retains notes",
+    "Confirmed clearing resets outcomes and notes",
+    "Clear restores input focus",
+    "Document fits 320",
+    "Document fits 390",
+    "Document fits 1440",
+    "No JavaScript errors"
+  ]
+}

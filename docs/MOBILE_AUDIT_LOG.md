@@ -4,6 +4,12 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 20. Separate collection facilitator and anonymous export — 9 October 2026
+
+Added a facilitator-only page for the four connected-comparison tasks across grid/list/rail. Six counterbalanced orders rearrange cards without moving their notes between forms. Export requires agreement to trial and notes, a P-number, date, order and at least one observed outcome. Missing tasks remain unobserved. Clearing requires a second explicit action. Notes live in page memory until local download; no recording or upload. Original T05 logs remain separate. [Protocol](T05_COLLECTION_COMPARISON.md) · [Page](../studies/collection-facilitator.html) · [18-check evidence](collection-facilitator-check.json).
+
+**Octopus check:** Retain useful state; Return coherently. This research tool records whether those rules hold in the participant trial; it adds no SimpleX protocol capability. The analogy contributes continuity between a local extension and its source, not a literal form. Test: changing order preserves layout-specific notes, missing outcomes stay explicit, and cancellation preserves notes. The pre-change build lacks this page and cannot pass these checks; this does not prove a usability benefit. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F8/F11 and §10.2 step 2; `CHAT_SCROLLING.md` §6. Revise if facilitators misassign forms, exports lose observations, or the script coaches participants. Evidence is headless Chrome with fictional inputs; T05 remains open and the latest app remains V2.1.2.3.
+
 ## 19. Connected trial walkthrough: photo focus and fresh trials — 9 October 2026
 
 Agent-operated live browser walkthrough of grid/list/rail at `f9ca3b7`; no screen recording, participant or physical device. All three retained Maya’s exact draft after third-photo/home return. Two findings: CC1, Next photo rebuilt the viewer and focused Back; CC2, a paused form change had no direct fresh-trial action. Fixed control focus and an explicitly labelled reset. [Full report](COLLECTION_COMPARISON_REVIEW.md). [49-check regression record](collection-comparison-check.json); the Next-focus assertion failed before the fix.

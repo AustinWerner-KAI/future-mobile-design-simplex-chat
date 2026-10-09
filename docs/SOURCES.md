@@ -81,3 +81,7 @@ The 14 PNGs in `studies/v2121-captures/` are browser captures of original projec
 [Task/observation supplement](T05_COLLECTION_COMPARISON.md), [editable page](../studies/collection-comparison.html), [check script](../scripts/check-collection-comparison.cjs), [49-check record](collection-comparison-check.json). Three PNGs under `studies/collection-comparison-captures/` are browser captures of this original project UI. Photo surfaces are explicitly labelled illustrated placeholders. Original project licensing applies. Evidence is browser simulation, not participant research or native validation; it extends the study preparation without replacing the original T05 protocol.
 
 [Connected trial browser walkthrough](COLLECTION_COMPARISON_REVIEW.md), 9 October 2026: live grid/list/rail task execution, two observed workflow/focus findings, subsequent fixes and scripted regression evidence. No human participants or video recording.
+
+## Collection facilitator — 9 October 2026
+
+[Original facilitator page](../studies/collection-facilitator.html), [protocol supplement](T05_COLLECTION_COMPARISON.md), [check script](../scripts/check-collection-facilitator.cjs), [18-check record](collection-facilitator-check.json). Original project material; styling follows the existing T05 facilitator page. Checks use fictional P99 inputs and test order preservation, export gates, clearing and viewport fit. They are not recruited participant results or native accessibility validation. No recording, analytics or remote upload is implemented.
