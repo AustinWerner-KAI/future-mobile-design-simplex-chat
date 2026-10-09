@@ -4,6 +4,12 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 21. Next innovation brief — 9 October 2026
+
+Prepared the next experiment around a conversation becoming a local workspace, with an ordinary-message alternative, explicit cancellation and return. [Brief](NEXT_INNOVATION.md). Six approaches are compared; recommended first scene is a fictional café request. Proposed T21 scope avoids forwarding, payments and durable storage, but does not close those decisions. No new UI version, participant result or maintainer answer is claimed. T05 remains first; T22 remains gated.
+
+**Octopus check:** Act locally; Return coherently. One relationship and deliberate sending provide the starting point; programmable interfaces are speculative. The analogy contributes attached local extension and coherent return. Planned test: preparation/cancel emit nothing; reviewed submission emits one request and fold-back retains draft/focus. No implemented frame check exists yet; this documentation change makes no passing frame claim. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F5/F7/F8/F9, §10.2 and §10.4. Reverse if participants find ordinary messages simpler or misunderstand audience/sending.
+
 ## 20. Separate collection facilitator and anonymous export — 9 October 2026
 
 Added a facilitator-only page for the four connected-comparison tasks across grid/list/rail. Six counterbalanced orders rearrange cards without moving their notes between forms. Export requires agreement to trial and notes, a P-number, date, order and at least one observed outcome. Missing tasks remain unobserved. Clearing requires a second explicit action. Notes live in page memory until local download; no recording or upload. Original T05 logs remain separate. Live accessibility inspection found duplicated draft IDs; corrected them and added a uniqueness regression check, which failed before the correction. [Protocol](T05_COLLECTION_COMPARISON.md) · [Page](../studies/collection-facilitator.html) · [19-check evidence](collection-facilitator-check.json).
