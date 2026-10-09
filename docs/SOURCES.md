@@ -89,3 +89,7 @@ The 14 PNGs in `studies/v2121-captures/` are browser captures of original projec
 ## UI-free workspace contract — 9 October 2026
 
 [Original module](../prototypes/src/frame/booking-contract.mjs), [scope and rationale](WORKSPACE_CONTRACT.md), [Node checks](../scripts/check-booking-contract.mjs), [12 assertion groups](booking-contract-check.json). Fictional inputs; no real transport or security isolation. Evidence covers state transitions, not participant comprehension, renderer behaviour or native feasibility. Research rationale: `RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md` §9.1 and §10.2–10.4.
+
+## Workspace offer recovery — 9 October 2026
+
+[Recovery rationale and limits](WORKSPACE_CONTRACT.md#recovery-example--9-october-2026), [module](../prototypes/src/frame/booking-contract.mjs), [18 current assertion groups](booking-contract-check.json). Six additional groups test source-offer changes, stale review, unavailability, expiry/withdrawal, invalid updates, renewal and previous-receipt preservation. These are explicit fictional host events, not real-time availability or production freshness enforcement. Earlier 12-group results remain scoped history in audit §22. Original project implementation based on `INTERFACES_THAT_ARRIVE.md` §9.1 F5/F7/F8/F9.

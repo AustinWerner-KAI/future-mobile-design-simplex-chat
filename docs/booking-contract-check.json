@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-09T18:47:35.294Z",
+  "date": "2026-10-09T18:51:07.406Z",
   "method": "Node assertions against fictional UI-free study logic; no browser, person, transport or security isolation",
   "checks": [
     "Reject incomplete source context",
@@ -13,6 +13,12 @@
     "Fold restores reading and focus context and invalidates review",
     "Double submission and re-review of the same request cannot duplicate the queue",
     "Simulated failure retains selection; retry requires a fresh review and queues once",
-    "Instances isolate requests; caller changes do not rewrite the bound source"
+    "Instances isolate requests; caller changes do not rewrite the bound source",
+    "Updated offer invalidates approval even when the choice remains available",
+    "Unavailable choice is retained for explanation, never silently substituted",
+    "Expired or withdrawn offers cannot be reviewed or submitted; return context survives",
+    "Invalid offer updates are rejected atomically without consuming a valid review",
+    "A renewed offer requires a fresh choice review and cannot revive old approval",
+    "Offer changes do not rewrite a previously simulated request or its receipt"
   ]
 }

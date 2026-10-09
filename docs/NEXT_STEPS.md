@@ -8,7 +8,7 @@ Human relationships organise the interface. The octopus theory governs coordinat
 
 ## Completed prototype work
 
-- [x] **T27 — Workspace logic preparation, 9 October 2026:** [UI-free contract](WORKSPACE_CONTRACT.md) for local choice, exact host review, cancellation, simulated request, retry and source restoration. [12 assertion groups](booking-contract-check.json). No new visual candidate or production boundary; does not complete T05, T21 or T22.
+- [x] **T27 — Workspace logic preparation, 9 October 2026:** [UI-free contract](WORKSPACE_CONTRACT.md) for local choice, exact host review, cancellation, simulated request, retry and source restoration. [18 assertion groups](booking-contract-check.json). No new visual candidate or production boundary; does not complete T05, T21 or T22.
 
 - [x] **T01 — Relationship-first homes:** mixed people, groups, publications and providers; three interactive grid/strip/collection candidates. [Play](../v21-options.html) · [rationale](WHY_GRIDS.md).
 - [x] **T02 — In-page invitation simulation:** identity choice, pending/accepted/revoked states and clear verification limits. [Scope and evidence](V2_1.md). This completes the browser demonstration, not real connections.

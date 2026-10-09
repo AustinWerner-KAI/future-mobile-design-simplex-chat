@@ -4,6 +4,12 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 23. Workspace recovery when an offer changes — 9 October 2026
+
+Added host-simulated catalog updates, expiry and withdrawal. Every update invalidates review; an unavailable choice remains visible with an explanation and is never silently replaced. Closed offers block selection/review/submission. Fold preserves draft, choice and return values; earlier simulated request receipts are not rewritten. Invalid catalog updates leave existing state intact. [Recovery example and scope](WORKSPACE_CONTRACT.md#recovery-example--9-october-2026) · [18 assertion groups](booking-contract-check.json). No actual availability, clock, authenticated source event, transport or visual integration.
+
+**Octopus check:** Act locally; Return coherently. Deliberate sending within one relationship is the starting requirement; no SimpleX core change. The analogy contributes a local extension that can withdraw without losing its source context. Six added tests cover changed, unavailable, expired, withdrawn, malformed and renewed offers plus receipt preservation; the first added test failed on the previous build because `replaceOffer` was absent. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F5/F7/F8/F9, §10.2–10.4. Revise if people mistake retained choices for live availability, miss the need to re-review, or return loses context. T05/T21/T22 remain open; V2.1.2.3 remains current.
+
 ## 22. Executable workspace contract, UI-free — 9 October 2026
 
 Built local study logic for Harbour Café: catalog choice, review bound to recipient/identity/text, revision invalidation, cancellation, simulated submission, duplicate suppression and failure/retry. Fold returns the latest source draft plus reading/focus values. [Scope](WORKSPACE_CONTRACT.md) · [12 assertion groups](booking-contract-check.json). No visual candidate, network, renderer, enforced sandbox or participant evidence. The host/content API convention is not a security boundary. T05/T21/T22 remain open; V2.1.2.3 stays current.

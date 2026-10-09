@@ -2,7 +2,7 @@
 
 9 October 2026. Proposed study brief, not an implemented feature, approved decision, participant finding or SimpleX roadmap. The current app candidate remains [V2.1.2.3](../v21.html?mobile=1&version=2.1.2.3). [Project tracker](NEXT_STEPS.md).
 
-**Engineering preparation:** [Executable workspace contract](WORKSPACE_CONTRACT.md) now models local choice, exact review, simulated request and return (12 assertion groups). It is not a visual candidate or completed frame integration. T05/T21/T22 remain open.
+**Engineering preparation:** [Executable workspace contract](WORKSPACE_CONTRACT.md) now models local choice, exact review, simulated request and return (18 assertion groups). It is not a visual candidate or completed frame integration. T05/T21/T22 remain open.
 
 ## The human problem to investigate
 
