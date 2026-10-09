@@ -10,7 +10,7 @@ The new surface joins the collection home and Maya album in a single phone-sized
 
 ## Method
 
-Use the six orders G/L/R, G/R/L, L/G/R, L/R/G, R/G/L, R/L/G across six to nine participants. Reload between forms. A layout query (`?layout=grid`, `list`, `rail`) selects the initial form. Everyone sees identical names/order/content. Recent activity also offers the same connections; record if participants use it rather than favourites. Selection of a different layout during a paused trial requires reload.
+Use the six orders G/L/R, G/R/L, L/G/R, L/R/G, R/G/L, R/L/G across six to nine participants. Use Start fresh trial between forms; its label explicitly says it clears drafts. Reload also starts fresh. A layout query (`?layout=grid`, `list`, `rail`) selects the initial form. Everyone sees identical names/order/content. Recent activity also offers the same connections; record if participants use it rather than favourites. After Pause, select the next layout and choose Start fresh trial; Resume only resumes the original layout.
 
 The explicit consent covers trying the fictional page. Ask separate consent for recording/notes and stop on request. No recording starts from the page. Use anonymous IDs, not names or contact details. Tell people nothing about the octopus before tasks. After repeat trials, report learning/order effects; repeated tasks can become easier through familiarity.
 
@@ -55,3 +55,7 @@ The relationship remains the coordinating centre; the album extends locally from
 ## Evidence boundary
 
 Runtime browser checks are recorded in [collection-comparison-check.json](collection-comparison-check.json). They cover defined navigation and state, not native keyboard, VoiceOver/TalkBack, actual touch reach, participant comprehension or cryptographic guarantees. This is a research-support page, not V2.1.2.4 and not Study A/the programmable frame. The latest interface remains V2.1.2.3.
+
+## Agent browser walkthrough — 9 October 2026
+
+[Execution, two findings and fixes](COLLECTION_COMPARISON_REVIEW.md). Photo navigation now retains control focus; explicit fresh-trial reset replaces the reload-only instruction. [49-check record](collection-comparison-check.json). This does not complete participant testing.

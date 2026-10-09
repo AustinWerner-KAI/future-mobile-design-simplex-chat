@@ -4,6 +4,12 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 19. Connected trial walkthrough: photo focus and fresh trials — 9 October 2026
+
+Agent-operated live browser walkthrough of grid/list/rail at `f9ca3b7`; no screen recording, participant or physical device. All three retained Maya’s exact draft after third-photo/home return. Two findings: CC1, Next photo rebuilt the viewer and focused Back; CC2, a paused form change had no direct fresh-trial action. Fixed control focus and an explicitly labelled reset. [Full report](COLLECTION_COMPARISON_REVIEW.md). [49-check regression record](collection-comparison-check.json); the Next-focus assertion failed before the fix.
+
+**Octopus check:** Retain useful state; Return coherently. From SimpleX: one open chat and local state, no new core claim. From the analogy: local contact remains usable through movement and return. Test: repeat photo navigation without losing focus; Resume retains the draft, fresh trial clears it explicitly. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F8/F11, §10.2 step 2; `CHAT_SCROLLING.md` §6. Drop/revise if T05 shows these controls confuse or cause unintended loss. Latest app remains V2.1.2.3; T05 remains open.
+
 ## 18. Connected collection comparison for T05 — 9 October 2026
 
 The collection lab demonstrated home, conversation and album separately. A new focused page connects those moments for neutral comparison of grid/list/rail. Same eight fictional people and order; no sending, tracking or recording. An unsent draft survives album dismissal, home return and trial pause. This is study preparation, not a new interface version or participant result. [Protocol supplement](T05_COLLECTION_COMPARISON.md) · [Trial](../studies/collection-comparison.html).
