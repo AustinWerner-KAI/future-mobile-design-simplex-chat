@@ -8,6 +8,8 @@
 
 **10 October follow-on:** [Interactive main-menu journey](../studies/menu-journey.html?mobile=1) · [Sixteen rendered states and evidence](MENU_JOURNEY.md). One open relationship, local photo/plan, audience distinctions, retained drafts and explicit local personal connections.
 
+**New concept, 10 October — [Thread of intent](THREAD_OF_INTENT.md):** [Try the private purpose layer](../studies/intent.html?mobile=1) · [Visual board](../studies/intent-board.html). A private dock carries your purpose through separate relationships; only your edited note crosses a named audience boundary. Alternative exploration, not a replacement for the café comparison or completed research gates.
+
 ## The human problem to investigate
 
 A person arranging something with a friend or business may have to reconstruct the same context in a separate tool. Our proposal is that the relationship remains the home of the task. We have not measured the frequency or cost of this problem. T05 and a later comparison must establish whether the proposed workspace is useful.

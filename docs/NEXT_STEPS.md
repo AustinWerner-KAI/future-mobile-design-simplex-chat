@@ -8,6 +8,8 @@ Human relationships organise the interface. The octopus theory governs coordinat
 
 ## Completed prototype work
 
+- [x] **T32 — Thread of intent innovation exploration, 10 October 2026:** [Interactive phone](../studies/intent.html?mobile=1), [visual board](../studies/intent-board.html), [eight scenes/rationale](THREAD_OF_INTENT.md), [35 browser checks](intent-check.json). Private purpose dock across separate people/group/business/place contexts; user-authored detail through exact recipient review; cancellation and draft return. Fixed client catalog, no transport or persistence. T05/T21/T22 remain open; purpose creation, multiple purposes and native integration are not built.
+
 - [x] **T31 — Personal entity connections exploration, 10 October 2026:** [Menu journey](../studies/menu-journey.html?mobile=1), [rationale and four added renders](MENU_JOURNEY.md#personal-connections--10-october-2026), [61 total browser checks](menu-journey-check.json). Choose target/reason, review local-only scope, inspect provenance, navigate without copying, return to independent draft and remove. T06 remains open for places, broader lifecycle and participant evidence.
 
 - [x] **T30 — Menu attachment exploration, 10 October 2026:** [Interactive menu](../studies/menu-journey.html?mobile=1), [four added PNGs and scope](MENU_JOURNEY.md#attachment-extension--10-october-2026), [40 total browser checks](menu-journey-check.json). Local illustrated image choice/replacement, independent caption, exact review, cancellation and simulated failure/retry. T09 remains open for real file/permission/upload lifecycle; T05 remains open for human evidence.
