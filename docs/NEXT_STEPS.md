@@ -8,6 +8,8 @@ Human relationships organise the interface. The octopus theory governs coordinat
 
 ## Completed prototype work
 
+- [x] **T33 — QR doorway and task return exploration, 10 October 2026:** [Interactive purpose](../studies/intent.html?mobile=1), [QR reader](../studies/connect.html?mobile=1), [storyboard](../studies/connect-return-board.html), [scope](CONNECT_AND_RETURN.md), [28 checks](connect-return-check.json). Actual local fixture decoding; fictional connection; Pause/Return/Resume. Durable recovery, native share and protocol integration remain open.
+
 - [x] **T32 — Thread of intent innovation exploration, 10 October 2026:** [Interactive phone](../studies/intent.html?mobile=1), [visual board](../studies/intent-board.html), [eight scenes/rationale](THREAD_OF_INTENT.md), [35 browser checks](intent-check.json). Private purpose dock across separate people/group/business/place contexts; user-authored detail through exact recipient review; cancellation and draft return. Fixed client catalog, no transport or persistence. T05/T21/T22 remain open; purpose creation, multiple purposes and native integration are not built.
 
 - [x] **T31 — Personal entity connections exploration, 10 October 2026:** [Menu journey](../studies/menu-journey.html?mobile=1), [rationale and four added renders](MENU_JOURNEY.md#personal-connections--10-october-2026), [61 total browser checks](menu-journey-check.json). Choose target/reason, review local-only scope, inspect provenance, navigate without copying, return to independent draft and remove. T06 remains open for places, broader lifecycle and participant evidence.
@@ -16,7 +18,7 @@ Human relationships organise the interface. The octopus theory governs coordinat
 
 - [x] **T29 — Interactive main-menu journey, 10 October 2026:** [Phone view](../studies/menu-journey.html?mobile=1), [eight rendered states and rationale](MENU_JOURNEY.md), [26 browser checks](menu-journey-check.json). Draft/focus/scroll return, local photo/plan, Family audience and public reading. Separate exploratory visual study; no real transport or participant validation.
 
-- [x] **T28 — Exploratory workspace visuals, 9 October 2026:** [Six-screen storyboard and interactive phone](../studies/workspace.html), [rendered PNGs](WORKSPACE_VISUAL_STUDY.md#every-screen-rendered) and [27 browser checks](workspace-visual-check.json). Owner requested visuals before T05; this advances exploration without completing participant/privacy gates or replacing V2.1.2.3.
+- [x] **T28 — Exploratory workspace visuals, 9 October 2026:** [Six-screen storyboard and interactive phone](../studies/workspace.html), [rendered PNGs](WORKSPACE_VISUAL_STUDY.md#every-screen-rendered) and [28 browser checks](workspace-visual-check.json). Owner requested visuals before T05; this advances exploration without completing participant/privacy gates or replacing V2.1.2.3.
 
 - [x] **T27 — Workspace logic preparation, 9 October 2026:** [UI-free contract](WORKSPACE_CONTRACT.md) for local choice, exact host review, cancellation, simulated request, retry and source restoration. [18 assertion groups](booking-contract-check.json). No new visual candidate or production boundary; does not complete T05, T21 or T22.
 

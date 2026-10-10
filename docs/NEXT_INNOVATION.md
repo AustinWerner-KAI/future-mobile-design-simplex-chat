@@ -1,5 +1,7 @@
 # Next innovation — a conversation becomes a workspace
 
+**10 October extension:** [Receive → Read → Connect and Pause → Return → Resume](CONNECT_AND_RETURN.md) · [Rendered storyboard](../studies/connect-return-board.html). Local image decoding, deliberate identity review and task-preserving return; no native connection or durable storage.
+
 9 October 2026. Proposed study brief, not an implemented feature, approved decision, participant finding or SimpleX roadmap. The current app candidate remains [V2.1.2.3](../v21.html?mobile=1&version=2.1.2.3). [Project tracker](NEXT_STEPS.md).
 
 **Engineering preparation:** [Executable workspace contract](WORKSPACE_CONTRACT.md) now models local choice, exact review, simulated request and return (18 assertion groups). It is not a visual candidate or completed frame integration. T05/T21/T22 remain open.

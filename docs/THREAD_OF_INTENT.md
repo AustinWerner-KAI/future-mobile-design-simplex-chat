@@ -1,5 +1,7 @@
 # Thread of intent — one purpose, separate audiences
 
+**Follow-on exploration:** [Pause → Return → Resume with a QR connection detour](CONNECT_AND_RETURN.md) adds 28 separate browser checks and a [rendered storyboard](../studies/connect-return-board.html). The original 35 checks below retain their original scope.
+
 10 October 2026. Original exploratory concept by AustinWerner-KAI for **From anatomy to interface**. [Interactive phone](../studies/intent.html?mobile=1) · [Visual storyboard](../studies/intent-board.html) · [Rendered PNG board](../studies/intent-captures/concept-board.png). The current full-app candidate remains V2.1.2.3. This concept is independent, speculative and not a SimpleX roadmap or participant finding.
 
 ![Four-scene visual concept board](../studies/intent-captures/concept-board.png)

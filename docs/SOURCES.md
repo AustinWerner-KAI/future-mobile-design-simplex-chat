@@ -105,3 +105,7 @@ The 14 PNGs in `studies/v2121-captures/` are browser captures of original projec
 ## Thread of intent — original concept, 10 October 2026
 
 [Rationale/asset register](THREAD_OF_INTENT.md) · [HTML](../studies/intent.html) · [controller](../studies/intent.js) · [CSS](../studies/intent.css) · [board](../studies/intent-board.html) · [check/render source](../scripts/check-intent.cjs) · [35 browser checks](intent-check.json). Eight original phone PNGs plus a four-scene board in `studies/intent-captures/`; original SVG harbour diagram, no third-party map/image or location input. Source: original project synthesis, internal `INTERFACES_THAT_ARRIVE.md` §9.1/§10 and `CHAT_SCROLLING.md` §6, and supplied founder feedback interpreted without claiming endorsement. Original code MIT, original design CC BY 4.0. No claim of unprecedented invention, official SimpleX roadmap, participant validation or production privacy boundary.
+
+## QR doorway and task return — 10 October 2026
+
+See [CONNECT_AND_RETURN.md](CONNECT_AND_RETURN.md) for claim-level citations, partial upstream source inspection and asset provenance. SimpleX connection guide and July 2025 short-link protocol article underpin the explicit retrieval gate. Vendored jsQR 1.4.0 is Apache 2.0, with its own license; original-code MIT does not replace it. Generated non-operational QR fixtures use qrcode 1.5.4 (MIT development generator). UI and phone renders are original CC BY 4.0 design material.

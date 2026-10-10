@@ -1,5 +1,7 @@
 # From anatomy to interface
 
+**New exploration:** [Pause, QR connection and Resume](docs/CONNECT_AND_RETURN.md) · [Interactive phone](studies/intent.html?mobile=1) · [Rendered storyboard](studies/connect-return-board.html). Local QR decoding; fictional connection; retained page-memory task.
+
 **New innovation concept — [Thread of intent](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/intent.html?mobile=1): one private purpose across separate relationships.** [Visual storyboard](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/studies/intent-board.html) · [Eight scenes and design rationale](docs/THREAD_OF_INTENT.md). Exploratory; V2.1.2.3 remains the current full-app candidate.
 
 > **Latest edit — [V2.1.2.3: photos, email and a home at scale](https://github.com/AustinWerner-KAI/future-mobile-design-simplex-chat/blob/main/docs/V2_1_2_3.md). Start here.** [See the whole story](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/showcase.html) · [Try the interactive version](https://austinwerner-kai.github.io/future-mobile-design-simplex-chat/v21.html?mobile=1&version=2.1.2.3). Published 6 October 2026: photo pins and photo tools, email threads and forwarding, a home for 100+ conversations with one opening motion, and the homepage audit. V2 is the earlier reference baseline; older audits and screenshots retain their original version scope. This is a browser design study, not a production release.
