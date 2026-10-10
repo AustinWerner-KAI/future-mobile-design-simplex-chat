@@ -93,3 +93,11 @@ The 14 PNGs in `studies/v2121-captures/` are browser captures of original projec
 ## Workspace offer recovery — 9 October 2026
 
 [Recovery rationale and limits](WORKSPACE_CONTRACT.md#recovery-example--9-october-2026), [module](../prototypes/src/frame/booking-contract.mjs), [18 current assertion groups](booking-contract-check.json). Six additional groups test source-offer changes, stale review, unavailability, expiry/withdrawal, invalid updates, renewal and previous-receipt preservation. These are explicit fictional host events, not real-time availability or production freshness enforcement. Earlier 12-group results remain scoped history in audit §22. Original project implementation based on `INTERFACES_THAT_ARRIVE.md` §9.1 F5/F7/F8/F9.
+
+## Visual workspace and rendered screens — 9 October 2026
+
+[Visual scope and image index](WORKSPACE_VISUAL_STUDY.md), [HTML](../studies/workspace.html), [CSS](../studies/workspace.css), [controller](../studies/workspace.js), [render/check script](../scripts/check-workspace-visual.cjs), [27 browser checks](workspace-visual-check.json). Ten PNGs under `studies/workspace-captures/`: six original static mockups, one combined board, three fictional interactive-state renders. Browser-rendered original project UI; no third-party photographs or AI-generated mockups. Original-design CC BY 4.0 applies. Research rationale: `INTERFACES_THAT_ARRIVE.md` §9.1 and §10.2–10.4; owner-requested sequencing exception recorded in DECISIONS. Browser evidence is not participant, native or security validation.
+
+## Interactive menu journey — 10 October 2026
+
+[Scope and image register](MENU_JOURNEY.md), [HTML](../studies/menu-journey.html), [CSS](../studies/menu-journey.css), [controller](../studies/menu-journey.js), [check/render source](../scripts/check-menu-journey.cjs), [26 browser checks](menu-journey-check.json). Eight PNGs under `studies/menu-journey-captures/`, original rendered project UI. Harbour illustration is original SVG code, explicitly labelled a placeholder. No external photo or AI-generated image. Original code/design licensing applies. `INTERFACES_THAT_ARRIVE.md` §9.1 and §10.1–10.2 informs the one-open-chat/local-tool model. No participant, native or security validation claim.

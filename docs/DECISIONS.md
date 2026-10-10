@@ -80,3 +80,7 @@ Everything built on 5 October 2026 on the rail candidate is named V2.1.2.2 and r
 ## 6 October 2026 — V2.1.2.3 is the latest edit, and the whole story is told
 
 Everything built on 6 October 2026 on the rail candidate (issues #2, #3, #4 and #6, the homepage audit, the badge fix and W1) is named V2.1.2.3 and recorded in [V2_1_2_3](V2_1_2_3.md). The owner asked for the complete story to be told and showcased: [showcase.html](../showcase.html) walks every chapter from the first board, with live phones for the latest edit, and the record tells the same story in text. `version=2.1.2.1` and `version=2.1.2.2` links are aliases of the same build. This is a publication decision, not production readiness or participant validation.
+
+## 9 October 2026 — exploratory workspace visuals before participant testing
+
+Owner explicitly requested visual mockups and rendered images after the workspace contract. Publish a separate six-screen storyboard and interactive browser study, clearly labelled exploratory, before completing T05. This changes the sequence of visual exploration, not the evidence standard. V2.1.2.3 stays the current full-app candidate; T05/T21 remain open and T22 is not declared validated. [Scope](WORKSPACE_VISUAL_STUDY.md). No real booking, transport, payment, persistence or untrusted interface execution.

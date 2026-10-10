@@ -4,6 +4,10 @@
 
 **Engineering preparation:** [Executable workspace contract](WORKSPACE_CONTRACT.md) now models local choice, exact review, simulated request and return (18 assertion groups). It is not a visual candidate or completed frame integration. T05/T21/T22 remain open.
 
+**Visual exploration now published at the owner’s request:** [Six-screen storyboard and interactive phone](../studies/workspace.html) · [PNG board](../studies/workspace-captures/storyboard.png) · [Scope and evidence](WORKSPACE_VISUAL_STUDY.md). This advances exploratory visuals before T05; participant and privacy gates remain open.
+
+**10 October follow-on:** [Interactive main-menu journey](../studies/menu-journey.html?mobile=1) · [Eight rendered states and evidence](MENU_JOURNEY.md). One open relationship, local photo/plan, audience distinctions and retained drafts.
+
 ## The human problem to investigate
 
 A person arranging something with a friend or business may have to reconstruct the same context in a separate tool. Our proposal is that the relationship remains the home of the task. We have not measured the frequency or cost of this problem. T05 and a later comparison must establish whether the proposed workspace is useful.

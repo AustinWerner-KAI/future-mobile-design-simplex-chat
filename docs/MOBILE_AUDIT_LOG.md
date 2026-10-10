@@ -4,6 +4,18 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 25. Interactive relationship menu and local extensions — 10 October 2026
+
+User approved a main-menu image and requested the next interactive journey. Built separate menu→Maya→photo/plan→review→return, Family private group and Coast Journal public reading. One chat opens at a time; tools unfold inside it. Local search, browser/in-app Back, per-entity drafts, reading/menu scroll and source focus are retained. Eight original phone renders with reduced motion; [scope](MENU_JOURNEY.md) and [26 checks](menu-journey-check.json). No transport, persistence or production isolation. Café mockups from the earlier interrupted work are finished and preserved separately.
+
+**Octopus check:** Act locally; Return coherently. Relationship and deliberate sending are starting requirements; no SimpleX core integration. The analogy supplies attached task and coherent withdrawal. Tests assert choice/cancel produce no simulated reply and draft, focus and home scroll survive return; the previous build lacks this page. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F5/F7/F8/F11 and §10.1–10.2. Revise if audience or return is unclear, or an ordinary chat performs better. Owner-authorised visual exploration continues; T05/T21 remain open, V2.1.2.3 remains current. Physical phone, native text scale and screen readers are untested.
+
+## 24. Visual workspace storyboard and phone — 9 October 2026
+
+Owner explicitly requested visual mockups and rendered images. Published six storyboard screens, an interactive phone, a PNG board, six individual PNGs and three live-state close-ups. [Scope and all renders](WORKSPACE_VISUAL_STUDY.md) · [27 browser checks](workspace-visual-check.json). Original HTML/CSS, not AI device imagery. Inspection caught clipped review actions; removed redundant cancellation and reveal the review action before use. Draft remains outside the replaceable task. No sending, real availability, booking or security isolation.
+
+**Octopus check:** Act locally; Return coherently. Relationship and deliberate sending are requirements, not protocol additions. The source rail and unfolding local task express attached extension; return restores the latest draft, thread position and origin focus. Tests cover local no-send, exact review, cancel, fold, failure/retry and stale offers; pre-change build lacks the page. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F3/F5/F7/F8/F9, §10.2–10.4. Revise if participants misunderstand preparation/sending or find ordinary messages clearer. Explicit owner-requested sequence exception recorded in DECISIONS; no participant/physical-device/screen-reader validation. T05/T21 remain open; current full app is V2.1.2.3.
+
 ## 23. Workspace recovery when an offer changes — 9 October 2026
 
 Added host-simulated catalog updates, expiry and withdrawal. Every update invalidates review; an unavailable choice remains visible with an explanation and is never silently replaced. Closed offers block selection/review/submission. Fold preserves draft, choice and return values; earlier simulated request receipts are not rewritten. Invalid catalog updates leave existing state intact. [Recovery example and scope](WORKSPACE_CONTRACT.md#recovery-example--9-october-2026) · [18 assertion groups](booking-contract-check.json). No actual availability, clock, authenticated source event, transport or visual integration.

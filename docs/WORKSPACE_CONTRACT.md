@@ -19,7 +19,7 @@
 | Offer expires / is withdrawn | New requests blocked; draft and choice retained |
 | Fold back | Latest draft and source reading/focus values returned; review invalidated |
 
-This module returns restoration values; it does not move browser focus or scroll. Future UI code must apply and independently test those values. `updateDraft` represents a host-owned draft change while the workspace is open, so folding does not restore an obsolete snapshot.
+This module returns restoration values; it does not move browser focus or scroll. The separate [visual study](WORKSPACE_VISUAL_STUDY.md) now applies the draft and restores locally captured thread position and origin focus; its browser checks are separate from this module’s value assertions. `updateDraft` represents a host-owned draft change while the workspace is open, so folding does not restore an obsolete snapshot.
 
 ## Run and evidence
 

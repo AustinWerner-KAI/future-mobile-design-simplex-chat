@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-10T04:20:56.649Z",
+  "method": "Headless Chrome, fictional inputs; CSS enlargement is not native text scaling or participant evidence",
+  "checks": [
+    "Six labelled storyboard mockups render",
+    "Local choice queues nothing",
+    "Opening and choosing retain latest draft",
+    "Review names audience and identity",
+    "Review commit control is fully visible in the thread",
+    "Exact outgoing text is visible",
+    "Cancel review queues nothing",
+    "Fold returns focus to originating offer",
+    "Fold preserves edited draft",
+    "Reviewed simulation queues exactly one request",
+    "Receipt avoids booking and delivery claims",
+    "Successful request folds back to origin",
+    "Repeated request does not duplicate queue",
+    "Changed offer removes stale review",
+    "Unavailable choice has an explanation",
+    "Unavailable choice cannot be reviewed",
+    "Failure queues nothing",
+    "Failure offers retained-choice recovery",
+    "Fresh review retries once",
+    "Expired offer blocks request",
+    "Expiry preserves draft on return",
+    "No horizontal page overflow at 320",
+    "No horizontal page overflow at 390",
+    "No horizontal page overflow at 768",
+    "No horizontal page overflow at 1440",
+    "Document fits synthetic enlarged-text stress condition",
+    "No JavaScript errors"
+  ]
+}

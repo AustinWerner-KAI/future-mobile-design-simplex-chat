@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-10T04:21:27.235Z",
+  "method": "Headless Chrome fictional study; no participant, physical phone or native accessibility validation",
+  "checks": [
+    "Mixed favourites and four recent relationships",
+    "One Maya conversation opens",
+    "Photo has truthful accessible placeholder label",
+    "Reduced motion removes workspace animation",
+    "Photo return restores origin focus",
+    "Photo return retains edited draft",
+    "Unchosen time cannot proceed to review",
+    "Review names recipient and identity",
+    "Cancel creates no simulated message",
+    "Explicit review creates one simulated reply",
+    "Plan completion restores source focus",
+    "Plan completion preserves draft",
+    "Same suggestion cannot duplicate simulated reply",
+    "Home return restores originating row focus",
+    "Home scroll position returns",
+    "Menu shows latest retained draft",
+    "Family names its audience",
+    "Publication has no private composer",
+    "Publication audience is explicit",
+    "Group and Maya drafts stay isolated",
+    "Search filters locally",
+    "Viewport fits 320",
+    "Viewport fits 390",
+    "Viewport fits 768",
+    "Viewport fits 1440",
+    "No JavaScript errors"
+  ]
+}
