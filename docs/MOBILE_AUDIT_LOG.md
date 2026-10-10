@@ -4,6 +4,12 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 27. Explicit personal links between entities — 10 October 2026
+
+Added Organise in the separate menu journey: choose a target and reason, review local-only scope, save a directed personal link, inspect manually created provenance, open a single target conversation and return without copying content. Remove changes no membership. Cancel/Escape do not add links. Render review found verbose provenance; moved details behind a 44 CSS px disclosure. Corrected Back to name the source relationship. Four added PNGs and [61 total browser checks](menu-journey-check.json); [scope](MENU_JOURNEY.md#personal-connections--10-october-2026). T06/T05 remain open; full-app candidate remains V2.1.2.3.
+
+**Octopus check:** Coordinate; Return coherently. Named relationships and one open chat are the starting requirements; no SimpleX core integration. The analogy supplies explicit personal paths with an intelligible return, not biological social claims. Tests cover no inference/reciprocity, required user reason, cancel/no-link, inspectable provenance, independent drafts, named Back, source focus, removal and 320/390 fit. The previous build lacks Organise and fails the first added flow. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F8/F11 and §10.1; `CHAT_SCROLLING.md` §6. Revise if participants infer membership/affiliation or ordinary favourites/search are clearer. No production privacy, persistence, physical-device, screen-reader or participant validation. Owner-approved visual sequencing exception continues.
+
 ## 26. Outgoing image preparation and recovery — 10 October 2026
 
 Extended the separate menu study with client-rendered demo-image selection/replacement, caption, exact recipient/identity review, edit/cancel, simulated failure/retry and a receipt. Four new original SVG/HTML phone PNGs, [40 total browser checks](menu-journey-check.json), [scope](MENU_JOURNEY.md#attachment-extension--10-october-2026). No file picker, permission, upload or delivery; T09/T05 remain open. Caption and ordinary draft are independent. Back discards uncommitted attachments; page memory retains completed receipts. The full-app candidate remains V2.1.2.3.

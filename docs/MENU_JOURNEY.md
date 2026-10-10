@@ -20,6 +20,10 @@
 | Image review | [10](../studies/menu-journey-captures/10-image-review.png) | Exact image and caption; Maya as recipient, Austin as identity |
 | Queue failure | [11](../studies/menu-journey-captures/11-image-failure.png) | Nothing queued; explicit retry retains review and draft |
 | Simulated queue | [12](../studies/menu-journey-captures/12-image-queued.png) | One local receipt, with no server acceptance or delivery |
+| Organise | [13](../studies/menu-journey-captures/13-relate-choose.png) | Choose a target and enter your own reason |
+| Connection review | [14](../studies/menu-journey-captures/14-relate-review.png) | Explicit local-only scope; no affiliation created |
+| Saved connection | [15](../studies/menu-journey-captures/15-relate-saved.png) | A directed personal link, with inspectable provenance |
+| Return to Maya | [16](../studies/menu-journey-captures/16-relate-return.png) | Separate drafts and link-origin focus survive the crossing |
 
 All PNGs are browser renders of original code with fictional test input and reduced motion. The photo is a clearly labelled code-drawn illustration, not a real photograph. Code MIT; original design material CC BY 4.0 under repository terms.
 
@@ -41,7 +45,7 @@ All state is page memory. Reload clears it. Native keyboard reach, OS text scali
 
 ## Validation
 
-[40 browser checks](menu-journey-check.json) · [check/render script](../scripts/check-menu-journey.cjs). Headless Chrome at 320/390/768/1440 CSS px: entity differences, edited drafts, no-send choice/cancel, exact review, duplicate suppression, origin focus, menu scroll, isolated group draft, public reading, local search and reduced motion. Twelve phone renders. These show operation, not participant comprehension or a superior design.
+[61 browser checks](menu-journey-check.json) · [check/render script](../scripts/check-menu-journey.cjs). Headless Chrome at 320/390/768/1440 CSS px: entity differences, edited drafts, no-send choice/cancel, exact review, duplicate suppression, origin focus, menu scroll, isolated group draft, public reading, local search and reduced motion. Sixteen phone renders. These show operation, not participant comprehension or a superior design.
 
 The user asked for an interactive version after reviewing the main-menu image. This continues the explicit visual-exploration exception recorded 9 October. T05 and privacy gates remain open; it does not replace V2.1.2.3 or close Study A. Previous café workspace visuals are also preserved and published separately at [workspace.html](../studies/workspace.html).
 
@@ -61,3 +65,17 @@ In Maya, tap **＋ Image**. Choose Harbour or Coastal path, add an optional capt
 [Failure condition](../studies/menu-journey.html?mobile=1&queue=fail) makes the first attachment queue attempt fail locally, once. Retry requires an explicit tap on the retained exact review. No uncertain server outcome is modelled. Device permission, actual file selection, camera access, metadata removal, upload progress and server acceptance/delivery remain outside this exploration. **T09 remains open.** All state is lost on reload.
 
 The client-authored preparation stays inside the conversation. Its origin is the composer; cancellation/completion restore that button and the captured thread position. This is local action and coherent return, with deliberate review in the named relationship. Research: Interfaces that arrive §9.1 F5/F8/F9 and §10.1. The old build fails the new test because Image is absent. Simplify or drop if people confuse the caption with the separate draft, mistake a local receipt for delivery, or find ordinary attachment preparation clearer. No new protocol or security claim is made.
+
+## Personal connections — 10 October 2026
+
+Open **Maya → Organise**. Choose Family, Harbour Café or Coast Journal and enter your own reason, for example “Saturday planning”. Nothing is preselected or inferred from messages. Review names the two entities and says that keeping them together creates no message, membership or shared affiliation. **Keep locally** adds a directed link only beside Maya. It does not appear beside Family automatically. This is a personal navigation aid, not a claim that Maya belongs to Family or works for Harbour Café.
+
+The saved card shows the target and your reason. **About this link** explains that you added it manually and that nothing was shared. **Open Family** opens a single target conversation without carrying text, attachment or reason into it. Its Back control names Maya; Back returns to the source link with Maya's independent draft and reading position retained. **Remove** deletes only this page-memory link; it does not leave a group or delete a conversation. Cancel or Escape changes nothing. Reload clears all links and drafts. There is no export or server copy in this study; this is not an encrypted storage or protocol guarantee.
+
+The first scope covers existing demo people, groups, publications and a provider. Places, profile separation, durable storage, membership evidence from verified sources and unlink recovery remain future work. **T06 remains open** for the broader lifecycle and human validation. This is an owner-authorised exploration, not Study A, a named full-app version or an official SimpleX capability.
+
+**Mobile brief:** someone planning with a friend needs a personally useful route to a group or café. The connection card preserves entity labels/shapes and exposes the reason without reproducing messages from another chat. Detailed provenance unfolds on request to reduce occupied screen space. The ordinary composer remains independent. Review is a conservative study choice; T05 should test whether a local organisation action needs this extra step.
+
+**Octopus check:** Coordinate; Return coherently. SimpleX supplies the relationship context and one-open-chat constraint, without core integration here. The analogy supplies an explicit connection that can be followed and withdrawn without carrying unintended content. Tests assert no inferred/reciprocal links, cancel adds none, crossing copies no draft, return restores draft/focus, removal changes no membership and the organiser fits 320/390 CSS px. The previous build lacks Organise; the new test fails there. Research: [Interfaces that arrive §9.1 F8/F11 and §10.1](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#91-principles), [Chat scrolling §6](RESEARCH_NOTES/CHAT_SCROLLING.md#6-what-this-means-for-the-prototype). This is navigation among separate chats, not several live chats inside a list. Drop or simplify if participants infer a shared affiliation, cannot distinguish local organisation from messaging, or find ordinary favourites/search clearer.
+
+Evidence: 61 total automated browser checks, four added PNGs. No consenting participant, physical phone, screen-reader run, native integration or security boundary was tested. Original project synthesis and original code-rendered imagery; no new external biological or protocol claim.

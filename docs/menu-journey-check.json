@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-10T04:47:20.620Z",
+  "date": "2026-10-10T05:16:48.780Z",
   "method": "Headless Chrome fictional study; no participant, physical phone or native accessibility validation",
   "checks": [
     "Mixed favourites and four recent relationships",
@@ -41,6 +41,27 @@
     "Simulated receipt survives relationship return",
     "Escape cancels local image preparation",
     "Leaving relationship clears uncommitted attachment",
+    "No personal relationships inferred from fixture messages",
+    "Unchosen personal connection cannot be reviewed",
+    "A personal connection requires the user reason",
+    "Review separates personal organisation from affiliation",
+    "Cancelling connection review adds no local link",
+    "Connection cancellation retains message draft",
+    "Explicit confirmation adds one local link",
+    "Saved local connection restores organiser focus",
+    "Local link has inspectable user-created evidence",
+    "Chosen connection opens one target conversation",
+    "Back names originating relationship",
+    "Crossing to Family does not copy Maya draft",
+    "Directed link does not imply reciprocal connection",
+    "Related conversation return restores Maya draft",
+    "Related conversation return restores link origin focus",
+    "Related conversation return restores source reading position",
+    "Already linked target is excluded from add choices",
+    "Removing local link changes no membership",
+    "Escape closes personal organiser",
+    "Personal organiser fits 320",
+    "Personal organiser fits 390",
     "No JavaScript errors"
   ]
 }

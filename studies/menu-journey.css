@@ -6,3 +6,7 @@ body{background:#f6f8f9}main.page{max-width:1000px;margin:0 auto;padding:32px 20
 .search input{border:0;background:transparent;font:inherit;color:inherit;min-width:0;width:100%;outline-offset:4px}
 
 .attach{float:right;margin:0 0 8px 8px}.attachment-art{display:block;width:100%;max-height:150px;border-radius:12px;margin:12px 0}.workspace label{font-size:12px;display:block}.workspace textarea{width:100%;font:inherit;min-height:64px;padding:12px;border:1px solid #9caeb9;border-radius:12px;color:#242a2d}.composer:after{content:"";display:block;clear:both}
+
+.relations{border-left:2px solid #bdced9;padding:0 0 12px 12px;margin-bottom:16px}.relation-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.relations .small,.relations small{font-size:12px;color:#586269;line-height:1.5}.relation-item{display:flex;gap:12px;border-top:1px solid #d9e1e6;padding-top:12px;margin-top:12px}.relation-item .mark{width:32px;height:32px;flex:none;font-size:12px;margin:0}.relation-item>div{min-width:0}.relation-item p{margin:4px 0;font-size:14px;overflow-wrap:anywhere}.relation-item .actions button{font-size:12px;padding:8px 12px}.relations textarea{resize:vertical}
+
+.relation-item details{font-size:12px;margin:8px 0}.relation-item summary{min-height:44px;display:flex;align-items:center;cursor:pointer;text-decoration:underline}.relation-item details p{font-size:12px}
