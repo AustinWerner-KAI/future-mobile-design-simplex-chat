@@ -6,7 +6,7 @@
 
 **Visual exploration now published at the owner’s request:** [Six-screen storyboard and interactive phone](../studies/workspace.html) · [PNG board](../studies/workspace-captures/storyboard.png) · [Scope and evidence](WORKSPACE_VISUAL_STUDY.md). This advances exploratory visuals before T05; participant and privacy gates remain open.
 
-**10 October follow-on:** [Interactive main-menu journey](../studies/menu-journey.html?mobile=1) · [Eight rendered states and evidence](MENU_JOURNEY.md). One open relationship, local photo/plan, audience distinctions and retained drafts.
+**10 October follow-on:** [Interactive main-menu journey](../studies/menu-journey.html?mobile=1) · [Twelve rendered states and evidence](MENU_JOURNEY.md). One open relationship, local photo/plan, audience distinctions and retained drafts.
 
 ## The human problem to investigate
 

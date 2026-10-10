@@ -8,6 +8,8 @@ Human relationships organise the interface. The octopus theory governs coordinat
 
 ## Completed prototype work
 
+- [x] **T30 — Menu attachment exploration, 10 October 2026:** [Interactive menu](../studies/menu-journey.html?mobile=1), [four added PNGs and scope](MENU_JOURNEY.md#attachment-extension--10-october-2026), [40 total browser checks](menu-journey-check.json). Local illustrated image choice/replacement, independent caption, exact review, cancellation and simulated failure/retry. T09 remains open for real file/permission/upload lifecycle; T05 remains open for human evidence.
+
 - [x] **T29 — Interactive main-menu journey, 10 October 2026:** [Phone view](../studies/menu-journey.html?mobile=1), [eight rendered states and rationale](MENU_JOURNEY.md), [26 browser checks](menu-journey-check.json). Draft/focus/scroll return, local photo/plan, Family audience and public reading. Separate exploratory visual study; no real transport or participant validation.
 
 - [x] **T28 — Exploratory workspace visuals, 9 October 2026:** [Six-screen storyboard and interactive phone](../studies/workspace.html), [rendered PNGs](WORKSPACE_VISUAL_STUDY.md#every-screen-rendered) and [27 browser checks](workspace-visual-check.json). Owner requested visuals before T05; this advances exploration without completing participant/privacy gates or replacing V2.1.2.3.

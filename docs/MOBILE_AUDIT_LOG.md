@@ -4,6 +4,12 @@ One running record of mobile audits on the latest candidate. Add new audits at t
 
 Method: the Kings of Mobile Design framework. Evidence level: agent-operated headless Chromium. No physical device, screen reader or participant was used. Sizes are CSS pixels, not iOS points or Android dp.
 
+## 26. Outgoing image preparation and recovery — 10 October 2026
+
+Extended the separate menu study with client-rendered demo-image selection/replacement, caption, exact recipient/identity review, edit/cancel, simulated failure/retry and a receipt. Four new original SVG/HTML phone PNGs, [40 total browser checks](menu-journey-check.json), [scope](MENU_JOURNEY.md#attachment-extension--10-october-2026). No file picker, permission, upload or delivery; T09/T05 remain open. Caption and ordinary draft are independent. Back discards uncommitted attachments; page memory retains completed receipts. The full-app candidate remains V2.1.2.3.
+
+**Octopus check:** Act locally; Return coherently. Deliberate action in a named relationship is the foundation, without core integration. The analogy supplies a composer-attached extension that returns to its captured context. New assertions cover blocked unselected review, replacement/caption retention, no-queue edit/cancel/failure, explicit retry, duplicate suppression, draft/focus and relationship return. Pre-change Image control is absent and fails the first attachment check. Research: `INTERFACES_THAT_ARRIVE.md` §9.1 F5/F8/F9, §10.1 and owner-approved visual sequence exception. Revise if people confuse caption/draft or local receipt/delivery, or ordinary image preparation is clearer. No physical-device, participant, native keyboard, OS permission or screen-reader validation.
+
 ## 25. Interactive relationship menu and local extensions — 10 October 2026
 
 User approved a main-menu image and requested the next interactive journey. Built separate menu→Maya→photo/plan→review→return, Family private group and Coast Journal public reading. One chat opens at a time; tools unfold inside it. Local search, browser/in-app Back, per-entity drafts, reading/menu scroll and source focus are retained. Eight original phone renders with reduced motion; [scope](MENU_JOURNEY.md) and [26 checks](menu-journey-check.json). No transport, persistence or production isolation. Café mockups from the earlier interrupted work are finished and preserved separately.

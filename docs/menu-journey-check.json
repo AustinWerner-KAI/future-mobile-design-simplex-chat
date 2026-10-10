@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-10T04:21:27.235Z",
+  "date": "2026-10-10T04:47:20.620Z",
   "method": "Headless Chrome fictional study; no participant, physical phone or native accessibility validation",
   "checks": [
     "Mixed favourites and four recent relationships",
@@ -27,6 +27,20 @@
     "Viewport fits 390",
     "Viewport fits 768",
     "Viewport fits 1440",
+    "Image review blocked before selection",
+    "Replacing image preserves caption",
+    "Image review names audience and identity",
+    "Editing review queues nothing",
+    "Failed simulation queues nothing",
+    "Failure provides explicit retry",
+    "Retry creates one simulated attachment",
+    "Attachment completion preserves independent draft",
+    "Attachment completion restores composer origin focus",
+    "Same image and caption cannot queue twice in page",
+    "Cancellation adds no attachment",
+    "Simulated receipt survives relationship return",
+    "Escape cancels local image preparation",
+    "Leaving relationship clears uncommitted attachment",
     "No JavaScript errors"
   ]
 }

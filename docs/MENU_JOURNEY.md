@@ -16,6 +16,10 @@
 | Return | [06](../studies/menu-journey-captures/06-return.png) | Simulated reply plus retained draft and source focus |
 | Family | [07](../studies/menu-journey-captures/07-family.png) | Named private group audience with an isolated draft |
 | Coast Journal | [08](../studies/menu-journey-captures/08-publication.png) | Public reading; no private-reply composer |
+| Prepare image | [09](../studies/menu-journey-captures/09-image-prepare.png) | Select a demo image and caption locally |
+| Image review | [10](../studies/menu-journey-captures/10-image-review.png) | Exact image and caption; Maya as recipient, Austin as identity |
+| Queue failure | [11](../studies/menu-journey-captures/11-image-failure.png) | Nothing queued; explicit retry retains review and draft |
+| Simulated queue | [12](../studies/menu-journey-captures/12-image-queued.png) | One local receipt, with no server acceptance or delivery |
 
 All PNGs are browser renders of original code with fictional test input and reduced motion. The photo is a clearly labelled code-drawn illustration, not a real photograph. Code MIT; original design material CC BY 4.0 under repository terms.
 
@@ -37,7 +41,7 @@ All state is page memory. Reload clears it. Native keyboard reach, OS text scali
 
 ## Validation
 
-[26 browser checks](menu-journey-check.json) · [check/render script](../scripts/check-menu-journey.cjs). Headless Chrome at 320/390/768/1440 CSS px: entity differences, edited drafts, no-send choice/cancel, exact review, duplicate suppression, origin focus, menu scroll, isolated group draft, public reading, local search and reduced motion. Eight phone renders. These show operation, not participant comprehension or a superior design.
+[40 browser checks](menu-journey-check.json) · [check/render script](../scripts/check-menu-journey.cjs). Headless Chrome at 320/390/768/1440 CSS px: entity differences, edited drafts, no-send choice/cancel, exact review, duplicate suppression, origin focus, menu scroll, isolated group draft, public reading, local search and reduced motion. Twelve phone renders. These show operation, not participant comprehension or a superior design.
 
 The user asked for an interactive version after reviewing the main-menu image. This continues the explicit visual-exploration exception recorded 9 October. T05 and privacy gates remain open; it does not replace V2.1.2.3 or close Study A. Previous café workspace visuals are also preserved and published separately at [workspace.html](../studies/workspace.html).
 
@@ -49,3 +53,11 @@ The user asked for an interactive version after reviewing the main-menu image. T
 - **Tests:** edited draft survives photo/plan/home return; original focus/scroll return; choice/cancel create no simulated message. These checks cannot run on the pre-change build because this page is absent.
 - **Research:** [Interfaces that arrive §9.1 F5/F7/F8/F11](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#91-principles), [§10.1 open-chat workspace](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#101-what-changes) and [§10.2 study sequence](RESEARCH_NOTES/INTERFACES_THAT_ARRIVE.md#102-sequence-of-studies).
 - **Revise/drop if:** people cannot distinguish group/public audiences, misunderstand simulation, lose orientation on return or complete the same task more clearly in an ordinary chat.
+
+## Attachment extension — 10 October 2026
+
+In Maya, tap **＋ Image**. Choose Harbour or Coastal path, add an optional caption, replace the image, and review before **Simulate queue**. Editing or cancelling queues nothing. The attachment caption is separate from the conversation draft. A repeated image/caption pair is suppressed for this page instance; this is deliberately narrow study logic, not transport idempotency or a recommendation to block legitimate resends forever. Leaving the relationship discards an uncommitted attachment; it preserves the ordinary draft and completed simulation receipts. Clicking Image again resumes current preparation.
+
+[Failure condition](../studies/menu-journey.html?mobile=1&queue=fail) makes the first attachment queue attempt fail locally, once. Retry requires an explicit tap on the retained exact review. No uncertain server outcome is modelled. Device permission, actual file selection, camera access, metadata removal, upload progress and server acceptance/delivery remain outside this exploration. **T09 remains open.** All state is lost on reload.
+
+The client-authored preparation stays inside the conversation. Its origin is the composer; cancellation/completion restore that button and the captured thread position. This is local action and coherent return, with deliberate review in the named relationship. Research: Interfaces that arrive §9.1 F5/F8/F9 and §10.1. The old build fails the new test because Image is absent. Simplify or drop if people confuse the caption with the separate draft, mistake a local receipt for delivery, or find ordinary attachment preparation clearer. No new protocol or security claim is made.
